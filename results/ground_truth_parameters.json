@@ -1,0 +1,35 @@
+{
+  "433_Eros": {
+    "pole_lambda_deg": 11.35,
+    "pole_beta_deg": 17.22,
+    "period_hours": 5.27025,
+    "dimensions_km": [
+      34.4,
+      11.2,
+      11.2
+    ],
+    "source": "NEAR Shoemaker spacecraft"
+  },
+  "216_Kleopatra": {
+    "pole_lambda_deg": 76.0,
+    "pole_beta_deg": 16.0,
+    "period_hours": 5.385,
+    "dimensions_km": [
+      217.0,
+      94.0,
+      81.0
+    ],
+    "source": "Radar + AO observations"
+  },
+  "25143_Itokawa": {
+    "pole_lambda_deg": 128.5,
+    "pole_beta_deg": -89.66,
+    "period_hours": 12.132,
+    "dimensions_km": [
+      0.535,
+      0.294,
+      0.209
+    ],
+    "source": "Hayabusa spacecraft"
+  }
+}
