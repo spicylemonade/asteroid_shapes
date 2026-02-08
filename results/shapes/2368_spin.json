@@ -1,0 +1,9 @@
+{
+  "asteroid_id": 2368,
+  "name": "Beltrovata",
+  "pole_lambda_deg": 0.0,
+  "pole_beta_deg": 45.0,
+  "period_hours": 6.9055,
+  "chi2_reduced": 0.478,
+  "method": "convex"
+}

@@ -1,0 +1,9 @@
+{
+  "asteroid_id": 4015,
+  "name": "Wilson-Harrington",
+  "pole_lambda_deg": 0.0,
+  "pole_beta_deg": 0.0,
+  "period_hours": 3.6119,
+  "chi2_reduced": 2.884,
+  "method": "convex"
+}

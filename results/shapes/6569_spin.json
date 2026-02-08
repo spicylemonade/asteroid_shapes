@@ -1,0 +1,9 @@
+{
+  "asteroid_id": 6569,
+  "name": "Ondaatje",
+  "pole_lambda_deg": 0.0,
+  "pole_beta_deg": 45.0,
+  "period_hours": 5.8549,
+  "chi2_reduced": 48.522,
+  "method": "convex"
+}

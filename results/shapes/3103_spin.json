@@ -1,0 +1,8 @@
+{
+  "asteroid_id": 3103,
+  "name": "Eger",
+  "pole_lambda_deg": 270.0,
+  "pole_beta_deg": 30.0,
+  "period_hours": 2.8727,
+  "chi2_reduced": 8.878
+}

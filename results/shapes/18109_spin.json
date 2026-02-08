@@ -1,0 +1,8 @@
+{
+  "asteroid_id": 18109,
+  "name": "2000 NG11",
+  "pole_lambda_deg": 120.0,
+  "pole_beta_deg": -45.0,
+  "period_hours": 2.169,
+  "chi2_reduced": 161.346
+}

@@ -1,0 +1,9 @@
+{
+  "asteroid_id": 5626,
+  "name": "1991 FE",
+  "pole_lambda_deg": 0.0,
+  "pole_beta_deg": 0.0,
+  "period_hours": 49.7374,
+  "chi2_reduced": 0.632,
+  "method": "convex"
+}

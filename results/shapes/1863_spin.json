@@ -1,0 +1,9 @@
+{
+  "asteroid_id": 1863,
+  "name": "Antinous",
+  "pole_lambda_deg": 270.0,
+  "pole_beta_deg": 45.0,
+  "period_hours": 8.5587,
+  "chi2_reduced": 1.055,
+  "method": "convex"
+}

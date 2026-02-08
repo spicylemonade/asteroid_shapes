@@ -1,0 +1,21 @@
+{
+  "asteroid_id": 25143,
+  "name": "Itokawa",
+  "n_lightcurves": 1,
+  "n_datapoints": 33,
+  "known_period_h": 12.1324,
+  "recovered_period_h": 3.6109,
+  "period_error_h": 8.5215,
+  "known_pole_lambda": 128.5,
+  "known_pole_beta": -89.66,
+  "recovered_pole_lambda": 297.1,
+  "recovered_pole_beta": 30.0,
+  "pole_error_deg": 120.3,
+  "hausdorff_normalized": 0.5743,
+  "hausdorff_mean": 0.0703,
+  "volumetric_iou": 0.3635,
+  "chi2_reduced": 11.927,
+  "convex_chi2": 9.472,
+  "genetic_chi2": 11.927,
+  "final_method": "genetic"
+}

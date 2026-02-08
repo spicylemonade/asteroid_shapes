@@ -1,0 +1,8 @@
+{
+  "asteroid_id": 5143,
+  "name": "Heracles",
+  "pole_lambda_deg": 45.0,
+  "pole_beta_deg": -30.0,
+  "period_hours": 2.4013,
+  "chi2_reduced": 4.418
+}

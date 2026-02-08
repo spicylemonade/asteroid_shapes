@@ -1,0 +1,8 @@
+{
+  "asteroid_id": 53110,
+  "name": "1999 AR7",
+  "pole_lambda_deg": 240.0,
+  "pole_beta_deg": -45.0,
+  "period_hours": 2.1306,
+  "chi2_reduced": 8.0
+}

@@ -1,0 +1,9 @@
+{
+  "asteroid_id": 7889,
+  "name": "1994 LX",
+  "pole_lambda_deg": 270.0,
+  "pole_beta_deg": -45.0,
+  "period_hours": 2.7517,
+  "chi2_reduced": 15.173,
+  "method": "convex"
+}

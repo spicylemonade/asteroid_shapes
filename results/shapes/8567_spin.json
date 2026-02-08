@@ -1,0 +1,9 @@
+{
+  "asteroid_id": 8567,
+  "name": "1996 HW1",
+  "pole_lambda_deg": 270.0,
+  "pole_beta_deg": 0.0,
+  "period_hours": 2.1882,
+  "chi2_reduced": 2.38,
+  "method": "convex"
+}

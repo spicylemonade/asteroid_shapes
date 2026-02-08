@@ -1,0 +1,9 @@
+{
+  "asteroid_id": 7822,
+  "name": "1991 CS",
+  "pole_lambda_deg": 270.0,
+  "pole_beta_deg": 0.0,
+  "period_hours": 2.0259,
+  "chi2_reduced": 6.178,
+  "method": "convex"
+}

@@ -1,0 +1,9 @@
+{
+  "asteroid_id": 2061,
+  "name": "Anza",
+  "pole_lambda_deg": 270.0,
+  "pole_beta_deg": 45.0,
+  "period_hours": 3.4525,
+  "chi2_reduced": 1.681,
+  "method": "convex"
+}

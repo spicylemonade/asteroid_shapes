@@ -1,0 +1,8 @@
+{
+  "asteroid_id": 1566,
+  "name": "Icarus",
+  "pole_lambda_deg": 90.0,
+  "pole_beta_deg": -30.0,
+  "period_hours": 3.5428,
+  "chi2_reduced": 8.438
+}

@@ -1,0 +1,8 @@
+{
+  "asteroid_id": 4055,
+  "name": "Magellan",
+  "pole_lambda_deg": 90.0,
+  "pole_beta_deg": 0.0,
+  "period_hours": 3.706,
+  "chi2_reduced": 11.906
+}

@@ -1,0 +1,9 @@
+{
+  "asteroid_id": 5751,
+  "name": "Zao",
+  "pole_lambda_deg": 180.0,
+  "pole_beta_deg": -45.0,
+  "period_hours": 2.0374,
+  "chi2_reduced": 3.335,
+  "method": "convex"
+}

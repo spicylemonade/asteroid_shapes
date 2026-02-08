@@ -1,0 +1,8 @@
+{
+  "asteroid_id": 2102,
+  "name": "Tantalus",
+  "pole_lambda_deg": 45.0,
+  "pole_beta_deg": 60.0,
+  "period_hours": 2.2726,
+  "chi2_reduced": 2.505
+}

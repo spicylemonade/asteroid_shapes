@@ -1,0 +1,8 @@
+{
+  "asteroid_id": 3552,
+  "name": "Don Quixote",
+  "pole_lambda_deg": 180.0,
+  "pole_beta_deg": -30.0,
+  "period_hours": 3.3657,
+  "chi2_reduced": 24.307
+}

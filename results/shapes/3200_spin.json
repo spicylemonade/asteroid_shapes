@@ -1,0 +1,8 @@
+{
+  "asteroid_id": 3200,
+  "name": "Phaethon",
+  "pole_lambda_deg": 270.0,
+  "pole_beta_deg": 30.0,
+  "period_hours": 4.0,
+  "chi2_reduced": 4.484
+}

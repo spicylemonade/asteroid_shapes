@@ -1,0 +1,9 @@
+{
+  "asteroid_id": 6239,
+  "name": "Minos",
+  "pole_lambda_deg": 180.0,
+  "pole_beta_deg": 0.0,
+  "period_hours": 3.6004,
+  "chi2_reduced": 1.381,
+  "method": "convex"
+}

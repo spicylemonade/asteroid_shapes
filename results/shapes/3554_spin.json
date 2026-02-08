@@ -1,0 +1,9 @@
+{
+  "asteroid_id": 3554,
+  "name": "Amun",
+  "pole_lambda_deg": 0.0,
+  "pole_beta_deg": -45.0,
+  "period_hours": 2.5165,
+  "chi2_reduced": 2.603,
+  "method": "convex"
+}
