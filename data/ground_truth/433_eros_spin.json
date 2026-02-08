@@ -1,0 +1,15 @@
+{
+  "asteroid_id": 433,
+  "name": "Eros",
+  "pole_lambda_deg": 11.4,
+  "pole_beta_deg": 17.2,
+  "period_hours": 5.27025,
+  "period_days": 0.21959375,
+  "reference_epoch_jd": 2451545.0,
+  "source": "Gaskell et al. 2008; NEAR Shoemaker; JPL radar",
+  "dimensions_km": [
+    34.4,
+    11.2,
+    11.2
+  ]
+}

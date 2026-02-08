@@ -1,0 +1,15 @@
+{
+  "asteroid_id": 216,
+  "name": "Kleopatra",
+  "pole_lambda_deg": 76.0,
+  "pole_beta_deg": 16.0,
+  "period_hours": 5.385,
+  "period_days": 0.224375,
+  "reference_epoch_jd": 2451545.0,
+  "source": "Descamps et al. 2011; Ostro et al. 2000; JPL radar",
+  "dimensions_km": [
+    217,
+    94,
+    81
+  ]
+}
