@@ -1,7 +1,7 @@
 {
   "version": "1.0",
   "created_at": "2026-02-08T12:00:00Z",
-  "updated_at": "2026-02-08T17:53:34.163650+00:00",
+  "updated_at": "2026-02-08T18:13:11.530543+00:00",
   "current_agent": "researcher",
   "agent_status": {
     "orchestrator": {
@@ -79,8 +79,8 @@
           "id": "item_006",
           "description": "Catalog available ALCDEF data and cross-reference with DAMIT and MPC for target selection feasibility",
           "acceptance_criteria": "Extract and parse ALCDEF_ALL.zip; produce a CSV or JSON catalog listing: asteroid number/designation, number of lightcurves available, date range of observations, filters used, and number of data points per asteroid. Cross-reference against DAMIT database (via web query) to flag which asteroids already have published shape models. Identify at least 100 asteroids with >=20 lightcurves that do NOT appear in DAMIT.",
-          "status": "in_progress",
-          "notes": null,
+          "status": "completed",
+          "notes": "ALCDEF catalog parsed: 24,643 files. Cross-referenced with DAMIT (5,060 asteroids scraped from DAMIT website). Found 7,383 asteroids with >=20 lightcurves NOT in DAMIT. CSV catalog and candidate list saved. See results/alcdef_catalog_summary.csv and results/alcdef_nicht_damit_candidates.json.",
           "error": null
         }
       ]
@@ -284,8 +284,8 @@
   ],
   "summary": {
     "total_items": 27,
-    "completed": 5,
-    "in_progress": 1,
+    "completed": 6,
+    "in_progress": 0,
     "failed": 0,
     "pending": 21
   }

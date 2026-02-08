@@ -1,0 +1,6412 @@
+[
+ {
+  "number": 288,
+  "name": "Glauke",
+  "file": "ALCDEF_288_Glauke.txt",
+  "num_lightcurves": 189,
+  "num_datapoints": 3152,
+  "date_range": "2010-07-16 to 2014-07-27",
+  "num_sessions": 189,
+  "filters": [
+   "C",
+   "R"
+  ]
+ },
+ {
+  "number": 319,
+  "name": "Leona",
+  "file": "ALCDEF_319_Leona.txt",
+  "num_lightcurves": 157,
+  "num_datapoints": 9673,
+  "date_range": "2004-12-18 to 2024-01-20",
+  "num_sessions": 153,
+  "filters": [
+   "C"
+  ]
+ },
+ {
+  "number": 703,
+  "name": "Noemi",
+  "file": "ALCDEF_703_Noemi.txt",
+  "num_lightcurves": 127,
+  "num_datapoints": 4064,
+  "date_range": "2000-11-28 to 2024-04-04",
+  "num_sessions": 65,
+  "filters": [
+   "C",
+   "SR",
+   "V",
+   "R"
+  ]
+ },
+ {
+  "number": 617,
+  "name": "Patroclus",
+  "file": "ALCDEF_617_Patroclus.txt",
+  "num_lightcurves": 119,
+  "num_datapoints": 6903,
+  "date_range": "2007-02-15 to 2024-10-30",
+  "num_sessions": 74,
+  "filters": [
+   "C",
+   "SR",
+   "V",
+   "R"
+  ]
+ },
+ {
+  "number": 1943,
+  "name": "Anteros",
+  "file": "ALCDEF_1943_Anteros.txt",
+  "num_lightcurves": 117,
+  "num_datapoints": 3681,
+  "date_range": "2009-06-18 to 2021-08-14",
+  "num_sessions": 101,
+  "filters": [
+   "C",
+   "GR",
+   "R"
+  ]
+ },
+ {
+  "number": 527,
+  "name": "Euryanthe",
+  "file": "ALCDEF_527_Euryanthe.txt",
+  "num_lightcurves": 104,
+  "num_datapoints": 16371,
+  "date_range": "2009-11-08 to 2021-05-27",
+  "num_sessions": 86,
+  "filters": [
+   "C",
+   "GR",
+   "R"
+  ]
+ },
+ {
+  "number": 1830,
+  "name": "Pogson",
+  "file": "ALCDEF_1830_Pogson.txt",
+  "num_lightcurves": 102,
+  "num_datapoints": 4763,
+  "date_range": "2007-04-18 to 2018-11-13",
+  "num_sessions": 89,
+  "filters": [
+   "C",
+   "GR",
+   "R"
+  ]
+ },
+ {
+  "number": 12867,
+  "name": "Joeloic",
+  "file": "ALCDEF_12867_Joeloic.txt",
+  "num_lightcurves": 98,
+  "num_datapoints": 2710,
+  "date_range": "2016-09-04 to 2023-11-16",
+  "num_sessions": 91,
+  "filters": [
+   "C"
+  ]
+ },
+ {
+  "number": 1887,
+  "name": "Virton",
+  "file": "ALCDEF_1887_Virton.txt",
+  "num_lightcurves": 93,
+  "num_datapoints": 4929,
+  "date_range": "2023-08-30 to 2025-01-22",
+  "num_sessions": 71,
+  "filters": [
+   "C",
+   "SR",
+   "V"
+  ]
+ },
+ {
+  "number": 763,
+  "name": "Cupido",
+  "file": "ALCDEF_763_Cupido.txt",
+  "num_lightcurves": 89,
+  "num_datapoints": 12888,
+  "date_range": "2010-07-03 to 2017-11-24",
+  "num_sessions": 48,
+  "filters": [
+   "C"
+  ]
+ },
+ {
+  "number": 1744,
+  "name": "Harriet",
+  "file": "ALCDEF_1744_Harriet.txt",
+  "num_lightcurves": 86,
+  "num_datapoints": 2771,
+  "date_range": "2019-04-11 to 2019-07-01",
+  "num_sessions": 49,
+  "filters": [
+   "C",
+   "R"
+  ]
+ },
+ {
+  "number": 5435,
+  "name": "Kameoka",
+  "file": "ALCDEF_5435_Kameoka.txt",
+  "num_lightcurves": 84,
+  "num_datapoints": 1729,
+  "date_range": "2011-12-30 to 2019-07-07",
+  "num_sessions": 56,
+  "filters": [
+   "C",
+   "R"
+  ]
+ },
+ {
+  "number": 88230,
+  "name": "2001 BT65",
+  "file": "ALCDEF_88230_2001_BT65.txt",
+  "num_lightcurves": 84,
+  "num_datapoints": 246,
+  "date_range": "2012-06-25 to 2013-11-12",
+  "num_sessions": 84,
+  "filters": [
+   "SG",
+   "R"
+  ]
+ },
+ {
+  "number": 5143,
+  "name": "Heracles",
+  "file": "ALCDEF_5143_Heracles.txt",
+  "num_lightcurves": 83,
+  "num_datapoints": 4591,
+  "date_range": "2011-11-09 to 2021-11-13",
+  "num_sessions": 65,
+  "filters": [
+   "C",
+   "V",
+   "R"
+  ]
+ },
+ {
+  "number": 163696,
+  "name": "2003 EB50",
+  "file": "ALCDEF_163696_2003_EB50.txt",
+  "num_lightcurves": 82,
+  "num_datapoints": 3254,
+  "date_range": "2013-12-21 to 2019-05-13",
+  "num_sessions": 49,
+  "filters": [
+   "C"
+  ]
+ },
+ {
+  "number": 6477,
+  "name": "1988 AE5",
+  "file": "ALCDEF_6477_1988_AE5.txt",
+  "num_lightcurves": 80,
+  "num_datapoints": 1224,
+  "date_range": "2009-12-16 to 2018-12-10",
+  "num_sessions": 76,
+  "filters": [
+   "GR",
+   "R"
+  ]
+ },
+ {
+  "number": 717,
+  "name": "Wisibada",
+  "file": "ALCDEF_717_Wisibada.txt",
+  "num_lightcurves": 78,
+  "num_datapoints": 8469,
+  "date_range": "2012-10-11 to 2024-12-30",
+  "num_sessions": 65,
+  "filters": [
+   "C"
+  ]
+ },
+ {
+  "number": 8743,
+  "name": "Keneke",
+  "file": "ALCDEF_8743_Keneke.txt",
+  "num_lightcurves": 76,
+  "num_datapoints": 3175,
+  "date_range": "2016-07-09 to 2022-05-31",
+  "num_sessions": 56,
+  "filters": [
+   "C",
+   "GR"
+  ]
+ },
+ {
+  "number": 19926,
+  "name": "1979 YQ",
+  "file": "ALCDEF_19926_1979_YQ.txt",
+  "num_lightcurves": 75,
+  "num_datapoints": 211,
+  "date_range": "2010-03-05 to 2012-12-20",
+  "num_sessions": 75,
+  "filters": [
+   "SG",
+   "R"
+  ]
+ },
+ {
+  "number": 4103,
+  "name": "Chahine",
+  "file": "ALCDEF_4103_Chahine.txt",
+  "num_lightcurves": 75,
+  "num_datapoints": 5178,
+  "date_range": "2011-04-20 to 2020-12-01",
+  "num_sessions": 66,
+  "filters": [
+   "C",
+   "GR",
+   "R"
+  ]
+ },
+ {
+  "number": 1134,
+  "name": "Kepler",
+  "file": "ALCDEF_1134_Kepler.txt",
+  "num_lightcurves": 73,
+  "num_datapoints": 6162,
+  "date_range": "2017-08-26 to 2017-12-06",
+  "num_sessions": 45,
+  "filters": [
+   "C"
+  ]
+ },
+ {
+  "number": 3868,
+  "name": "Mendoza",
+  "file": "ALCDEF_3868_Mendoza.txt",
+  "num_lightcurves": 73,
+  "num_datapoints": 3010,
+  "date_range": "2006-06-29 to 2019-02-16",
+  "num_sessions": 67,
+  "filters": [
+   "C",
+   "GR"
+  ]
+ },
+ {
+  "number": 4867,
+  "name": "Polites",
+  "file": "ALCDEF_4867_Polites.txt",
+  "num_lightcurves": 73,
+  "num_datapoints": 1958,
+  "date_range": "2010-08-14 to 2019-04-21",
+  "num_sessions": 59,
+  "filters": [
+   "C",
+   "GR",
+   "V",
+   "R"
+  ]
+ },
+ {
+  "number": 1051,
+  "name": "Merope",
+  "file": "ALCDEF_1051_Merope.txt",
+  "num_lightcurves": 72,
+  "num_datapoints": 3823,
+  "date_range": "2012-09-23 to 2023-09-20",
+  "num_sessions": 66,
+  "filters": [
+   "C",
+   "GR",
+   "R"
+  ]
+ },
+ {
+  "number": 111,
+  "name": "Ate",
+  "file": "ALCDEF_111_Ate.txt",
+  "num_lightcurves": 72,
+  "num_datapoints": 17102,
+  "date_range": "2009-11-21 to 2023-03-10",
+  "num_sessions": 62,
+  "filters": [
+   "C",
+   "GR",
+   "R"
+  ]
+ },
+ {
+  "number": 1144,
+  "name": "Oda",
+  "file": "ALCDEF_1144_Oda.txt",
+  "num_lightcurves": 72,
+  "num_datapoints": 4028,
+  "date_range": "2011-05-11 to 2018-06-05",
+  "num_sessions": 72,
+  "filters": [
+   "C",
+   "R"
+  ]
+ },
+ {
+  "number": 3122,
+  "name": "Florence",
+  "file": "ALCDEF_3122_Florence.txt",
+  "num_lightcurves": 72,
+  "num_datapoints": 10878,
+  "date_range": "2016-01-14 to 2023-01-27",
+  "num_sessions": 32,
+  "filters": [
+   "C",
+   "I",
+   "V",
+   "R"
+  ]
+ },
+ {
+  "number": 1473,
+  "name": "Ounas",
+  "file": "ALCDEF_1473_Ounas.txt",
+  "num_lightcurves": 71,
+  "num_datapoints": 7725,
+  "date_range": "2012-08-03 to 2019-03-25",
+  "num_sessions": 61,
+  "filters": [
+   "C",
+   "GR",
+   "V",
+   "R"
+  ]
+ },
+ {
+  "number": 185851,
+  "name": "2000 DP107",
+  "file": "ALCDEF_185851_2000_DP107.txt",
+  "num_lightcurves": 71,
+  "num_datapoints": 3144,
+  "date_range": "2000-09-28 to 2008-10-29",
+  "num_sessions": 39,
+  "filters": [
+   "C",
+   "R"
+  ]
+ },
+ {
+  "number": 308635,
+  "name": "2005 YU55",
+  "file": "ALCDEF_308635_2005_YU55.txt",
+  "num_lightcurves": 70,
+  "num_datapoints": 1348,
+  "date_range": "2010-04-10 to 2011-11-17",
+  "num_sessions": 8,
+  "filters": [
+   "C",
+   "R"
+  ]
+ },
+ {
+  "number": 348400,
+  "name": "2005 JF21",
+  "file": "ALCDEF_348400_2005_JF21.txt",
+  "num_lightcurves": 70,
+  "num_datapoints": 3396,
+  "date_range": "2015-06-14 to 2015-11-30",
+  "num_sessions": 50,
+  "filters": [
+   "C",
+   "R"
+  ]
+ },
+ {
+  "number": 4060,
+  "name": "Deipylos",
+  "file": "ALCDEF_4060_Deipylos.txt",
+  "num_lightcurves": 70,
+  "num_datapoints": 1518,
+  "date_range": "2010-07-25 to 2022-10-24",
+  "num_sessions": 56,
+  "filters": [
+   "C",
+   "R"
+  ]
+ },
+ {
+  "number": 467317,
+  "name": "2000 QW7",
+  "file": "ALCDEF_467317_2000_QW7.txt",
+  "num_lightcurves": 70,
+  "num_datapoints": 3101,
+  "date_range": "2019-09-04 to 2019-11-08",
+  "num_sessions": 24,
+  "filters": [
+   "C"
+  ]
+ },
+ {
+  "number": 49662,
+  "name": "1999 KC3",
+  "file": "ALCDEF_49662_1999_KC3.txt",
+  "num_lightcurves": 70,
+  "num_datapoints": 1042,
+  "date_range": "2010-03-12 to 2018-09-19",
+  "num_sessions": 67,
+  "filters": [
+   "GR",
+   "R"
+  ]
+ },
+ {
+  "number": 58359,
+  "name": "1995 KP4",
+  "file": "ALCDEF_58359_1995_KP4.txt",
+  "num_lightcurves": 70,
+  "num_datapoints": 884,
+  "date_range": "2013-08-05 to 2019-03-25",
+  "num_sessions": 64,
+  "filters": [
+   "GR",
+   "R"
+  ]
+ },
+ {
+  "number": 65803,
+  "name": "Didymos",
+  "file": "ALCDEF_65803_Didymos.txt",
+  "num_lightcurves": 70,
+  "num_datapoints": 3772,
+  "date_range": "2003-11-22 to 2023-01-05",
+  "num_sessions": 25,
+  "filters": [
+   "C",
+   "V",
+   "R"
+  ]
+ },
+ {
+  "number": 9616,
+  "name": "1993 FR3",
+  "file": "ALCDEF_9616_1993_FR3.txt",
+  "num_lightcurves": 70,
+  "num_datapoints": 856,
+  "date_range": "2009-07-08 to 2019-02-26",
+  "num_sessions": 69,
+  "filters": [
+   "GR",
+   "R"
+  ]
+ },
+ {
+  "number": 26203,
+  "name": "1997 KS",
+  "file": "ALCDEF_26203_1997_KS.txt",
+  "num_lightcurves": 69,
+  "num_datapoints": 1467,
+  "date_range": "2013-08-02 to 2019-02-27",
+  "num_sessions": 69,
+  "filters": [
+   "C",
+   "GR",
+   "R"
+  ]
+ },
+ {
+  "number": 3497,
+  "name": "Innanen",
+  "file": "ALCDEF_3497_Innanen.txt",
+  "num_lightcurves": 69,
+  "num_datapoints": 1448,
+  "date_range": "2007-04-10 to 2018-12-10",
+  "num_sessions": 65,
+  "filters": [
+   "C",
+   "GR",
+   "R"
+  ]
+ },
+ {
+  "number": 4524,
+  "name": "Barklajdetolli",
+  "file": "ALCDEF_4524_Barklajdetolli.txt",
+  "num_lightcurves": 69,
+  "num_datapoints": 952,
+  "date_range": "2009-06-17 to 2016-09-30",
+  "num_sessions": 60,
+  "filters": [
+   "C"
+  ]
+ },
+ {
+  "number": 7169,
+  "name": "Linda",
+  "file": "ALCDEF_7169_Linda.txt",
+  "num_lightcurves": 69,
+  "num_datapoints": 1461,
+  "date_range": "2006-08-05 to 2023-10-31",
+  "num_sessions": 66,
+  "filters": [
+   "C",
+   "GR",
+   "R"
+  ]
+ },
+ {
+  "number": 1264,
+  "name": "Letaba",
+  "file": "ALCDEF_1264_Letaba.txt",
+  "num_lightcurves": 68,
+  "num_datapoints": 3388,
+  "date_range": "2002-08-26 to 2019-01-14",
+  "num_sessions": 50,
+  "filters": [
+   "C",
+   "GR",
+   "R"
+  ]
+ },
+ {
+  "number": 1269,
+  "name": "Rollandia",
+  "file": "ALCDEF_1269_Rollandia.txt",
+  "num_lightcurves": 68,
+  "num_datapoints": 5147,
+  "date_range": "2016-08-06 to 2024-11-19",
+  "num_sessions": 63,
+  "filters": [
+   "C"
+  ]
+ },
+ {
+  "number": 128,
+  "name": "Nemesis",
+  "file": "ALCDEF_128_Nemesis.txt",
+  "num_lightcurves": 68,
+  "num_datapoints": 16716,
+  "date_range": "2015-01-05 to 2022-10-29",
+  "num_sessions": 62,
+  "filters": [
+   "C",
+   "R"
+  ]
+ },
+ {
+  "number": 162421,
+  "name": "2000 ET70",
+  "file": "ALCDEF_162421_2000_ET70.txt",
+  "num_lightcurves": 68,
+  "num_datapoints": 3623,
+  "date_range": "2012-02-19 to 2012-02-24",
+  "num_sessions": 5,
+  "filters": [
+   "C"
+  ]
+ },
+ {
+  "number": 217807,
+  "name": "2000 XK44",
+  "file": "ALCDEF_217807_2000_XK44.txt",
+  "num_lightcurves": 68,
+  "num_datapoints": 4386,
+  "date_range": "2009-11-05 to 2009-11-25",
+  "num_sessions": 17,
+  "filters": [
+   "C",
+   "R"
+  ]
+ },
+ {
+  "number": 805,
+  "name": "Hormuthia",
+  "file": "ALCDEF_805_Hormuthia.txt",
+  "num_lightcurves": 68,
+  "num_datapoints": 5050,
+  "date_range": "2008-06-23 to 2024-03-13",
+  "num_sessions": 54,
+  "filters": [
+   "C"
+  ]
+ },
+ {
+  "number": 2873,
+  "name": "Binzel",
+  "file": "ALCDEF_2873_Binzel.txt",
+  "num_lightcurves": 67,
+  "num_datapoints": 1697,
+  "date_range": "2010-07-21 to 2019-04-07",
+  "num_sessions": 52,
+  "filters": [
+   "C",
+   "R"
+  ]
+ },
+ {
+  "number": 294739,
+  "name": "2008 CM",
+  "file": "ALCDEF_294739_2008_CM.txt",
+  "num_lightcurves": 67,
+  "num_datapoints": 1777,
+  "date_range": "2014-01-13 to 2016-01-09",
+  "num_sessions": 11,
+  "filters": [
+   "C",
+   "V",
+   "R"
+  ]
+ },
+ {
+  "number": 455432,
+  "name": "2003 RP8",
+  "file": "ALCDEF_455432_2003_RP8.txt",
+  "num_lightcurves": 67,
+  "num_datapoints": 3170,
+  "date_range": "2019-07-19 to 2019-08-13",
+  "num_sessions": 9,
+  "filters": [
+   "C"
+  ]
+ },
+ {
+  "number": 51350,
+  "name": "2000 QU176",
+  "file": "ALCDEF_51350_2000_QU176.txt",
+  "num_lightcurves": 67,
+  "num_datapoints": 851,
+  "date_range": "2012-06-26 to 2019-03-25",
+  "num_sessions": 64,
+  "filters": [
+   "GR",
+   "SG",
+   "R"
+  ]
+ },
+ {
+  "number": 654,
+  "name": "Zelinda",
+  "file": "ALCDEF_654_Zelinda.txt",
+  "num_lightcurves": 67,
+  "num_datapoints": 18091,
+  "date_range": "2007-08-27 to 2014-08-18",
+  "num_sessions": 39,
+  "filters": [
+   "C",
+   "I",
+   "R"
+  ]
+ },
+ {
+  "number": 74590,
+  "name": "1999 OG2",
+  "file": "ALCDEF_74590_1999_OG2.txt",
+  "num_lightcurves": 67,
+  "num_datapoints": 2172,
+  "date_range": "2007-09-11 to 2018-11-13",
+  "num_sessions": 54,
+  "filters": [
+   "C",
+   "GR",
+   "R"
+  ]
+ },
+ {
+  "number": 142250,
+  "name": "2002 RO102",
+  "file": "ALCDEF_142250_2002_RO102.txt",
+  "num_lightcurves": 65,
+  "num_datapoints": 1030,
+  "date_range": "2010-08-03 to 2018-09-19",
+  "num_sessions": 63,
+  "filters": [
+   "GR",
+   "R"
+  ]
+ },
+ {
+  "number": 2691,
+  "name": "Sersic",
+  "file": "ALCDEF_2691_Sersic.txt",
+  "num_lightcurves": 65,
+  "num_datapoints": 2764,
+  "date_range": "2011-06-03 to 2015-09-23",
+  "num_sessions": 32,
+  "filters": [
+   "C"
+  ]
+ },
+ {
+  "number": 3166,
+  "name": "Klondike",
+  "file": "ALCDEF_3166_Klondike.txt",
+  "num_lightcurves": 65,
+  "num_datapoints": 2393,
+  "date_range": "2007-04-09 to 2023-01-14",
+  "num_sessions": 63,
+  "filters": [
+   "C",
+   "GR",
+   "R"
+  ]
+ },
+ {
+  "number": 488515,
+  "name": "2001 FE90",
+  "file": "ALCDEF_488515_2001_FE90.txt",
+  "num_lightcurves": 65,
+  "num_datapoints": 2657,
+  "date_range": "2009-06-21 to 2009-06-29",
+  "num_sessions": 6,
+  "filters": [
+   "C",
+   "V"
+  ]
+ },
+ {
+  "number": 75079,
+  "name": "1999 VN24",
+  "file": "ALCDEF_75079_1999_VN24.txt",
+  "num_lightcurves": 65,
+  "num_datapoints": 450,
+  "date_range": "2011-04-02 to 2013-10-12",
+  "num_sessions": 62,
+  "filters": [
+   "R",
+   "SG"
+  ]
+ },
+ {
+  "number": 76818,
+  "name": "2000 RG79",
+  "file": "ALCDEF_76818_2000_RG79.txt",
+  "num_lightcurves": 65,
+  "num_datapoints": 4094,
+  "date_range": "2005-08-07 to 2016-12-04",
+  "num_sessions": 64,
+  "filters": [
+   "C",
+   "R"
+  ]
+ },
+ {
+  "number": 9430,
+  "name": "Erichthonios",
+  "file": "ALCDEF_9430_Erichthonios.txt",
+  "num_lightcurves": 65,
+  "num_datapoints": 217,
+  "date_range": "2012-08-20 to 2013-12-02",
+  "num_sessions": 65,
+  "filters": [
+   "R",
+   "SG"
+  ]
+ },
+ {
+  "number": 1583,
+  "name": "Antilochus",
+  "file": "ALCDEF_1583_Antilochus.txt",
+  "num_lightcurves": 64,
+  "num_datapoints": 4110,
+  "date_range": "2009-11-19 to 2020-10-20",
+  "num_sessions": 54,
+  "filters": [
+   "C",
+   "R"
+  ]
+ },
+ {
+  "number": 4015,
+  "name": "Wilson-Harrington",
+  "file": "ALCDEF_4015_Wilson-Harrington.txt",
+  "num_lightcurves": 64,
+  "num_datapoints": 1566,
+  "date_range": "2009-07-15 to 2010-03-11",
+  "num_sessions": 61,
+  "filters": [
+   "C",
+   "R"
+  ]
+ },
+ {
+  "number": 57,
+  "name": "Mnemosyne",
+  "file": "ALCDEF_57_Mnemosyne.txt",
+  "num_lightcurves": 64,
+  "num_datapoints": 18284,
+  "date_range": "2015-06-23 to 2024-03-14",
+  "num_sessions": 64,
+  "filters": [
+   "C",
+   "R"
+  ]
+ },
+ {
+  "number": 12424,
+  "name": "1995 VM",
+  "file": "ALCDEF_12424_1995_VM.txt",
+  "num_lightcurves": 63,
+  "num_datapoints": 895,
+  "date_range": "2009-11-02 to 2023-04-27",
+  "num_sessions": 59,
+  "filters": [
+   "C",
+   "GR",
+   "R"
+  ]
+ },
+ {
+  "number": 1250,
+  "name": "Galanthus",
+  "file": "ALCDEF_1250_Galanthus.txt",
+  "num_lightcurves": 63,
+  "num_datapoints": 1089,
+  "date_range": "2013-08-10 to 2019-04-21",
+  "num_sessions": 60,
+  "filters": [
+   "GR",
+   "R"
+  ]
+ },
+ {
+  "number": 113765,
+  "name": "2002 TX172",
+  "file": "ALCDEF_113765_2002_TX172.txt",
+  "num_lightcurves": 62,
+  "num_datapoints": 526,
+  "date_range": "2013-08-02 to 2018-09-19",
+  "num_sessions": 61,
+  "filters": [
+   "GR",
+   "R"
+  ]
+ },
+ {
+  "number": 2241,
+  "name": "Alcathous",
+  "file": "ALCDEF_2241_Alcathous.txt",
+  "num_lightcurves": 62,
+  "num_datapoints": 3250,
+  "date_range": "2010-06-05 to 2019-03-25",
+  "num_sessions": 58,
+  "filters": [
+   "C",
+   "GR",
+   "R"
+  ]
+ },
+ {
+  "number": 2261,
+  "name": "Keeler",
+  "file": "ALCDEF_2261_Keeler.txt",
+  "num_lightcurves": 62,
+  "num_datapoints": 2762,
+  "date_range": "2010-04-03 to 2021-05-01",
+  "num_sessions": 54,
+  "filters": [
+   "C",
+   "GR"
+  ]
+ },
+ {
+  "number": 4055,
+  "name": "Magellan",
+  "file": "ALCDEF_4055_Magellan.txt",
+  "num_lightcurves": 62,
+  "num_datapoints": 1469,
+  "date_range": "2010-01-01 to 2022-04-04",
+  "num_sessions": 59,
+  "filters": [
+   "C",
+   "GR",
+   "R"
+  ]
+ },
+ {
+  "number": 125604,
+  "name": "2001 XJ48",
+  "file": "ALCDEF_125604_2001_XJ48.txt",
+  "num_lightcurves": 61,
+  "num_datapoints": 960,
+  "date_range": "2013-08-29 to 2019-03-25",
+  "num_sessions": 56,
+  "filters": [
+   "GR",
+   "R"
+  ]
+ },
+ {
+  "number": 1867,
+  "name": "Deiphobus",
+  "file": "ALCDEF_1867_Deiphobus.txt",
+  "num_lightcurves": 61,
+  "num_datapoints": 2686,
+  "date_range": "2007-01-19 to 2017-03-07",
+  "num_sessions": 39,
+  "filters": [
+   "C"
+  ]
+ },
+ {
+  "number": 3309,
+  "name": "Brorfelde",
+  "file": "ALCDEF_3309_Brorfelde.txt",
+  "num_lightcurves": 61,
+  "num_datapoints": 1959,
+  "date_range": "2005-10-25 to 2014-05-05",
+  "num_sessions": 58,
+  "filters": [
+   "C",
+   "R"
+  ]
+ },
+ {
+  "number": 3609,
+  "name": "Liloketai",
+  "file": "ALCDEF_3609_Liloketai.txt",
+  "num_lightcurves": 61,
+  "num_datapoints": 1177,
+  "date_range": "2013-08-02 to 2018-09-19",
+  "num_sessions": 59,
+  "filters": [
+   "GR",
+   "R"
+  ]
+ },
+ {
+  "number": 76437,
+  "name": "2000 FD29",
+  "file": "ALCDEF_76437_2000_FD29.txt",
+  "num_lightcurves": 61,
+  "num_datapoints": 147,
+  "date_range": "2013-08-02 to 2013-11-11",
+  "num_sessions": 61,
+  "filters": [
+   "R"
+  ]
+ },
+ {
+  "number": 11232,
+  "name": "1999 JA77",
+  "file": "ALCDEF_11232_1999_JA77.txt",
+  "num_lightcurves": 60,
+  "num_datapoints": 1127,
+  "date_range": "2009-11-02 to 2018-10-17",
+  "num_sessions": 60,
+  "filters": [
+   "GR",
+   "R"
+  ]
+ },
+ {
+  "number": 1796,
+  "name": "Riga",
+  "file": "ALCDEF_1796_Riga.txt",
+  "num_lightcurves": 60,
+  "num_datapoints": 2037,
+  "date_range": "2003-06-02 to 2023-10-08",
+  "num_sessions": 57,
+  "filters": [
+   "C",
+   "GR"
+  ]
+ },
+ {
+  "number": 18632,
+  "name": "Danielsson",
+  "file": "ALCDEF_18632_Danielsson.txt",
+  "num_lightcurves": 60,
+  "num_datapoints": 144,
+  "date_range": "2010-07-07 to 2011-01-29",
+  "num_sessions": 60,
+  "filters": [
+   "R"
+  ]
+ },
+ {
+  "number": 2000,
+  "name": "Herschel",
+  "file": "ALCDEF_2000_Herschel.txt",
+  "num_lightcurves": 60,
+  "num_datapoints": 7897,
+  "date_range": "2004-08-21 to 2020-01-02",
+  "num_sessions": 53,
+  "filters": [
+   "C",
+   "SR",
+   "R"
+  ]
+ },
+ {
+  "number": 22180,
+  "name": "2000 YZ",
+  "file": "ALCDEF_22180_2000_YZ.txt",
+  "num_lightcurves": 60,
+  "num_datapoints": 1498,
+  "date_range": "2011-05-10 to 2019-04-21",
+  "num_sessions": 43,
+  "filters": [
+   "C",
+   "GR",
+   "R"
+  ]
+ },
+ {
+  "number": 3225,
+  "name": "Hoag",
+  "file": "ALCDEF_3225_Hoag.txt",
+  "num_lightcurves": 60,
+  "num_datapoints": 1866,
+  "date_range": "2007-03-13 to 2023-06-17",
+  "num_sessions": 60,
+  "filters": [
+   "C",
+   "R"
+  ]
+ },
+ {
+  "number": 3709,
+  "name": "Polypoites",
+  "file": "ALCDEF_3709_Polypoites.txt",
+  "num_lightcurves": 60,
+  "num_datapoints": 2331,
+  "date_range": "2010-10-30 to 2021-08-13",
+  "num_sessions": 49,
+  "filters": [
+   "C"
+  ]
+ },
+ {
+  "number": 3945,
+  "name": "Gerasimenko",
+  "file": "ALCDEF_3945_Gerasimenko.txt",
+  "num_lightcurves": 60,
+  "num_datapoints": 166,
+  "date_range": "2010-07-26 to 2012-02-29",
+  "num_sessions": 60,
+  "filters": [
+   "R"
+  ]
+ },
+ {
+  "number": 51365,
+  "name": "2000 TA42",
+  "file": "ALCDEF_51365_2000_TA42.txt",
+  "num_lightcurves": 60,
+  "num_datapoints": 414,
+  "date_range": "2013-08-02 to 2014-11-11",
+  "num_sessions": 60,
+  "filters": [
+   "C",
+   "R"
+  ]
+ },
+ {
+  "number": 76170,
+  "name": "2000 EF30",
+  "file": "ALCDEF_76170_2000_EF30.txt",
+  "num_lightcurves": 60,
+  "num_datapoints": 978,
+  "date_range": "2010-07-09 to 2018-08-21",
+  "num_sessions": 57,
+  "filters": [
+   "GR",
+   "R"
+  ]
+ },
+ {
+  "number": 13839,
+  "name": "1999 XF29",
+  "file": "ALCDEF_13839_1999_XF29.txt",
+  "num_lightcurves": 59,
+  "num_datapoints": 1112,
+  "date_range": "2010-07-25 to 2018-12-10",
+  "num_sessions": 55,
+  "filters": [
+   "GR",
+   "R"
+  ]
+ },
+ {
+  "number": 154244,
+  "name": "2002 KL6",
+  "file": "ALCDEF_154244_2002_KL6.txt",
+  "num_lightcurves": 59,
+  "num_datapoints": 4408,
+  "date_range": "2009-06-18 to 2023-08-21",
+  "num_sessions": 45,
+  "filters": [
+   "C",
+   "R"
+  ]
+ },
+ {
+  "number": 15777,
+  "name": "1993 LF",
+  "file": "ALCDEF_15777_1993_LF.txt",
+  "num_lightcurves": 59,
+  "num_datapoints": 788,
+  "date_range": "2011-12-07 to 2018-09-19",
+  "num_sessions": 58,
+  "filters": [
+   "GR",
+   "R"
+  ]
+ },
+ {
+  "number": 1903,
+  "name": "Adzhimushkaj",
+  "file": "ALCDEF_1903_Adzhimushkaj.txt",
+  "num_lightcurves": 59,
+  "num_datapoints": 877,
+  "date_range": "2021-11-22 to 2022-02-04",
+  "num_sessions": 59,
+  "filters": [
+   "C"
+  ]
+ },
+ {
+  "number": 4440,
+  "name": "Tchantches",
+  "file": "ALCDEF_4440_Tchantches.txt",
+  "num_lightcurves": 59,
+  "num_datapoints": 2537,
+  "date_range": "2002-08-27 to 2025-02-16",
+  "num_sessions": 56,
+  "filters": [
+   "C",
+   "R"
+  ]
+ },
+ {
+  "number": 4708,
+  "name": "Polydoros",
+  "file": "ALCDEF_4708_Polydoros.txt",
+  "num_lightcurves": 59,
+  "num_datapoints": 2369,
+  "date_range": "2011-07-30 to 2019-03-25",
+  "num_sessions": 49,
+  "filters": [
+   "C",
+   "GR",
+   "R"
+  ]
+ },
+ {
+  "number": 162082,
+  "name": "1998 HL1",
+  "file": "ALCDEF_162082_1998_HL1.txt",
+  "num_lightcurves": 58,
+  "num_datapoints": 4818,
+  "date_range": "2019-10-01 to 2019-10-28",
+  "num_sessions": 8,
+  "filters": [
+   "C",
+   "V"
+  ]
+ },
+ {
+  "number": 275073,
+  "name": "2009 UX139",
+  "file": "ALCDEF_275073_2009_UX139.txt",
+  "num_lightcurves": 58,
+  "num_datapoints": 522,
+  "date_range": "2013-08-28 to 2019-03-25",
+  "num_sessions": 51,
+  "filters": [
+   "GR",
+   "R"
+  ]
+ },
+ {
+  "number": 441987,
+  "name": "2010 NY65",
+  "file": "ALCDEF_441987_2010_NY65.txt",
+  "num_lightcurves": 58,
+  "num_datapoints": 2417,
+  "date_range": "2016-07-01 to 2020-07-01",
+  "num_sessions": 26,
+  "filters": [
+   "C"
+  ]
+ },
+ {
+  "number": 4517,
+  "name": "Ralpharvey",
+  "file": "ALCDEF_4517_Ralpharvey.txt",
+  "num_lightcurves": 58,
+  "num_datapoints": 1177,
+  "date_range": "2010-07-26 to 2019-07-05",
+  "num_sessions": 51,
+  "filters": [
+   "C",
+   "GR",
+   "R"
+  ]
+ },
+ {
+  "number": 4664,
+  "name": "Hanner",
+  "file": "ALCDEF_4664_Hanner.txt",
+  "num_lightcurves": 58,
+  "num_datapoints": 173,
+  "date_range": "2010-08-14 to 2012-01-28",
+  "num_sessions": 58,
+  "filters": [
+   "R"
+  ]
+ },
+ {
+  "number": 5641,
+  "name": "McCleese",
+  "file": "ALCDEF_5641_McCleese.txt",
+  "num_lightcurves": 58,
+  "num_datapoints": 3425,
+  "date_range": "2005-05-16 to 2010-07-02",
+  "num_sessions": 49,
+  "filters": [
+   "C"
+  ]
+ },
+ {
+  "number": 59014,
+  "name": "1998 SC74",
+  "file": "ALCDEF_59014_1998_SC74.txt",
+  "num_lightcurves": 58,
+  "num_datapoints": 135,
+  "date_range": "2013-08-03 to 2013-11-06",
+  "num_sessions": 58,
+  "filters": [
+   "R"
+  ]
+ },
+ {
+  "number": 86192,
+  "name": "1999 SV1",
+  "file": "ALCDEF_86192_1999_SV1.txt",
+  "num_lightcurves": 58,
+  "num_datapoints": 814,
+  "date_range": "2010-07-10 to 2023-07-22",
+  "num_sessions": 58,
+  "filters": [
+   "C",
+   "R"
+  ]
+ },
+ {
+  "number": 113077,
+  "name": "2002 RR63",
+  "file": "ALCDEF_113077_2002_RR63.txt",
+  "num_lightcurves": 57,
+  "num_datapoints": 913,
+  "date_range": "2013-10-02 to 2018-09-19",
+  "num_sessions": 53,
+  "filters": [
+   "GR",
+   "R"
+  ]
+ },
+ {
+  "number": 15502,
+  "name": "1999 NV27",
+  "file": "ALCDEF_15502_1999_NV27.txt",
+  "num_lightcurves": 57,
+  "num_datapoints": 2417,
+  "date_range": "2012-09-20 to 2019-04-19",
+  "num_sessions": 54,
+  "filters": [
+   "C",
+   "GR",
+   "R"
+  ]
+ },
+ {
+  "number": 166632,
+  "name": "2002 SP30",
+  "file": "ALCDEF_166632_2002_SP30.txt",
+  "num_lightcurves": 57,
+  "num_datapoints": 593,
+  "date_range": "2013-08-28 to 2018-09-16",
+  "num_sessions": 52,
+  "filters": [
+   "GR",
+   "R"
+  ]
+ },
+ {
+  "number": 2259,
+  "name": "Sofievka",
+  "file": "ALCDEF_2259_Sofievka.txt",
+  "num_lightcurves": 57,
+  "num_datapoints": 1149,
+  "date_range": "2006-09-15 to 2019-03-25",
+  "num_sessions": 54,
+  "filters": [
+   "C",
+   "GR",
+   "R"
+  ]
+ },
+ {
+  "number": 2577,
+  "name": "Litva",
+  "file": "ALCDEF_2577_Litva.txt",
+  "num_lightcurves": 57,
+  "num_datapoints": 2805,
+  "date_range": "2004-04-15 to 2020-07-07",
+  "num_sessions": 43,
+  "filters": [
+   "C"
+  ]
+ },
+ {
+  "number": 54238,
+  "name": "2000 JD19",
+  "file": "ALCDEF_54238_2000_JD19.txt",
+  "num_lightcurves": 57,
+  "num_datapoints": 1104,
+  "date_range": "2009-12-15 to 2018-12-10",
+  "num_sessions": 55,
+  "filters": [
+   "GR",
+   "R"
+  ]
+ },
+ {
+  "number": 5577,
+  "name": "Priestley",
+  "file": "ALCDEF_5577_Priestley.txt",
+  "num_lightcurves": 57,
+  "num_datapoints": 1310,
+  "date_range": "2008-05-06 to 2013-06-02",
+  "num_sessions": 43,
+  "filters": [
+   "C",
+   "R"
+  ]
+ },
+ {
+  "number": 8128,
+  "name": "Nicomachus",
+  "file": "ALCDEF_8128_Nicomachus.txt",
+  "num_lightcurves": 57,
+  "num_datapoints": 276,
+  "date_range": "2009-09-21 to 2013-10-06",
+  "num_sessions": 57,
+  "filters": [
+   "R"
+  ]
+ },
+ {
+  "number": 114334,
+  "name": "2002 XW65",
+  "file": "ALCDEF_114334_2002_XW65.txt",
+  "num_lightcurves": 56,
+  "num_datapoints": 1241,
+  "date_range": "2010-07-25 to 2018-09-19",
+  "num_sessions": 54,
+  "filters": [
+   "GR",
+   "R"
+  ]
+ },
+ {
+  "number": 15190,
+  "name": "3353 T-2",
+  "file": "ALCDEF_15190_3353_T-2.txt",
+  "num_lightcurves": 56,
+  "num_datapoints": 1107,
+  "date_range": "2013-09-07 to 2018-08-19",
+  "num_sessions": 53,
+  "filters": [
+   "GR",
+   "R"
+  ]
+ },
+ {
+  "number": 17252,
+  "name": "2000 GJ127",
+  "file": "ALCDEF_17252_2000_GJ127.txt",
+  "num_lightcurves": 56,
+  "num_datapoints": 762,
+  "date_range": "2010-03-12 to 2018-12-02",
+  "num_sessions": 55,
+  "filters": [
+   "GR",
+   "R"
+  ]
+ },
+ {
+  "number": 185,
+  "name": "Eunike",
+  "file": "ALCDEF_185_Eunike.txt",
+  "num_lightcurves": 56,
+  "num_datapoints": 9612,
+  "date_range": "2010-04-22 to 2020-06-28",
+  "num_sessions": 53,
+  "filters": [
+   "C",
+   "V",
+   "R"
+  ]
+ },
+ {
+  "number": 2207,
+  "name": "Antenor",
+  "file": "ALCDEF_2207_Antenor.txt",
+  "num_lightcurves": 56,
+  "num_datapoints": 1284,
+  "date_range": "2012-08-20 to 2019-04-14",
+  "num_sessions": 49,
+  "filters": [
+   "C",
+   "R",
+   "SG"
+  ]
+ },
+ {
+  "number": 25861,
+  "name": "2000 FS15",
+  "file": "ALCDEF_25861_2000_FS15.txt",
+  "num_lightcurves": 56,
+  "num_datapoints": 1259,
+  "date_range": "2013-08-03 to 2018-09-19",
+  "num_sessions": 54,
+  "filters": [
+   "GR",
+   "R"
+  ]
+ },
+ {
+  "number": 35291,
+  "name": "1996 TN46",
+  "file": "ALCDEF_35291_1996_TN46.txt",
+  "num_lightcurves": 56,
+  "num_datapoints": 634,
+  "date_range": "2013-08-02 to 2019-04-13",
+  "num_sessions": 55,
+  "filters": [
+   "GR",
+   "R"
+  ]
+ },
+ {
+  "number": 3873,
+  "name": "Roddy",
+  "file": "ALCDEF_3873_Roddy.txt",
+  "num_lightcurves": 56,
+  "num_datapoints": 2323,
+  "date_range": "2004-07-13 to 2015-11-10",
+  "num_sessions": 56,
+  "filters": [
+   "C"
+  ]
+ },
+ {
+  "number": 450894,
+  "name": "2008 BT18",
+  "file": "ALCDEF_450894_2008_BT18.txt",
+  "num_lightcurves": 56,
+  "num_datapoints": 1984,
+  "date_range": "2008-07-18 to 2018-04-03",
+  "num_sessions": 19,
+  "filters": [
+   "C",
+   "I"
+  ]
+ },
+ {
+  "number": 51871,
+  "name": "2001 PH8",
+  "file": "ALCDEF_51871_2001_PH8.txt",
+  "num_lightcurves": 56,
+  "num_datapoints": 134,
+  "date_range": "2013-08-03 to 2013-11-11",
+  "num_sessions": 56,
+  "filters": [
+   "R"
+  ]
+ },
+ {
+  "number": 70410,
+  "name": "1999 SE3",
+  "file": "ALCDEF_70410_1999_SE3.txt",
+  "num_lightcurves": 56,
+  "num_datapoints": 558,
+  "date_range": "2010-07-08 to 2013-07-09",
+  "num_sessions": 56,
+  "filters": [
+   "C",
+   "R"
+  ]
+ },
+ {
+  "number": 7352,
+  "name": "1994 CO",
+  "file": "ALCDEF_7352_1994_CO.txt",
+  "num_lightcurves": 56,
+  "num_datapoints": 1383,
+  "date_range": "2013-09-13 to 2013-10-21",
+  "num_sessions": 30,
+  "filters": [
+   "C"
+  ]
+ },
+ {
+  "number": 7983,
+  "name": "Festin",
+  "file": "ALCDEF_7983_Festin.txt",
+  "num_lightcurves": 56,
+  "num_datapoints": 137,
+  "date_range": "2010-08-18 to 2013-10-22",
+  "num_sessions": 56,
+  "filters": [
+   "R"
+  ]
+ },
+ {
+  "number": 80044,
+  "name": "1999 JN40",
+  "file": "ALCDEF_80044_1999_JN40.txt",
+  "num_lightcurves": 56,
+  "num_datapoints": 1191,
+  "date_range": "2010-03-05 to 2018-10-17",
+  "num_sessions": 54,
+  "filters": [
+   "GR",
+   "R"
+  ]
+ },
+ {
+  "number": 9122,
+  "name": "Hunten",
+  "file": "ALCDEF_9122_Hunten.txt",
+  "num_lightcurves": 56,
+  "num_datapoints": 100,
+  "date_range": "2010-07-07 to 2010-12-12",
+  "num_sessions": 56,
+  "filters": [
+   "R"
+  ]
+ },
+ {
+  "number": 123034,
+  "name": "2000 SG288",
+  "file": "ALCDEF_123034_2000_SG288.txt",
+  "num_lightcurves": 55,
+  "num_datapoints": 516,
+  "date_range": "2013-08-10 to 2019-01-29",
+  "num_sessions": 52,
+  "filters": [
+   "GR",
+   "R"
+  ]
+ },
+ {
+  "number": 13553,
+  "name": "Masaakikoyama",
+  "file": "ALCDEF_13553_Masaakikoyama.txt",
+  "num_lightcurves": 55,
+  "num_datapoints": 6419,
+  "date_range": "2018-06-22 to 2018-09-20",
+  "num_sessions": 44,
+  "filters": [
+   "C"
+  ]
+ },
+ {
+  "number": 153591,
+  "name": "2001 SN263",
+  "file": "ALCDEF_153591_2001_SN263.txt",
+  "num_lightcurves": 55,
+  "num_datapoints": 3063,
+  "date_range": "2008-02-08 to 2022-02-04",
+  "num_sessions": 24,
+  "filters": [
+   "C",
+   "I",
+   "R"
+  ]
+ },
+ {
+  "number": 15638,
+  "name": "2000 JA65",
+  "file": "ALCDEF_15638_2000_JA65.txt",
+  "num_lightcurves": 55,
+  "num_datapoints": 556,
+  "date_range": "2010-07-07 to 2018-10-17",
+  "num_sessions": 54,
+  "filters": [
+   "GR",
+   "R"
+  ]
+ },
+ {
+  "number": 26383,
+  "name": "1999 MA2",
+  "file": "ALCDEF_26383_1999_MA2.txt",
+  "num_lightcurves": 55,
+  "num_datapoints": 1315,
+  "date_range": "2009-01-14 to 2023-05-29",
+  "num_sessions": 49,
+  "filters": [
+   "I",
+   "R",
+   "GR",
+   "SR",
+   "V",
+   "C",
+   "SG"
+  ]
+ },
+ {
+  "number": 27062,
+  "name": "1998 SJ58",
+  "file": "ALCDEF_27062_1998_SJ58.txt",
+  "num_lightcurves": 55,
+  "num_datapoints": 122,
+  "date_range": "2010-11-05 to 2013-11-10",
+  "num_sessions": 55,
+  "filters": [
+   "R"
+  ]
+ },
+ {
+  "number": 5084,
+  "name": "Gnedin",
+  "file": "ALCDEF_5084_Gnedin.txt",
+  "num_lightcurves": 55,
+  "num_datapoints": 892,
+  "date_range": "2013-08-02 to 2018-09-19",
+  "num_sessions": 53,
+  "filters": [
+   "GR",
+   "R"
+  ]
+ },
+ {
+  "number": 5481,
+  "name": "Kiuchi",
+  "file": "ALCDEF_5481_Kiuchi.txt",
+  "num_lightcurves": 55,
+  "num_datapoints": 2428,
+  "date_range": "2008-03-13 to 2019-05-05",
+  "num_sessions": 36,
+  "filters": [
+   "C",
+   "GR",
+   "R"
+  ]
+ },
+ {
+  "number": 764,
+  "name": "Gedania",
+  "file": "ALCDEF_764_Gedania.txt",
+  "num_lightcurves": 55,
+  "num_datapoints": 5189,
+  "date_range": "2009-07-19 to 2021-12-05",
+  "num_sessions": 51,
+  "filters": [
+   "C",
+   "GR"
+  ]
+ },
+ {
+  "number": 76715,
+  "name": "2000 JK11",
+  "file": "ALCDEF_76715_2000_JK11.txt",
+  "num_lightcurves": 55,
+  "num_datapoints": 674,
+  "date_range": "2013-08-28 to 2018-09-19",
+  "num_sessions": 52,
+  "filters": [
+   "GR",
+   "R"
+  ]
+ },
+ {
+  "number": 790,
+  "name": "Pretoria",
+  "file": "ALCDEF_790_Pretoria.txt",
+  "num_lightcurves": 55,
+  "num_datapoints": 2580,
+  "date_range": "2005-01-24 to 2025-04-08",
+  "num_sessions": 46,
+  "filters": [
+   "R",
+   "GR",
+   "SR",
+   "V",
+   "C",
+   "B"
+  ]
+ },
+ {
+  "number": 1146,
+  "name": "Biarmia",
+  "file": "ALCDEF_1146_Biarmia.txt",
+  "num_lightcurves": 54,
+  "num_datapoints": 6251,
+  "date_range": "1999-09-22 to 2020-07-24",
+  "num_sessions": 41,
+  "filters": [
+   "C",
+   "GR"
+  ]
+ },
+ {
+  "number": 17251,
+  "name": "Vondracek",
+  "file": "ALCDEF_17251_Vondracek.txt",
+  "num_lightcurves": 54,
+  "num_datapoints": 928,
+  "date_range": "2010-01-01 to 2018-11-11",
+  "num_sessions": 52,
+  "filters": [
+   "GR",
+   "R"
+  ]
+ },
+ {
+  "number": 19506,
+  "name": "1998 MN4",
+  "file": "ALCDEF_19506_1998_MN4.txt",
+  "num_lightcurves": 54,
+  "num_datapoints": 936,
+  "date_range": "2012-03-22 to 2018-09-19",
+  "num_sessions": 49,
+  "filters": [
+   "GR",
+   "R"
+  ]
+ },
+ {
+  "number": 20308,
+  "name": "1998 FP109",
+  "file": "ALCDEF_20308_1998_FP109.txt",
+  "num_lightcurves": 54,
+  "num_datapoints": 963,
+  "date_range": "2013-08-03 to 2019-05-19",
+  "num_sessions": 50,
+  "filters": [
+   "GR",
+   "R"
+  ]
+ },
+ {
+  "number": 264835,
+  "name": "2002 QD36",
+  "file": "ALCDEF_264835_2002_QD36.txt",
+  "num_lightcurves": 54,
+  "num_datapoints": 120,
+  "date_range": "2013-08-06 to 2013-11-12",
+  "num_sessions": 54,
+  "filters": [
+   "R"
+  ]
+ },
+ {
+  "number": 27171,
+  "name": "1999 AD33",
+  "file": "ALCDEF_27171_1999_AD33.txt",
+  "num_lightcurves": 54,
+  "num_datapoints": 975,
+  "date_range": "2009-12-15 to 2018-12-08",
+  "num_sessions": 52,
+  "filters": [
+   "GR",
+   "R"
+  ]
+ },
+ {
+  "number": 32861,
+  "name": "1993 FM7",
+  "file": "ALCDEF_32861_1993_FM7.txt",
+  "num_lightcurves": 54,
+  "num_datapoints": 95,
+  "date_range": "2010-07-07 to 2010-12-28",
+  "num_sessions": 54,
+  "filters": [
+   "R"
+  ]
+ },
+ {
+  "number": 33579,
+  "name": "1999 JC35",
+  "file": "ALCDEF_33579_1999_JC35.txt",
+  "num_lightcurves": 54,
+  "num_datapoints": 118,
+  "date_range": "2010-01-02 to 2013-11-11",
+  "num_sessions": 54,
+  "filters": [
+   "R"
+  ]
+ },
+ {
+  "number": 3810,
+  "name": "Aoraki",
+  "file": "ALCDEF_3810_Aoraki.txt",
+  "num_lightcurves": 54,
+  "num_datapoints": 1007,
+  "date_range": "2010-06-30 to 2019-04-21",
+  "num_sessions": 51,
+  "filters": [
+   "GR",
+   "R"
+  ]
+ },
+ {
+  "number": 410778,
+  "name": "2009 FG19",
+  "file": "ALCDEF_410778_2009_FG19.txt",
+  "num_lightcurves": 54,
+  "num_datapoints": 2583,
+  "date_range": "2014-09-21 to 2014-10-07",
+  "num_sessions": 9,
+  "filters": [
+   "C"
+  ]
+ },
+ {
+  "number": 4226,
+  "name": "Damiaan",
+  "file": "ALCDEF_4226_Damiaan.txt",
+  "num_lightcurves": 54,
+  "num_datapoints": 2870,
+  "date_range": "2023-07-26 to 2023-10-03",
+  "num_sessions": 25,
+  "filters": [
+   "C",
+   "SR",
+   "V"
+  ]
+ },
+ {
+  "number": 43029,
+  "name": "1999 VT24",
+  "file": "ALCDEF_43029_1999_VT24.txt",
+  "num_lightcurves": 54,
+  "num_datapoints": 124,
+  "date_range": "2010-06-30 to 2010-12-10",
+  "num_sessions": 54,
+  "filters": [
+   "R"
+  ]
+ },
+ {
+  "number": 58,
+  "name": "Concordia",
+  "file": "ALCDEF_58_Concordia.txt",
+  "num_lightcurves": 54,
+  "num_datapoints": 9480,
+  "date_range": "2006-02-04 to 2024-03-28",
+  "num_sessions": 53,
+  "filters": [
+   "C",
+   "GR"
+  ]
+ },
+ {
+  "number": 62575,
+  "name": "2000 SL278",
+  "file": "ALCDEF_62575_2000_SL278.txt",
+  "num_lightcurves": 54,
+  "num_datapoints": 125,
+  "date_range": "2013-08-02 to 2013-11-11",
+  "num_sessions": 54,
+  "filters": [
+   "R"
+  ]
+ },
+ {
+  "number": 66524,
+  "name": "1999 RQ102",
+  "file": "ALCDEF_66524_1999_RQ102.txt",
+  "num_lightcurves": 54,
+  "num_datapoints": 1012,
+  "date_range": "2012-07-24 to 2019-03-25",
+  "num_sessions": 50,
+  "filters": [
+   "GR",
+   "SG",
+   "R"
+  ]
+ },
+ {
+  "number": 887,
+  "name": "Alinda",
+  "file": "ALCDEF_887_Alinda.txt",
+  "num_lightcurves": 54,
+  "num_datapoints": 11051,
+  "date_range": "2024-11-06 to 2025-03-31",
+  "num_sessions": 33,
+  "filters": [
+   "C"
+  ]
+ },
+ {
+  "number": 13894,
+  "name": "2039 T-2",
+  "file": "ALCDEF_13894_2039_T-2.txt",
+  "num_lightcurves": 53,
+  "num_datapoints": 520,
+  "date_range": "2013-08-02 to 2019-05-04",
+  "num_sessions": 52,
+  "filters": [
+   "GR",
+   "R"
+  ]
+ },
+ {
+  "number": 15538,
+  "name": "2000 BW14",
+  "file": "ALCDEF_15538_2000_BW14.txt",
+  "num_lightcurves": 53,
+  "num_datapoints": 1075,
+  "date_range": "2013-08-02 to 2018-10-13",
+  "num_sessions": 51,
+  "filters": [
+   "GR",
+   "R"
+  ]
+ },
+ {
+  "number": 18414,
+  "name": "1993 OY6",
+  "file": "ALCDEF_18414_1993_OY6.txt",
+  "num_lightcurves": 53,
+  "num_datapoints": 1012,
+  "date_range": "2010-01-02 to 2018-11-13",
+  "num_sessions": 50,
+  "filters": [
+   "GR",
+   "R"
+  ]
+ },
+ {
+  "number": 18896,
+  "name": "2000 GN113",
+  "file": "ALCDEF_18896_2000_GN113.txt",
+  "num_lightcurves": 53,
+  "num_datapoints": 221,
+  "date_range": "2012-07-03 to 2023-12-10",
+  "num_sessions": 53,
+  "filters": [
+   "C",
+   "SG",
+   "R"
+  ]
+ },
+ {
+  "number": 20774,
+  "name": "2000 RP3",
+  "file": "ALCDEF_20774_2000_RP3.txt",
+  "num_lightcurves": 53,
+  "num_datapoints": 151,
+  "date_range": "2010-07-23 to 2012-01-21",
+  "num_sessions": 53,
+  "filters": [
+   "R"
+  ]
+ },
+ {
+  "number": 234400,
+  "name": "2001 QR292",
+  "file": "ALCDEF_234400_2001_QR292.txt",
+  "num_lightcurves": 53,
+  "num_datapoints": 122,
+  "date_range": "2013-08-09 to 2013-11-11",
+  "num_sessions": 53,
+  "filters": [
+   "R"
+  ]
+ },
+ {
+  "number": 272872,
+  "name": "2006 BY81",
+  "file": "ALCDEF_272872_2006_BY81.txt",
+  "num_lightcurves": 53,
+  "num_datapoints": 112,
+  "date_range": "2013-08-10 to 2013-11-12",
+  "num_sessions": 53,
+  "filters": [
+   "R"
+  ]
+ },
+ {
+  "number": 33097,
+  "name": "1997 YB7",
+  "file": "ALCDEF_33097_1997_YB7.txt",
+  "num_lightcurves": 53,
+  "num_datapoints": 1131,
+  "date_range": "2011-12-06 to 2018-12-09",
+  "num_sessions": 51,
+  "filters": [
+   "GR",
+   "R"
+  ]
+ },
+ {
+  "number": 3982,
+  "name": "Kastel'",
+  "file": "ALCDEF_3982_Kastel'.txt",
+  "num_lightcurves": 53,
+  "num_datapoints": 2587,
+  "date_range": "2005-09-27 to 2015-10-06",
+  "num_sessions": 32,
+  "filters": [
+   "C"
+  ]
+ },
+ {
+  "number": 40623,
+  "name": "1999 RO170",
+  "file": "ALCDEF_40623_1999_RO170.txt",
+  "num_lightcurves": 53,
+  "num_datapoints": 862,
+  "date_range": "2013-07-30 to 2018-11-13",
+  "num_sessions": 47,
+  "filters": [
+   "GR",
+   "R"
+  ]
+ },
+ {
+  "number": 418849,
+  "name": "2008 WM64",
+  "file": "ALCDEF_418849_2008_WM64.txt",
+  "num_lightcurves": 53,
+  "num_datapoints": 2300,
+  "date_range": "2017-12-21 to 2017-12-22",
+  "num_sessions": 2,
+  "filters": [
+   "C"
+  ]
+ },
+ {
+  "number": 494,
+  "name": "Virtus",
+  "file": "ALCDEF_494_Virtus.txt",
+  "num_lightcurves": 53,
+  "num_datapoints": 8769,
+  "date_range": "2005-12-15 to 2021-12-04",
+  "num_sessions": 45,
+  "filters": [
+   "C"
+  ]
+ },
+ {
+  "number": 85397,
+  "name": "1996 TN3",
+  "file": "ALCDEF_85397_1996_TN3.txt",
+  "num_lightcurves": 53,
+  "num_datapoints": 651,
+  "date_range": "2013-07-31 to 2019-02-26",
+  "num_sessions": 50,
+  "filters": [
+   "GR",
+   "R"
+  ]
+ },
+ {
+  "number": 9942,
+  "name": "1989 TM1",
+  "file": "ALCDEF_9942_1989_TM1.txt",
+  "num_lightcurves": 53,
+  "num_datapoints": 1192,
+  "date_range": "2010-07-26 to 2018-09-19",
+  "num_sessions": 50,
+  "filters": [
+   "GR",
+   "R"
+  ]
+ },
+ {
+  "number": 11155,
+  "name": "Kinpu",
+  "file": "ALCDEF_11155_Kinpu.txt",
+  "num_lightcurves": 52,
+  "num_datapoints": 1084,
+  "date_range": "2010-06-30 to 2019-03-25",
+  "num_sessions": 49,
+  "filters": [
+   "GR",
+   "R"
+  ]
+ },
+ {
+  "number": 13266,
+  "name": "1998 QY30",
+  "file": "ALCDEF_13266_1998_QY30.txt",
+  "num_lightcurves": 52,
+  "num_datapoints": 116,
+  "date_range": "2013-08-02 to 2014-01-01",
+  "num_sessions": 52,
+  "filters": [
+   "R"
+  ]
+ },
+ {
+  "number": 147880,
+  "name": "2006 QV113",
+  "file": "ALCDEF_147880_2006_QV113.txt",
+  "num_lightcurves": 52,
+  "num_datapoints": 1100,
+  "date_range": "2010-07-25 to 2018-09-17",
+  "num_sessions": 49,
+  "filters": [
+   "GR",
+   "R"
+  ]
+ },
+ {
+  "number": 1566,
+  "name": "Icarus",
+  "file": "ALCDEF_1566_Icarus.txt",
+  "num_lightcurves": 52,
+  "num_datapoints": 2129,
+  "date_range": "2015-06-16 to 2015-07-17",
+  "num_sessions": 7,
+  "filters": [
+   "C"
+  ]
+ },
+ {
+  "number": 15861,
+  "name": "Ispahan",
+  "file": "ALCDEF_15861_Ispahan.txt",
+  "num_lightcurves": 52,
+  "num_datapoints": 981,
+  "date_range": "2013-08-02 to 2018-10-11",
+  "num_sessions": 50,
+  "filters": [
+   "GR",
+   "R"
+  ]
+ },
+ {
+  "number": 1656,
+  "name": "Suomi",
+  "file": "ALCDEF_1656_Suomi.txt",
+  "num_lightcurves": 52,
+  "num_datapoints": 2334,
+  "date_range": "2004-04-27 to 2020-07-01",
+  "num_sessions": 50,
+  "filters": [
+   "C"
+  ]
+ },
+ {
+  "number": 195812,
+  "name": "2002 QL19",
+  "file": "ALCDEF_195812_2002_QL19.txt",
+  "num_lightcurves": 52,
+  "num_datapoints": 708,
+  "date_range": "2010-01-07 to 2018-09-19",
+  "num_sessions": 45,
+  "filters": [
+   "GR",
+   "R"
+  ]
+ },
+ {
+  "number": 20838,
+  "name": "2000 UY53",
+  "file": "ALCDEF_20838_2000_UY53.txt",
+  "num_lightcurves": 52,
+  "num_datapoints": 919,
+  "date_range": "2010-09-05 to 2018-08-19",
+  "num_sessions": 48,
+  "filters": [
+   "GR",
+   "R"
+  ]
+ },
+ {
+  "number": 23167,
+  "name": "2000 GL124",
+  "file": "ALCDEF_23167_2000_GL124.txt",
+  "num_lightcurves": 52,
+  "num_datapoints": 262,
+  "date_range": "2011-11-03 to 2013-04-21",
+  "num_sessions": 52,
+  "filters": [
+   "R"
+  ]
+ },
+ {
+  "number": 25564,
+  "name": "1999 XC175",
+  "file": "ALCDEF_25564_1999_XC175.txt",
+  "num_lightcurves": 52,
+  "num_datapoints": 1037,
+  "date_range": "2011-04-07 to 2018-09-19",
+  "num_sessions": 49,
+  "filters": [
+   "GR",
+   "R",
+   "SG"
+  ]
+ },
+ {
+  "number": 28854,
+  "name": "Budisteanu",
+  "file": "ALCDEF_28854_Budisteanu.txt",
+  "num_lightcurves": 52,
+  "num_datapoints": 1039,
+  "date_range": "2009-09-21 to 2018-09-16",
+  "num_sessions": 48,
+  "filters": [
+   "GR",
+   "R"
+  ]
+ },
+ {
+  "number": 4364,
+  "name": "Shkodrov",
+  "file": "ALCDEF_4364_Shkodrov.txt",
+  "num_lightcurves": 52,
+  "num_datapoints": 266,
+  "date_range": "2010-09-10 to 2015-02-28",
+  "num_sessions": 49,
+  "filters": [
+   "C",
+   "R"
+  ]
+ },
+ {
+  "number": 4635,
+  "name": "Rimbaud",
+  "file": "ALCDEF_4635_Rimbaud.txt",
+  "num_lightcurves": 52,
+  "num_datapoints": 1499,
+  "date_range": "2008-04-10 to 2023-03-14",
+  "num_sessions": 42,
+  "filters": [
+   "C"
+  ]
+ },
+ {
+  "number": 47865,
+  "name": "2000 FK3",
+  "file": "ALCDEF_47865_2000_FK3.txt",
+  "num_lightcurves": 52,
+  "num_datapoints": 924,
+  "date_range": "2013-08-29 to 2018-10-17",
+  "num_sessions": 51,
+  "filters": [
+   "GR",
+   "R"
+  ]
+ },
+ {
+  "number": 57743,
+  "name": "2001 UB168",
+  "file": "ALCDEF_57743_2001_UB168.txt",
+  "num_lightcurves": 52,
+  "num_datapoints": 837,
+  "date_range": "2013-08-28 to 2019-02-27",
+  "num_sessions": 50,
+  "filters": [
+   "GR",
+   "R"
+  ]
+ },
+ {
+  "number": 59046,
+  "name": "1998 TW17",
+  "file": "ALCDEF_59046_1998_TW17.txt",
+  "num_lightcurves": 52,
+  "num_datapoints": 131,
+  "date_range": "2013-08-03 to 2013-11-12",
+  "num_sessions": 52,
+  "filters": [
+   "R"
+  ]
+ },
+ {
+  "number": 63062,
+  "name": "2000 WL118",
+  "file": "ALCDEF_63062_2000_WL118.txt",
+  "num_lightcurves": 52,
+  "num_datapoints": 122,
+  "date_range": "2013-08-04 to 2013-11-04",
+  "num_sessions": 52,
+  "filters": [
+   "R"
+  ]
+ },
+ {
+  "number": 6427,
+  "name": "1995 FY",
+  "file": "ALCDEF_6427_1995_FY.txt",
+  "num_lightcurves": 52,
+  "num_datapoints": 984,
+  "date_range": "2013-08-02 to 2019-05-19",
+  "num_sessions": 49,
+  "filters": [
+   "GR",
+   "R"
+  ]
+ },
+ {
+  "number": 64792,
+  "name": "2001 XL206",
+  "file": "ALCDEF_64792_2001_XL206.txt",
+  "num_lightcurves": 52,
+  "num_datapoints": 464,
+  "date_range": "2013-08-02 to 2019-01-26",
+  "num_sessions": 48,
+  "filters": [
+   "GR",
+   "R"
+  ]
+ },
+ {
+  "number": 85628,
+  "name": "1998 KV2",
+  "file": "ALCDEF_85628_1998_KV2.txt",
+  "num_lightcurves": 52,
+  "num_datapoints": 1473,
+  "date_range": "2014-04-24 to 2022-04-21",
+  "num_sessions": 52,
+  "filters": [
+   "C"
+  ]
+ },
+ {
+  "number": 85953,
+  "name": "1999 FK21",
+  "file": "ALCDEF_85953_1999_FK21.txt",
+  "num_lightcurves": 52,
+  "num_datapoints": 4999,
+  "date_range": "2011-03-26 to 2018-04-13",
+  "num_sessions": 19,
+  "filters": [
+   "C"
+  ]
+ },
+ {
+  "number": 9053,
+  "name": "Hamamelis",
+  "file": "ALCDEF_9053_Hamamelis.txt",
+  "num_lightcurves": 52,
+  "num_datapoints": 95,
+  "date_range": "2009-12-03 to 2014-03-29",
+  "num_sessions": 52,
+  "filters": [
+   "R"
+  ]
+ },
+ {
+  "number": 121145,
+  "name": "1999 JT59",
+  "file": "ALCDEF_121145_1999_JT59.txt",
+  "num_lightcurves": 51,
+  "num_datapoints": 1178,
+  "date_range": "2010-03-05 to 2018-09-19",
+  "num_sessions": 49,
+  "filters": [
+   "GR",
+   "R"
+  ]
+ },
+ {
+  "number": 147946,
+  "name": "4084 T-3",
+  "file": "ALCDEF_147946_4084_T-3.txt",
+  "num_lightcurves": 51,
+  "num_datapoints": 125,
+  "date_range": "2013-08-05 to 2013-11-08",
+  "num_sessions": 51,
+  "filters": [
+   "R"
+  ]
+ },
+ {
+  "number": 15084,
+  "name": "1999 CH38",
+  "file": "ALCDEF_15084_1999_CH38.txt",
+  "num_lightcurves": 51,
+  "num_datapoints": 129,
+  "date_range": "2013-08-02 to 2013-11-12",
+  "num_sessions": 51,
+  "filters": [
+   "R"
+  ]
+ },
+ {
+  "number": 15191,
+  "name": "4234 T-2",
+  "file": "ALCDEF_15191_4234_T-2.txt",
+  "num_lightcurves": 51,
+  "num_datapoints": 719,
+  "date_range": "2013-07-31 to 2018-08-16",
+  "num_sessions": 48,
+  "filters": [
+   "GR",
+   "R"
+  ]
+ },
+ {
+  "number": 1622,
+  "name": "Chacornac",
+  "file": "ALCDEF_1622_Chacornac.txt",
+  "num_lightcurves": 51,
+  "num_datapoints": 340,
+  "date_range": "2009-04-05 to 2013-10-08",
+  "num_sessions": 51,
+  "filters": [
+   "C",
+   "R"
+  ]
+ },
+ {
+  "number": 16734,
+  "name": "1996 HZ22",
+  "file": "ALCDEF_16734_1996_HZ22.txt",
+  "num_lightcurves": 51,
+  "num_datapoints": 94,
+  "date_range": "2010-07-15 to 2013-10-03",
+  "num_sessions": 51,
+  "filters": [
+   "R"
+  ]
+ },
+ {
+  "number": 16774,
+  "name": "1996 VP1",
+  "file": "ALCDEF_16774_1996_VP1.txt",
+  "num_lightcurves": 51,
+  "num_datapoints": 937,
+  "date_range": "2013-08-28 to 2019-01-31",
+  "num_sessions": 48,
+  "filters": [
+   "GR",
+   "R"
+  ]
+ },
+ {
+  "number": 18890,
+  "name": "2000 EV26",
+  "file": "ALCDEF_18890_2000_EV26.txt",
+  "num_lightcurves": 51,
+  "num_datapoints": 1325,
+  "date_range": "2011-06-28 to 2024-05-03",
+  "num_sessions": 51,
+  "filters": [
+   "C"
+  ]
+ },
+ {
+  "number": 2056,
+  "name": "Nancy",
+  "file": "ALCDEF_2056_Nancy.txt",
+  "num_lightcurves": 51,
+  "num_datapoints": 1116,
+  "date_range": "2018-10-19 to 2018-12-16",
+  "num_sessions": 51,
+  "filters": [
+   "C"
+  ]
+ },
+ {
+  "number": 23501,
+  "name": "1992 CK1",
+  "file": "ALCDEF_23501_1992_CK1.txt",
+  "num_lightcurves": 51,
+  "num_datapoints": 98,
+  "date_range": "2010-11-14 to 2011-06-13",
+  "num_sessions": 51,
+  "filters": [
+   "SG",
+   "R"
+  ]
+ },
+ {
+  "number": 246058,
+  "name": "2006 VT31",
+  "file": "ALCDEF_246058_2006_VT31.txt",
+  "num_lightcurves": 51,
+  "num_datapoints": 125,
+  "date_range": "2010-07-20 to 2010-11-13",
+  "num_sessions": 51,
+  "filters": [
+   "R"
+  ]
+ },
+ {
+  "number": 2579,
+  "name": "Spartacus",
+  "file": "ALCDEF_2579_Spartacus.txt",
+  "num_lightcurves": 51,
+  "num_datapoints": 2087,
+  "date_range": "2009-02-01 to 2019-04-21",
+  "num_sessions": 49,
+  "filters": [
+   "C",
+   "GR"
+  ]
+ },
+ {
+  "number": 28735,
+  "name": "2000 GX125",
+  "file": "ALCDEF_28735_2000_GX125.txt",
+  "num_lightcurves": 51,
+  "num_datapoints": 161,
+  "date_range": "2009-12-01 to 2014-04-10",
+  "num_sessions": 51,
+  "filters": [
+   "SG",
+   "R"
+  ]
+ },
+ {
+  "number": 28876,
+  "name": "2000 KL31",
+  "file": "ALCDEF_28876_2000_KL31.txt",
+  "num_lightcurves": 51,
+  "num_datapoints": 1254,
+  "date_range": "2013-09-26 to 2018-08-22",
+  "num_sessions": 48,
+  "filters": [
+   "GR",
+   "R"
+  ]
+ },
+ {
+  "number": 33313,
+  "name": "1998 KJ60",
+  "file": "ALCDEF_33313_1998_KJ60.txt",
+  "num_lightcurves": 51,
+  "num_datapoints": 840,
+  "date_range": "2012-02-04 to 2018-10-11",
+  "num_sessions": 48,
+  "filters": [
+   "GR",
+   "R"
+  ]
+ },
+ {
+  "number": 50897,
+  "name": "2000 GA44",
+  "file": "ALCDEF_50897_2000_GA44.txt",
+  "num_lightcurves": 51,
+  "num_datapoints": 1005,
+  "date_range": "2010-07-21 to 2018-08-22",
+  "num_sessions": 50,
+  "filters": [
+   "GR",
+   "R"
+  ]
+ },
+ {
+  "number": 52410,
+  "name": "1993 UG6",
+  "file": "ALCDEF_52410_1993_UG6.txt",
+  "num_lightcurves": 51,
+  "num_datapoints": 556,
+  "date_range": "2013-08-05 to 2019-02-01",
+  "num_sessions": 46,
+  "filters": [
+   "GR",
+   "R"
+  ]
+ },
+ {
+  "number": 54727,
+  "name": "2001 KO10",
+  "file": "ALCDEF_54727_2001_KO10.txt",
+  "num_lightcurves": 51,
+  "num_datapoints": 1224,
+  "date_range": "2013-01-20 to 2018-08-22",
+  "num_sessions": 47,
+  "filters": [
+   "GR",
+   "R"
+  ]
+ },
+ {
+  "number": 63410,
+  "name": "2001 KQ39",
+  "file": "ALCDEF_63410_2001_KQ39.txt",
+  "num_lightcurves": 51,
+  "num_datapoints": 125,
+  "date_range": "2013-08-02 to 2013-11-11",
+  "num_sessions": 51,
+  "filters": [
+   "R"
+  ]
+ },
+ {
+  "number": 76461,
+  "name": "2000 FH44",
+  "file": "ALCDEF_76461_2000_FH44.txt",
+  "num_lightcurves": 51,
+  "num_datapoints": 1204,
+  "date_range": "2010-02-13 to 2018-09-19",
+  "num_sessions": 50,
+  "filters": [
+   "GR",
+   "R"
+  ]
+ },
+ {
+  "number": 7808,
+  "name": "Bagould",
+  "file": "ALCDEF_7808_Bagould.txt",
+  "num_lightcurves": 51,
+  "num_datapoints": 119,
+  "date_range": "2010-07-21 to 2010-11-13",
+  "num_sessions": 51,
+  "filters": [
+   "R"
+  ]
+ },
+ {
+  "number": 904,
+  "name": "Rockefellia",
+  "file": "ALCDEF_904_Rockefellia.txt",
+  "num_lightcurves": 51,
+  "num_datapoints": 2556,
+  "date_range": "2001-11-05 to 2023-02-03",
+  "num_sessions": 45,
+  "filters": [
+   "C",
+   "R"
+  ]
+ },
+ {
+  "number": 95560,
+  "name": "2002 EX98",
+  "file": "ALCDEF_95560_2002_EX98.txt",
+  "num_lightcurves": 51,
+  "num_datapoints": 654,
+  "date_range": "2012-07-16 to 2019-02-27",
+  "num_sessions": 50,
+  "filters": [
+   "GR",
+   "SG",
+   "R"
+  ]
+ },
+ {
+  "number": 10513,
+  "name": "1989 TJ14",
+  "file": "ALCDEF_10513_1989_TJ14.txt",
+  "num_lightcurves": 50,
+  "num_datapoints": 1044,
+  "date_range": "2009-11-04 to 2018-10-12",
+  "num_sessions": 48,
+  "filters": [
+   "GR",
+   "R"
+  ]
+ },
+ {
+  "number": 11031,
+  "name": "1988 RC5",
+  "file": "ALCDEF_11031_1988_RC5.txt",
+  "num_lightcurves": 50,
+  "num_datapoints": 1331,
+  "date_range": "2011-12-21 to 2018-09-19",
+  "num_sessions": 48,
+  "filters": [
+   "GR",
+   "R"
+  ]
+ },
+ {
+  "number": 12052,
+  "name": "Aretaon",
+  "file": "ALCDEF_12052_Aretaon.txt",
+  "num_lightcurves": 50,
+  "num_datapoints": 1128,
+  "date_range": "2012-09-08 to 2019-03-25",
+  "num_sessions": 46,
+  "filters": [
+   "C",
+   "GR",
+   "R"
+  ]
+ },
+ {
+  "number": 15440,
+  "name": "1998 WX4",
+  "file": "ALCDEF_15440_1998_WX4.txt",
+  "num_lightcurves": 50,
+  "num_datapoints": 1937,
+  "date_range": "2013-01-05 to 2017-06-18",
+  "num_sessions": 37,
+  "filters": [
+   "C"
+  ]
+ },
+ {
+  "number": 20052,
+  "name": "1993 FS27",
+  "file": "ALCDEF_20052_1993_FS27.txt",
+  "num_lightcurves": 50,
+  "num_datapoints": 132,
+  "date_range": "2013-08-02 to 2013-10-31",
+  "num_sessions": 50,
+  "filters": [
+   "R"
+  ]
+ },
+ {
+  "number": 201320,
+  "name": "2002 TC119",
+  "file": "ALCDEF_201320_2002_TC119.txt",
+  "num_lightcurves": 50,
+  "num_datapoints": 776,
+  "date_range": "2013-08-02 to 2018-09-19",
+  "num_sessions": 44,
+  "filters": [
+   "GR",
+   "R"
+  ]
+ },
+ {
+  "number": 2107,
+  "name": "Ilmari",
+  "file": "ALCDEF_2107_Ilmari.txt",
+  "num_lightcurves": 50,
+  "num_datapoints": 978,
+  "date_range": "2013-08-02 to 2019-01-06",
+  "num_sessions": 50,
+  "filters": [
+   "GR",
+   "R"
+  ]
+ },
+ {
+  "number": 214869,
+  "name": "2007 PA8",
+  "file": "ALCDEF_214869_2007_PA8.txt",
+  "num_lightcurves": 50,
+  "num_datapoints": 418,
+  "date_range": "2012-07-22 to 2012-11-01",
+  "num_sessions": 50,
+  "filters": [
+   "C",
+   "SG",
+   "R"
+  ]
+ },
+ {
+  "number": 22411,
+  "name": "1995 TR",
+  "file": "ALCDEF_22411_1995_TR.txt",
+  "num_lightcurves": 50,
+  "num_datapoints": 770,
+  "date_range": "2010-09-10 to 2019-02-27",
+  "num_sessions": 48,
+  "filters": [
+   "GR",
+   "R"
+  ]
+ },
+ {
+  "number": 23740,
+  "name": "1998 KP3",
+  "file": "ALCDEF_23740_1998_KP3.txt",
+  "num_lightcurves": 50,
+  "num_datapoints": 968,
+  "date_range": "2013-07-30 to 2019-03-25",
+  "num_sessions": 47,
+  "filters": [
+   "GR",
+   "R"
+  ]
+ },
+ {
+  "number": 25011,
+  "name": "1998 PP1",
+  "file": "ALCDEF_25011_1998_PP1.txt",
+  "num_lightcurves": 50,
+  "num_datapoints": 1022,
+  "date_range": "2010-07-20 to 2019-03-25",
+  "num_sessions": 47,
+  "filters": [
+   "GR",
+   "R"
+  ]
+ },
+ {
+  "number": 29474,
+  "name": "1997 UT8",
+  "file": "ALCDEF_29474_1997_UT8.txt",
+  "num_lightcurves": 50,
+  "num_datapoints": 127,
+  "date_range": "2013-08-02 to 2013-11-11",
+  "num_sessions": 50,
+  "filters": [
+   "R"
+  ]
+ },
+ {
+  "number": 2974,
+  "name": "Holden",
+  "file": "ALCDEF_2974_Holden.txt",
+  "num_lightcurves": 50,
+  "num_datapoints": 1760,
+  "date_range": "2015-08-29 to 2015-10-03",
+  "num_sessions": 26,
+  "filters": [
+   "C",
+   "R"
+  ]
+ },
+ {
+  "number": 4030,
+  "name": "Archenhold",
+  "file": "ALCDEF_4030_Archenhold.txt",
+  "num_lightcurves": 50,
+  "num_datapoints": 2089,
+  "date_range": "2019-04-03 to 2020-09-26",
+  "num_sessions": 37,
+  "filters": [
+   "C",
+   "GR"
+  ]
+ },
+ {
+  "number": 54139,
+  "name": "2000 HZ36",
+  "file": "ALCDEF_54139_2000_HZ36.txt",
+  "num_lightcurves": 50,
+  "num_datapoints": 670,
+  "date_range": "2010-08-27 to 2018-10-17",
+  "num_sessions": 49,
+  "filters": [
+   "GR",
+   "R"
+  ]
+ },
+ {
+  "number": 6063,
+  "name": "Jason",
+  "file": "ALCDEF_6063_Jason.txt",
+  "num_lightcurves": 50,
+  "num_datapoints": 3067,
+  "date_range": "2013-10-03 to 2017-06-26",
+  "num_sessions": 34,
+  "filters": [
+   "C"
+  ]
+ },
+ {
+  "number": 6411,
+  "name": "Tamaga",
+  "file": "ALCDEF_6411_Tamaga.txt",
+  "num_lightcurves": 50,
+  "num_datapoints": 633,
+  "date_range": "2007-12-26 to 2022-02-12",
+  "num_sessions": 48,
+  "filters": [
+   "C",
+   "R"
+  ]
+ },
+ {
+  "number": 795,
+  "name": "Fini",
+  "file": "ALCDEF_795_Fini.txt",
+  "num_lightcurves": 50,
+  "num_datapoints": 6226,
+  "date_range": "2003-01-19 to 2024-12-10",
+  "num_sessions": 50,
+  "filters": [
+   "C",
+   "R"
+  ]
+ },
+ {
+  "number": 90839,
+  "name": "1995 WN7",
+  "file": "ALCDEF_90839_1995_WN7.txt",
+  "num_lightcurves": 50,
+  "num_datapoints": 568,
+  "date_range": "2013-08-29 to 2019-01-04",
+  "num_sessions": 47,
+  "filters": [
+   "GR",
+   "R"
+  ]
+ },
+ {
+  "number": 10119,
+  "name": "Remarque",
+  "file": "ALCDEF_10119_Remarque.txt",
+  "num_lightcurves": 49,
+  "num_datapoints": 105,
+  "date_range": "2009-11-16 to 2013-12-31",
+  "num_sessions": 49,
+  "filters": [
+   "R"
+  ]
+ },
+ {
+  "number": 1016,
+  "name": "Anitra",
+  "file": "ALCDEF_1016_Anitra.txt",
+  "num_lightcurves": 49,
+  "num_datapoints": 5254,
+  "date_range": "2012-11-25 to 2023-02-09",
+  "num_sessions": 44,
+  "filters": [
+   "C",
+   "I"
+  ]
+ },
+ {
+  "number": 12020,
+  "name": "1996 XW19",
+  "file": "ALCDEF_12020_1996_XW19.txt",
+  "num_lightcurves": 49,
+  "num_datapoints": 1108,
+  "date_range": "2010-07-18 to 2019-03-25",
+  "num_sessions": 46,
+  "filters": [
+   "GR",
+   "R"
+  ]
+ },
+ {
+  "number": 143089,
+  "name": "2002 XZ9",
+  "file": "ALCDEF_143089_2002_XZ9.txt",
+  "num_lightcurves": 49,
+  "num_datapoints": 1238,
+  "date_range": "2010-07-27 to 2018-09-19",
+  "num_sessions": 45,
+  "filters": [
+   "GR",
+   "R"
+  ]
+ },
+ {
+  "number": 17405,
+  "name": "1986 VQ2",
+  "file": "ALCDEF_17405_1986_VQ2.txt",
+  "num_lightcurves": 49,
+  "num_datapoints": 952,
+  "date_range": "2010-09-01 to 2019-03-25",
+  "num_sessions": 45,
+  "filters": [
+   "GR",
+   "R"
+  ]
+ },
+ {
+  "number": 21525,
+  "name": "1998 MP23",
+  "file": "ALCDEF_21525_1998_MP23.txt",
+  "num_lightcurves": 49,
+  "num_datapoints": 1171,
+  "date_range": "2009-12-03 to 2018-12-10",
+  "num_sessions": 46,
+  "filters": [
+   "GR",
+   "R"
+  ]
+ },
+ {
+  "number": 25505,
+  "name": "1999 XQ95",
+  "file": "ALCDEF_25505_1999_XQ95.txt",
+  "num_lightcurves": 49,
+  "num_datapoints": 933,
+  "date_range": "2013-09-28 to 2019-04-19",
+  "num_sessions": 47,
+  "filters": [
+   "GR",
+   "R"
+  ]
+ },
+ {
+  "number": 27721,
+  "name": "1989 WJ",
+  "file": "ALCDEF_27721_1989_WJ.txt",
+  "num_lightcurves": 49,
+  "num_datapoints": 1238,
+  "date_range": "2010-09-06 to 2018-10-17",
+  "num_sessions": 48,
+  "filters": [
+   "GR",
+   "R"
+  ]
+ },
+ {
+  "number": 30262,
+  "name": "2000 HP41",
+  "file": "ALCDEF_30262_2000_HP41.txt",
+  "num_lightcurves": 49,
+  "num_datapoints": 1285,
+  "date_range": "2013-01-14 to 2018-08-22",
+  "num_sessions": 47,
+  "filters": [
+   "GR",
+   "R"
+  ]
+ },
+ {
+  "number": 34726,
+  "name": "2001 QA25",
+  "file": "ALCDEF_34726_2001_QA25.txt",
+  "num_lightcurves": 49,
+  "num_datapoints": 709,
+  "date_range": "2013-09-14 to 2018-09-07",
+  "num_sessions": 47,
+  "filters": [
+   "GR",
+   "R"
+  ]
+ },
+ {
+  "number": 40071,
+  "name": "1998 KL59",
+  "file": "ALCDEF_40071_1998_KL59.txt",
+  "num_lightcurves": 49,
+  "num_datapoints": 82,
+  "date_range": "2009-12-15 to 2014-04-10",
+  "num_sessions": 49,
+  "filters": [
+   "R"
+  ]
+ },
+ {
+  "number": 41736,
+  "name": "2000 UN102",
+  "file": "ALCDEF_41736_2000_UN102.txt",
+  "num_lightcurves": 49,
+  "num_datapoints": 1055,
+  "date_range": "2010-07-12 to 2019-03-25",
+  "num_sessions": 46,
+  "filters": [
+   "GR",
+   "R"
+  ]
+ },
+ {
+  "number": 45601,
+  "name": "2000 DE5",
+  "file": "ALCDEF_45601_2000_DE5.txt",
+  "num_lightcurves": 49,
+  "num_datapoints": 1249,
+  "date_range": "2010-01-13 to 2018-10-17",
+  "num_sessions": 49,
+  "filters": [
+   "GR",
+   "R"
+  ]
+ },
+ {
+  "number": 467,
+  "name": "Laura",
+  "file": "ALCDEF_467_Laura.txt",
+  "num_lightcurves": 49,
+  "num_datapoints": 7719,
+  "date_range": "2010-08-11 to 2019-06-17",
+  "num_sessions": 45,
+  "filters": [
+   "C",
+   "GR"
+  ]
+ },
+ {
+  "number": 59575,
+  "name": "1999 JB51",
+  "file": "ALCDEF_59575_1999_JB51.txt",
+  "num_lightcurves": 49,
+  "num_datapoints": 124,
+  "date_range": "2013-08-11 to 2013-11-09",
+  "num_sessions": 49,
+  "filters": [
+   "R"
+  ]
+ },
+ {
+  "number": 6823,
+  "name": "1988 ED1",
+  "file": "ALCDEF_6823_1988_ED1.txt",
+  "num_lightcurves": 49,
+  "num_datapoints": 1158,
+  "date_range": "2007-12-14 to 2015-11-08",
+  "num_sessions": 49,
+  "filters": [
+   "C",
+   "R"
+  ]
+ },
+ {
+  "number": 101355,
+  "name": "1998 TS35",
+  "file": "ALCDEF_101355_1998_TS35.txt",
+  "num_lightcurves": 48,
+  "num_datapoints": 112,
+  "date_range": "2013-08-05 to 2013-12-02",
+  "num_sessions": 48,
+  "filters": [
+   "R"
+  ]
+ },
+ {
+  "number": 109220,
+  "name": "2001 QE87",
+  "file": "ALCDEF_109220_2001_QE87.txt",
+  "num_lightcurves": 48,
+  "num_datapoints": 121,
+  "date_range": "2013-08-02 to 2013-12-02",
+  "num_sessions": 48,
+  "filters": [
+   "R"
+  ]
+ },
+ {
+  "number": 114077,
+  "name": "2002 VM33",
+  "file": "ALCDEF_114077_2002_VM33.txt",
+  "num_lightcurves": 48,
+  "num_datapoints": 106,
+  "date_range": "2013-08-03 to 2014-01-01",
+  "num_sessions": 48,
+  "filters": [
+   "R"
+  ]
+ },
+ {
+  "number": 114114,
+  "name": "2002 VD48",
+  "file": "ALCDEF_114114_2002_VD48.txt",
+  "num_lightcurves": 48,
+  "num_datapoints": 908,
+  "date_range": "2010-03-15 to 2018-10-16",
+  "num_sessions": 44,
+  "filters": [
+   "GR",
+   "R"
+  ]
+ },
+ {
+  "number": 132919,
+  "name": "2002 SX34",
+  "file": "ALCDEF_132919_2002_SX34.txt",
+  "num_lightcurves": 48,
+  "num_datapoints": 858,
+  "date_range": "2013-10-12 to 2018-09-19",
+  "num_sessions": 45,
+  "filters": [
+   "GR",
+   "R"
+  ]
+ },
+ {
+  "number": 142260,
+  "name": "2002 RL107",
+  "file": "ALCDEF_142260_2002_RL107.txt",
+  "num_lightcurves": 48,
+  "num_datapoints": 692,
+  "date_range": "2010-07-25 to 2018-08-22",
+  "num_sessions": 46,
+  "filters": [
+   "GR",
+   "R"
+  ]
+ },
+ {
+  "number": 16139,
+  "name": "1999 XO120",
+  "file": "ALCDEF_16139_1999_XO120.txt",
+  "num_lightcurves": 48,
+  "num_datapoints": 788,
+  "date_range": "2010-07-26 to 2019-06-18",
+  "num_sessions": 46,
+  "filters": [
+   "GR",
+   "R"
+  ]
+ },
+ {
+  "number": 16433,
+  "name": "1988 VX2",
+  "file": "ALCDEF_16433_1988_VX2.txt",
+  "num_lightcurves": 48,
+  "num_datapoints": 975,
+  "date_range": "2010-06-17 to 2019-03-25",
+  "num_sessions": 44,
+  "filters": [
+   "GR",
+   "R"
+  ]
+ },
+ {
+  "number": 17325,
+  "name": "3300 T-1",
+  "file": "ALCDEF_17325_3300_T-1.txt",
+  "num_lightcurves": 48,
+  "num_datapoints": 426,
+  "date_range": "2013-08-04 to 2016-09-25",
+  "num_sessions": 48,
+  "filters": [
+   "C",
+   "R"
+  ]
+ },
+ {
+  "number": 18415,
+  "name": "1993 PW5",
+  "file": "ALCDEF_18415_1993_PW5.txt",
+  "num_lightcurves": 48,
+  "num_datapoints": 111,
+  "date_range": "2013-08-02 to 2013-11-11",
+  "num_sessions": 48,
+  "filters": [
+   "R"
+  ]
+ },
+ {
+  "number": 19686,
+  "name": "1999 RL197",
+  "file": "ALCDEF_19686_1999_RL197.txt",
+  "num_lightcurves": 48,
+  "num_datapoints": 108,
+  "date_range": "2010-07-21 to 2010-11-16",
+  "num_sessions": 48,
+  "filters": [
+   "R"
+  ]
+ },
+ {
+  "number": 2074,
+  "name": "Shoemaker",
+  "file": "ALCDEF_2074_Shoemaker.txt",
+  "num_lightcurves": 48,
+  "num_datapoints": 1557,
+  "date_range": "2010-07-06 to 2017-07-10",
+  "num_sessions": 47,
+  "filters": [
+   "C"
+  ]
+ },
+ {
+  "number": 270645,
+  "name": "2002 PR112",
+  "file": "ALCDEF_270645_2002_PR112.txt",
+  "num_lightcurves": 48,
+  "num_datapoints": 611,
+  "date_range": "2013-09-28 to 2018-08-22",
+  "num_sessions": 46,
+  "filters": [
+   "GR",
+   "R"
+  ]
+ },
+ {
+  "number": 29149,
+  "name": "1988 RE1",
+  "file": "ALCDEF_29149_1988_RE1.txt",
+  "num_lightcurves": 48,
+  "num_datapoints": 767,
+  "date_range": "2013-08-02 to 2019-01-27",
+  "num_sessions": 46,
+  "filters": [
+   "GR",
+   "R"
+  ]
+ },
+ {
+  "number": 298,
+  "name": "Baptistina",
+  "file": "ALCDEF_298_Baptistina.txt",
+  "num_lightcurves": 48,
+  "num_datapoints": 3126,
+  "date_range": "2008-03-13 to 2009-11-05",
+  "num_sessions": 46,
+  "filters": [
+   "C",
+   "R"
+  ]
+ },
+ {
+  "number": 32011,
+  "name": "2000 HF56",
+  "file": "ALCDEF_32011_2000_HF56.txt",
+  "num_lightcurves": 48,
+  "num_datapoints": 141,
+  "date_range": "2009-12-15 to 2013-01-22",
+  "num_sessions": 48,
+  "filters": [
+   "SG",
+   "R"
+  ]
+ },
+ {
+  "number": 40716,
+  "name": "1999 SL",
+  "file": "ALCDEF_40716_1999_SL.txt",
+  "num_lightcurves": 48,
+  "num_datapoints": 94,
+  "date_range": "2013-07-31 to 2013-11-04",
+  "num_sessions": 48,
+  "filters": [
+   "R"
+  ]
+ },
+ {
+  "number": 41012,
+  "name": "1999 UD17",
+  "file": "ALCDEF_41012_1999_UD17.txt",
+  "num_lightcurves": 48,
+  "num_datapoints": 186,
+  "date_range": "2010-08-27 to 2012-02-26",
+  "num_sessions": 48,
+  "filters": [
+   "R"
+  ]
+ },
+ {
+  "number": 4674,
+  "name": "Pauling",
+  "file": "ALCDEF_4674_Pauling.txt",
+  "num_lightcurves": 48,
+  "num_datapoints": 2401,
+  "date_range": "2005-10-03 to 2019-01-06",
+  "num_sessions": 44,
+  "filters": [
+   "C",
+   "GR"
+  ]
+ },
+ {
+  "number": 47143,
+  "name": "1999 LL31",
+  "file": "ALCDEF_47143_1999_LL31.txt",
+  "num_lightcurves": 48,
+  "num_datapoints": 1288,
+  "date_range": "2012-04-20 to 2018-09-19",
+  "num_sessions": 44,
+  "filters": [
+   "C",
+   "GR",
+   "R"
+  ]
+ },
+ {
+  "number": 48645,
+  "name": "1995 UF8",
+  "file": "ALCDEF_48645_1995_UF8.txt",
+  "num_lightcurves": 48,
+  "num_datapoints": 106,
+  "date_range": "2013-08-03 to 2013-12-14",
+  "num_sessions": 48,
+  "filters": [
+   "R"
+  ]
+ },
+ {
+  "number": 49597,
+  "name": "1999 FY12",
+  "file": "ALCDEF_49597_1999_FY12.txt",
+  "num_lightcurves": 48,
+  "num_datapoints": 904,
+  "date_range": "2012-07-21 to 2018-12-10",
+  "num_sessions": 44,
+  "filters": [
+   "GR",
+   "SG",
+   "R"
+  ]
+ },
+ {
+  "number": 50156,
+  "name": "2000 AN142",
+  "file": "ALCDEF_50156_2000_AN142.txt",
+  "num_lightcurves": 48,
+  "num_datapoints": 1073,
+  "date_range": "2013-07-30 to 2019-03-25",
+  "num_sessions": 45,
+  "filters": [
+   "GR",
+   "R"
+  ]
+ },
+ {
+  "number": 6135,
+  "name": "Billowen",
+  "file": "ALCDEF_6135_Billowen.txt",
+  "num_lightcurves": 48,
+  "num_datapoints": 322,
+  "date_range": "2009-06-25 to 2019-02-01",
+  "num_sessions": 48,
+  "filters": [
+   "GR",
+   "R"
+  ]
+ },
+ {
+  "number": 6733,
+  "name": "1992 EF",
+  "file": "ALCDEF_6733_1992_EF.txt",
+  "num_lightcurves": 48,
+  "num_datapoints": 966,
+  "date_range": "2010-07-13 to 2019-05-19",
+  "num_sessions": 46,
+  "filters": [
+   "GR",
+   "R"
+  ]
+ },
+ {
+  "number": 69597,
+  "name": "1998 FQ15",
+  "file": "ALCDEF_69597_1998_FQ15.txt",
+  "num_lightcurves": 48,
+  "num_datapoints": 116,
+  "date_range": "2013-08-02 to 2013-11-12",
+  "num_sessions": 48,
+  "filters": [
+   "R"
+  ]
+ },
+ {
+  "number": 7710,
+  "name": "Ishibashi",
+  "file": "ALCDEF_7710_Ishibashi.txt",
+  "num_lightcurves": 48,
+  "num_datapoints": 1305,
+  "date_range": "2012-09-06 to 2018-09-19",
+  "num_sessions": 46,
+  "filters": [
+   "GR",
+   "SG",
+   "R"
+  ]
+ },
+ {
+  "number": 77682,
+  "name": "2001 MY29",
+  "file": "ALCDEF_77682_2001_MY29.txt",
+  "num_lightcurves": 48,
+  "num_datapoints": 101,
+  "date_range": "2013-07-31 to 2013-11-12",
+  "num_sessions": 48,
+  "filters": [
+   "R"
+  ]
+ },
+ {
+  "number": 85944,
+  "name": "1999 EM7",
+  "file": "ALCDEF_85944_1999_EM7.txt",
+  "num_lightcurves": 48,
+  "num_datapoints": 123,
+  "date_range": "2013-08-02 to 2013-10-16",
+  "num_sessions": 48,
+  "filters": [
+   "R"
+  ]
+ },
+ {
+  "number": 87224,
+  "name": "2000 OG41",
+  "file": "ALCDEF_87224_2000_OG41.txt",
+  "num_lightcurves": 48,
+  "num_datapoints": 115,
+  "date_range": "2013-08-02 to 2014-02-12",
+  "num_sessions": 48,
+  "filters": [
+   "R"
+  ]
+ },
+ {
+  "number": 103717,
+  "name": "2000 CS91",
+  "file": "ALCDEF_103717_2000_CS91.txt",
+  "num_lightcurves": 47,
+  "num_datapoints": 686,
+  "date_range": "2012-06-25 to 2019-07-15",
+  "num_sessions": 42,
+  "filters": [
+   "GR",
+   "R"
+  ]
+ },
+ {
+  "number": 105654,
+  "name": "2000 SX26",
+  "file": "ALCDEF_105654_2000_SX26.txt",
+  "num_lightcurves": 47,
+  "num_datapoints": 116,
+  "date_range": "2013-08-02 to 2013-11-12",
+  "num_sessions": 47,
+  "filters": [
+   "R"
+  ]
+ },
+ {
+  "number": 106570,
+  "name": "2000 WY89",
+  "file": "ALCDEF_106570_2000_WY89.txt",
+  "num_lightcurves": 47,
+  "num_datapoints": 133,
+  "date_range": "2012-07-24 to 2013-01-13",
+  "num_sessions": 47,
+  "filters": [
+   "SG",
+   "R"
+  ]
+ },
+ {
+  "number": 11076,
+  "name": "1992 UR",
+  "file": "ALCDEF_11076_1992_UR.txt",
+  "num_lightcurves": 47,
+  "num_datapoints": 1244,
+  "date_range": "2012-12-10 to 2018-09-19",
+  "num_sessions": 45,
+  "filters": [
+   "GR",
+   "R"
+  ]
+ },
+ {
+  "number": 126363,
+  "name": "2002 AR182",
+  "file": "ALCDEF_126363_2002_AR182.txt",
+  "num_lightcurves": 47,
+  "num_datapoints": 581,
+  "date_range": "2013-08-05 to 2019-03-25",
+  "num_sessions": 43,
+  "filters": [
+   "GR",
+   "R"
+  ]
+ },
+ {
+  "number": 143946,
+  "name": "2003 YB117",
+  "file": "ALCDEF_143946_2003_YB117.txt",
+  "num_lightcurves": 47,
+  "num_datapoints": 109,
+  "date_range": "2013-08-09 to 2014-01-01",
+  "num_sessions": 47,
+  "filters": [
+   "R"
+  ]
+ },
+ {
+  "number": 154058,
+  "name": "2002 CX161",
+  "file": "ALCDEF_154058_2002_CX161.txt",
+  "num_lightcurves": 47,
+  "num_datapoints": 107,
+  "date_range": "2013-08-03 to 2013-11-11",
+  "num_sessions": 47,
+  "filters": [
+   "R"
+  ]
+ },
+ {
+  "number": 159402,
+  "name": "1999 AP10",
+  "file": "ALCDEF_159402_1999_AP10.txt",
+  "num_lightcurves": 47,
+  "num_datapoints": 3529,
+  "date_range": "2009-09-21 to 2021-01-04",
+  "num_sessions": 42,
+  "filters": [
+   "C"
+  ]
+ },
+ {
+  "number": 190166,
+  "name": "2005 UP156",
+  "file": "ALCDEF_190166_2005_UP156.txt",
+  "num_lightcurves": 47,
+  "num_datapoints": 2210,
+  "date_range": "2014-08-09 to 2017-07-04",
+  "num_sessions": 47,
+  "filters": [
+   "C"
+  ]
+ },
+ {
+  "number": 2028,
+  "name": "Janequeo",
+  "file": "ALCDEF_2028_Janequeo.txt",
+  "num_lightcurves": 47,
+  "num_datapoints": 734,
+  "date_range": "2010-06-24 to 2019-02-01",
+  "num_sessions": 44,
+  "filters": [
+   "GR",
+   "R"
+  ]
+ },
+ {
+  "number": 237510,
+  "name": "2000 RM69",
+  "file": "ALCDEF_237510_2000_RM69.txt",
+  "num_lightcurves": 47,
+  "num_datapoints": 847,
+  "date_range": "2011-09-22 to 2018-08-22",
+  "num_sessions": 43,
+  "filters": [
+   "GR",
+   "SG"
+  ]
+ },
+ {
+  "number": 2491,
+  "name": "Tvashtri",
+  "file": "ALCDEF_2491_Tvashtri.txt",
+  "num_lightcurves": 47,
+  "num_datapoints": 1115,
+  "date_range": "2008-04-29 to 2018-04-27",
+  "num_sessions": 46,
+  "filters": [
+   "C",
+   "R"
+  ]
+ },
+ {
+  "number": 26736,
+  "name": "Rojeski",
+  "file": "ALCDEF_26736_Rojeski.txt",
+  "num_lightcurves": 47,
+  "num_datapoints": 685,
+  "date_range": "2013-08-29 to 2019-03-25",
+  "num_sessions": 40,
+  "filters": [
+   "GR",
+   "R"
+  ]
+ },
+ {
+  "number": 2777,
+  "name": "Shukshin",
+  "file": "ALCDEF_2777_Shukshin.txt",
+  "num_lightcurves": 47,
+  "num_datapoints": 943,
+  "date_range": "2008-09-27 to 2021-05-01",
+  "num_sessions": 47,
+  "filters": [
+   "C"
+  ]
+ },
+ {
+  "number": 29889,
+  "name": "1999 GN36",
+  "file": "ALCDEF_29889_1999_GN36.txt",
+  "num_lightcurves": 47,
+  "num_datapoints": 596,
+  "date_range": "2013-08-29 to 2019-02-01",
+  "num_sessions": 46,
+  "filters": [
+   "GR",
+   "R"
+  ]
+ },
+ {
+  "number": 30843,
+  "name": "1991 JK1",
+  "file": "ALCDEF_30843_1991_JK1.txt",
+  "num_lightcurves": 47,
+  "num_datapoints": 1246,
+  "date_range": "2012-12-21 to 2018-08-22",
+  "num_sessions": 44,
+  "filters": [
+   "GR",
+   "R"
+  ]
+ },
+ {
+  "number": 3317,
+  "name": "Paris",
+  "file": "ALCDEF_3317_Paris.txt",
+  "num_lightcurves": 47,
+  "num_datapoints": 1620,
+  "date_range": "2016-02-04 to 2022-06-14",
+  "num_sessions": 34,
+  "filters": [
+   "C"
+  ]
+ },
+ {
+  "number": 44681,
+  "name": "1999 RZ195",
+  "file": "ALCDEF_44681_1999_RZ195.txt",
+  "num_lightcurves": 47,
+  "num_datapoints": 119,
+  "date_range": "2013-08-02 to 2013-11-12",
+  "num_sessions": 47,
+  "filters": [
+   "R"
+  ]
+ },
+ {
+  "number": 50971,
+  "name": "2000 GP88",
+  "file": "ALCDEF_50971_2000_GP88.txt",
+  "num_lightcurves": 47,
+  "num_datapoints": 105,
+  "date_range": "2009-12-15 to 2013-01-22",
+  "num_sessions": 47,
+  "filters": [
+   "SG",
+   "R"
+  ]
+ },
+ {
+  "number": 58798,
+  "name": "1998 FU100",
+  "file": "ALCDEF_58798_1998_FU100.txt",
+  "num_lightcurves": 47,
+  "num_datapoints": 880,
+  "date_range": "2010-05-22 to 2019-04-19",
+  "num_sessions": 44,
+  "filters": [
+   "GR",
+   "R"
+  ]
+ },
+ {
+  "number": 60055,
+  "name": "1999 TB112",
+  "file": "ALCDEF_60055_1999_TB112.txt",
+  "num_lightcurves": 47,
+  "num_datapoints": 120,
+  "date_range": "2013-08-02 to 2013-10-16",
+  "num_sessions": 47,
+  "filters": [
+   "R"
+  ]
+ },
+ {
+  "number": 67493,
+  "name": "2000 RR27",
+  "file": "ALCDEF_67493_2000_RR27.txt",
+  "num_lightcurves": 47,
+  "num_datapoints": 93,
+  "date_range": "2013-08-03 to 2013-10-13",
+  "num_sessions": 47,
+  "filters": [
+   "R"
+  ]
+ },
+ {
+  "number": 7299,
+  "name": "Indiawadkins",
+  "file": "ALCDEF_7299_Indiawadkins.txt",
+  "num_lightcurves": 47,
+  "num_datapoints": 737,
+  "date_range": "2013-08-29 to 2019-03-25",
+  "num_sessions": 43,
+  "filters": [
+   "GR",
+   "R"
+  ]
+ },
+ {
+  "number": 7510,
+  "name": "1978 UF6",
+  "file": "ALCDEF_7510_1978_UF6.txt",
+  "num_lightcurves": 47,
+  "num_datapoints": 199,
+  "date_range": "2012-06-25 to 2012-11-01",
+  "num_sessions": 47,
+  "filters": [
+   "SG",
+   "R"
+  ]
+ },
+ {
+  "number": 7750,
+  "name": "McEwen",
+  "file": "ALCDEF_7750_McEwen.txt",
+  "num_lightcurves": 47,
+  "num_datapoints": 3928,
+  "date_range": "2011-08-09 to 2019-03-25",
+  "num_sessions": 42,
+  "filters": [
+   "C",
+   "GR",
+   "R"
+  ]
+ },
+ {
+  "number": 79621,
+  "name": "1998 RF62",
+  "file": "ALCDEF_79621_1998_RF62.txt",
+  "num_lightcurves": 47,
+  "num_datapoints": 113,
+  "date_range": "2013-08-03 to 2013-10-16",
+  "num_sessions": 47,
+  "filters": [
+   "R"
+  ]
+ },
+ {
+  "number": 801,
+  "name": "Helwerthia",
+  "file": "ALCDEF_801_Helwerthia.txt",
+  "num_lightcurves": 47,
+  "num_datapoints": 3921,
+  "date_range": "2012-03-24 to 2018-11-13",
+  "num_sessions": 38,
+  "filters": [
+   "C",
+   "GR",
+   "R"
+  ]
+ },
+ {
+  "number": 86094,
+  "name": "1999 RW100",
+  "file": "ALCDEF_86094_1999_RW100.txt",
+  "num_lightcurves": 47,
+  "num_datapoints": 396,
+  "date_range": "2010-06-29 to 2019-03-25",
+  "num_sessions": 44,
+  "filters": [
+   "GR",
+   "R"
+  ]
+ },
+ {
+  "number": 884,
+  "name": "Priamus",
+  "file": "ALCDEF_884_Priamus.txt",
+  "num_lightcurves": 47,
+  "num_datapoints": 1794,
+  "date_range": "2010-07-16 to 2019-04-21",
+  "num_sessions": 45,
+  "filters": [
+   "C",
+   "GR",
+   "V",
+   "R"
+  ]
+ },
+ {
+  "number": 9413,
+  "name": "Eichendorff",
+  "file": "ALCDEF_9413_Eichendorff.txt",
+  "num_lightcurves": 47,
+  "num_datapoints": 110,
+  "date_range": "2013-08-03 to 2013-11-03",
+  "num_sessions": 47,
+  "filters": [
+   "R"
+  ]
+ },
+ {
+  "number": 10544,
+  "name": "Horsnebara",
+  "file": "ALCDEF_10544_Horsnebara.txt",
+  "num_lightcurves": 46,
+  "num_datapoints": 908,
+  "date_range": "2013-07-31 to 2019-05-19",
+  "num_sessions": 43,
+  "filters": [
+   "GR",
+   "R"
+  ]
+ },
+ {
+  "number": 114656,
+  "name": "2003 FE3",
+  "file": "ALCDEF_114656_2003_FE3.txt",
+  "num_lightcurves": 46,
+  "num_datapoints": 1126,
+  "date_range": "2012-03-30 to 2018-08-22",
+  "num_sessions": 43,
+  "filters": [
+   "GR",
+   "R"
+  ]
+ },
+ {
+  "number": 11474,
+  "name": "1982 SM2",
+  "file": "ALCDEF_11474_1982_SM2.txt",
+  "num_lightcurves": 46,
+  "num_datapoints": 111,
+  "date_range": "2013-08-02 to 2013-11-10",
+  "num_sessions": 46,
+  "filters": [
+   "R"
+  ]
+ },
+ {
+  "number": 115054,
+  "name": "2003 RR6",
+  "file": "ALCDEF_115054_2003_RR6.txt",
+  "num_lightcurves": 46,
+  "num_datapoints": 98,
+  "date_range": "2013-07-31 to 2013-11-04",
+  "num_sessions": 46,
+  "filters": [
+   "R"
+  ]
+ },
+ {
+  "number": 11976,
+  "name": "Josephthurn",
+  "file": "ALCDEF_11976_Josephthurn.txt",
+  "num_lightcurves": 46,
+  "num_datapoints": 607,
+  "date_range": "2009-04-22 to 2013-12-22",
+  "num_sessions": 45,
+  "filters": [
+   "C",
+   "R"
+  ]
+ },
+ {
+  "number": 125336,
+  "name": "2001 VA49",
+  "file": "ALCDEF_125336_2001_VA49.txt",
+  "num_lightcurves": 46,
+  "num_datapoints": 362,
+  "date_range": "2013-08-04 to 2019-02-27",
+  "num_sessions": 44,
+  "filters": [
+   "GR",
+   "R"
+  ]
+ },
+ {
+  "number": 140923,
+  "name": "2001 VX66",
+  "file": "ALCDEF_140923_2001_VX66.txt",
+  "num_lightcurves": 46,
+  "num_datapoints": 106,
+  "date_range": "2013-08-02 to 2013-10-16",
+  "num_sessions": 46,
+  "filters": [
+   "R"
+  ]
+ },
+ {
+  "number": 154029,
+  "name": "2002 CY46",
+  "file": "ALCDEF_154029_2002_CY46.txt",
+  "num_lightcurves": 46,
+  "num_datapoints": 1908,
+  "date_range": "2010-09-02 to 2010-09-06",
+  "num_sessions": 5,
+  "filters": [
+   "C"
+  ]
+ },
+ {
+  "number": 17939,
+  "name": "1999 HH8",
+  "file": "ALCDEF_17939_1999_HH8.txt",
+  "num_lightcurves": 46,
+  "num_datapoints": 1031,
+  "date_range": "2010-07-12 to 2019-03-25",
+  "num_sessions": 43,
+  "filters": [
+   "GR",
+   "R"
+  ]
+ },
+ {
+  "number": 18232,
+  "name": "3322 T-1",
+  "file": "ALCDEF_18232_3322_T-1.txt",
+  "num_lightcurves": 46,
+  "num_datapoints": 777,
+  "date_range": "2010-07-22 to 2018-08-22",
+  "num_sessions": 44,
+  "filters": [
+   "GR",
+   "R"
+  ]
+ },
+ {
+  "number": 1941,
+  "name": "Wild",
+  "file": "ALCDEF_1941_Wild.txt",
+  "num_lightcurves": 46,
+  "num_datapoints": 628,
+  "date_range": "2011-08-25 to 2020-01-25",
+  "num_sessions": 46,
+  "filters": [
+   "C",
+   "SG"
+  ]
+ },
+ {
+  "number": 19472,
+  "name": "1998 HL52",
+  "file": "ALCDEF_19472_1998_HL52.txt",
+  "num_lightcurves": 46,
+  "num_datapoints": 378,
+  "date_range": "2010-03-14 to 2019-07-04",
+  "num_sessions": 44,
+  "filters": [
+   "C",
+   "GR",
+   "R"
+  ]
+ },
+ {
+  "number": 20537,
+  "name": "Sandraderosa",
+  "file": "ALCDEF_20537_Sandraderosa.txt",
+  "num_lightcurves": 46,
+  "num_datapoints": 938,
+  "date_range": "2013-07-30 to 2019-04-20",
+  "num_sessions": 43,
+  "filters": [
+   "GR",
+   "R"
+  ]
+ },
+ {
+  "number": 22081,
+  "name": "2000 AA165",
+  "file": "ALCDEF_22081_2000_AA165.txt",
+  "num_lightcurves": 46,
+  "num_datapoints": 1112,
+  "date_range": "2013-09-30 to 2018-12-11",
+  "num_sessions": 43,
+  "filters": [
+   "GR",
+   "R"
+  ]
+ },
+ {
+  "number": 26876,
+  "name": "1994 CR14",
+  "file": "ALCDEF_26876_1994_CR14.txt",
+  "num_lightcurves": 46,
+  "num_datapoints": 1088,
+  "date_range": "2009-12-15 to 2018-12-10",
+  "num_sessions": 42,
+  "filters": [
+   "GR",
+   "R"
+  ]
+ },
+ {
+  "number": 279208,
+  "name": "2009 UQ35",
+  "file": "ALCDEF_279208_2009_UQ35.txt",
+  "num_lightcurves": 46,
+  "num_datapoints": 107,
+  "date_range": "2013-08-04 to 2013-12-02",
+  "num_sessions": 46,
+  "filters": [
+   "R"
+  ]
+ },
+ {
+  "number": 29385,
+  "name": "1996 JT",
+  "file": "ALCDEF_29385_1996_JT.txt",
+  "num_lightcurves": 46,
+  "num_datapoints": 111,
+  "date_range": "2013-08-02 to 2014-01-01",
+  "num_sessions": 46,
+  "filters": [
+   "R"
+  ]
+ },
+ {
+  "number": 30800,
+  "name": "1989 ST",
+  "file": "ALCDEF_30800_1989_ST.txt",
+  "num_lightcurves": 46,
+  "num_datapoints": 950,
+  "date_range": "2013-08-10 to 2019-03-25",
+  "num_sessions": 42,
+  "filters": [
+   "GR",
+   "R"
+  ]
+ },
+ {
+  "number": 3248,
+  "name": "Farinella",
+  "file": "ALCDEF_3248_Farinella.txt",
+  "num_lightcurves": 46,
+  "num_datapoints": 2099,
+  "date_range": "2018-08-24 to 2021-03-19",
+  "num_sessions": 35,
+  "filters": [
+   "C",
+   "GR"
+  ]
+ },
+ {
+  "number": 331471,
+  "name": "1984 QY1",
+  "file": "ALCDEF_331471_1984_QY1.txt",
+  "num_lightcurves": 46,
+  "num_datapoints": 2979,
+  "date_range": "2016-06-06 to 2020-06-08",
+  "num_sessions": 22,
+  "filters": [
+   "C"
+  ]
+ },
+ {
+  "number": 60584,
+  "name": "2000 EW132",
+  "file": "ALCDEF_60584_2000_EW132.txt",
+  "num_lightcurves": 46,
+  "num_datapoints": 964,
+  "date_range": "2010-07-17 to 2018-08-21",
+  "num_sessions": 41,
+  "filters": [
+   "GR",
+   "R"
+  ]
+ },
+ {
+  "number": 6382,
+  "name": "1988 EL",
+  "file": "ALCDEF_6382_1988_EL.txt",
+  "num_lightcurves": 46,
+  "num_datapoints": 2103,
+  "date_range": "2005-02-04 to 2018-08-22",
+  "num_sessions": 44,
+  "filters": [
+   "C",
+   "GR"
+  ]
+ },
+ {
+  "number": 691,
+  "name": "Lehigh",
+  "file": "ALCDEF_691_Lehigh.txt",
+  "num_lightcurves": 46,
+  "num_datapoints": 5016,
+  "date_range": "2009-01-09 to 2025-01-03",
+  "num_sessions": 44,
+  "filters": [
+   "C",
+   "GR",
+   "R"
+  ]
+ },
+ {
+  "number": 84597,
+  "name": "2002 VD31",
+  "file": "ALCDEF_84597_2002_VD31.txt",
+  "num_lightcurves": 46,
+  "num_datapoints": 115,
+  "date_range": "2013-08-02 to 2014-01-01",
+  "num_sessions": 46,
+  "filters": [
+   "R"
+  ]
+ },
+ {
+  "number": 948,
+  "name": "Jucunda",
+  "file": "ALCDEF_948_Jucunda.txt",
+  "num_lightcurves": 46,
+  "num_datapoints": 1887,
+  "date_range": "2011-03-06 to 2018-08-22",
+  "num_sessions": 43,
+  "filters": [
+   "C",
+   "GR",
+   "V"
+  ]
+ },
+ {
+  "number": 9739,
+  "name": "Powell",
+  "file": "ALCDEF_9739_Powell.txt",
+  "num_lightcurves": 46,
+  "num_datapoints": 2507,
+  "date_range": "2006-09-25 to 2019-06-17",
+  "num_sessions": 34,
+  "filters": [
+   "C",
+   "GR",
+   "R"
+  ]
+ },
+ {
+  "number": 103930,
+  "name": "2000 DG65",
+  "file": "ALCDEF_103930_2000_DG65.txt",
+  "num_lightcurves": 45,
+  "num_datapoints": 112,
+  "date_range": "2013-08-02 to 2013-11-11",
+  "num_sessions": 45,
+  "filters": [
+   "R"
+  ]
+ },
+ {
+  "number": 115758,
+  "name": "2003 UH206",
+  "file": "ALCDEF_115758_2003_UH206.txt",
+  "num_lightcurves": 45,
+  "num_datapoints": 775,
+  "date_range": "2013-09-14 to 2019-04-21",
+  "num_sessions": 40,
+  "filters": [
+   "GR",
+   "R"
+  ]
+ },
+ {
+  "number": 12080,
+  "name": "1998 FC111",
+  "file": "ALCDEF_12080_1998_FC111.txt",
+  "num_lightcurves": 45,
+  "num_datapoints": 85,
+  "date_range": "2010-06-23 to 2013-03-12",
+  "num_sessions": 45,
+  "filters": [
+   "R"
+  ]
+ },
+ {
+  "number": 13855,
+  "name": "1999 XX105",
+  "file": "ALCDEF_13855_1999_XX105.txt",
+  "num_lightcurves": 45,
+  "num_datapoints": 963,
+  "date_range": "2010-06-30 to 2018-12-10",
+  "num_sessions": 43,
+  "filters": [
+   "GR",
+   "R"
+  ]
+ },
+ {
+  "number": 15293,
+  "name": "1991 VO3",
+  "file": "ALCDEF_15293_1991_VO3.txt",
+  "num_lightcurves": 45,
+  "num_datapoints": 115,
+  "date_range": "2013-08-02 to 2013-11-11",
+  "num_sessions": 45,
+  "filters": [
+   "R"
+  ]
+ },
+ {
+  "number": 15385,
+  "name": "Dallolmo",
+  "file": "ALCDEF_15385_Dallolmo.txt",
+  "num_lightcurves": 45,
+  "num_datapoints": 1101,
+  "date_range": "2010-01-03 to 2018-12-10",
+  "num_sessions": 43,
+  "filters": [
+   "GR",
+   "R"
+  ]
+ },
+ {
+  "number": 161128,
+  "name": "2002 RG77",
+  "file": "ALCDEF_161128_2002_RG77.txt",
+  "num_lightcurves": 45,
+  "num_datapoints": 111,
+  "date_range": "2013-08-02 to 2013-10-16",
+  "num_sessions": 45,
+  "filters": [
+   "R"
+  ]
+ },
+ {
+  "number": 162900,
+  "name": "2001 HG31",
+  "file": "ALCDEF_162900_2001_HG31.txt",
+  "num_lightcurves": 45,
+  "num_datapoints": 2014,
+  "date_range": "2008-10-02 to 2009-03-24",
+  "num_sessions": 34,
+  "filters": [
+   "C",
+   "R"
+  ]
+ },
+ {
+  "number": 16626,
+  "name": "Thumper",
+  "file": "ALCDEF_16626_Thumper.txt",
+  "num_lightcurves": 45,
+  "num_datapoints": 108,
+  "date_range": "2010-07-19 to 2012-02-29",
+  "num_sessions": 45,
+  "filters": [
+   "R"
+  ]
+ },
+ {
+  "number": 18804,
+  "name": "1999 JS77",
+  "file": "ALCDEF_18804_1999_JS77.txt",
+  "num_lightcurves": 45,
+  "num_datapoints": 1010,
+  "date_range": "2013-01-19 to 2018-11-13",
+  "num_sessions": 41,
+  "filters": [
+   "GR",
+   "R"
+  ]
+ },
+ {
+  "number": 19426,
+  "name": "Leal",
+  "file": "ALCDEF_19426_Leal.txt",
+  "num_lightcurves": 45,
+  "num_datapoints": 98,
+  "date_range": "2013-08-06 to 2013-11-11",
+  "num_sessions": 45,
+  "filters": [
+   "R"
+  ]
+ },
+ {
+  "number": 20488,
+  "name": "Pic-du-Midi",
+  "file": "ALCDEF_20488_Pic-du-Midi.txt",
+  "num_lightcurves": 45,
+  "num_datapoints": 121,
+  "date_range": "2013-08-02 to 2013-11-09",
+  "num_sessions": 45,
+  "filters": [
+   "R"
+  ]
+ },
+ {
+  "number": 21018,
+  "name": "1988 VV1",
+  "file": "ALCDEF_21018_1988_VV1.txt",
+  "num_lightcurves": 45,
+  "num_datapoints": 186,
+  "date_range": "2011-01-05 to 2014-01-01",
+  "num_sessions": 45,
+  "filters": [
+   "R",
+   "SG"
+  ]
+ },
+ {
+  "number": 220119,
+  "name": "2002 TV47",
+  "file": "ALCDEF_220119_2002_TV47.txt",
+  "num_lightcurves": 45,
+  "num_datapoints": 103,
+  "date_range": "2013-08-17 to 2014-01-01",
+  "num_sessions": 45,
+  "filters": [
+   "R"
+  ]
+ },
+ {
+  "number": 238509,
+  "name": "2004 TH52",
+  "file": "ALCDEF_238509_2004_TH52.txt",
+  "num_lightcurves": 45,
+  "num_datapoints": 89,
+  "date_range": "2013-08-04 to 2013-11-11",
+  "num_sessions": 45,
+  "filters": [
+   "R"
+  ]
+ },
+ {
+  "number": 24465,
+  "name": "2000 SX155",
+  "file": "ALCDEF_24465_2000_SX155.txt",
+  "num_lightcurves": 45,
+  "num_datapoints": 2267,
+  "date_range": "2008-10-18 to 2016-11-24",
+  "num_sessions": 45,
+  "filters": [
+   "C"
+  ]
+ },
+ {
+  "number": 266516,
+  "name": "2008 EU137",
+  "file": "ALCDEF_266516_2008_EU137.txt",
+  "num_lightcurves": 45,
+  "num_datapoints": 105,
+  "date_range": "2013-08-04 to 2013-11-06",
+  "num_sessions": 45,
+  "filters": [
+   "R"
+  ]
+ },
+ {
+  "number": 27360,
+  "name": "2000 DH107",
+  "file": "ALCDEF_27360_2000_DH107.txt",
+  "num_lightcurves": 45,
+  "num_datapoints": 810,
+  "date_range": "2011-01-26 to 2018-09-19",
+  "num_sessions": 43,
+  "filters": [
+   "GR",
+   "SG",
+   "R"
+  ]
+ },
+ {
+  "number": 28399,
+  "name": "1999 RY136",
+  "file": "ALCDEF_28399_1999_RY136.txt",
+  "num_lightcurves": 45,
+  "num_datapoints": 87,
+  "date_range": "2010-07-20 to 2010-11-16",
+  "num_sessions": 45,
+  "filters": [
+   "R"
+  ]
+ },
+ {
+  "number": 30372,
+  "name": "Halback",
+  "file": "ALCDEF_30372_Halback.txt",
+  "num_lightcurves": 45,
+  "num_datapoints": 108,
+  "date_range": "2013-08-02 to 2013-11-11",
+  "num_sessions": 45,
+  "filters": [
+   "R"
+  ]
+ },
+ {
+  "number": 31402,
+  "name": "Negishi",
+  "file": "ALCDEF_31402_Negishi.txt",
+  "num_lightcurves": 45,
+  "num_datapoints": 114,
+  "date_range": "2013-08-12 to 2013-11-04",
+  "num_sessions": 45,
+  "filters": [
+   "R"
+  ]
+ },
+ {
+  "number": 31751,
+  "name": "1999 JF85",
+  "file": "ALCDEF_31751_1999_JF85.txt",
+  "num_lightcurves": 45,
+  "num_datapoints": 1003,
+  "date_range": "2010-04-02 to 2018-11-13",
+  "num_sessions": 42,
+  "filters": [
+   "GR",
+   "R"
+  ]
+ },
+ {
+  "number": 3562,
+  "name": "Ignatius",
+  "file": "ALCDEF_3562_Ignatius.txt",
+  "num_lightcurves": 45,
+  "num_datapoints": 1481,
+  "date_range": "2016-01-24 to 2018-10-17",
+  "num_sessions": 36,
+  "filters": [
+   "C",
+   "GR"
+  ]
+ },
+ {
+  "number": 42158,
+  "name": "2001 BT70",
+  "file": "ALCDEF_42158_2001_BT70.txt",
+  "num_lightcurves": 45,
+  "num_datapoints": 1126,
+  "date_range": "2013-07-30 to 2018-12-10",
+  "num_sessions": 43,
+  "filters": [
+   "GR",
+   "R"
+  ]
+ },
+ {
+  "number": 42978,
+  "name": "1999 TL219",
+  "file": "ALCDEF_42978_1999_TL219.txt",
+  "num_lightcurves": 45,
+  "num_datapoints": 571,
+  "date_range": "2012-06-25 to 2019-02-27",
+  "num_sessions": 43,
+  "filters": [
+   "GR",
+   "SG",
+   "R"
+  ]
+ },
+ {
+  "number": 46264,
+  "name": "2001 HB50",
+  "file": "ALCDEF_46264_2001_HB50.txt",
+  "num_lightcurves": 45,
+  "num_datapoints": 107,
+  "date_range": "2013-08-02 to 2013-10-27",
+  "num_sessions": 45,
+  "filters": [
+   "R"
+  ]
+ },
+ {
+  "number": 46983,
+  "name": "1998 SX161",
+  "file": "ALCDEF_46983_1998_SX161.txt",
+  "num_lightcurves": 45,
+  "num_datapoints": 95,
+  "date_range": "2010-08-05 to 2010-12-05",
+  "num_sessions": 45,
+  "filters": [
+   "R"
+  ]
+ },
+ {
+  "number": 47082,
+  "name": "1998 YA15",
+  "file": "ALCDEF_47082_1998_YA15.txt",
+  "num_lightcurves": 45,
+  "num_datapoints": 929,
+  "date_range": "2013-09-02 to 2018-10-12",
+  "num_sessions": 42,
+  "filters": [
+   "GR",
+   "R"
+  ]
+ },
+ {
+  "number": 47922,
+  "name": "2000 GK109",
+  "file": "ALCDEF_47922_2000_GK109.txt",
+  "num_lightcurves": 45,
+  "num_datapoints": 451,
+  "date_range": "2012-06-26 to 2018-12-10",
+  "num_sessions": 44,
+  "filters": [
+   "GR",
+   "SG",
+   "R"
+  ]
+ },
+ {
+  "number": 48522,
+  "name": "1993 FF54",
+  "file": "ALCDEF_48522_1993_FF54.txt",
+  "num_lightcurves": 45,
+  "num_datapoints": 839,
+  "date_range": "2013-08-02 to 2018-08-21",
+  "num_sessions": 43,
+  "filters": [
+   "GR",
+   "R"
+  ]
+ },
+ {
+  "number": 4979,
+  "name": "Otawara",
+  "file": "ALCDEF_4979_Otawara.txt",
+  "num_lightcurves": 45,
+  "num_datapoints": 100,
+  "date_range": "2010-07-26 to 2013-09-26",
+  "num_sessions": 45,
+  "filters": [
+   "R"
+  ]
+ },
+ {
+  "number": 50034,
+  "name": "2000 AJ48",
+  "file": "ALCDEF_50034_2000_AJ48.txt",
+  "num_lightcurves": 45,
+  "num_datapoints": 1207,
+  "date_range": "2013-03-16 to 2018-09-19",
+  "num_sessions": 43,
+  "filters": [
+   "GR",
+   "R"
+  ]
+ },
+ {
+  "number": 51802,
+  "name": "2001 NF4",
+  "file": "ALCDEF_51802_2001_NF4.txt",
+  "num_lightcurves": 45,
+  "num_datapoints": 786,
+  "date_range": "2012-11-20 to 2018-08-22",
+  "num_sessions": 42,
+  "filters": [
+   "GR",
+   "R"
+  ]
+ },
+ {
+  "number": 53930,
+  "name": "2000 GO42",
+  "file": "ALCDEF_53930_2000_GO42.txt",
+  "num_lightcurves": 45,
+  "num_datapoints": 98,
+  "date_range": "2013-08-02 to 2013-10-27",
+  "num_sessions": 45,
+  "filters": [
+   "R"
+  ]
+ },
+ {
+  "number": 54023,
+  "name": "2000 GD100",
+  "file": "ALCDEF_54023_2000_GD100.txt",
+  "num_lightcurves": 45,
+  "num_datapoints": 203,
+  "date_range": "2012-06-25 to 2012-10-03",
+  "num_sessions": 45,
+  "filters": [
+   "SG",
+   "R"
+  ]
+ },
+ {
+  "number": 57189,
+  "name": "2001 QX30",
+  "file": "ALCDEF_57189_2001_QX30.txt",
+  "num_lightcurves": 45,
+  "num_datapoints": 75,
+  "date_range": "2010-07-07 to 2011-01-24",
+  "num_sessions": 45,
+  "filters": [
+   "R"
+  ]
+ },
+ {
+  "number": 61791,
+  "name": "2000 QV182",
+  "file": "ALCDEF_61791_2000_QV182.txt",
+  "num_lightcurves": 45,
+  "num_datapoints": 101,
+  "date_range": "2013-07-31 to 2013-11-11",
+  "num_sessions": 45,
+  "filters": [
+   "R"
+  ]
+ },
+ {
+  "number": 67742,
+  "name": "2000 UP34",
+  "file": "ALCDEF_67742_2000_UP34.txt",
+  "num_lightcurves": 45,
+  "num_datapoints": 98,
+  "date_range": "2010-10-13 to 2013-10-07",
+  "num_sessions": 45,
+  "filters": [
+   "R"
+  ]
+ },
+ {
+  "number": 740,
+  "name": "Cantabia",
+  "file": "ALCDEF_740_Cantabia.txt",
+  "num_lightcurves": 45,
+  "num_datapoints": 5200,
+  "date_range": "2009-01-20 to 2019-01-06",
+  "num_sessions": 44,
+  "filters": [
+   "C",
+   "GR",
+   "V"
+  ]
+ },
+ {
+  "number": 75482,
+  "name": "1999 XC173",
+  "file": "ALCDEF_75482_1999_XC173.txt",
+  "num_lightcurves": 45,
+  "num_datapoints": 112,
+  "date_range": "2013-08-13 to 2013-11-11",
+  "num_sessions": 45,
+  "filters": [
+   "R"
+  ]
+ },
+ {
+  "number": 80706,
+  "name": "2000 CL16",
+  "file": "ALCDEF_80706_2000_CL16.txt",
+  "num_lightcurves": 45,
+  "num_datapoints": 112,
+  "date_range": "2013-08-08 to 2013-12-22",
+  "num_sessions": 45,
+  "filters": [
+   "R"
+  ]
+ },
+ {
+  "number": 89579,
+  "name": "2001 XE127",
+  "file": "ALCDEF_89579_2001_XE127.txt",
+  "num_lightcurves": 45,
+  "num_datapoints": 119,
+  "date_range": "2013-08-02 to 2013-10-27",
+  "num_sessions": 45,
+  "filters": [
+   "R"
+  ]
+ },
+ {
+  "number": 10134,
+  "name": "1993 HL6",
+  "file": "ALCDEF_10134_1993_HL6.txt",
+  "num_lightcurves": 44,
+  "num_datapoints": 1066,
+  "date_range": "2010-06-08 to 2019-03-25",
+  "num_sessions": 41,
+  "filters": [
+   "GR",
+   "R"
+  ]
+ },
+ {
+  "number": 11824,
+  "name": "Alpaidze",
+  "file": "ALCDEF_11824_Alpaidze.txt",
+  "num_lightcurves": 44,
+  "num_datapoints": 187,
+  "date_range": "2012-07-05 to 2013-01-13",
+  "num_sessions": 44,
+  "filters": [
+   "SG",
+   "R"
+  ]
+ },
+ {
+  "number": 123553,
+  "name": "2000 XN29",
+  "file": "ALCDEF_123553_2000_XN29.txt",
+  "num_lightcurves": 44,
+  "num_datapoints": 94,
+  "date_range": "2013-08-29 to 2014-01-03",
+  "num_sessions": 44,
+  "filters": [
+   "R"
+  ]
+ },
+ {
+  "number": 135421,
+  "name": "2001 UC49",
+  "file": "ALCDEF_135421_2001_UC49.txt",
+  "num_lightcurves": 44,
+  "num_datapoints": 896,
+  "date_range": "2012-07-22 to 2018-12-10",
+  "num_sessions": 39,
+  "filters": [
+   "GR",
+   "R"
+  ]
+ },
+ {
+  "number": 16428,
+  "name": "1988 RD12",
+  "file": "ALCDEF_16428_1988_RD12.txt",
+  "num_lightcurves": 44,
+  "num_datapoints": 116,
+  "date_range": "2013-08-02 to 2013-10-16",
+  "num_sessions": 44,
+  "filters": [
+   "R"
+  ]
+ },
+ {
+  "number": 164716,
+  "name": "1998 GH",
+  "file": "ALCDEF_164716_1998_GH.txt",
+  "num_lightcurves": 44,
+  "num_datapoints": 852,
+  "date_range": "2010-07-19 to 2018-10-08",
+  "num_sessions": 42,
+  "filters": [
+   "GR",
+   "R"
+  ]
+ },
+ {
+  "number": 19254,
+  "name": "1994 VD7",
+  "file": "ALCDEF_19254_1994_VD7.txt",
+  "num_lightcurves": 44,
+  "num_datapoints": 833,
+  "date_range": "2010-06-17 to 2019-02-27",
+  "num_sessions": 44,
+  "filters": [
+   "GR",
+   "R"
+  ]
+ },
+ {
+  "number": 20037,
+  "name": "Duke",
+  "file": "ALCDEF_20037_Duke.txt",
+  "num_lightcurves": 44,
+  "num_datapoints": 1726,
+  "date_range": "2010-09-12 to 2023-09-27",
+  "num_sessions": 42,
+  "filters": [
+   "C",
+   "GR"
+  ]
+ },
+ {
+  "number": 21104,
+  "name": "Sveshnikov",
+  "file": "ALCDEF_21104_Sveshnikov.txt",
+  "num_lightcurves": 44,
+  "num_datapoints": 1105,
+  "date_range": "2010-05-25 to 2019-03-25",
+  "num_sessions": 38,
+  "filters": [
+   "GR",
+   "R"
+  ]
+ },
+ {
+  "number": 2596,
+  "name": "Vainu Bappu",
+  "file": "ALCDEF_2596_Vainu_Bappu.txt",
+  "num_lightcurves": 44,
+  "num_datapoints": 808,
+  "date_range": "2012-09-08 to 2019-01-05",
+  "num_sessions": 41,
+  "filters": [
+   "GR",
+   "SG",
+   "R"
+  ]
+ },
+ {
+  "number": 26073,
+  "name": "5168 T-3",
+  "file": "ALCDEF_26073_5168_T-3.txt",
+  "num_lightcurves": 44,
+  "num_datapoints": 1186,
+  "date_range": "2013-08-28 to 2018-10-17",
+  "num_sessions": 43,
+  "filters": [
+   "GR",
+   "R"
+  ]
+ },
+ {
+  "number": 26894,
+  "name": "1995 KN1",
+  "file": "ALCDEF_26894_1995_KN1.txt",
+  "num_lightcurves": 44,
+  "num_datapoints": 892,
+  "date_range": "2013-10-23 to 2018-10-17",
+  "num_sessions": 40,
+  "filters": [
+   "GR",
+   "R"
+  ]
+ },
+ {
+  "number": 2792,
+  "name": "Ponomarev",
+  "file": "ALCDEF_2792_Ponomarev.txt",
+  "num_lightcurves": 44,
+  "num_datapoints": 585,
+  "date_range": "2013-09-07 to 2019-07-10",
+  "num_sessions": 39,
+  "filters": [
+   "GR",
+   "R"
+  ]
+ },
+ {
+  "number": 28679,
+  "name": "2000 GY68",
+  "file": "ALCDEF_28679_2000_GY68.txt",
+  "num_lightcurves": 44,
+  "num_datapoints": 1004,
+  "date_range": "2012-08-26 to 2018-12-10",
+  "num_sessions": 42,
+  "filters": [
+   "GR",
+   "SG",
+   "R"
+  ]
+ },
+ {
+  "number": 29797,
+  "name": "1999 CC78",
+  "file": "ALCDEF_29797_1999_CC78.txt",
+  "num_lightcurves": 44,
+  "num_datapoints": 747,
+  "date_range": "2013-08-29 to 2019-01-31",
+  "num_sessions": 41,
+  "filters": [
+   "GR",
+   "R"
+  ]
+ },
+ {
+  "number": 30823,
+  "name": "1990 SY15",
+  "file": "ALCDEF_30823_1990_SY15.txt",
+  "num_lightcurves": 44,
+  "num_datapoints": 1105,
+  "date_range": "2011-07-07 to 2018-12-10",
+  "num_sessions": 41,
+  "filters": [
+   "GR",
+   "SG"
+  ]
+ },
+ {
+  "number": 40463,
+  "name": "Frankkameny",
+  "file": "ALCDEF_40463_Frankkameny.txt",
+  "num_lightcurves": 44,
+  "num_datapoints": 109,
+  "date_range": "2013-08-02 to 2013-10-23",
+  "num_sessions": 44,
+  "filters": [
+   "R"
+  ]
+ },
+ {
+  "number": 4067,
+  "name": "Mikhel'son",
+  "file": "ALCDEF_4067_Mikhel'son.txt",
+  "num_lightcurves": 44,
+  "num_datapoints": 2088,
+  "date_range": "2013-10-24 to 2014-01-15",
+  "num_sessions": 26,
+  "filters": [
+   "C"
+  ]
+ },
+ {
+  "number": 41371,
+  "name": "2000 AB101",
+  "file": "ALCDEF_41371_2000_AB101.txt",
+  "num_lightcurves": 44,
+  "num_datapoints": 84,
+  "date_range": "2010-07-28 to 2013-06-16",
+  "num_sessions": 44,
+  "filters": [
+   "R"
+  ]
+ },
+ {
+  "number": 4223,
+  "name": "Shikoku",
+  "file": "ALCDEF_4223_Shikoku.txt",
+  "num_lightcurves": 44,
+  "num_datapoints": 1057,
+  "date_range": "2010-06-08 to 2019-04-21",
+  "num_sessions": 40,
+  "filters": [
+   "C",
+   "GR",
+   "R"
+  ]
+ },
+ {
+  "number": 43101,
+  "name": "1999 XX18",
+  "file": "ALCDEF_43101_1999_XX18.txt",
+  "num_lightcurves": 44,
+  "num_datapoints": 105,
+  "date_range": "2013-08-03 to 2013-11-10",
+  "num_sessions": 44,
+  "filters": [
+   "R"
+  ]
+ },
+ {
+  "number": 44628,
+  "name": "1999 RQ75",
+  "file": "ALCDEF_44628_1999_RQ75.txt",
+  "num_lightcurves": 44,
+  "num_datapoints": 106,
+  "date_range": "2013-08-02 to 2013-11-12",
+  "num_sessions": 44,
+  "filters": [
+   "R"
+  ]
+ },
+ {
+  "number": 46791,
+  "name": "1998 HW149",
+  "file": "ALCDEF_46791_1998_HW149.txt",
+  "num_lightcurves": 44,
+  "num_datapoints": 683,
+  "date_range": "2013-10-04 to 2019-06-17",
+  "num_sessions": 42,
+  "filters": [
+   "GR",
+   "R"
+  ]
+ },
+ {
+  "number": 53739,
+  "name": "2000 EB49",
+  "file": "ALCDEF_53739_2000_EB49.txt",
+  "num_lightcurves": 44,
+  "num_datapoints": 94,
+  "date_range": "2013-08-02 to 2013-12-02",
+  "num_sessions": 44,
+  "filters": [
+   "R"
+  ]
+ },
+ {
+  "number": 5928,
+  "name": "Pindarus",
+  "file": "ALCDEF_5928_Pindarus.txt",
+  "num_lightcurves": 44,
+  "num_datapoints": 1503,
+  "date_range": "2018-04-09 to 2020-09-17",
+  "num_sessions": 29,
+  "filters": [
+   "C"
+  ]
+ },
+ {
+  "number": 59573,
+  "name": "1999 JK49",
+  "file": "ALCDEF_59573_1999_JK49.txt",
+  "num_lightcurves": 44,
+  "num_datapoints": 673,
+  "date_range": "2012-07-20 to 2019-03-25",
+  "num_sessions": 38,
+  "filters": [
+   "GR",
+   "SG",
+   "R"
+  ]
+ },
+ {
+  "number": 6265,
+  "name": "1985 TW3",
+  "file": "ALCDEF_6265_1985_TW3.txt",
+  "num_lightcurves": 44,
+  "num_datapoints": 1715,
+  "date_range": "2007-07-15 to 2013-05-19",
+  "num_sessions": 44,
+  "filters": [
+   "C",
+   "R"
+  ]
+ },
+ {
+  "number": 6384,
+  "name": "Kervin",
+  "file": "ALCDEF_6384_Kervin.txt",
+  "num_lightcurves": 44,
+  "num_datapoints": 2458,
+  "date_range": "2006-03-31 to 2022-04-02",
+  "num_sessions": 43,
+  "filters": [
+   "C"
+  ]
+ },
+ {
+  "number": 6570,
+  "name": "Tomohiro",
+  "file": "ALCDEF_6570_Tomohiro.txt",
+  "num_lightcurves": 44,
+  "num_datapoints": 98,
+  "date_range": "2013-08-02 to 2013-10-25",
+  "num_sessions": 44,
+  "filters": [
+   "R"
+  ]
+ },
+ {
+  "number": 67909,
+  "name": "2000 WJ98",
+  "file": "ALCDEF_67909_2000_WJ98.txt",
+  "num_lightcurves": 44,
+  "num_datapoints": 1036,
+  "date_range": "2010-08-06 to 2019-03-25",
+  "num_sessions": 40,
+  "filters": [
+   "GR",
+   "R"
+  ]
+ },
+ {
+  "number": 7193,
+  "name": "Yamaoka",
+  "file": "ALCDEF_7193_Yamaoka.txt",
+  "num_lightcurves": 44,
+  "num_datapoints": 924,
+  "date_range": "2010-07-21 to 2019-04-21",
+  "num_sessions": 42,
+  "filters": [
+   "GR",
+   "R"
+  ]
+ },
+ {
+  "number": 7516,
+  "name": "Kranjc",
+  "file": "ALCDEF_7516_Kranjc.txt",
+  "num_lightcurves": 44,
+  "num_datapoints": 2600,
+  "date_range": "2008-04-12 to 2022-06-19",
+  "num_sessions": 34,
+  "filters": [
+   "C"
+  ]
+ },
+ {
+  "number": 75528,
+  "name": "1999 XC214",
+  "file": "ALCDEF_75528_1999_XC214.txt",
+  "num_lightcurves": 44,
+  "num_datapoints": 83,
+  "date_range": "2009-12-18 to 2010-06-28",
+  "num_sessions": 44,
+  "filters": [
+   "R"
+  ]
+ },
+ {
+  "number": 77694,
+  "name": "2001 NT18",
+  "file": "ALCDEF_77694_2001_NT18.txt",
+  "num_lightcurves": 44,
+  "num_datapoints": 138,
+  "date_range": "2012-07-18 to 2014-03-05",
+  "num_sessions": 44,
+  "filters": [
+   "SG",
+   "R"
+  ]
+ },
+ {
+  "number": 80524,
+  "name": "2000 AD63",
+  "file": "ALCDEF_80524_2000_AD63.txt",
+  "num_lightcurves": 44,
+  "num_datapoints": 111,
+  "date_range": "2013-08-03 to 2014-01-01",
+  "num_sessions": 44,
+  "filters": [
+   "R"
+  ]
+ },
+ {
+  "number": 8098,
+  "name": "Miyamotoatsushi",
+  "file": "ALCDEF_8098_Miyamotoatsushi.txt",
+  "num_lightcurves": 44,
+  "num_datapoints": 152,
+  "date_range": "2012-06-25 to 2012-11-01",
+  "num_sessions": 44,
+  "filters": [
+   "SG",
+   "R"
+  ]
+ },
+ {
+  "number": 85743,
+  "name": "1998 SU113",
+  "file": "ALCDEF_85743_1998_SU113.txt",
+  "num_lightcurves": 44,
+  "num_datapoints": 100,
+  "date_range": "2013-08-04 to 2013-12-02",
+  "num_sessions": 44,
+  "filters": [
+   "R"
+  ]
+ },
+ {
+  "number": 87254,
+  "name": "2000 OY52",
+  "file": "ALCDEF_87254_2000_OY52.txt",
+  "num_lightcurves": 44,
+  "num_datapoints": 112,
+  "date_range": "2013-08-03 to 2013-11-10",
+  "num_sessions": 44,
+  "filters": [
+   "R"
+  ]
+ },
+ {
+  "number": 981,
+  "name": "Martina",
+  "file": "ALCDEF_981_Martina.txt",
+  "num_lightcurves": 44,
+  "num_datapoints": 111,
+  "date_range": "2010-07-26 to 2012-02-29",
+  "num_sessions": 44,
+  "filters": [
+   "R"
+  ]
+ },
+ {
+  "number": 9864,
+  "name": "1991 RT17",
+  "file": "ALCDEF_9864_1991_RT17.txt",
+  "num_lightcurves": 44,
+  "num_datapoints": 103,
+  "date_range": "2013-08-29 to 2013-12-22",
+  "num_sessions": 44,
+  "filters": [
+   "R"
+  ]
+ },
+ {
+  "number": 103357,
+  "name": "2000 AM92",
+  "file": "ALCDEF_103357_2000_AM92.txt",
+  "num_lightcurves": 43,
+  "num_datapoints": 992,
+  "date_range": "2013-08-06 to 2019-03-25",
+  "num_sessions": 39,
+  "filters": [
+   "GR",
+   "R"
+  ]
+ },
+ {
+  "number": 103929,
+  "name": "2000 DU64",
+  "file": "ALCDEF_103929_2000_DU64.txt",
+  "num_lightcurves": 43,
+  "num_datapoints": 106,
+  "date_range": "2013-08-02 to 2013-10-27",
+  "num_sessions": 43,
+  "filters": [
+   "R"
+  ]
+ },
+ {
+  "number": 109950,
+  "name": "2001 SB46",
+  "file": "ALCDEF_109950_2001_SB46.txt",
+  "num_lightcurves": 43,
+  "num_datapoints": 207,
+  "date_range": "2012-07-22 to 2012-09-28",
+  "num_sessions": 43,
+  "filters": [
+   "SG",
+   "R"
+  ]
+ },
+ {
+  "number": 11463,
+  "name": "Petrpokorny",
+  "file": "ALCDEF_11463_Petrpokorny.txt",
+  "num_lightcurves": 43,
+  "num_datapoints": 105,
+  "date_range": "2013-08-05 to 2014-01-01",
+  "num_sessions": 43,
+  "filters": [
+   "R"
+  ]
+ },
+ {
+  "number": 11737,
+  "name": "1998 QL24",
+  "file": "ALCDEF_11737_1998_QL24.txt",
+  "num_lightcurves": 43,
+  "num_datapoints": 1010,
+  "date_range": "2010-07-26 to 2019-02-01",
+  "num_sessions": 42,
+  "filters": [
+   "GR",
+   "R"
+  ]
+ },
+ {
+  "number": 125324,
+  "name": "2001 VY41",
+  "file": "ALCDEF_125324_2001_VY41.txt",
+  "num_lightcurves": 43,
+  "num_datapoints": 100,
+  "date_range": "2013-08-02 to 2013-11-09",
+  "num_sessions": 43,
+  "filters": [
+   "R"
+  ]
+ },
+ {
+  "number": 131406,
+  "name": "2001 LB12",
+  "file": "ALCDEF_131406_2001_LB12.txt",
+  "num_lightcurves": 43,
+  "num_datapoints": 91,
+  "date_range": "2013-08-05 to 2013-10-28",
+  "num_sessions": 43,
+  "filters": [
+   "R"
+  ]
+ },
+ {
+  "number": 15822,
+  "name": "1994 TV15",
+  "file": "ALCDEF_15822_1994_TV15.txt",
+  "num_lightcurves": 43,
+  "num_datapoints": 1414,
+  "date_range": "2007-05-12 to 2015-04-12",
+  "num_sessions": 41,
+  "filters": [
+   "C",
+   "R"
+  ]
+ },
+ {
+  "number": 15850,
+  "name": "1996 AE1",
+  "file": "ALCDEF_15850_1996_AE1.txt",
+  "num_lightcurves": 43,
+  "num_datapoints": 801,
+  "date_range": "2010-07-26 to 2019-05-20",
+  "num_sessions": 41,
+  "filters": [
+   "GR",
+   "R"
+  ]
+ },
+ {
+  "number": 17137,
+  "name": "1999 JK84",
+  "file": "ALCDEF_17137_1999_JK84.txt",
+  "num_lightcurves": 43,
+  "num_datapoints": 1164,
+  "date_range": "2013-09-13 to 2018-10-16",
+  "num_sessions": 42,
+  "filters": [
+   "GR",
+   "R"
+  ]
+ },
+ {
+  "number": 1845,
+  "name": "Helewalda",
+  "file": "ALCDEF_1845_Helewalda.txt",
+  "num_lightcurves": 43,
+  "num_datapoints": 1192,
+  "date_range": "2010-02-16 to 2018-11-13",
+  "num_sessions": 40,
+  "filters": [
+   "GR",
+   "R"
+  ]
+ },
+ {
+  "number": 20465,
+  "name": "Vervack",
+  "file": "ALCDEF_20465_Vervack.txt",
+  "num_lightcurves": 43,
+  "num_datapoints": 889,
+  "date_range": "2013-01-16 to 2018-11-13",
+  "num_sessions": 39,
+  "filters": [
+   "GR",
+   "R"
+  ]
+ },
+ {
+  "number": 20545,
+  "name": "Karenhowell",
+  "file": "ALCDEF_20545_Karenhowell.txt",
+  "num_lightcurves": 43,
+  "num_datapoints": 1070,
+  "date_range": "2013-07-30 to 2019-03-25",
+  "num_sessions": 40,
+  "filters": [
+   "GR",
+   "R"
+  ]
+ },
+ {
+  "number": 21566,
+  "name": "1998 QM103",
+  "file": "ALCDEF_21566_1998_QM103.txt",
+  "num_lightcurves": 43,
+  "num_datapoints": 114,
+  "date_range": "2013-08-06 to 2013-11-11",
+  "num_sessions": 43,
+  "filters": [
+   "R"
+  ]
+ },
+ {
+  "number": 23948,
+  "name": "1998 UQ18",
+  "file": "ALCDEF_23948_1998_UQ18.txt",
+  "num_lightcurves": 43,
+  "num_datapoints": 1227,
+  "date_range": "2013-10-22 to 2018-10-17",
+  "num_sessions": 42,
+  "filters": [
+   "GR",
+   "R"
+  ]
+ },
+ {
+  "number": 26351,
+  "name": "1998 XG95",
+  "file": "ALCDEF_26351_1998_XG95.txt",
+  "num_lightcurves": 43,
+  "num_datapoints": 1173,
+  "date_range": "2011-12-07 to 2018-10-15",
+  "num_sessions": 42,
+  "filters": [
+   "GR",
+   "R"
+  ]
+ },
+ {
+  "number": 3001,
+  "name": "Michelangelo",
+  "file": "ALCDEF_3001_Michelangelo.txt",
+  "num_lightcurves": 43,
+  "num_datapoints": 1120,
+  "date_range": "2009-06-25 to 2020-10-23",
+  "num_sessions": 38,
+  "filters": [
+   "C",
+   "GR",
+   "R"
+  ]
+ },
+ {
+  "number": 30506,
+  "name": "2000 RO85",
+  "file": "ALCDEF_30506_2000_RO85.txt",
+  "num_lightcurves": 43,
+  "num_datapoints": 896,
+  "date_range": "2013-09-11 to 2019-04-21",
+  "num_sessions": 39,
+  "filters": [
+   "GR",
+   "R"
+  ]
+ },
+ {
+  "number": 3188,
+  "name": "Jekabsons",
+  "file": "ALCDEF_3188_Jekabsons.txt",
+  "num_lightcurves": 43,
+  "num_datapoints": 934,
+  "date_range": "2013-08-28 to 2019-05-19",
+  "num_sessions": 40,
+  "filters": [
+   "GR",
+   "R"
+  ]
+ },
+ {
+  "number": 318,
+  "name": "Magdalena",
+  "file": "ALCDEF_318_Magdalena.txt",
+  "num_lightcurves": 43,
+  "num_datapoints": 10130,
+  "date_range": "2013-11-15 to 2018-11-14",
+  "num_sessions": 42,
+  "filters": [
+   "C",
+   "GR"
+  ]
+ },
+ {
+  "number": 32445,
+  "name": "2000 RC104",
+  "file": "ALCDEF_32445_2000_RC104.txt",
+  "num_lightcurves": 43,
+  "num_datapoints": 91,
+  "date_range": "2010-11-30 to 2013-11-08",
+  "num_sessions": 43,
+  "filters": [
+   "R"
+  ]
+ },
+ {
+  "number": 32460,
+  "name": "2000 SY92",
+  "file": "ALCDEF_32460_2000_SY92.txt",
+  "num_lightcurves": 43,
+  "num_datapoints": 2160,
+  "date_range": "2016-08-25 to 2019-04-17",
+  "num_sessions": 40,
+  "filters": [
+   "C",
+   "GR"
+  ]
+ },
+ {
+  "number": 33380,
+  "name": "1999 CC33",
+  "file": "ALCDEF_33380_1999_CC33.txt",
+  "num_lightcurves": 43,
+  "num_datapoints": 319,
+  "date_range": "2013-08-02 to 2019-06-17",
+  "num_sessions": 41,
+  "filters": [
+   "GR",
+   "R"
+  ]
+ },
+ {
+  "number": 34587,
+  "name": "2000 SA357",
+  "file": "ALCDEF_34587_2000_SA357.txt",
+  "num_lightcurves": 43,
+  "num_datapoints": 189,
+  "date_range": "2012-07-22 to 2012-10-03",
+  "num_sessions": 43,
+  "filters": [
+   "SG",
+   "R"
+  ]
+ },
+ {
+  "number": 3571,
+  "name": "Milanstefanik",
+  "file": "ALCDEF_3571_Milanstefanik.txt",
+  "num_lightcurves": 43,
+  "num_datapoints": 1649,
+  "date_range": "2016-09-01 to 2020-03-31",
+  "num_sessions": 28,
+  "filters": [
+   "C"
+  ]
+ },
+ {
+  "number": 3792,
+  "name": "Preston",
+  "file": "ALCDEF_3792_Preston.txt",
+  "num_lightcurves": 43,
+  "num_datapoints": 2366,
+  "date_range": "2016-01-20 to 2018-11-13",
+  "num_sessions": 38,
+  "filters": [
+   "C",
+   "GR"
+  ]
+ },
+ {
+  "number": 40717,
+  "name": "1999 SC2",
+  "file": "ALCDEF_40717_1999_SC2.txt",
+  "num_lightcurves": 43,
+  "num_datapoints": 810,
+  "date_range": "2010-06-03 to 2019-03-20",
+  "num_sessions": 40,
+  "filters": [
+   "GR",
+   "R"
+  ]
+ },
+ {
+  "number": 41476,
+  "name": "2000 PC14",
+  "file": "ALCDEF_41476_2000_PC14.txt",
+  "num_lightcurves": 43,
+  "num_datapoints": 119,
+  "date_range": "2013-08-02 to 2013-10-15",
+  "num_sessions": 43,
+  "filters": [
+   "R"
+  ]
+ },
+ {
+  "number": 42811,
+  "name": "1999 JN81",
+  "file": "ALCDEF_42811_1999_JN81.txt",
+  "num_lightcurves": 43,
+  "num_datapoints": 1727,
+  "date_range": "2007-07-16 to 2022-06-25",
+  "num_sessions": 40,
+  "filters": [
+   "C",
+   "GR",
+   "R"
+  ]
+ },
+ {
+  "number": 45636,
+  "name": "2000 EG12",
+  "file": "ALCDEF_45636_2000_EG12.txt",
+  "num_lightcurves": 43,
+  "num_datapoints": 1194,
+  "date_range": "2011-01-28 to 2018-08-22",
+  "num_sessions": 39,
+  "filters": [
+   "GR",
+   "R"
+  ]
+ },
+ {
+  "number": 4630,
+  "name": "Chaonis",
+  "file": "ALCDEF_4630_Chaonis.txt",
+  "num_lightcurves": 43,
+  "num_datapoints": 116,
+  "date_range": "2013-08-02 to 2013-11-12",
+  "num_sessions": 43,
+  "filters": [
+   "R"
+  ]
+ },
+ {
+  "number": 48707,
+  "name": "1996 KR1",
+  "file": "ALCDEF_48707_1996_KR1.txt",
+  "num_lightcurves": 43,
+  "num_datapoints": 1199,
+  "date_range": "2010-06-03 to 2014-03-20",
+  "num_sessions": 39,
+  "filters": [
+   "C",
+   "R"
+  ]
+ },
+ {
+  "number": 49574,
+  "name": "1999 CO119",
+  "file": "ALCDEF_49574_1999_CO119.txt",
+  "num_lightcurves": 43,
+  "num_datapoints": 792,
+  "date_range": "2013-08-29 to 2018-10-09",
+  "num_sessions": 41,
+  "filters": [
+   "GR",
+   "R"
+  ]
+ },
+ {
+  "number": 511137,
+  "name": "2013 XM24",
+  "file": "ALCDEF_511137_2013_XM24.txt",
+  "num_lightcurves": 43,
+  "num_datapoints": 1325,
+  "date_range": "2014-06-24 to 2014-07-03",
+  "num_sessions": 10,
+  "filters": [
+   "C"
+  ]
+ },
+ {
+  "number": 59530,
+  "name": "1999 JU24",
+  "file": "ALCDEF_59530_1999_JU24.txt",
+  "num_lightcurves": 43,
+  "num_datapoints": 183,
+  "date_range": "2012-07-22 to 2012-09-27",
+  "num_sessions": 43,
+  "filters": [
+   "SG",
+   "R"
+  ]
+ },
+ {
+  "number": 5968,
+  "name": "Trauger",
+  "file": "ALCDEF_5968_Trauger.txt",
+  "num_lightcurves": 43,
+  "num_datapoints": 1466,
+  "date_range": "2005-09-03 to 2023-06-06",
+  "num_sessions": 43,
+  "filters": [
+   "C"
+  ]
+ },
+ {
+  "number": 62379,
+  "name": "2000 SA155",
+  "file": "ALCDEF_62379_2000_SA155.txt",
+  "num_lightcurves": 43,
+  "num_datapoints": 92,
+  "date_range": "2010-07-09 to 2010-12-11",
+  "num_sessions": 43,
+  "filters": [
+   "R"
+  ]
+ },
+ {
+  "number": 6330,
+  "name": "Koen",
+  "file": "ALCDEF_6330_Koen.txt",
+  "num_lightcurves": 43,
+  "num_datapoints": 89,
+  "date_range": "2010-07-26 to 2013-12-23",
+  "num_sessions": 43,
+  "filters": [
+   "R"
+  ]
+ },
+ {
+  "number": 66958,
+  "name": "1999 XO23",
+  "file": "ALCDEF_66958_1999_XO23.txt",
+  "num_lightcurves": 43,
+  "num_datapoints": 102,
+  "date_range": "2013-08-07 to 2013-11-11",
+  "num_sessions": 43,
+  "filters": [
+   "R"
+  ]
+ },
+ {
+  "number": 6751,
+  "name": "van Genderen",
+  "file": "ALCDEF_6751_van_Genderen.txt",
+  "num_lightcurves": 43,
+  "num_datapoints": 573,
+  "date_range": "2010-07-21 to 2019-01-01",
+  "num_sessions": 42,
+  "filters": [
+   "GR",
+   "R"
+  ]
+ },
+ {
+  "number": 6859,
+  "name": "Datemasamune",
+  "file": "ALCDEF_6859_Datemasamune.txt",
+  "num_lightcurves": 43,
+  "num_datapoints": 1247,
+  "date_range": "2006-02-22 to 2024-07-17",
+  "num_sessions": 43,
+  "filters": [
+   "C"
+  ]
+ },
+ {
+  "number": 6901,
+  "name": "Roybishop",
+  "file": "ALCDEF_6901_Roybishop.txt",
+  "num_lightcurves": 43,
+  "num_datapoints": 2116,
+  "date_range": "2008-07-31 to 2022-11-23",
+  "num_sessions": 43,
+  "filters": [
+   "C"
+  ]
+ },
+ {
+  "number": 6950,
+  "name": "Simonek",
+  "file": "ALCDEF_6950_Simonek.txt",
+  "num_lightcurves": 43,
+  "num_datapoints": 1490,
+  "date_range": "2012-11-02 to 2025-02-25",
+  "num_sessions": 41,
+  "filters": [
+   "C",
+   "GR",
+   "R"
+  ]
+ },
+ {
+  "number": 7440,
+  "name": "Zavist",
+  "file": "ALCDEF_7440_Zavist.txt",
+  "num_lightcurves": 43,
+  "num_datapoints": 1223,
+  "date_range": "2010-07-25 to 2018-10-17",
+  "num_sessions": 42,
+  "filters": [
+   "GR",
+   "R"
+  ]
+ },
+ {
+  "number": 77780,
+  "name": "2001 QJ27",
+  "file": "ALCDEF_77780_2001_QJ27.txt",
+  "num_lightcurves": 43,
+  "num_datapoints": 1193,
+  "date_range": "2010-03-04 to 2018-09-19",
+  "num_sessions": 41,
+  "filters": [
+   "GR",
+   "R"
+  ]
+ },
+ {
+  "number": 8345,
+  "name": "Ulmerspatz",
+  "file": "ALCDEF_8345_Ulmerspatz.txt",
+  "num_lightcurves": 43,
+  "num_datapoints": 2904,
+  "date_range": "2011-11-24 to 2012-02-24",
+  "num_sessions": 34,
+  "filters": [
+   "C",
+   "R"
+  ]
+ },
+ {
+  "number": 8657,
+  "name": "Cedrus",
+  "file": "ALCDEF_8657_Cedrus.txt",
+  "num_lightcurves": 43,
+  "num_datapoints": 98,
+  "date_range": "2010-07-26 to 2012-03-03",
+  "num_sessions": 43,
+  "filters": [
+   "R"
+  ]
+ },
+ {
+  "number": 907,
+  "name": "Rhoda",
+  "file": "ALCDEF_907_Rhoda.txt",
+  "num_lightcurves": 43,
+  "num_datapoints": 3271,
+  "date_range": "2004-04-01 to 2023-06-19",
+  "num_sessions": 43,
+  "filters": [
+   "C",
+   "GR",
+   "R"
+  ]
+ },
+ {
+  "number": 93440,
+  "name": "2000 SX328",
+  "file": "ALCDEF_93440_2000_SX328.txt",
+  "num_lightcurves": 43,
+  "num_datapoints": 93,
+  "date_range": "2013-09-02 to 2013-11-12",
+  "num_sessions": 43,
+  "filters": [
+   "R"
+  ]
+ },
+ {
+  "number": 93707,
+  "name": "2000 VP31",
+  "file": "ALCDEF_93707_2000_VP31.txt",
+  "num_lightcurves": 43,
+  "num_datapoints": 254,
+  "date_range": "2010-02-12 to 2014-02-23",
+  "num_sessions": 43,
+  "filters": [
+   "SG",
+   "R"
+  ]
+ },
+ {
+  "number": 94599,
+  "name": "2001 VY79",
+  "file": "ALCDEF_94599_2001_VY79.txt",
+  "num_lightcurves": 43,
+  "num_datapoints": 731,
+  "date_range": "2010-03-05 to 2018-09-19",
+  "num_sessions": 38,
+  "filters": [
+   "GR",
+   "R"
+  ]
+ },
+ {
+  "number": 1019,
+  "name": "Strackea",
+  "file": "ALCDEF_1019_Strackea.txt",
+  "num_lightcurves": 42,
+  "num_datapoints": 1838,
+  "date_range": "2009-04-20 to 2019-02-26",
+  "num_sessions": 37,
+  "filters": [
+   "C",
+   "GR",
+   "I"
+  ]
+ },
+ {
+  "number": 108479,
+  "name": "2001 KE60",
+  "file": "ALCDEF_108479_2001_KE60.txt",
+  "num_lightcurves": 42,
+  "num_datapoints": 179,
+  "date_range": "2012-07-22 to 2013-01-09",
+  "num_sessions": 42,
+  "filters": [
+   "SG",
+   "R"
+  ]
+ },
+ {
+  "number": 108592,
+  "name": "2001 MC13",
+  "file": "ALCDEF_108592_2001_MC13.txt",
+  "num_lightcurves": 42,
+  "num_datapoints": 113,
+  "date_range": "2013-08-02 to 2014-01-01",
+  "num_sessions": 42,
+  "filters": [
+   "R"
+  ]
+ },
+ {
+  "number": 115359,
+  "name": "2003 SA250",
+  "file": "ALCDEF_115359_2003_SA250.txt",
+  "num_lightcurves": 42,
+  "num_datapoints": 132,
+  "date_range": "2010-02-02 to 2013-12-02",
+  "num_sessions": 42,
+  "filters": [
+   "R"
+  ]
+ },
+ {
+  "number": 121987,
+  "name": "2000 EU188",
+  "file": "ALCDEF_121987_2000_EU188.txt",
+  "num_lightcurves": 42,
+  "num_datapoints": 1010,
+  "date_range": "2013-04-30 to 2018-11-13",
+  "num_sessions": 39,
+  "filters": [
+   "GR",
+   "R"
+  ]
+ },
+ {
+  "number": 13567,
+  "name": "Urabe",
+  "file": "ALCDEF_13567_Urabe.txt",
+  "num_lightcurves": 42,
+  "num_datapoints": 1058,
+  "date_range": "2013-10-23 to 2018-10-17",
+  "num_sessions": 40,
+  "filters": [
+   "GR",
+   "R"
+  ]
+ },
+ {
+  "number": 13578,
+  "name": "1993 MK",
+  "file": "ALCDEF_13578_1993_MK.txt",
+  "num_lightcurves": 42,
+  "num_datapoints": 1818,
+  "date_range": "2007-12-29 to 2022-02-25",
+  "num_sessions": 41,
+  "filters": [
+   "C",
+   "GR",
+   "R"
+  ]
+ },
+ {
+  "number": 138215,
+  "name": "2000 EJ181",
+  "file": "ALCDEF_138215_2000_EJ181.txt",
+  "num_lightcurves": 42,
+  "num_datapoints": 171,
+  "date_range": "2010-07-19 to 2018-09-19",
+  "num_sessions": 41,
+  "filters": [
+   "GR",
+   "R"
+  ]
+ },
+ {
+  "number": 16457,
+  "name": "1989 VF",
+  "file": "ALCDEF_16457_1989_VF.txt",
+  "num_lightcurves": 42,
+  "num_datapoints": 794,
+  "date_range": "2010-07-26 to 2019-07-17",
+  "num_sessions": 40,
+  "filters": [
+   "GR",
+   "R"
+  ]
+ },
+ {
+  "number": 166646,
+  "name": "2002 TJ4",
+  "file": "ALCDEF_166646_2002_TJ4.txt",
+  "num_lightcurves": 42,
+  "num_datapoints": 93,
+  "date_range": "2013-08-02 to 2013-10-13",
+  "num_sessions": 42,
+  "filters": [
+   "R"
+  ]
+ },
+ {
+  "number": 20031,
+  "name": "1992 OO",
+  "file": "ALCDEF_20031_1992_OO.txt",
+  "num_lightcurves": 42,
+  "num_datapoints": 527,
+  "date_range": "2012-12-11 to 2019-01-19",
+  "num_sessions": 42,
+  "filters": [
+   "GR",
+   "R"
+  ]
+ },
+ {
+  "number": 20470,
+  "name": "1999 NZ5",
+  "file": "ALCDEF_20470_1999_NZ5.txt",
+  "num_lightcurves": 42,
+  "num_datapoints": 1279,
+  "date_range": "2013-03-03 to 2018-10-17",
+  "num_sessions": 41,
+  "filters": [
+   "C",
+   "GR",
+   "R"
+  ]
+ },
+ {
+  "number": 21556,
+  "name": "Christineli",
+  "file": "ALCDEF_21556_Christineli.txt",
+  "num_lightcurves": 42,
+  "num_datapoints": 422,
+  "date_range": "2013-07-30 to 2019-01-17",
+  "num_sessions": 40,
+  "filters": [
+   "GR",
+   "R"
+  ]
+ },
+ {
+  "number": 22087,
+  "name": "2000 AZ175",
+  "file": "ALCDEF_22087_2000_AZ175.txt",
+  "num_lightcurves": 42,
+  "num_datapoints": 1128,
+  "date_range": "2010-02-24 to 2018-12-10",
+  "num_sessions": 38,
+  "filters": [
+   "GR",
+   "R"
+  ]
+ },
+ {
+  "number": 22769,
+  "name": "Aurelianora",
+  "file": "ALCDEF_22769_Aurelianora.txt",
+  "num_lightcurves": 42,
+  "num_datapoints": 98,
+  "date_range": "2013-08-29 to 2013-11-11",
+  "num_sessions": 42,
+  "filters": [
+   "R"
+  ]
+ },
+ {
+  "number": 2333,
+  "name": "Porthan",
+  "file": "ALCDEF_2333_Porthan.txt",
+  "num_lightcurves": 42,
+  "num_datapoints": 1110,
+  "date_range": "2010-07-26 to 2018-09-19",
+  "num_sessions": 39,
+  "filters": [
+   "C",
+   "GR",
+   "R"
+  ]
+ },
+ {
+  "number": 23438,
+  "name": "1984 SZ5",
+  "file": "ALCDEF_23438_1984_SZ5.txt",
+  "num_lightcurves": 42,
+  "num_datapoints": 156,
+  "date_range": "2012-07-22 to 2013-01-21",
+  "num_sessions": 42,
+  "filters": [
+   "SG",
+   "R"
+  ]
+ },
+ {
+  "number": 246917,
+  "name": "1998 UR18",
+  "file": "ALCDEF_246917_1998_UR18.txt",
+  "num_lightcurves": 42,
+  "num_datapoints": 84,
+  "date_range": "2010-08-14 to 2011-01-24",
+  "num_sessions": 42,
+  "filters": [
+   "R"
+  ]
+ },
+ {
+  "number": 2531,
+  "name": "Cambridge",
+  "file": "ALCDEF_2531_Cambridge.txt",
+  "num_lightcurves": 42,
+  "num_datapoints": 78,
+  "date_range": "2009-11-02 to 2010-07-02",
+  "num_sessions": 42,
+  "filters": [
+   "R"
+  ]
+ },
+ {
+  "number": 27182,
+  "name": "1999 CL3",
+  "file": "ALCDEF_27182_1999_CL3.txt",
+  "num_lightcurves": 42,
+  "num_datapoints": 812,
+  "date_range": "2010-01-08 to 2018-11-13",
+  "num_sessions": 39,
+  "filters": [
+   "GR",
+   "R"
+  ]
+ },
+ {
+  "number": 28358,
+  "name": "1999 FW48",
+  "file": "ALCDEF_28358_1999_FW48.txt",
+  "num_lightcurves": 42,
+  "num_datapoints": 176,
+  "date_range": "2012-07-22 to 2012-10-03",
+  "num_sessions": 42,
+  "filters": [
+   "SG",
+   "R"
+  ]
+ },
+ {
+  "number": 2895,
+  "name": "Memnon",
+  "file": "ALCDEF_2895_Memnon.txt",
+  "num_lightcurves": 42,
+  "num_datapoints": 1794,
+  "date_range": "2015-01-03 to 2020-05-17",
+  "num_sessions": 30,
+  "filters": [
+   "C",
+   "V"
+  ]
+ },
+ {
+  "number": 29956,
+  "name": "1999 JF91",
+  "file": "ALCDEF_29956_1999_JF91.txt",
+  "num_lightcurves": 42,
+  "num_datapoints": 756,
+  "date_range": "2010-03-05 to 2018-11-13",
+  "num_sessions": 39,
+  "filters": [
+   "GR",
+   "R"
+  ]
+ },
+ {
+  "number": 3063,
+  "name": "Makhaon",
+  "file": "ALCDEF_3063_Makhaon.txt",
+  "num_lightcurves": 42,
+  "num_datapoints": 2113,
+  "date_range": "2013-01-20 to 2021-10-13",
+  "num_sessions": 30,
+  "filters": [
+   "C"
+  ]
+ },
+ {
+  "number": 31098,
+  "name": "Frankhill",
+  "file": "ALCDEF_31098_Frankhill.txt",
+  "num_lightcurves": 42,
+  "num_datapoints": 484,
+  "date_range": "2018-07-04 to 2018-07-24",
+  "num_sessions": 11,
+  "filters": [
+   "C"
+  ]
+ },
+ {
+  "number": 32435,
+  "name": "2000 RZ96",
+  "file": "ALCDEF_32435_2000_RZ96.txt",
+  "num_lightcurves": 42,
+  "num_datapoints": 442,
+  "date_range": "2013-07-31 to 2019-02-27",
+  "num_sessions": 42,
+  "filters": [
+   "GR",
+   "R"
+  ]
+ },
+ {
+  "number": 32534,
+  "name": "2001 PL37",
+  "file": "ALCDEF_32534_2001_PL37.txt",
+  "num_lightcurves": 42,
+  "num_datapoints": 964,
+  "date_range": "2013-08-02 to 2018-08-15",
+  "num_sessions": 39,
+  "filters": [
+   "GR",
+   "R"
+  ]
+ },
+ {
+  "number": 33619,
+  "name": "Dominickrowan",
+  "file": "ALCDEF_33619_Dominickrowan.txt",
+  "num_lightcurves": 42,
+  "num_datapoints": 94,
+  "date_range": "2013-08-28 to 2013-11-04",
+  "num_sessions": 42,
+  "filters": [
+   "R"
+  ]
+ },
+ {
+  "number": 33778,
+  "name": "1999 RO160",
+  "file": "ALCDEF_33778_1999_RO160.txt",
+  "num_lightcurves": 42,
+  "num_datapoints": 1040,
+  "date_range": "2010-07-26 to 2019-07-17",
+  "num_sessions": 38,
+  "filters": [
+   "GR",
+   "R"
+  ]
+ },
+ {
+  "number": 34546,
+  "name": "2000 SG234",
+  "file": "ALCDEF_34546_2000_SG234.txt",
+  "num_lightcurves": 42,
+  "num_datapoints": 1255,
+  "date_range": "2010-04-08 to 2018-10-17",
+  "num_sessions": 41,
+  "filters": [
+   "GR",
+   "R"
+  ]
+ },
+ {
+  "number": 3549,
+  "name": "Hapke",
+  "file": "ALCDEF_3549_Hapke.txt",
+  "num_lightcurves": 42,
+  "num_datapoints": 1337,
+  "date_range": "2012-08-24 to 2019-02-27",
+  "num_sessions": 37,
+  "filters": [
+   "C",
+   "GR",
+   "R",
+   "SG"
+  ]
+ },
+ {
+  "number": 3645,
+  "name": "Fabini",
+  "file": "ALCDEF_3645_Fabini.txt",
+  "num_lightcurves": 42,
+  "num_datapoints": 966,
+  "date_range": "2012-07-04 to 2019-02-27",
+  "num_sessions": 41,
+  "filters": [
+   "GR",
+   "R"
+  ]
+ },
+ {
+  "number": 375,
+  "name": "Ursula",
+  "file": "ALCDEF_375_Ursula.txt",
+  "num_lightcurves": 42,
+  "num_datapoints": 6215,
+  "date_range": "2016-12-11 to 2019-06-17",
+  "num_sessions": 32,
+  "filters": [
+   "C",
+   "GR"
+  ]
+ },
+ {
+  "number": 3990,
+  "name": "Heimdal",
+  "file": "ALCDEF_3990_Heimdal.txt",
+  "num_lightcurves": 42,
+  "num_datapoints": 2040,
+  "date_range": "2021-01-19 to 2021-03-31",
+  "num_sessions": 18,
+  "filters": [
+   "C"
+  ]
+ },
+ {
+  "number": 40903,
+  "name": "1999 TB144",
+  "file": "ALCDEF_40903_1999_TB144.txt",
+  "num_lightcurves": 42,
+  "num_datapoints": 882,
+  "date_range": "2013-10-01 to 2018-12-10",
+  "num_sessions": 39,
+  "filters": [
+   "GR",
+   "R"
+  ]
+ },
+ {
+  "number": 42915,
+  "name": "1999 RD232",
+  "file": "ALCDEF_42915_1999_RD232.txt",
+  "num_lightcurves": 42,
+  "num_datapoints": 92,
+  "date_range": "2013-07-31 to 2013-11-11",
+  "num_sessions": 42,
+  "filters": [
+   "R"
+  ]
+ },
+ {
+  "number": 43712,
+  "name": "5054 T-2",
+  "file": "ALCDEF_43712_5054_T-2.txt",
+  "num_lightcurves": 42,
+  "num_datapoints": 638,
+  "date_range": "2013-07-30 to 2019-02-01",
+  "num_sessions": 41,
+  "filters": [
+   "GR",
+   "R"
+  ]
+ },
+ {
+  "number": 464798,
+  "name": "2004 JX20",
+  "file": "ALCDEF_464798_2004_JX20.txt",
+  "num_lightcurves": 42,
+  "num_datapoints": 2954,
+  "date_range": "2010-06-01 to 2022-06-01",
+  "num_sessions": 25,
+  "filters": [
+   "C"
+  ]
+ },
+ {
+  "number": 49758,
+  "name": "1999 VY188",
+  "file": "ALCDEF_49758_1999_VY188.txt",
+  "num_lightcurves": 42,
+  "num_datapoints": 103,
+  "date_range": "2013-09-04 to 2013-11-12",
+  "num_sessions": 42,
+  "filters": [
+   "R"
+  ]
+ }
+]

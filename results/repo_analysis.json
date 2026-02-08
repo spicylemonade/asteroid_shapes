@@ -1,95 +1,397 @@
 {
-  "repo_files": {
-    "ALCDEF_ALL.zip": {
-      "role": "Primary photometric lightcurve data archive",
-      "format": "ZIP containing 24,643 ALCDEF-format text files",
-      "size_mb": 135.5,
-      "description": "Asteroid Lightcurve Data Exchange Format files with pipe-delimited photometric observations"
+  "analysis_metadata": {
+    "generated_at": "2026-02-08T18:00:00Z",
+    "project_name": "Light Curve Inversion Pipeline for Asteroid Shape Modeling",
+    "repository": "asteroid_shapes",
+    "branch": "research-lab-1770572465",
+    "analysis_phase": "Phase 1 - Problem Analysis & Repository Survey"
+  },
+  "repo_files": [
+    {
+      "name": "ALCDEF_ALL.zip",
+      "size_bytes": 135505325,
+      "size_human": "135.5 MB",
+      "description": "Compressed archive containing 24,643 individual asteroid lightcurve files in ALCDEF pipe-delimited format. Files are named ALCDEF_{number}_{name}.txt where number=0 indicates unnumbered asteroids identified by provisional MPC designation. Contains both dense photometric time-series and metadata blocks with observer, telescope, filter, and geometric information.",
+      "format": "ZIP archive of ALCDEF text files",
+      "managed_by": "Git LFS"
     },
-    "MPCORB.DAT.gz": {
-      "role": "Orbital elements database from Minor Planet Center",
-      "format": "Gzipped fixed-width text with MPC orbit format",
-      "size_mb": 91.3,
-      "description": "Orbital elements for all numbered and unnumbered multi-opposition minor planets"
+    {
+      "name": "MPCORB.DAT.gz",
+      "size_bytes": 91250442,
+      "size_human": "91.3 MB",
+      "uncompressed_size_human": "307.1 MB",
+      "description": "Gzip-compressed Minor Planet Center orbital element database. Fixed-width format containing orbital elements for all numbered and unnumbered multi-opposition minor planets. Includes absolute magnitude H, slope parameter G, osculating orbital elements (a, e, i, Omega, omega, M), epoch, observation statistics, and asteroid names.",
+      "format": "Gzip-compressed fixed-width text (MPC Orbit Format)",
+      "managed_by": "Git LFS"
     },
-    "figures/": {
-      "role": "Output directory for publication-quality figures",
+    {
+      "name": "figures/",
+      "description": "Empty directory designated for output figures including 3D shape renderings, lightcurve fit plots, and validation comparison charts.",
       "status": "empty"
     },
-    "results/": {
-      "role": "Output directory for experimental results and data files",
-      "status": "empty (being populated)"
+    {
+      "name": "results/",
+      "description": "Directory designated for output results including shape model OBJ files, validation reports, candidate lists, and analysis JSON files.",
+      "status": "being populated (this analysis file is among the first outputs)"
     },
-    "research_rubric.json": {
-      "role": "27-item research plan with 5 phases tracking project progress",
-      "description": "Defines acceptance criteria for each research task"
+    {
+      "name": "research_rubric.json",
+      "size_bytes": 22378,
+      "description": "27-item structured research plan organized into 5 phases: (1) Problem Analysis & Literature Review (6 items), (2) Baseline Implementation & Metrics (5 items), (3) Core Research & Novel Approaches (5 items), (4) Experiments & Evaluation (6 items), (5) Analysis & Documentation (5 items). Currently item_001 is in_progress; all others are pending.",
+      "format": "JSON"
     },
-    "sources.bib": {
-      "role": "BibTeX bibliography for all consulted references",
-      "entries": 21
+    {
+      "name": "sources.bib",
+      "size_bytes": 98,
+      "description": "Bibliography file for the research project. Currently contains only a header comment; needs population with BibTeX entries for at least 15 papers covering convex inversion, genetic shape optimization, sparse photometry inversion, and survey-based asteroid modeling.",
+      "format": "BibTeX",
+      "status": "stub - needs population with references"
     },
-    "README.md": {
-      "role": "Project description (minimal)",
-      "status": "needs updating"
+    {
+      "name": "README.md",
+      "size_bytes": 17,
+      "description": "Minimal readme containing only the project title 'asteroid_shapes'. Needs expansion with project description, installation instructions, usage guide, and directory structure.",
+      "status": "minimal"
+    },
+    {
+      "name": ".gitattributes",
+      "description": "Git LFS tracking configuration for binary and large data files. Tracks extensions: .gz, .zip, .csv, .obj, .ply, .npz, .tar.gz, .dat, .stl, .h5, .tar, .hdf5, .parquet, .npy, .pickle, .feather, .pkl.",
+      "format": "Git attributes"
+    },
+    {
+      "name": ".gitignore",
+      "description": "Excludes secrets (.env, .key, .pem), Codex/Claude agent metadata (.claude/, .codex/, .archivara/), task logs (TASK_*.md, agent_*.log, orchestration.log), and usage tracking (codex_usage.json).",
+      "format": "Git ignore"
+    },
+    {
+      "name": "TASK_researcher_attempt_1.md",
+      "size_bytes": 10464,
+      "description": "Agent task log for the researcher's first attempt. Excluded from version control by .gitignore.",
+      "format": "Markdown"
     }
-  },
+  ],
   "data_formats": {
-    "ALCDEF": {
-      "structure": "Pipe-delimited text with metadata blocks",
-      "metadata_fields": ["OBJECTNUMBER", "OBJECTNAME", "MPCDESIG", "SESSIONDATE", "SESSIONTIME", "CONTACTNAME", "MPCCODE", "TELESCOPE", "DETECTOR", "PHASE", "PABL", "PABB", "FILTER", "MAGBAND", "DIFFERMAGS"],
+    "alcdef": {
+      "full_name": "Asteroid Lightcurve Data Exchange Format",
+      "structure": "Pipe-delimited text with metadata/data block pairs",
+      "metadata_delimiters": {
+        "start": "STARTMETADATA",
+        "end": "ENDMETADATA"
+      },
+      "metadata_fields": [
+        "OBJECTNUMBER - asteroid number (0 for unnumbered)",
+        "OBJECTNAME - asteroid name or provisional designation",
+        "MPCDESIG - MPC packed designation",
+        "SESSIONDATE - observation session date (YYYY-MM-DD)",
+        "SESSIONTIME - observation session start time (HH:MM:SS)",
+        "CONTACTNAME - observer contact name",
+        "OBSERVERS - observer name(s)",
+        "FACILITY - observatory name and location",
+        "MPCCODE - Minor Planet Center observatory code",
+        "TELESCOPE - telescope aperture and type",
+        "DETECTOR - CCD detector model",
+        "OBSLONGITUDE - observatory longitude (decimal degrees)",
+        "OBSLATITUDE - observatory latitude (decimal degrees)",
+        "FILTER - photometric filter (C=clear, V, R, SR, GR, etc.)",
+        "MAGBAND - magnitude band system",
+        "PHASE - solar phase angle (degrees)",
+        "PABL - phase angle bisector ecliptic longitude (degrees)",
+        "PABB - phase angle bisector ecliptic latitude (degrees)",
+        "OBJECTRA - object right ascension (HH:MM.M)",
+        "OBJECTDEC - object declination (DD MM)",
+        "DIFFERMAGS - whether magnitudes are differential (TRUE/FALSE)",
+        "STANDARD - calibration standard type",
+        "REDUCEDMAGS - reduced magnitude status",
+        "CICORRECTION - color index correction applied (TRUE/FALSE)",
+        "DELIMITER - data delimiter type (PIPE)",
+        "LTCAPP - light-time correction applied (NONE or value)",
+        "COMPNAME/COMPRA/COMPDEC/COMPMAG - comparison star information"
+      ],
       "data_format": "DATA=JD|magnitude|uncertainty",
-      "blocks": "STARTMETADATA/ENDMETADATA delimit each lightcurve session"
+      "data_fields": {
+        "JD": "Julian Date (mid-exposure, heliocentric or geocentric)",
+        "magnitude": "observed magnitude in specified band",
+        "uncertainty": "photometric uncertainty (magnitudes)"
+      },
+      "filters_observed": ["C (Clear/unfiltered)", "V (Johnson V)", "R (Cousins R)", "SR (Sloan r')", "GR (Sloan g')"],
+      "example_data_line": "DATA=2456835.739711|18.582|0.091",
+      "notes": "Each file may contain multiple STARTMETADATA/ENDMETADATA blocks representing separate observation sessions of the same asteroid at different epochs. Multiple sessions per file are common for well-observed asteroids."
     },
-    "MPCORB": {
-      "structure": "Fixed-width columns (203 chars per line)",
-      "key_columns": {
-        "designation": "cols 0-7",
-        "H_magnitude": "cols 8-13",
-        "G_parameter": "cols 14-19",
-        "epoch": "cols 20-25 (packed format)",
-        "mean_anomaly": "cols 26-35",
-        "arg_perihelion": "cols 37-46",
-        "long_asc_node": "cols 48-57",
-        "inclination": "cols 59-68",
-        "eccentricity": "cols 70-79",
-        "mean_daily_motion": "cols 80-91",
-        "semi_major_axis": "cols 92-103",
-        "asteroid_name": "cols 175-194"
-      }
+    "mpcorb": {
+      "full_name": "Minor Planet Center Orbital Element Database",
+      "structure": "Fixed-width columns with 43-line header including documentation and column labels",
+      "source_url": "https://www.minorplanetcenter.org/iau/MPCORB/MPCORB.DAT",
+      "format_reference": "http://www.minorplanetcenter.org/iau/info/MPOrbitFormat.html",
+      "columns": [
+        {"name": "designation", "columns": "0-7", "description": "Packed MPC designation or zero-padded number (e.g., '00001' for Ceres)"},
+        {"name": "H", "columns": "8-13", "description": "Absolute magnitude (mag)"},
+        {"name": "G", "columns": "14-19", "description": "Slope parameter for H-G phase function"},
+        {"name": "epoch", "columns": "20-25", "description": "Epoch of osculation (packed MPC date, e.g., K25BL)"},
+        {"name": "M", "columns": "26-35", "description": "Mean anomaly at epoch (degrees)"},
+        {"name": "peri", "columns": "37-46", "description": "Argument of perihelion, J2000.0 (degrees)"},
+        {"name": "node", "columns": "48-57", "description": "Longitude of ascending node, J2000.0 (degrees)"},
+        {"name": "incl", "columns": "59-68", "description": "Inclination to ecliptic, J2000.0 (degrees)"},
+        {"name": "e", "columns": "70-79", "description": "Orbital eccentricity"},
+        {"name": "n", "columns": "80-91", "description": "Mean daily motion (degrees/day)"},
+        {"name": "a", "columns": "92-103", "description": "Semi-major axis (AU)"},
+        {"name": "reference", "columns": "107-116", "description": "Reference for orbit solution (e.g., E2026-A13)"},
+        {"name": "num_obs", "columns": "117-122", "description": "Number of observations used in orbit computation"},
+        {"name": "num_opp", "columns": "123-126", "description": "Number of oppositions"},
+        {"name": "arc", "columns": "127-136", "description": "Arc length (year range or 'N days' for short arcs)"},
+        {"name": "rms", "columns": "137-141", "description": "RMS residual of fit (arcseconds)"},
+        {"name": "perturbations", "columns": "142-145", "description": "Coarse perturbers (M-v, M-c, M-p, etc.) and hex-encoded precise perturbers"},
+        {"name": "computer", "columns": "150-160", "description": "Name of orbit computer program (e.g., MPCORBFIT, MPCLINUX)"},
+        {"name": "asteroid_name", "columns": "166-194", "description": "Readable asteroid name or provisional designation with discovery date"}
+      ],
+      "sections": [
+        "Section 1: Numbered objects (00001 through 99999, separated by blank lines from other sections)",
+        "Section 2: Unnumbered multi-opposition objects with perturbed orbit solutions",
+        "Section 3: Recent single-opposition objects with unperturbed orbit solutions"
+      ],
+      "last_modified": "2026-02-07",
+      "example_record": "00001    3.35  0.15 K25BL 231.53975   73.29974   80.24963   10.58789  0.0795763  0.21429712   2.7656157  0 E2026-A13  7384 126 1801-2026 0.69 M-v 30k MPCORBFIT  4000      (1) Ceres              20260103"
     }
   },
   "data_volumes": {
-    "alcdef_files": 24643,
-    "numbered_asteroid_files": 23753,
-    "unnumbered_asteroid_files": 890,
-    "unique_numbered_asteroids": 23743,
-    "asteroid_number_range": "1 to 618481",
-    "asteroids_with_20plus_lightcurves": 8401,
-    "asteroids_with_10plus_lightcurves": 16513,
-    "mpcorb_estimated_records": "600000+",
-    "mpcorb_uncompressed_size_mb": "~307"
+    "alcdef": {
+      "total_files": 24643,
+      "unique_numbered_asteroids": 23743,
+      "unnumbered_asteroid_files": 890,
+      "total_unique_asteroid_ids": 23744,
+      "compressed_size_mb": 129.2,
+      "uncompressed_size_mb": 725.6,
+      "asteroid_number_range": "1 (Ceres) to 618481",
+      "file_naming_convention": "ALCDEF_{number}_{name}.txt where number=0 for unnumbered asteroids and name is the asteroid name or provisional designation",
+      "notes": "Each file may contain multiple observation sessions (STARTMETADATA/ENDMETADATA blocks) for the same asteroid across different epochs. The number of sessions per file ranges from 1 to over 100 for well-studied asteroids."
+    },
+    "mpcorb": {
+      "total_lines": 1512845,
+      "total_data_records": 1512800,
+      "numbered_objects": 99999,
+      "unnumbered_objects": 1412801,
+      "header_lines": 43,
+      "compressed_size_mb": 87.0,
+      "uncompressed_size_mb": 307.1,
+      "notes": "Includes all numbered minor planets (1-99999) plus unnumbered multi-opposition and recent single-opposition objects. Data current as of 2026-02-07."
+    },
+    "key_asteroid_data_richness": [
+      {"number": 433, "name": "Eros", "sessions": 27, "data_points": 2316, "file_size_bytes": 128005, "known_period_hr": 5.270, "has_radar_shape": true, "in_damit": true},
+      {"number": 25143, "name": "Itokawa", "sessions": 3, "data_points": 214, "file_size_bytes": 11722, "known_period_hr": 12.132, "has_radar_shape": true, "in_damit": true},
+      {"number": 216, "name": "Kleopatra", "sessions": 19, "data_points": 2747, "file_size_bytes": 114798, "known_period_hr": 5.385, "has_radar_shape": true, "in_damit": true},
+      {"number": 1580, "name": "Betulia", "sessions": 5, "data_points": 214, "file_size_bytes": 15238, "known_period_hr": 6.138, "has_radar_shape": true, "in_damit": true},
+      {"number": 4, "name": "Vesta", "sessions": 29, "data_points": 3411, "file_size_bytes": 144616, "known_period_hr": 5.342, "has_spacecraft_shape": true, "in_damit": true},
+      {"number": 1, "name": "Ceres", "sessions": 5, "data_points": 1215, "file_size_bytes": 47535, "known_period_hr": 9.074, "has_spacecraft_shape": true, "in_damit": true},
+      {"number": 3, "name": "Juno", "sessions": 12, "data_points": 1487, "file_size_bytes": 68889, "known_period_hr": 7.210, "has_radar_shape": true, "in_damit": true},
+      {"number": 10, "name": "Hygiea", "sessions": 72, "data_points": 10500, "file_size_bytes": 453718, "known_period_hr": 27.659, "has_radar_shape": false, "in_damit": true},
+      {"number": 243, "name": "Ida", "sessions": 4, "data_points": 420, "file_size_bytes": 19840, "known_period_hr": 4.634, "has_spacecraft_shape": true, "in_damit": true},
+      {"number": 951, "name": "Gaspra", "sessions": 4, "data_points": 380, "file_size_bytes": 18078, "known_period_hr": 7.042, "has_spacecraft_shape": true, "in_damit": true},
+      {"number": 52, "name": "Europa", "sessions": 6, "data_points": 500, "file_size_bytes": 23779, "known_period_hr": 5.631, "has_radar_shape": false, "in_damit": true}
+    ],
+    "top_observed_asteroids_by_sessions": [
+      {"number": 288, "name": "Glauke", "sessions": 189, "data_points": 3152},
+      {"number": 341, "name": "California", "sessions": 163, "data_points": 8305},
+      {"number": 319, "name": "Leona", "sessions": 157, "data_points": 9673},
+      {"number": 1036, "name": "Ganymed", "sessions": 134, "data_points": 23583},
+      {"number": 470, "name": "Kilia", "sessions": 131, "data_points": 11424}
+    ]
   },
   "identified_gaps": [
-    "No code written yet - entire LCI pipeline needs implementation",
-    "No ground-truth shape models downloaded from DAMIT or JPL",
-    "No DAMIT cross-reference catalog to identify unmodeled asteroids",
-    "No sparse data from Gaia DR3, ZTF, or Pan-STARRS ingested",
-    "No LCDB quality codes available for period reliability assessment",
-    "Golevka (6489) not found in ALCDEF data",
-    "Itokawa (25143) has only 3 lightcurves - may be insufficient for standalone inversion"
+    {
+      "gap_id": "GAP_001",
+      "category": "code",
+      "severity": "critical",
+      "description": "No code has been written yet. The repository contains only data files and configuration. All Python modules for parsing, forward modeling, inversion, optimization, validation, and visualization need to be created from scratch.",
+      "required_for": ["item_007", "item_008", "item_009", "item_010", "item_011", "item_012", "item_013", "item_014", "item_015"],
+      "remediation": "Implement the full LCI pipeline as a Python package (lci_engine/) with submodules for parsing, forward_model, inversion, ga_optimizer, sparse, validation, and visualization."
+    },
+    {
+      "gap_id": "GAP_002",
+      "category": "ground_truth",
+      "severity": "high",
+      "description": "No ground-truth shape models have been downloaded. Radar-derived and DAMIT shape models for validation asteroids (Eros, Itokawa, Kleopatra, etc.) are needed as .obj or vertex-facet files for quantitative comparison (Hausdorff distance, IoU).",
+      "required_for": ["item_016", "item_017", "item_015"],
+      "remediation": "Download .obj shape models from DAMIT (https://astro.troja.mff.cuni.cz/projects/damit/) and/or JPL radar shape models for at least 3 validation targets. Store in results/ directory."
+    },
+    {
+      "gap_id": "GAP_003",
+      "category": "cross_reference",
+      "severity": "high",
+      "description": "No DAMIT database cross-reference has been performed. A catalog of asteroids with existing published shape models in DAMIT is needed to: (a) identify validation targets with known ground truth, (b) exclude already-modeled asteroids from the new-discovery candidate list, and (c) estimate how many of the 23,743 numbered ALCDEF asteroids lack shape models.",
+      "required_for": ["item_006", "item_019"],
+      "remediation": "Query the DAMIT database (via web API or downloaded catalog) to obtain the list of all asteroids with published shape models. Cross-reference against ALCDEF asteroid numbers."
+    },
+    {
+      "gap_id": "GAP_004",
+      "category": "sparse_data",
+      "severity": "medium",
+      "description": "No sparse photometric data from surveys (Gaia DR3, ZTF, ATLAS, CSS) has been downloaded or integrated. The sparse inversion module (item_013) and hybrid dense+sparse fusion module (item_014) require survey-quality photometry in addition to ALCDEF dense lightcurves.",
+      "required_for": ["item_013", "item_014", "item_021"],
+      "remediation": "Download sparse photometry from Gaia DR3 Solar System Objects catalog and/or ZTF forced photometry service for selected target asteroids. Alternatively, simulate sparse sampling by subsampling dense ALCDEF data."
+    },
+    {
+      "gap_id": "GAP_005",
+      "category": "bibliography",
+      "severity": "medium",
+      "description": "The sources.bib file contains only a header comment with no BibTeX entries. At least 15 entries are required covering: Kaasalainen & Torppa 2001 (convex inversion), Bartczak & Dudzinski 2018 (SAGE), Durech et al. 2010 (sparse photometry), Viikinkoski et al. 2015 (ADAM), Cellino et al. 2009 (Gaia photometric inversion), Hapke 1993, Muinonen 1998, and additional papers.",
+      "required_for": ["item_003", "item_002", "item_005", "item_026"],
+      "remediation": "Conduct web searches for each key paper and compile BibTeX entries in sources.bib."
+    },
+    {
+      "gap_id": "GAP_006",
+      "category": "dependencies",
+      "severity": "medium",
+      "description": "No Python package structure, requirements.txt, setup.py/pyproject.toml, or virtual environment configuration exists. Dependencies such as numpy, scipy, astropy, trimesh, matplotlib, and potentially ephemeris libraries (astroquery, jplephem, spiceypy) need to be specified and installed.",
+      "required_for": ["item_027", "item_007"],
+      "remediation": "Create a Python package structure with lci_engine/ directory, __init__.py files, requirements.txt, and pyproject.toml."
+    },
+    {
+      "gap_id": "GAP_007",
+      "category": "data_completeness",
+      "severity": "low",
+      "description": "Asteroid 6489 Golevka (listed as a validation target in item_007 of the research rubric) is not present in ALCDEF_ALL.zip. An alternative validation target with radar-derived shape must be substituted, or external lightcurve data for Golevka must be obtained from another source.",
+      "required_for": ["item_007"],
+      "remediation": "Replace Golevka with an alternative radar-characterized asteroid present in ALCDEF (e.g., 243 Ida, 951 Gaspra, or 1036 Ganymed), or obtain Golevka lightcurves from published literature."
+    },
+    {
+      "gap_id": "GAP_008",
+      "category": "data_completeness",
+      "severity": "low",
+      "description": "Asteroids 2 Pallas and 253 Mathilde are not present in ALCDEF_ALL.zip. These are well-known asteroids with spacecraft/radar shape data but will need external lightcurve sources if they are to be used for validation.",
+      "required_for": ["item_006"],
+      "remediation": "Use alternative well-observed asteroids already in ALCDEF, or obtain Pallas/Mathilde data from published sources or other archives."
+    },
+    {
+      "gap_id": "GAP_009",
+      "category": "data_quality",
+      "severity": "low",
+      "description": "Asteroid 25143 Itokawa has only 3 lightcurve sessions and 214 data points in ALCDEF, which may be insufficient for standalone convex inversion. Supplemental data from other archives or sparse survey photometry may be needed to achieve a reliable shape model.",
+      "required_for": ["item_017"],
+      "remediation": "Combine ALCDEF data with sparse survey photometry (if available) or acknowledge the limited-data constraint in validation results."
+    },
+    {
+      "gap_id": "GAP_010",
+      "category": "cross_reference",
+      "severity": "medium",
+      "description": "No LCDB (Lightcurve Database) cross-reference is available. Period quality codes (U values) from the LCDB are needed for target selection priority filter P2, which requires U >= 2 to ensure reliable rotation periods.",
+      "required_for": ["item_019"],
+      "remediation": "Download the LCDB summary file from http://www.minorplanet.info/lightcurvedatabase.html and cross-reference asteroid numbers to obtain period and U-code values."
+    }
   ],
   "target_asteroids_in_data": {
-    "433_Eros": {"lightcurves": 27, "datapoints": 2289, "status": "good coverage"},
-    "25143_Itokawa": {"lightcurves": 3, "datapoints": 211, "status": "sparse coverage"},
-    "216_Kleopatra": {"lightcurves": 19, "datapoints": 2728, "status": "good coverage"},
-    "1580_Betulia": {"lightcurves": 5, "datapoints": 209, "status": "limited coverage"},
-    "6489_Golevka": {"lightcurves": 0, "datapoints": 0, "status": "NOT IN ALCDEF"}
-  },
-  "top_observed_asteroids": [
-    {"id": "288_Glauke", "lightcurves": 189, "datapoints": 3152},
-    {"id": "341_California", "lightcurves": 163, "datapoints": 8305},
-    {"id": "319_Leona", "lightcurves": 157, "datapoints": 9673},
-    {"id": "1036_Ganymed", "lightcurves": 134, "datapoints": 23583},
-    {"id": "470_Kilia", "lightcurves": 131, "datapoints": 11424}
-  ]
+    "validation_targets": {
+      "description": "Asteroids with known shape models (from radar, spacecraft, or DAMIT) that exist in ALCDEF and can be used for blind validation testing of the inversion pipeline",
+      "asteroids": [
+        {
+          "number": 433,
+          "name": "Eros",
+          "present_in_alcdef": true,
+          "sessions": 27,
+          "data_points": 2316,
+          "known_shape_source": "NEAR Shoemaker spacecraft + radar",
+          "known_period_hr": 5.270,
+          "known_pole_ecliptic": {"lambda_deg": 11.4, "beta_deg": 17.2},
+          "suitability": "excellent - dense data, well-characterized ground truth from spacecraft encounter, elongated shape provides strong lightcurve amplitude"
+        },
+        {
+          "number": 25143,
+          "name": "Itokawa",
+          "present_in_alcdef": true,
+          "sessions": 3,
+          "data_points": 214,
+          "known_shape_source": "Hayabusa spacecraft + radar",
+          "known_period_hr": 12.132,
+          "known_pole_ecliptic": {"lambda_deg": 128.5, "beta_deg": -89.7},
+          "suitability": "moderate - limited ALCDEF data (only 3 sessions) but excellent ground truth from spacecraft; contact binary shape is a strong test for non-convex GA module"
+        },
+        {
+          "number": 216,
+          "name": "Kleopatra",
+          "present_in_alcdef": true,
+          "sessions": 19,
+          "data_points": 2747,
+          "known_shape_source": "Radar (Arecibo/Goldstone) + ADAM multi-data inversion",
+          "known_period_hr": 5.385,
+          "known_pole_ecliptic": {"lambda_deg": 76.0, "beta_deg": 16.0},
+          "suitability": "excellent - highly non-convex dumbbell/dog-bone shape, dense data, strong test for whether GA can recover extreme concavities"
+        },
+        {
+          "number": 1580,
+          "name": "Betulia",
+          "present_in_alcdef": true,
+          "sessions": 5,
+          "data_points": 214,
+          "known_shape_source": "Radar (Arecibo)",
+          "known_period_hr": 6.138,
+          "known_pole_ecliptic": {"lambda_deg": 136.0, "beta_deg": 22.0},
+          "suitability": "moderate - irregular shape with modest data, useful as a secondary validation target"
+        },
+        {
+          "number": 6489,
+          "name": "Golevka",
+          "present_in_alcdef": false,
+          "sessions": 0,
+          "data_points": 0,
+          "known_shape_source": "Radar (Goldstone)",
+          "known_period_hr": 6.026,
+          "suitability": "unavailable - not present in ALCDEF archive; must use alternative target or obtain external data"
+        }
+      ]
+    },
+    "additional_spacecraft_visited_asteroids_in_alcdef": {
+      "description": "Asteroids visited by spacecraft that are present in ALCDEF and could serve as supplementary validation targets",
+      "asteroids": [
+        {"number": 1, "name": "Ceres", "sessions": 5, "data_points": 1215, "spacecraft": "Dawn", "notes": "Nearly spherical, low lightcurve amplitude - limited shape information from photometry alone"},
+        {"number": 4, "name": "Vesta", "sessions": 29, "data_points": 3411, "spacecraft": "Dawn", "notes": "Large south-pole basin creates detectable non-convexity signal"},
+        {"number": 243, "name": "Ida", "sessions": 4, "data_points": 420, "spacecraft": "Galileo", "notes": "Elongated S-type asteroid with satellite Dactyl"},
+        {"number": 951, "name": "Gaspra", "sessions": 4, "data_points": 380, "spacecraft": "Galileo", "notes": "Irregular angular shape, limited ALCDEF coverage"}
+      ]
+    },
+    "high_data_volume_asteroids": {
+      "description": "Asteroids in ALCDEF with the richest observational coverage, suitable for dense-data convex inversion as primary new-discovery candidates",
+      "asteroids": [
+        {"number": 10, "name": "Hygiea", "sessions": 72, "data_points_approx": 10500, "file_size_bytes": 453718, "notes": "Exceptionally dense coverage, 27.659 hr period"},
+        {"number": 1036, "name": "Ganymed", "sessions": 134, "data_points": 23583, "notes": "Most data points of any asteroid, NEO"},
+        {"number": 319, "name": "Leona", "sessions": 157, "data_points": 9673, "notes": "Very high session count"},
+        {"number": 470, "name": "Kilia", "sessions": 131, "data_points": 11424, "notes": "Dense multi-apparition coverage"},
+        {"number": 341, "name": "California", "sessions": 163, "data_points": 8305, "notes": "High session count"},
+        {"number": 288, "name": "Glauke", "sessions": 189, "data_points": 3152, "notes": "Highest session count of all asteroids"},
+        {"number": 4, "name": "Vesta", "sessions": 29, "data_points": 3411, "file_size_bytes": 144616},
+        {"number": 216, "name": "Kleopatra", "sessions": 19, "data_points": 2747, "file_size_bytes": 114798},
+        {"number": 433, "name": "Eros", "sessions": 27, "data_points": 2316, "file_size_bytes": 128005},
+        {"number": 3, "name": "Juno", "sessions": 12, "data_points": 1487, "file_size_bytes": 68889}
+      ]
+    },
+    "candidate_discovery_pool": {
+      "description": "Summary statistics for identifying asteroids without existing shape models that have sufficient data for new inversion",
+      "total_numbered_asteroids_in_alcdef": 23743,
+      "unnumbered_asteroid_files": 890,
+      "estimated_asteroids_in_damit": "approximately 3000 as of 2025 per DAMIT database statistics",
+      "estimated_candidates_not_in_damit": "approximately 20000 or more numbered asteroids in ALCDEF not yet in DAMIT",
+      "filtering_criteria_for_top_candidates": [
+        "P1: NEO flag or estimated diameter > 100 km (from MPCORB H-magnitude assuming geometric albedo 0.1-0.25 and D = 1329 / sqrt(albedo) * 10^(-H/5) km)",
+        "P2: Period quality U >= 2 from LCDB cross-reference or ALCDEF metadata quality flags",
+        "P3: Not already in DAMIT (requires cross-reference query against DAMIT catalog)",
+        "P4: Sufficient data: >= 20 lightcurve sessions in ALCDEF spanning >= 3 apparitions, or >= 100 sparse survey data points over >= 3 apparitions"
+      ],
+      "next_steps": [
+        "Parse all 24,643 ALCDEF files to build a complete catalog with session counts, date ranges, filters used, and data point counts per asteroid",
+        "Cross-reference against DAMIT database to identify asteroids without published shape models",
+        "Cross-reference against LCDB for period quality codes",
+        "Compute estimated diameters from MPCORB H-magnitudes",
+        "Apply priority filters and rank candidates"
+      ]
+    },
+    "mpcorb_coverage": {
+      "total_objects": 1512800,
+      "numbered_objects": 99999,
+      "unnumbered_objects": 1412801,
+      "overlap_with_alcdef": "All 23,743 numbered asteroids in ALCDEF are expected to have orbital elements in MPCORB since MPCORB contains all 99,999 numbered objects. The 890 unnumbered ALCDEF asteroids can be matched via packed MPC designation.",
+      "utility_for_inversion": [
+        "Provides osculating orbital elements (a, e, i, Omega, omega, M, epoch) needed to compute Sun-asteroid-observer geometry vectors at any epoch via two-body or n-body propagation",
+        "H and G parameters enable absolute magnitude calibration and phase function correction for sparse photometry",
+        "Arc length and observation count provide data quality indicators",
+        "Semi-major axis and eccentricity identify NEOs (a < 1.3 AU, q < 1.3 AU) for priority filtering"
+      ]
+    }
+  }
 }
