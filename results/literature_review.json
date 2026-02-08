@@ -1,0 +1,112 @@
+{
+  "title": "Literature Review: Asteroid Lightcurve Inversion Methods",
+  "date": "2026-02-08",
+  "methods_reviewed": {
+    "convex_inversion_KTM": {
+      "key_papers": ["Kaasalainen2001a", "Kaasalainen2001b"],
+      "mathematical_formulation": "Gradient-based minimization of chi-squared between observed and synthetic lightcurves. Shape parameterized as convex hull via Gaussian surface density (Minkowski problem). Spherical harmonics or direct facet area representation. Levenberg-Marquardt optimization over spin axis (lambda, beta), sidereal period P, and shape parameters.",
+      "strengths": [
+        "Mathematically well-posed: convexity constraint guarantees uniqueness",
+        "Robust convergence with gradient-based methods",
+        "Works with as few as ~10-20 lightcurves spanning 3+ apparitions",
+        "Produces physically reasonable convex hulls even for non-convex bodies",
+        "Foundation of DAMIT database (5700+ models as of 2021)"
+      ],
+      "limitations": [
+        "Cannot resolve concavities, craters, or bifurcated shapes",
+        "Bilinear non-convex optimization problem prone to local minima",
+        "Requires good phase angle coverage for reliable pole determination",
+        "Period search is computationally expensive (brute-force grid)"
+      ],
+      "open_problems": "Global optimality not guaranteed; deep learning approaches being explored as alternatives"
+    },
+    "SAGE_genetic_evolution": {
+      "key_papers": ["Bartczak2018"],
+      "mathematical_formulation": "Genetic algorithm with population of non-convex shapes encoded as vertex displacements. Fitness = chi-squared of lightcurve fit + regularization. Mutation operators: vertex perturbation, facet modification. Crossover between parent shapes. Selection via tournament. Converges over 100+ generations with population >= 50.",
+      "strengths": [
+        "Produces non-convex shapes capturing craters, lobes, bifurcations",
+        "No convexity assumption - models closer to reality",
+        "Global search avoids local minima inherent in gradient methods",
+        "Successfully tested on Eros, Metis ground-truth data",
+        "Extensible to include stellar occultations and AO data"
+      ],
+      "limitations": [
+        "Computationally expensive (orders of magnitude slower than convex inversion)",
+        "Requires good initial period and approximate pole from convex inversion",
+        "Regularization needed to prevent overfitting with too many vertices",
+        "Uniform albedo assumption"
+      ],
+      "open_problems": "Scalability to large surveys; combining with sparse data"
+    },
+    "sparse_data_inversion": {
+      "key_papers": ["Durech2009", "Durech2010", "Cellino2009", "Hanus2011", "Hanus2013", "SantanaRos2015"],
+      "mathematical_formulation": "Extension of convex inversion to handle sparse photometric data (<100 points/apparition) from surveys (Gaia, Pan-STARRS, LSST). Key additions: (1) absolute magnitude calibration using H-G model to convert survey magnitudes to reduced magnitudes, (2) joint period+pole+shape fitting from sparse data alone, (3) Cellino approach uses triaxial ellipsoid + genetic algorithm for fast sparse inversion.",
+      "strengths": [
+        "Enables shape modeling from survey data (Gaia DR3: 22,815 asteroids with 25+ measurements)",
+        "Can be combined with dense data for improved accuracy",
+        "Gaia provides unprecedented photometric precision",
+        "Expected to yield 10,000+ new models from upcoming surveys"
+      ],
+      "limitations": [
+        "Period ambiguities more severe with sparse sampling",
+        "Shape resolution limited compared to dense data",
+        "Requires precise absolute calibration of survey photometry",
+        "Phase angle coverage often limited within single survey"
+      ],
+      "open_problems": "Combining Gaia DR3 + LSST + ground-based data optimally"
+    },
+    "ADAM_multi_modal": {
+      "key_papers": ["Viikinkoski2015", "Kaasalainen2012"],
+      "mathematical_formulation": "Unified framework for combining lightcurves, AO images, radar delay-Doppler, interferometry, occultation timings via 2D Fourier transform projections. Non-convex and non-starlike parametric shapes. Joint optimization of all data types with configurable weighting.",
+      "strengths": [
+        "Most complete multi-modal approach available",
+        "Handles any combination of data types uniformly",
+        "Non-convex shapes without convexity constraint",
+        "Available as open-source (MATLAB + C)"
+      ],
+      "limitations": [
+        "Requires multiple data types for best results",
+        "Complex setup and configuration",
+        "Computationally intensive for large vertex counts",
+        "Needs initial shape estimate (typically from convex inversion)"
+      ],
+      "open_problems": "Automation for large-scale surveys; incorporating thermal infrared data"
+    },
+    "KOALA": {
+      "key_papers": ["Carry2012"],
+      "mathematical_formulation": "Knitted Occultation, Adaptive-optics, and Lightcurve Analysis. Combines lightcurve inversion with AO images and stellar occultation silhouettes.",
+      "strengths": ["Good for asteroids with occultation data", "Provides absolute size scaling"],
+      "limitations": ["Requires occultation and/or AO data not available for most asteroids", "Less flexible than ADAM"]
+    },
+    "MPO_LCInvert": {
+      "key_papers": ["Warner2009"],
+      "description": "Commercial implementation of Kaasalainen-Durech convex inversion with user-friendly GUI. Based on convexinv code.",
+      "strengths": ["User-friendly wizard interface", "Well-tested on many asteroids"],
+      "limitations": ["Commercial (not open source)", "Convex shapes only", "No sparse data handling"]
+    }
+  },
+  "scattering_models": {
+    "Lommel_Seeliger": {
+      "description": "Simplest physically-motivated scattering law: brightness proportional to mu_0/(mu_0+mu) where mu_0=cos(incidence), mu=cos(emission). Single-scattering approximation.",
+      "references": ["Kaasalainen2001a", "Bowell1989"]
+    },
+    "Hapke": {
+      "description": "Full bidirectional reflectance model including single-scattering albedo, particle phase function, opposition effect (SHOE), macroscopic roughness. Most physically complete but more parameters to fit.",
+      "references": ["Hapke1993", "Hapke1981", "Bowell1989"]
+    },
+    "H_G_model": {
+      "description": "IAU standard two-parameter phase function for absolute magnitude calibration. H=absolute magnitude, G=slope parameter. Used for sparse data reduction.",
+      "references": ["Bowell1989"]
+    }
+  },
+  "open_source_tools_identified": [
+    {"name": "convexinv", "language": "C", "source": "DAMIT website + GitHub (mkretlow/DAMIT-convex)", "capabilities": "Convex shape inversion from lightcurves", "license": "Open"},
+    {"name": "conjgradinv", "language": "C", "source": "DAMIT website", "capabilities": "Conjugate gradient shape optimization", "license": "Open"},
+    {"name": "ADAM", "language": "MATLAB + C", "source": "GitHub (matvii/ADAM)", "capabilities": "Multi-data asteroid modeling", "license": "Open"},
+    {"name": "asteroid-inversion", "language": "MATLAB", "source": "GitHub (tkallava/asteroid-inversion)", "capabilities": "LC simulation and MCMC shape recovery", "license": "Open"},
+    {"name": "Asteroids@home", "language": "C++", "source": "BOINC project", "capabilities": "Distributed lightcurve inversion", "license": "Open"},
+    {"name": "lcgenerator", "language": "C", "source": "DAMIT website", "capabilities": "Synthetic lightcurve generation from shape models", "license": "Open"}
+  ],
+  "papers_identified": 21,
+  "summary": "The field of asteroid lightcurve inversion is mature for convex shapes (Kaasalainen-Torppa method, 5700+ models in DAMIT) but significant opportunities remain in: (1) non-convex shape recovery via genetic algorithms (SAGE), (2) sparse data exploitation from Gaia/LSST surveys, (3) multi-modal data fusion (ADAM). Our pipeline synthesizes all three approaches with a focus on sparse data handling and non-convex refinement to model previously uncharacterized asteroids."
+}

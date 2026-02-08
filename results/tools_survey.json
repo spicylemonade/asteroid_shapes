@@ -1,0 +1,62 @@
+{
+  "title": "Survey of Open-Source Lightcurve Inversion Tools",
+  "date": "2026-02-08",
+  "tools": [
+    {
+      "name": "convexinv / conjgradinv",
+      "language": "C",
+      "license": "Open (academic)",
+      "source_url": "https://astro.troja.mff.cuni.cz/projects/damit/pages/software_download",
+      "github_mirror": "https://github.com/mkretlow/DAMIT-convex",
+      "capabilities": "Convex shape inversion from dense lightcurves using spherical harmonics (convexinv) or direct facet areas (conjgradinv). Also includes lcgenerator for synthetic lightcurve computation.",
+      "limitations": "Convex shapes only. C code requires compilation. No sparse data handling. No GUI.",
+      "authors": "Kaasalainen, Durech"
+    },
+    {
+      "name": "ADAM (All-Data Asteroid Modeling)",
+      "language": "MATLAB + C core routines",
+      "license": "Open (academic)",
+      "source_url": "https://github.com/matvii/ADAM",
+      "capabilities": "Multi-modal reconstruction from lightcurves, AO images, radar delay-Doppler, interferometry, occultation timings. Non-convex and non-starlike shapes. Parallel execution support.",
+      "limitations": "Requires MATLAB license. Complex configuration. Needs initial shape from convex inversion.",
+      "authors": "Viikinkoski, Kaasalainen, Durech"
+    },
+    {
+      "name": "MPO LCInvert",
+      "language": "Windows binary (C/C++)",
+      "license": "Commercial",
+      "source_url": "https://minplanobs.org/BdwPub/php/mpolcinvert.php",
+      "capabilities": "GUI-based convex inversion wizard. Based on Kaasalainen-Durech algorithms. Step-by-step process from lightcurves to 3D model.",
+      "limitations": "Commercial product (not free). Windows only. Convex shapes only. No sparse data. No programmatic API.",
+      "authors": "Warner (based on Kaasalainen/Durech code)"
+    },
+    {
+      "name": "SAGE (Shaping Asteroids with Genetic Evolution)",
+      "language": "Not publicly available",
+      "license": "Not publicly released",
+      "source_url": "N/A (described in Bartczak & Dudzinski 2018)",
+      "capabilities": "Non-convex shape reconstruction via genetic algorithm. Tested on Eros, Metis. Can model craters, lobes, contact binaries.",
+      "limitations": "Source code not publicly released. Must be reimplemented from paper description.",
+      "authors": "Bartczak, Dudzinski"
+    },
+    {
+      "name": "asteroid-inversion (MCMC)",
+      "language": "MATLAB",
+      "license": "Open",
+      "source_url": "https://github.com/tkallava/asteroid-inversion",
+      "capabilities": "Lightcurve simulation and shape recovery using MCMC. Educational/research implementation.",
+      "limitations": "MATLAB required. Less mature than convexinv. Limited documentation.",
+      "authors": "Kallava"
+    },
+    {
+      "name": "Asteroids@home",
+      "language": "C++",
+      "license": "Open (BOINC)",
+      "source_url": "https://asteroidsathome.net",
+      "capabilities": "Distributed computing for lightcurve inversion using BOINC framework. Massive parallelization across volunteer computers.",
+      "limitations": "Distributed infrastructure required. Not suitable for individual use.",
+      "authors": "Durech et al."
+    }
+  ],
+  "summary": "Six tools/repositories catalogued. The most relevant open-source tool is convexinv (DAMIT), which provides the foundation for convex inversion in C. SAGE is not publicly available and must be reimplemented. ADAM provides the most complete multi-modal framework but requires MATLAB. Our pipeline will reimplement the core algorithms in Python, synthesizing convex inversion (convexinv approach), genetic non-convex optimization (SAGE approach), and sparse data handling (Durech/Cellino approach) into a unified framework."
+}

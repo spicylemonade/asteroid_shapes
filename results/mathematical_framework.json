@@ -1,0 +1,92 @@
+{
+  "title": "Mathematical Framework for Light Curve Inversion Pipeline",
+  "date": "2026-02-08",
+  "forward_model": {
+    "shape_representation": {
+      "convex": {
+        "method": "Triangulated convex polyhedron with N>=200 facets",
+        "parameterization": "Gaussian surface density G(n) giving relative area per surface normal direction n. Shape recovered via Minkowski problem: area of facet i proportional to G(n_i). Alternative: spherical harmonics expansion of surface radius r(theta,phi) = sum_{l=0}^{L} sum_{m=-l}^{l} c_{lm} Y_{lm}(theta,phi), L<=8",
+        "reference": "Kaasalainen2001a"
+      },
+      "non_convex": {
+        "method": "Vertex-based mesh with unconstrained vertex positions",
+        "parameterization": "Start from convex hull, perturb vertices inward to create concavities. Encode as displacement vector from convex reference shape.",
+        "reference": "Bartczak2018"
+      }
+    },
+    "scattering_law": {
+      "lommel_seeliger": {
+        "equation": "S(mu_0, mu, alpha) = f(alpha) * mu_0 / (mu_0 + mu)",
+        "parameters": "mu_0 = cos(incidence angle), mu = cos(emission angle), alpha = phase angle, f(alpha) = phase function",
+        "reference": "Kaasalainen2001a"
+      },
+      "hapke_simplified": {
+        "equation": "r(i,e,alpha) = (w/4pi) * (mu_0/(mu_0+mu)) * [p(alpha) + H(mu_0)*H(mu) - 1] * B(alpha)",
+        "parameters": "w = single-scattering albedo, p(alpha) = single-particle phase function, H(x) = Chandrasekhar H-function, B(alpha) = opposition effect",
+        "reference": "Hapke1993"
+      }
+    },
+    "viewing_geometry": {
+      "description": "For each observation epoch t, compute Sun-asteroid vector r_sun(t) and observer-asteroid vector r_obs(t) from orbital elements (a,e,i,Omega,omega,M0,epoch) via Kepler equation. Transform to asteroid body frame using spin axis (lambda,beta) and rotation phase phi(t) = phi_0 + 2*pi*(t-t0)/P.",
+      "inputs": ["orbital elements from MPCORB", "epoch of observation from ALCDEF", "observer position (geocentric/topocentric)"],
+      "reference": "Kaasalainen2001b"
+    },
+    "synthetic_brightness": {
+      "equation": "L(t) = sum_{i: visible & illuminated} S(mu_{0,i}, mu_i, alpha) * A_i * max(0, n_i . e_sun) * max(0, n_i . e_obs)",
+      "description": "Sum over all facets of the mesh that are both illuminated (sun-facing) and visible (observer-facing). A_i = facet area, n_i = facet normal, e_sun/e_obs = unit vectors to sun/observer in body frame.",
+      "reference": "Kaasalainen2001a"
+    }
+  },
+  "inverse_problem": {
+    "chi_squared": {
+      "equation": "chi^2 = sum_{j=1}^{N_obs} w_j * (L_obs(t_j) - c_j * L_model(t_j; theta))^2",
+      "parameters": "theta = {lambda, beta, P, phi_0, shape_params}. c_j = per-lightcurve scaling factor (absorbed calibration offsets for relative photometry). w_j = 1/sigma_j^2 (inverse variance weights).",
+      "reference": "Kaasalainen2001b"
+    },
+    "regularization": {
+      "smoothness": {
+        "equation": "R_smooth = lambda_s * sum_{(i,j) adjacent} (a_i - a_j)^2",
+        "description": "Penalizes differences between areas of adjacent facets, promoting smooth shapes",
+        "reference": "Kaasalainen2001a"
+      },
+      "convexity": {
+        "equation": "R_convex = lambda_c * sum_i max(0, -d_i)^2",
+        "description": "Penalizes inward-pointing vertex displacements (d_i < 0 means concavity). Set lambda_c = 0 for non-convex optimization.",
+        "reference": "Kaasalainen2001a"
+      }
+    },
+    "total_loss": {
+      "equation": "J(theta) = chi^2(theta) + R_smooth(theta) + R_convex(theta)"
+    }
+  },
+  "period_search": {
+    "method": "Phase Dispersion Minimization (PDM) or chi-squared periodogram",
+    "range": "2-100 hours (default), step <= 0.0001 hr for fine search",
+    "procedure": "1) Coarse scan with step=0.001 hr to find candidate periods. 2) Fine scan around each candidate with step=0.00001 hr. 3) Select period with minimum chi^2. 4) Handle aliases (P, P/2, 2P).",
+    "reference": "Kaasalainen2001b"
+  },
+  "genetic_algorithm_extension": {
+    "genome": "Vector of vertex displacements from convex hull reference",
+    "mutation_operators": [
+      "Gaussian perturbation of random vertex subset",
+      "Facet inversion (push facet inward to create concavity)",
+      "Local smoothing (average vertex with neighbors)",
+      "Scale mutation (uniform scaling of displacement magnitudes)"
+    ],
+    "crossover": "Uniform crossover: for each vertex, take displacement from parent A or B with probability 0.5",
+    "selection": "Tournament selection (k=3)",
+    "fitness": "1 / J(theta) where J is total loss",
+    "population": ">= 50, generations >= 100",
+    "reference": "Bartczak2018"
+  },
+  "sparse_data_extension": {
+    "absolute_calibration": {
+      "equation": "V_reduced = V_observed - 5*log10(r*Delta) + 2.5*log10(Phi(alpha))",
+      "description": "Convert apparent magnitude to reduced magnitude at unit heliocentric and geocentric distances. Phi(alpha) = H-G phase function.",
+      "reference": "Bowell1989"
+    },
+    "joint_fitting": "Same chi-squared framework but with absolute magnitudes instead of relative. Each sparse observation contributes independently (no lightcurve grouping needed).",
+    "uncertainty": "Bootstrap resampling over sparse data points, re-running inversion 50+ times to estimate confidence intervals on period, pole, and shape.",
+    "reference": "Durech2009"
+  }
+}
