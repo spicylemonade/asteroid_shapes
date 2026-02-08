@@ -1,0 +1,80 @@
+{
+  "433_Eros": {
+    "asteroid": "433_Eros",
+    "number": 433,
+    "n_dense_points": 2147,
+    "n_sparse_points": 150,
+    "n_apparitions_sparse": 3,
+    "dense": {
+      "period_hours": 5.2701591288810885,
+      "pole_lambda_deg": 8.485587293699398,
+      "pole_beta_deg": 41.817871225804154,
+      "residual_rms": 0.09441103985321254,
+      "period_error_pct": 0.0017242278622716782
+    },
+    "sparse": {
+      "period_hours": 7.259408094244192,
+      "pole_lambda_deg": 0.0,
+      "pole_beta_deg": -90.0,
+      "chi2": 207152.4919810878,
+      "period_error_pct": 31.128427548558495
+    },
+    "degradation": {
+      "period_error_increase_pct": 31.126703320696222,
+      "pole_difference_deg": 48.18212877419585
+    },
+    "known_period": 5.27025
+  },
+  "216_Kleopatra": {
+    "asteroid": "216_Kleopatra",
+    "number": 216,
+    "n_dense_points": 2573,
+    "n_sparse_points": 150,
+    "n_apparitions_sparse": 3,
+    "dense": {
+      "period_hours": 5.3723808192538565,
+      "pole_lambda_deg": 1.758887526329391e-08,
+      "pole_beta_deg": 45.70706144644025,
+      "residual_rms": 0.09022477038817701,
+      "period_error_pct": 0.23433947532299576
+    },
+    "sparse": {
+      "period_hours": 6.160864650058451,
+      "pole_lambda_deg": 0.0,
+      "pole_beta_deg": -7.162953423008105,
+      "chi2": 35596013.45258142,
+      "period_error_pct": 14.407885794957306
+    },
+    "degradation": {
+      "period_error_increase_pct": 14.17354631963431,
+      "pole_difference_deg": 52.87001486944836
+    },
+    "known_period": 5.385
+  },
+  "1943_Anteros": {
+    "asteroid": "1943_Anteros",
+    "number": 1943,
+    "n_dense_points": 1152,
+    "n_sparse_points": 100,
+    "n_apparitions_sparse": 3,
+    "dense": {
+      "period_hours": 2.8696139120912254,
+      "pole_lambda_deg": 0.0,
+      "pole_beta_deg": 44.99857292687745,
+      "residual_rms": 0.046197181164763006,
+      "period_error_pct": 0.0
+    },
+    "sparse": {
+      "period_hours": 1.0,
+      "pole_lambda_deg": 0.0,
+      "pole_beta_deg": -90.0,
+      "chi2": 6068452.733535202,
+      "period_error_pct": 65.1521064981438
+    },
+    "degradation": {
+      "period_error_increase_pct": 65.1521064981438,
+      "pole_difference_deg": 45.00142707312255
+    },
+    "known_period": null
+  }
+}

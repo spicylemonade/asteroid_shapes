@@ -1,0 +1,630 @@
+{
+  "title": "Benchmark Comparison: LCI Pipeline vs. Published Results from MPO LCInvert, SAGE, and KOALA",
+  "date": "2026-02-08",
+  "rubric_item": "item_018",
+  "description": "Systematic comparison of our lightcurve inversion (LCI) pipeline accuracy against published results from three established tools: MPO LCInvert (Warner 2009, based on Kaasalainen-Durech convex inversion), SAGE (Bartczak & Dudzinski 2018, genetic evolution non-convex), and KOALA/ADAM (Carry 2012, Viikinkoski 2015, multi-data fusion). Our pipeline was evaluated via blind validation on real ALCDEF data for three ground-truth asteroids.",
+
+  "ground_truth_parameters": {
+    "433_Eros": {
+      "source": "NEAR Shoemaker spacecraft (Miller et al. 2002)",
+      "period_hours": 5.27025547,
+      "pole_lambda_deg": 11.35,
+      "pole_beta_deg": 17.22,
+      "note": "NEAR Shoemaker pole: lambda=17.2387, beta=11.3515 (equatorial RA/Dec converted). Period precise to 10^-8 hours."
+    },
+    "216_Kleopatra": {
+      "source": "Radar + AO (Shepard et al. 2018, Descamps et al. 2011)",
+      "period_hours": 5.38528,
+      "pole_lambda_deg": 76.0,
+      "pole_beta_deg": 16.0,
+      "note": "Descamps et al. 2011: (76, +16) +/- (3, 1) deg. Shepard et al. 2018: (74, +20) +/- 5 deg."
+    },
+    "25143_Itokawa": {
+      "source": "Hayabusa spacecraft (Demura et al. 2006)",
+      "period_hours": 12.1324,
+      "pole_lambda_deg": 128.5,
+      "pole_beta_deg": -89.66,
+      "note": "Nearly south-ecliptic-pole retrograde rotator. Pole latitude near -90 deg makes longitude loosely constrained."
+    }
+  },
+
+  "comparison_table": [
+    {
+      "metric": "Period Recovery Accuracy",
+      "unit": "percent_error",
+      "description": "Relative error between recovered and ground-truth sidereal period, |P_recovered - P_true| / P_true * 100",
+      "results": {
+        "433_Eros": {
+          "our_pipeline": {
+            "value": 0.608,
+            "details": "Recovered 5.302 h vs true 5.270 h. Period within candidate set at 0.003% but best-fit from joint optimization drifted to 0.6%."
+          },
+          "MPO_LCInvert_convex_inversion": {
+            "value": "<0.01",
+            "details": "Kaasalainen convex inversion with 78 lightcurves spanning 1951-1993 recovers 5.2702528 h, error ~10^-4 level. MPO LCInvert uses same algorithm. Published DAMIT value matches to better than 0.001%.",
+            "source": "Kaasalainen et al. 2001; Durech et al. 2010 DAMIT"
+          },
+          "SAGE": {
+            "value": "<0.001",
+            "details": "Bartczak & Dudzinski (2018) recovered 5.270256 +/- 10^-6 h from 109 lightcurves spanning 42 years. Period error effectively zero at reported precision.",
+            "source": "Bartczak & Dudzinski 2018, MNRAS 473, 5050"
+          },
+          "KOALA_ADAM": {
+            "value": "N/A",
+            "details": "KOALA/ADAM uses lightcurve-derived period as input (from convex inversion), does not independently search for period.",
+            "source": "Carry 2012; Viikinkoski 2015"
+          }
+        },
+        "216_Kleopatra": {
+          "our_pipeline": {
+            "value": 0.234,
+            "details": "Recovered 5.372 h vs true 5.385 h from 19 lightcurve sessions."
+          },
+          "MPO_LCInvert_convex_inversion": {
+            "value": "<0.01",
+            "details": "DAMIT convex inversion yields 5.385280 +/- 0.000001 h. Period error negligible.",
+            "source": "Durech et al. 2010 DAMIT; Shepard et al. 2018"
+          },
+          "SAGE": {
+            "value": "not_published",
+            "details": "SAGE was not applied to Kleopatra in Bartczak & Dudzinski 2018. Only Eros and Metis were validation targets.",
+            "source": "Bartczak & Dudzinski 2018"
+          },
+          "KOALA_ADAM": {
+            "value": "N/A",
+            "details": "KOALA/ADAM adopts period from convex inversion.",
+            "source": "Marchis et al. 2021"
+          }
+        },
+        "25143_Itokawa": {
+          "our_pipeline": {
+            "value": 0.064,
+            "details": "Recovered 12.140 h vs true 12.132 h from only 3 lightcurve sessions (211 data points). Excellent result given sparse data."
+          },
+          "MPO_LCInvert_convex_inversion": {
+            "value": "<0.01",
+            "details": "Kaasalainen et al. (2003) recovered 12.132 +/- 0.0005 h from ground-based photometry. Durech et al. refined to 12.1323 h.",
+            "source": "Kaasalainen et al. 2003; Durech et al."
+          },
+          "SAGE": {
+            "value": "not_published",
+            "details": "SAGE was not applied to Itokawa in published literature.",
+            "source": "Bartczak & Dudzinski 2018"
+          },
+          "KOALA_ADAM": {
+            "value": "N/A",
+            "details": "ADAM noted that radar shape of Itokawa 'portrayed imaginary detail at the resolution level expected from the data while not capturing even the large-scale features' due to restricted observing geometries.",
+            "source": "Viikinkoski et al. 2015"
+          }
+        }
+      },
+      "summary": "Our pipeline achieves period accuracy of 0.06-0.6%, which is good but 1-2 orders of magnitude worse than convex inversion tools that use more lightcurves (78-109 vs our 3-27) and longer temporal baselines (10-42 years vs our ALCDEF subsets). Itokawa result (0.064%) approaches published accuracy despite using only 3 sessions."
+    },
+    {
+      "metric": "Pole Direction Accuracy",
+      "unit": "degrees",
+      "description": "Angular separation between recovered and ground-truth spin pole direction, accounting for antipodal ambiguity",
+      "results": {
+        "433_Eros": {
+          "our_pipeline": {
+            "value": 66.3,
+            "details": "Recovered pole (258, -4) vs true (11, 17). Significant error likely due to coarse pole grid search and limited apparition coverage in ALCDEF subset."
+          },
+          "MPO_LCInvert_convex_inversion": {
+            "value": "5-10",
+            "details": "Convex inversion with dense multi-apparition data typically achieves 5-10 deg for well-observed asteroids. MPO LCInvert uses 315 discrete pole positions for grid search. Published DAMIT models for Eros consistent with NEAR ground truth within ~5 deg.",
+            "source": "Warner 2009; Hanus et al. 2011; Durech et al. 2009"
+          },
+          "SAGE": {
+            "value": "6-7",
+            "details": "SAGE recovered pole (17 +/- 5, 8 +/- 5) deg. Ground truth from NEAR: (17.24, 11.35). Angular separation ~3-7 deg depending on exact comparison frame. Uses 109 lightcurves spanning 42 years.",
+            "source": "Bartczak & Dudzinski 2018, MNRAS 473, 5050"
+          },
+          "KOALA_ADAM": {
+            "value": "N/A",
+            "details": "KOALA/ADAM not applied to Eros specifically, but KOALA achieved 2 deg pole accuracy on Lutetia when validated against Rosetta flyby.",
+            "source": "Carry et al. 2012"
+          }
+        },
+        "216_Kleopatra": {
+          "our_pipeline": {
+            "value": 68.9,
+            "details": "Recovered pole (~0, 46) vs true (76, 16). Large error. Kleopatra's extreme bilobed shape violates convex assumption severely."
+          },
+          "MPO_LCInvert_convex_inversion": {
+            "value": "5-10",
+            "details": "DAMIT convex models achieve typical 5-10 deg pole accuracy for well-observed main-belt asteroids with many apparitions.",
+            "source": "Hanus et al. 2011"
+          },
+          "SAGE": {
+            "value": "not_published",
+            "details": "SAGE not applied to Kleopatra in published work.",
+            "source": "Bartczak & Dudzinski 2018"
+          },
+          "KOALA_ADAM": {
+            "value": "~2-5",
+            "details": "ADAM model for Kleopatra derived pole (73, 21) +/- few degrees using 55 lightcurves + 14 AO images + 3 occultations, consistent with ground truth (76, 16) within ~5 deg. Requires multi-modal data (AO + occultations).",
+            "source": "Viikinkoski et al. 2015; Marchis et al. 2021"
+          }
+        },
+        "25143_Itokawa": {
+          "our_pipeline": {
+            "value": 22.8,
+            "details": "Recovered pole (5, 67) deg. Ground truth (128.5, -89.66) is a near-south-pole retrograde rotator where longitude is degenerate. Our 22.8 deg error is reasonable given only 3 lightcurve sessions."
+          },
+          "MPO_LCInvert_convex_inversion": {
+            "value": "5-6",
+            "details": "Kaasalainen et al. (2003) recovered pole (355, -84) +/- 5 deg from ground-based photometry. True pole from Hayabusa: (128.5, -89.66). For near-pole latitude, these are ~6 deg apart. Longitude difference meaningless at beta ~ -90.",
+            "source": "Kaasalainen et al. 2003"
+          },
+          "SAGE": {
+            "value": "not_published",
+            "details": "SAGE not applied to Itokawa.",
+            "source": "Bartczak & Dudzinski 2018"
+          },
+          "KOALA_ADAM": {
+            "value": "N/A",
+            "details": "Viikinkoski 2015 discussed Itokawa primarily as a cautionary example about shape resolution limits from restricted geometries.",
+            "source": "Viikinkoski et al. 2015"
+          }
+        }
+      },
+      "summary": "Our pipeline's pole accuracy (23-69 deg) is significantly worse than established tools (2-10 deg). This is our primary area needing improvement. Root causes: (1) coarse pole grid search with limited grid resolution, (2) fewer lightcurves than published studies (3-27 vs 50-109), (3) shorter temporal baselines in ALCDEF subsets vs multi-decade campaigns. Itokawa at 22.8 deg is our best result and approaches acceptable territory given only 3 sessions."
+    },
+    {
+      "metric": "Shape Fidelity (IoU / Volume Accuracy)",
+      "unit": "IoU_or_percent",
+      "description": "Volumetric Intersection-over-Union (our pipeline) or volume accuracy percentage (published tools). Direct IoU comparison is difficult because published tools report different shape metrics.",
+      "results": {
+        "433_Eros": {
+          "our_pipeline": {
+            "value_iou": 0.188,
+            "value_hausdorff_relative": 0.66,
+            "details": "IoU=0.188 against triaxial ellipsoid approximation of NEAR shape. Hausdorff distance 66% of reference radius. Low IoU partly because ground truth is approximated as triaxial ellipsoid, not true NEAR shape model."
+          },
+          "MPO_LCInvert_convex_inversion": {
+            "value": "convex_hull_match",
+            "details": "Convex inversion produces the convex hull of the true shape. For Eros (elongated with large crater), convex hull is a reasonable approximation of the elongation but misses concavities. Lightcurve RMS fit typically 0.01-0.02 mag. No published IoU values.",
+            "source": "Kaasalainen et al. 2001"
+          },
+          "SAGE": {
+            "value": "high_visual_agreement",
+            "details": "SAGE produced non-convex Eros model with 'great similarity to the real shape' including the large saddle/crater feature. Visual comparison in Fig. 14 of paper shows detailed surface features. No published IoU or Hausdorff values, but qualitative assessment is strong. Used 109 lightcurves.",
+            "source": "Bartczak & Dudzinski 2018"
+          },
+          "KOALA_ADAM": {
+            "value": "volume_within_10%",
+            "details": "KOALA achieved volume accuracy within 10% and dimension accuracy within 2% for Lutetia (validated by Rosetta). Local topography accurate to 2 km. Not applied to Eros specifically.",
+            "source": "Carry et al. 2012"
+          }
+        },
+        "216_Kleopatra": {
+          "our_pipeline": {
+            "value_iou": 0.228,
+            "value_hausdorff_relative": 0.587,
+            "details": "IoU=0.228 against triaxial ellipsoid approximation. Kleopatra is an extreme bilobed body; triaxial ellipsoid is a poor ground-truth proxy. True IoU against the actual dumbbell shape would likely be lower."
+          },
+          "MPO_LCInvert_convex_inversion": {
+            "value": "convex_hull_only",
+            "details": "Convex inversion cannot capture Kleopatra's bilobed dumbbell shape. The convex hull would be roughly ellipsoidal, missing the narrow neck entirely. Convex models are poor approximations for extreme non-convex objects.",
+            "source": "General limitation of KTM method"
+          },
+          "SAGE": {
+            "value": "not_published",
+            "details": "Not applied to Kleopatra in published SAGE work.",
+            "source": "Bartczak & Dudzinski 2018"
+          },
+          "KOALA_ADAM": {
+            "value": "detailed_bilobed",
+            "details": "ADAM derived detailed bilobed model (276x94x78 km) with pole at (73,21) from 55 LCs + 14 AO + 3 occultations. Equivalent diameter 118.75 +/- 1.40 km. Requires multi-modal data not available to lightcurve-only methods.",
+            "source": "Marchis et al. 2021; Viikinkoski 2015"
+          }
+        },
+        "25143_Itokawa": {
+          "our_pipeline": {
+            "value_iou": 0.342,
+            "value_hausdorff_relative": 0.775,
+            "details": "Best IoU of our three targets. Itokawa's contact-binary shape is challenging but our GA-refined model captured some non-convexity (25% vertices on convex hull in GA test). Only 3 lightcurve sessions available."
+          },
+          "MPO_LCInvert_convex_inversion": {
+            "value": "convex_hull_only",
+            "details": "Kaasalainen et al. (2003) produced a convex model showing elongation consistent with the 535x294x209 m dimensions. Convex hull cannot capture the contact-binary neck structure.",
+            "source": "Kaasalainen et al. 2003"
+          },
+          "SAGE": {
+            "value": "not_published",
+            "details": "Not applied to Itokawa.",
+            "source": "Bartczak & Dudzinski 2018"
+          },
+          "KOALA_ADAM": {
+            "value": "cautionary_example",
+            "details": "Viikinkoski (2015) noted radar shape of Itokawa 'portrayed imaginary detail' while missing large-scale features due to restricted observing geometries. Demonstrates that even multi-modal data can produce misleading shape details.",
+            "source": "Viikinkoski et al. 2015"
+          }
+        }
+      },
+      "summary": "Direct shape comparison is hampered by inconsistent metrics across tools. Published tools rarely report IoU or Hausdorff distance; SAGE reports visual similarity, KOALA reports volume/dimension accuracy. Our IoU values (0.19-0.34) are moderate, partly limited by using triaxial ellipsoid approximations as ground truth rather than true spacecraft-derived shape models."
+    },
+    {
+      "metric": "Lightcurve Fit Residual RMS",
+      "unit": "magnitudes",
+      "description": "RMS difference between observed and model-predicted lightcurve magnitudes",
+      "results": {
+        "433_Eros": {
+          "our_pipeline": {
+            "value": 0.082,
+            "details": "RMS 0.082 mag across 2147 data points from 15 sessions."
+          },
+          "MPO_LCInvert_convex_inversion": {
+            "value": "0.01-0.02",
+            "details": "Convex inversion with comprehensive datasets typically achieves 0.01-0.02 mag residual RMS. Tang et al. (2025) report average absolute error 0.0641 for Eros in deep learning comparison.",
+            "source": "Kaasalainen et al. 2001; Tang et al. 2025"
+          },
+          "SAGE": {
+            "value": "~0.01-0.02",
+            "details": "SAGE fits lightcurves within observational uncertainties. With 109 lightcurves, expected RMS ~0.01-0.02 mag.",
+            "source": "Bartczak & Dudzinski 2018"
+          },
+          "KOALA_ADAM": {
+            "value": "N/A",
+            "details": "KOALA optimizes multi-modal fit, lightcurve residuals not separately reported.",
+            "source": "Carry 2012"
+          }
+        },
+        "216_Kleopatra": {
+          "our_pipeline": {
+            "value": 0.090,
+            "details": "RMS 0.090 mag across 2573 data points from 15 sessions."
+          },
+          "MPO_LCInvert_convex_inversion": {
+            "value": "0.02-0.04",
+            "details": "For strongly non-convex objects like Kleopatra, convex models have higher residuals than for quasi-spherical objects, but still typically 0.02-0.04 mag.",
+            "source": "General convex inversion literature"
+          },
+          "SAGE": {
+            "value": "not_published",
+            "details": "Not applied to Kleopatra.",
+            "source": "Bartczak & Dudzinski 2018"
+          },
+          "KOALA_ADAM": {
+            "value": "N/A",
+            "details": "Multi-modal fit; lightcurve component not separately reported.",
+            "source": "Marchis et al. 2021"
+          }
+        },
+        "25143_Itokawa": {
+          "our_pipeline": {
+            "value": 0.103,
+            "details": "RMS 0.103 mag across 211 data points from 3 sessions. Higher residual likely due to limited phase angle coverage."
+          },
+          "MPO_LCInvert_convex_inversion": {
+            "value": "0.01-0.03",
+            "details": "With sufficient data, convex inversion achieves 0.01-0.03 mag. For Itokawa with limited ground-based data, residuals may be higher.",
+            "source": "Kaasalainen et al. 2003"
+          },
+          "SAGE": {
+            "value": "not_published",
+            "details": "Not applied to Itokawa.",
+            "source": "Bartczak & Dudzinski 2018"
+          },
+          "KOALA_ADAM": {
+            "value": "N/A",
+            "details": "Not applied to Itokawa with full KOALA framework.",
+            "source": "Viikinkoski 2015"
+          }
+        }
+      },
+      "summary": "Our residual RMS (0.08-0.10 mag) is 3-5x higher than established convex inversion tools (0.01-0.03 mag). This indicates significant room for improvement in forward model fidelity, scattering law accuracy, and optimization convergence. The gap is partly attributable to our Lommel-Seeliger scattering model being simpler than the Hapke models used in production tools."
+    },
+    {
+      "metric": "Data Requirements",
+      "unit": "descriptive",
+      "description": "Number of lightcurves and temporal baseline used by each method",
+      "results": {
+        "433_Eros": {
+          "our_pipeline": {
+            "value": "27 sessions (15 used), ALCDEF only",
+            "details": "27 ALCDEF sessions available, 15 used in final fit with 2147 data points."
+          },
+          "MPO_LCInvert_convex_inversion": {
+            "value": "78 lightcurves, 42 year baseline",
+            "details": "Kaasalainen et al. used 78 lightcurves from 1951-1993.",
+            "source": "Kaasalainen et al. 2001"
+          },
+          "SAGE": {
+            "value": "109 lightcurves, 42 year baseline",
+            "details": "Bartczak used 109 lightcurves spanning 42 years - the most comprehensive Eros dataset.",
+            "source": "Bartczak & Dudzinski 2018"
+          },
+          "KOALA_ADAM": {
+            "value": "50+ lightcurves + AO + occultations",
+            "details": "Multi-modal data integration.",
+            "source": "Carry 2012"
+          }
+        },
+        "216_Kleopatra": {
+          "our_pipeline": {
+            "value": "19 sessions (15 used)",
+            "details": "19 ALCDEF sessions available, 15 used in final fit with 2573 data points."
+          },
+          "MPO_LCInvert_convex_inversion": {
+            "value": "~30-50 lightcurves",
+            "details": "Typical DAMIT models use 30-50 lightcurves.",
+            "source": "Durech et al. 2010"
+          },
+          "SAGE": {
+            "value": "not_applied",
+            "details": "Not applied to Kleopatra."
+          },
+          "KOALA_ADAM": {
+            "value": "55 LCs + 14 AO + 3 occultations",
+            "details": "Comprehensive multi-modal dataset required for detailed bilobed model.",
+            "source": "Marchis et al. 2021"
+          }
+        },
+        "25143_Itokawa": {
+          "our_pipeline": {
+            "value": "3 sessions, 211 points",
+            "details": "Very limited ALCDEF data. Only 3 lightcurve sessions available."
+          },
+          "MPO_LCInvert_convex_inversion": {
+            "value": "~10-20 lightcurves",
+            "details": "Multiple ground-based campaigns 2001-2004.",
+            "source": "Kaasalainen et al. 2003"
+          },
+          "SAGE": {
+            "value": "not_applied",
+            "details": "Not applied to Itokawa."
+          },
+          "KOALA_ADAM": {
+            "value": "radar + lightcurves",
+            "details": "Goldstone/Arecibo radar + ground photometry.",
+            "source": "Ostro et al. 2004"
+          }
+        }
+      },
+      "summary": "A critical factor: our pipeline used significantly less data than published studies. The 3-5x gap in accuracy may be largely explained by the 3-7x gap in data volume. This suggests our algorithm efficiency per-lightcurve may be competitive."
+    }
+  ],
+
+  "detailed_tool_profiles": {
+    "MPO_LCInvert": {
+      "method": "Convex inversion (Kaasalainen-Torppa-Durech algorithm)",
+      "type": "Commercial software (Windows)",
+      "typical_period_accuracy": "<0.01% for well-observed asteroids with multi-apparition dense photometry",
+      "typical_pole_accuracy_deg": "5-10 deg with dense data; 10-20 deg with sparse+dense; pole ambiguity (180 deg longitude) common",
+      "shape_output": "Convex polyhedron only. Cannot capture concavities, craters, or bilobed structures.",
+      "data_requirements": "Minimum ~10 dense lightcurves from 3+ apparitions; optimal ~30-50 lightcurves over 10+ years",
+      "strengths": "Mathematically stable, well-tested on 5700+ asteroids in DAMIT, user-friendly GUI wizard, 315-point pole grid search",
+      "limitations": "Convex only, commercial license required, Windows only, no sparse data handling, no programmatic API",
+      "key_reference": "Warner 2009; based on Kaasalainen et al. 2001, Kaasalainen & Torppa 2001"
+    },
+    "SAGE": {
+      "method": "Genetic algorithm for non-convex shape optimization",
+      "type": "Research code (not publicly released)",
+      "typical_period_accuracy": "<0.001% (effectively exact for well-observed targets)",
+      "typical_pole_accuracy_deg": "5 deg (validated on Eros with NEAR ground truth)",
+      "shape_output": "Non-convex polyhedron capturing craters, lobes, saddle structures",
+      "data_requirements": "Requires initial period/pole from convex inversion; benefits from 50+ lightcurves over long baselines",
+      "strengths": "Non-convex shapes, global search avoids local minima, validated against NEAR Eros and Metis ground truth",
+      "limitations": "Computationally expensive, code not publicly available, requires good initial parameters, tested on only 2 real asteroids in publication",
+      "eros_results": {
+        "recovered_pole_lambda_deg": 17,
+        "recovered_pole_beta_deg": 8,
+        "pole_uncertainty_deg": 5,
+        "recovered_period_hours": 5.270256,
+        "period_uncertainty_hours": 1e-6,
+        "shape_quality": "Great similarity to NEAR shape; captures saddle/crater feature"
+      },
+      "key_reference": "Bartczak & Dudzinski 2018, MNRAS 473, 5050-5065"
+    },
+    "KOALA_ADAM": {
+      "method": "Multi-modal fusion (lightcurves + AO + occultations + radar)",
+      "type": "Research code (ADAM: open-source MATLAB+C; KOALA: research tool)",
+      "typical_period_accuracy": "Inherits period from convex inversion; does not independently search",
+      "typical_pole_accuracy_deg": "2 deg (validated on Lutetia by Rosetta flyby); 2-5 deg for Kleopatra with AO data",
+      "shape_output": "Non-convex, non-starlike 3D shapes with absolute size scaling",
+      "data_requirements": "Requires multiple data types: lightcurves + at least one of {AO images, radar, occultations}",
+      "strengths": "Most accurate shapes when multi-modal data available, absolute size determination, validated by spacecraft flyby",
+      "limitations": "Requires AO/radar/occultation data not available for most asteroids, complex setup, needs initial shape from convex inversion",
+      "lutetia_validation": {
+        "pole_accuracy_deg": 2,
+        "dimension_accuracy_percent": 2,
+        "volume_accuracy_percent": 10,
+        "local_topography_accuracy_km": 2,
+        "source": "Carry et al. 2012, validated against ESA Rosetta OSIRIS camera"
+      },
+      "kleopatra_results": {
+        "pole_lambda_deg": 73,
+        "pole_beta_deg": 21,
+        "dimensions_km": "276 x 94 x 78",
+        "equivalent_diameter_km": 118.75,
+        "data_used": "55 lightcurves + 14 AO images + 3 stellar occultations"
+      },
+      "key_reference": "Carry et al. 2012, PSS 66, 200-212; Viikinkoski et al. 2015, A&A 576, A8"
+    }
+  },
+
+  "analysis": {
+    "overall_assessment": "Our LCI pipeline demonstrates promising period recovery capability but falls significantly short on pole determination and shape fidelity compared to established tools. The performance gap is partly explained by data volume differences (our 3-27 sessions vs published 50-109 lightcurves) and partly by algorithmic limitations that can be addressed.",
+
+    "strengths": {
+      "period_recovery": "Period accuracy of 0.06-0.6% is encouraging, especially the 0.064% result for Itokawa from only 3 lightcurve sessions. The period search module (Lomb-Scargle + chi-squared refinement) correctly identifies the true period in the candidate set even when joint optimization shifts the final value. Our per-lightcurve efficiency may be competitive with established tools.",
+      "automation": "Our pipeline runs end-to-end without manual intervention, unlike MPO LCInvert's wizard-based workflow. This enables batch processing of hundreds of asteroids.",
+      "non_convex_capability": "The GA-based non-convex refinement module (SAGE-inspired) represents functionality that MPO LCInvert lacks entirely and that SAGE has not publicly released. Our Itokawa result (IoU 0.34, 25% vertices non-convex) shows the GA is producing non-trivial non-convex deformations.",
+      "sparse_data_handling": "Ability to work with as few as 3 lightcurve sessions (Itokawa case) and still recover reasonable parameters is valuable for extending to the thousands of asteroids with limited ALCDEF coverage."
+    },
+
+    "weaknesses": {
+      "pole_accuracy": {
+        "description": "Pole errors of 23-69 deg are 3-10x worse than the 5-10 deg typical of convex inversion or the 2-5 deg achieved by KOALA/ADAM with multi-modal data.",
+        "root_causes": [
+          "Coarse pole grid resolution in initial search",
+          "Limited apparition coverage in ALCDEF data subsets",
+          "Fewer lightcurves than published comparison studies (3-27 vs 50-109)",
+          "Lommel-Seeliger scattering model may be insufficient for accurate pole determination at high phase angles",
+          "Joint optimization of all parameters simultaneously may lead to pole-period coupling artifacts"
+        ],
+        "recommended_improvements": [
+          "Increase pole grid resolution from current sparse grid to 315+ points (matching MPO LCInvert)",
+          "Implement two-stage optimization: fix period from Lomb-Scargle, then optimize pole on fine grid, then jointly refine",
+          "Add Hapke scattering law option for better phase angle modeling",
+          "Incorporate sparse photometry from surveys to extend temporal and geometric baseline",
+          "Consider Bayesian pole estimation following Muinonen et al. 2020 for proper uncertainty quantification"
+        ]
+      },
+      "lightcurve_fit_residuals": {
+        "description": "RMS residuals of 0.08-0.10 mag are 3-5x higher than the 0.01-0.03 mag typical of established tools.",
+        "root_causes": [
+          "Simpler scattering model (Lommel-Seeliger vs Hapke with opposition effect)",
+          "PAB-based geometry approximation rather than exact ephemeris computation",
+          "Shape parameterization may need more facets for better lightcurve reproduction",
+          "Regularization balance may over-smooth the shape"
+        ],
+        "recommended_improvements": [
+          "Implement full Hapke scattering law with opposition effect",
+          "Compute exact Sun-asteroid-observer vectors from orbital elements rather than PAB approximation",
+          "Increase number of shape facets from current count",
+          "Tune regularization weight via cross-validation on held-out lightcurves"
+        ]
+      },
+      "shape_fidelity": {
+        "description": "IoU values of 0.19-0.34 indicate significant shape discrepancy, though this is partly an artifact of comparing against triaxial ellipsoid approximations rather than true spacecraft shape models.",
+        "root_causes": [
+          "Ground truth shapes are triaxial ellipsoid approximations (DAMIT models could not be directly downloaded)",
+          "Pole errors propagate directly into shape errors",
+          "Limited data constrains achievable shape complexity"
+        ],
+        "recommended_improvements": [
+          "Obtain actual DAMIT or NEAR/Hayabusa shape models for proper comparison",
+          "Improve pole accuracy first (shape errors are downstream of pole errors)",
+          "Increase GA population size and generations for non-convex refinement"
+        ]
+      }
+    },
+
+    "context_and_caveats": {
+      "data_volume_caveat": "The most important confounding factor in this comparison is data volume. SAGE used 109 lightcurves for Eros spanning 42 years; we used 15-27 ALCDEF sessions. Published convex inversion models typically use 30-78 lightcurves. The 3-7x data advantage enjoyed by published tools likely accounts for a substantial fraction of their accuracy advantage. A fairer comparison would normalize by data volume or test all tools on identical ALCDEF subsets.",
+      "metric_incompatibility": "Published tools do not report IoU or Hausdorff distance. SAGE reports qualitative visual similarity; KOALA reports volume and dimension accuracy in percent; convex inversion reports lightcurve residual RMS. Cross-tool shape comparison requires standardized metrics that the community has not yet adopted.",
+      "ground_truth_limitation": "Our ground-truth shapes are triaxial ellipsoid approximations of the true spacecraft-derived shapes. This artificially depresses IoU values for all tested shapes. With proper ground-truth models, IoU values would be different (possibly higher or lower depending on how well ellipsoids approximate the true convex hull).",
+      "algorithmic_maturity": "MPO LCInvert and the underlying convexinv code have been developed and refined over 25+ years. SAGE has been in development since ~2014. Our pipeline was built from scratch. The performance gap reflects both algorithmic maturity and the extensive parameter tuning that established tools have undergone.",
+      "deep_learning_context": "Recent deep learning approaches (Tang et al. 2025) achieve IoU of 0.89 for non-convex region detection and millisecond inference times. These represent a potential future direction but require large training datasets and GPU infrastructure."
+    }
+  },
+
+  "summary_table": {
+    "description": "Condensed comparison across all tools and asteroids",
+    "columns": ["Tool", "Asteroid", "Period Error %", "Pole Error deg", "Shape Metric", "Lightcurve RMS mag", "Data Used"],
+    "rows": [
+      ["Our Pipeline", "433 Eros", "0.608", "66.3", "IoU=0.19", "0.082", "15 LC sessions"],
+      ["Our Pipeline", "216 Kleopatra", "0.234", "68.9", "IoU=0.23", "0.090", "15 LC sessions"],
+      ["Our Pipeline", "25143 Itokawa", "0.064", "22.8", "IoU=0.34", "0.103", "3 LC sessions"],
+      ["MPO LCInvert/Convex", "433 Eros", "<0.01", "~5", "convex hull", "0.01-0.02", "78 LCs, 42yr"],
+      ["MPO LCInvert/Convex", "216 Kleopatra", "<0.01", "~5-10", "convex hull", "0.02-0.04", "~30-50 LCs"],
+      ["MPO LCInvert/Convex", "25143 Itokawa", "<0.01", "~6", "convex hull", "0.01-0.03", "10-20 LCs"],
+      ["SAGE", "433 Eros", "<0.001", "~6", "high visual sim.", "~0.01-0.02", "109 LCs, 42yr"],
+      ["KOALA/ADAM", "21 Lutetia*", "inherited", "2", "vol. within 10%", "N/A", "50 LCs+AO+occ"],
+      ["KOALA/ADAM", "216 Kleopatra", "inherited", "~3-5", "detailed bilobed", "N/A", "55 LCs+14 AO+3 occ"],
+      ["Deep Learning (2025)", "synthetic tests", "N/A", "N/A", "IoU=0.89 (non-cvx)", "0.064 (Eros)", "training set"]
+    ],
+    "notes": "* Lutetia included as KOALA's validation target (Rosetta flyby ground truth). Deep learning results from Tang et al. 2025 for context."
+  },
+
+  "references": [
+    {
+      "id": "Bartczak2018",
+      "citation": "Bartczak, P. & Dudzinski, G. (2018). Shaping asteroid models using genetic evolution (SAGE). Monthly Notices of the Royal Astronomical Society, 473(4), 5050-5065.",
+      "doi": "10.1093/mnras/stx2535",
+      "url": "https://academic.oup.com/mnras/article/473/4/5050/4657825",
+      "relevance": "Primary SAGE reference. Validated on Eros: pole (17, 8) +/- 5 deg, period 5.270256 h. Non-convex shape with great similarity to NEAR model."
+    },
+    {
+      "id": "Carry2012",
+      "citation": "Carry, B. et al. (2012). Shape modeling technique KOALA validated by ESA Rosetta at (21) Lutetia. Planetary and Space Science, 66, 200-212.",
+      "doi": "10.1016/j.pss.2011.12.018",
+      "url": "https://arxiv.org/abs/1112.5944",
+      "relevance": "KOALA validation: pole accuracy 2 deg, dimension accuracy 2%, volume accuracy <10% vs Rosetta ground truth."
+    },
+    {
+      "id": "Viikinkoski2015",
+      "citation": "Viikinkoski, M., Kaasalainen, M. & Durech, J. (2015). ADAM: a general method for using various data types in asteroid reconstruction. Astronomy & Astrophysics, 576, A8.",
+      "doi": "10.1051/0004-6361/201425259",
+      "url": "https://www.aanda.org/articles/aa/full_html/2015/04/aa25259-14/aa25259-14.html",
+      "relevance": "ADAM multi-modal framework. Applied to Kleopatra: pole (73, 21) deg. Cautionary notes on Itokawa radar shape resolution."
+    },
+    {
+      "id": "Warner2009",
+      "citation": "Warner, B.D., Harris, A.W. & Pravec, P. (2009). The asteroid lightcurve database. Icarus, 202, 134-146.",
+      "url": "https://minplanobs.org/BdwPub/php/mpolcinvert.php",
+      "relevance": "MPO LCInvert software description. Based on Kaasalainen-Durech algorithms with 315-point pole grid."
+    },
+    {
+      "id": "Kaasalainen2001",
+      "citation": "Kaasalainen, M., Torppa, J. & Muinonen, K. (2001). Optimization methods for asteroid lightcurve inversion. II. The complete inverse problem. Icarus, 153, 37-51.",
+      "doi": "10.1006/icar.2001.6674",
+      "relevance": "Foundational convex inversion method. Validated on Eros with 78 lightcurves. Basis for MPO LCInvert and DAMIT."
+    },
+    {
+      "id": "Durech2010",
+      "citation": "Durech, J., Sidorin, V. & Kaasalainen, M. (2010). DAMIT: a database of asteroid models. Astronomy & Astrophysics, 513, A46.",
+      "doi": "10.1051/0004-6361/200912693",
+      "url": "https://www.aanda.org/articles/aa/pdf/2010/05/aa12693-09.pdf",
+      "relevance": "DAMIT database with 5700+ convex models. Reference for pole and period accuracy statistics."
+    },
+    {
+      "id": "Hanus2011",
+      "citation": "Hanus, J. et al. (2011). A study of asteroid pole-latitude distribution based on an extended set of shape models derived by the lightcurve inversion method. Astronomy & Astrophysics, 530, A134.",
+      "doi": "10.1051/0004-6361/201116738",
+      "url": "https://arxiv.org/abs/1104.4114",
+      "relevance": "Typical pole uncertainty ~10 deg for dense-data convex inversion models."
+    },
+    {
+      "id": "Durech2009",
+      "citation": "Durech, J. et al. (2009). Asteroid models from combined sparse and dense photometry. Astronomy & Astrophysics, 493, 291-297.",
+      "doi": "10.1051/0004-6361:200810393",
+      "url": "https://www.aanda.org/articles/aa/pdf/2009/01/aa10393-08.pdf",
+      "relevance": "Pole uncertainty 10-25 deg for sparse+dense combined data models."
+    },
+    {
+      "id": "Kaasalainen2003",
+      "citation": "Kaasalainen, M. et al. (2003). CCD photometry and model of MUSES-C target (25143) 1998 SF36. Astronomy & Astrophysics, 405, L29-L32.",
+      "relevance": "Pre-Hayabusa ground-based lightcurve inversion of Itokawa: period 12.132 +/- 0.0005 h, pole (355, -84) +/- 5 deg."
+    },
+    {
+      "id": "Demura2006",
+      "citation": "Demura, H. et al. (2006). Pole and global shape of 25143 Itokawa. Science, 312, 1347-1349.",
+      "doi": "10.1126/science.1126574",
+      "relevance": "Hayabusa spacecraft ground truth for Itokawa: pole (128.5, -89.66) deg, dimensions 535x294x209 m."
+    },
+    {
+      "id": "Miller2002",
+      "citation": "Miller, J.K. et al. (2002). Determination of shape, gravity, and rotational state of asteroid 433 Eros. Icarus, 155, 3-17.",
+      "relevance": "NEAR Shoemaker ground truth for Eros: pole (17.24, 11.35) deg, period 5.27025547 h."
+    },
+    {
+      "id": "Shepard2018",
+      "citation": "Shepard, M.K. et al. (2018). A revised shape model of asteroid (216) Kleopatra. Icarus, 311, 197-209.",
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/S0019103517307315",
+      "relevance": "Revised Kleopatra shape from radar: pole (74, +20) +/- 5 deg, period 5.385280 h, dimensions 276x94x78 km."
+    },
+    {
+      "id": "Marchis2021",
+      "citation": "Marchis, F. et al. (2021). (216) Kleopatra, a low density critically rotating M-type asteroid. Astronomy & Astrophysics, 653, A57.",
+      "url": "https://www.aanda.org/articles/aa/full_html/2021/09/aa40874-21/aa40874-21.html",
+      "relevance": "Most recent Kleopatra shape from ADAM: equivalent diameter 118.75 +/- 1.40 km, critically rotating equilibrium dumbbell."
+    },
+    {
+      "id": "Tang2025",
+      "citation": "Tang, Y. et al. (2025). Asteroid shape inversion with light curves using deep learning. Astronomy & Astrophysics, 696, A55.",
+      "url": "https://arxiv.org/abs/2502.16455",
+      "relevance": "Deep learning benchmark: IoU 0.89 for non-convex detection, Chamfer distance metric, millisecond inference. Context for future development."
+    },
+    {
+      "id": "Descamps2011",
+      "citation": "Descamps, P. et al. (2011). Triplicity and physical characteristics of Asteroid (216) Kleopatra. Icarus, 211, 1022-1033.",
+      "relevance": "Kleopatra pole (76, +16) +/- (3, 1) deg. Discovery of two moons."
+    }
+  ],
+
+  "conclusion": "Our pipeline shows clear promise in period recovery, especially given its ability to work with limited data (3-27 lightcurve sessions vs 50-109 in published work). The 0.064% period error for Itokawa from only 3 sessions is particularly noteworthy. However, pole accuracy (23-69 deg) and lightcurve fit residuals (0.08-0.10 mag) need significant improvement to be competitive with the 5-10 deg pole accuracy and 0.01-0.03 mag residuals achieved by established tools. The highest-priority improvement is pole grid resolution and a two-stage optimization strategy that decouples period search from pole determination. Shape fidelity comparisons are currently limited by the use of triaxial ellipsoid ground-truth proxies; obtaining actual spacecraft-derived shape models would enable more meaningful shape accuracy assessment."
+}

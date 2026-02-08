@@ -76,37 +76,46 @@ def sparse_chi_squared(params: np.ndarray,
 
     period_days = period / 24.0
 
+    # Vectorize: precompute static rotation matrix
+    from .forward_model import rotation_matrix_z, rotation_matrix_y
+    R_beta = rotation_matrix_y(-(np.pi / 2 - pole_beta))
+    R_lambda = rotation_matrix_z(-pole_lambda)
+    R_static = R_beta @ R_lambda
+
+    t0 = sparse_data[0]['time']
     chi2 = 0.0
+
     for dp in sparse_data:
         t = dp['time']
-        phase = 2.0 * np.pi * (t - sparse_data[0]['time']) / period_days
-        sun_ecl = dp['sun_ecl']
-        obs_ecl = dp['obs_ecl']
+        phase = 2.0 * np.pi * (t - t0) / period_days
+        cos_p, sin_p = np.cos(-phase), np.sin(-phase)
 
-        sun_body, obs_body = ecliptic_to_body_frame(
-            sun_ecl, obs_ecl, pole_lambda, pole_beta, phase
-        )
+        sun_s = R_static @ dp['sun_ecl']
+        obs_s = R_static @ dp['obs_ecl']
+
+        sun_body = np.array([cos_p*sun_s[0]-sin_p*sun_s[1],
+                             sin_p*sun_s[0]+cos_p*sun_s[1], sun_s[2]])
+        obs_body = np.array([cos_p*obs_s[0]-sin_p*obs_s[1],
+                             sin_p*obs_s[0]+cos_p*obs_s[1], obs_s[2]])
 
         mu0 = normals @ sun_body
         mu = normals @ obs_body
         visible = (mu0 > 0) & (mu > 0)
 
         if np.any(visible):
-            scatter = lommel_seeliger(mu0[visible], mu[visible])
-            brightness = np.sum(scatter * areas[visible])
+            denom = np.maximum(mu0[visible] + mu[visible], 1e-10)
+            brightness = np.sum(mu0[visible] / denom * areas[visible])
         else:
             brightness = 1e-10
 
         model_mag = H_abs - 2.5 * np.log10(max(brightness, 1e-30))
-        obs_mag = dp['reduced_mag']
         err = max(dp['uncertainty'], 0.01)
+        chi2 += ((model_mag - dp['reduced_mag']) / err) ** 2
 
-        chi2 += ((model_mag - obs_mag) / err) ** 2
-
-    # Smoothness regularization
-    if adjacency is not None and lambda_smooth > 0:
-        for i, j in adjacency:
-            chi2 += lambda_smooth * (log_areas[i] - log_areas[j]) ** 2
+    # Smoothness regularization (vectorized)
+    if adjacency is not None and len(adjacency) > 0 and lambda_smooth > 0:
+        diffs = log_areas[adjacency[:, 0]] - log_areas[adjacency[:, 1]]
+        chi2 += lambda_smooth * np.sum(diffs ** 2)
 
     return chi2
 
