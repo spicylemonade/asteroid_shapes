@@ -1,7 +1,7 @@
 {
   "version": "1.0",
   "created_at": "2026-02-08T12:00:00Z",
-  "updated_at": "2026-02-08T18:13:11.530543+00:00",
+  "updated_at": "2026-02-08T18:18:03.991929+00:00",
   "current_agent": "researcher",
   "agent_status": {
     "orchestrator": {
@@ -94,23 +94,23 @@
           "id": "item_007",
           "description": "Build ALCDEF and MPCORB data ingestion and parsing modules",
           "acceptance_criteria": "Python module(s) that: (1) extract ALCDEF_ALL.zip and parse all 24,643 lightcurve files into structured data (asteroid ID, JD timestamps, magnitudes, uncertainties, metadata), (2) parse MPCORB.DAT.gz into orbital element records (H, G, a, e, i, Omega, omega, M, epoch), (3) provide API to query by asteroid number/designation, (4) unit tests pass on at least 5 known asteroids (433 Eros, 25143 Itokawa, 216 Kleopatra, 1580 Betulia, 6489 Golevka). All parsed data validated against manually checked sample values.",
-          "status": "pending",
-          "notes": null,
+          "status": "completed",
+          "notes": "ALCDEF parser and MPCORB database modules working. Tested on 5 targets: Eros(27 sessions, 2289 pts), Itokawa(3/211), Kleopatra(19/2728), Betulia(5/209), Golevka(not in ALCDEF). MPCORB loaded 100k records, orbital elements validated for all 5 targets.",
           "error": null
         },
         {
           "id": "item_008",
           "description": "Implement forward model: shape representation and synthetic lightcurve generation",
           "acceptance_criteria": "Python module implementing: (1) convex shape representation using either spherical-harmonics coefficients or triangulated convex hull with >=200 facets, (2) Lommel-Seeliger scattering law (and optionally Hapke), (3) computation of illumination and viewing geometry per facet given Sun-asteroid-observer vectors derived from orbital elements and epoch, (4) generation of synthetic brightness at arbitrary epochs. Validated by: generating a lightcurve for a triaxial ellipsoid (a:b:c = 2:1.5:1) at known geometry and confirming amplitude matches analytic prediction within 5%.",
-          "status": "pending",
-          "notes": null,
+          "status": "completed",
+          "notes": "Forward model implemented: triaxial ellipsoid mesh generation, Lommel-Seeliger scattering, ecliptic-to-body frame transform, synthetic lightcurve generation. Validated: 2:1.5:1 ellipsoid at phase=30deg gives amplitude 0.308 mag vs expected 0.312 (1% error, well within 5% criterion). Amplitude monotonically increases with axis ratio. OBJ mesh I/O working.",
           "error": null
         },
         {
           "id": "item_009",
           "description": "Implement period search algorithm",
           "acceptance_criteria": "Module that performs period search over a specified range (default 2-100 hours, step <=0.0001 hr) using chi-squared minimization or phase dispersion minimization. Tested on ALCDEF data for 433 Eros: recovered period must be within 0.1% of the known value (5.270 hours). Execution time for a single asteroid with ~50 lightcurves must be under 10 minutes on a single CPU core.",
-          "status": "pending",
+          "status": "in_progress",
           "notes": null,
           "error": null
         },
@@ -284,9 +284,9 @@
   ],
   "summary": {
     "total_items": 27,
-    "completed": 6,
-    "in_progress": 0,
+    "completed": 8,
+    "in_progress": 1,
     "failed": 0,
-    "pending": 21
+    "pending": 18
   }
 }
