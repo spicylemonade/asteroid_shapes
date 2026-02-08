@@ -1,0 +1,254 @@
+{
+  "433_Eros": {
+    "asteroid": "433_Eros",
+    "number": 433,
+    "method": "jackknife",
+    "n_jackknife": 10,
+    "n_successful": 10,
+    "n_sessions": 10,
+    "n_datapoints": 2019,
+    "period": {
+      "mean": 5.258404748117405,
+      "std": 0.055506722213171746,
+      "relative_uncertainty_pct": 1.0555810150035343
+    },
+    "pole_lambda_deg": {
+      "mean": 7.91980427123476,
+      "std": 18.133205511677584
+    },
+    "pole_beta_deg": {
+      "mean": 42.029689317249286,
+      "std": 6.801234536942848
+    },
+    "residual_rms": {
+      "mean": 0.09794875728771188,
+      "std": 0.007232348918245181
+    },
+    "confidence": "low",
+    "time_seconds": 1480.1
+  },
+  "216_Kleopatra": {
+    "asteroid": "216_Kleopatra",
+    "number": 216,
+    "method": "jackknife",
+    "n_jackknife": 10,
+    "n_successful": 10,
+    "n_sessions": 10,
+    "n_datapoints": 2338,
+    "period": {
+      "mean": 5.3871021837797795,
+      "std": 0.008915843811688197,
+      "relative_uncertainty_pct": 0.1655035213279086
+    },
+    "pole_lambda_deg": {
+      "mean": 0.4090965405613696,
+      "std": 2.5764788056961025
+    },
+    "pole_beta_deg": {
+      "mean": 45.081181048096184,
+      "std": 0.3525313057180029
+    },
+    "residual_rms": {
+      "mean": 0.09165771260906264,
+      "std": 0.010744882806209399
+    },
+    "confidence": "high",
+    "time_seconds": 1592.4
+  },
+  "1943_Anteros": {
+    "asteroid": "1943_Anteros",
+    "number": 1943,
+    "method": "jackknife",
+    "n_jackknife": 10,
+    "n_successful": 10,
+    "n_sessions": 10,
+    "n_datapoints": 812,
+    "period": {
+      "mean": 2.869965884369038,
+      "std": 0.0004950447128995094,
+      "relative_uncertainty_pct": 0.017249149740619477
+    },
+    "pole_lambda_deg": {
+      "mean": 0.0,
+      "std": 0.0
+    },
+    "pole_beta_deg": {
+      "mean": 44.9809821889629,
+      "std": 0.037442398889540936
+    },
+    "residual_rms": {
+      "mean": 0.045556644959768446,
+      "std": 0.0003918451588047035
+    },
+    "confidence": "high",
+    "time_seconds": 226.3
+  },
+  "5143_Heracles": {
+    "asteroid": "5143_Heracles",
+    "number": 5143,
+    "method": "jackknife",
+    "n_jackknife": 10,
+    "n_successful": 10,
+    "n_sessions": 10,
+    "n_datapoints": 1764,
+    "period": {
+      "mean": 1.3529913712356152,
+      "std": 2.685355833809102e-05,
+      "relative_uncertainty_pct": 0.001984754589644359
+    },
+    "pole_lambda_deg": {
+      "mean": 0.00033465482251440986,
+      "std": 0.0030118934026296886
+    },
+    "pole_beta_deg": {
+      "mean": 44.996700028163815,
+      "std": 0.01026971722410171
+    },
+    "residual_rms": {
+      "mean": 0.05680972062813363,
+      "std": 0.0019098878791706804
+    },
+    "confidence": "high",
+    "time_seconds": 358.7
+  },
+  "3122_Florence": {
+    "asteroid": "3122_Florence",
+    "number": 3122,
+    "method": "jackknife",
+    "n_jackknife": 10,
+    "n_successful": 10,
+    "n_sessions": 10,
+    "n_datapoints": 3927,
+    "period": {
+      "mean": 1.9831035531945695,
+      "std": 0.05792472441523023,
+      "relative_uncertainty_pct": 2.9209127441640472
+    },
+    "pole_lambda_deg": {
+      "mean": 1.595841667465816,
+      "std": 5.46755035181994
+    },
+    "pole_beta_deg": {
+      "mean": 43.63737412999216,
+      "std": 2.7632187896791707
+    },
+    "residual_rms": {
+      "mean": 0.07412536292542257,
+      "std": 0.0012391348360304255
+    },
+    "confidence": "low",
+    "time_seconds": 1563.2
+  },
+  "65803_Didymos": {
+    "asteroid": "65803_Didymos",
+    "number": 65803,
+    "method": "jackknife",
+    "n_jackknife": 10,
+    "n_successful": 10,
+    "n_sessions": 10,
+    "n_datapoints": 2123,
+    "period": {
+      "mean": 2.2609861408481606,
+      "std": 5.3214525156860024e-05,
+      "relative_uncertainty_pct": 0.0023535980250147725
+    },
+    "pole_lambda_deg": {
+      "mean": 0.0,
+      "std": 0.0
+    },
+    "pole_beta_deg": {
+      "mean": 44.99812901357548,
+      "std": 0.00718396275513049
+    },
+    "residual_rms": {
+      "mean": 0.07686416633809016,
+      "std": 0.00356410342485032
+    },
+    "confidence": "high",
+    "time_seconds": 537.2
+  },
+  "4015_Wilson_Harrington": {
+    "asteroid": "4015_Wilson_Harrington",
+    "number": 4015,
+    "method": "jackknife",
+    "n_jackknife": 10,
+    "n_successful": 10,
+    "n_sessions": 10,
+    "n_datapoints": 744,
+    "period": {
+      "mean": 3.5658456773077654,
+      "std": 0.051917278772488785,
+      "relative_uncertainty_pct": 1.4559597770278896
+    },
+    "pole_lambda_deg": {
+      "mean": 2.036246965227213,
+      "std": 3.5531866858318164
+    },
+    "pole_beta_deg": {
+      "mean": 43.61153336763239,
+      "std": 3.2012904305547547
+    },
+    "residual_rms": {
+      "mean": 0.12159765073481754,
+      "std": 0.015012114489778738
+    },
+    "confidence": "low",
+    "time_seconds": 268.3
+  },
+  "57_Mnemosyne": {
+    "asteroid": "57_Mnemosyne",
+    "number": 57,
+    "method": "jackknife",
+    "n_jackknife": 10,
+    "n_successful": 10,
+    "n_sessions": 10,
+    "n_datapoints": 4016,
+    "period": {
+      "mean": 1.999971308400572,
+      "std": 0.0008031175660016116,
+      "relative_uncertainty_pct": 0.04015645437653229
+    },
+    "pole_lambda_deg": {
+      "mean": 0.0,
+      "std": 0.0
+    },
+    "pole_beta_deg": {
+      "mean": 45.00670799156646,
+      "std": 0.03065871839099753
+    },
+    "residual_rms": {
+      "mean": 0.037399565165173926,
+      "std": 0.0006699452809167183
+    },
+    "confidence": "high",
+    "time_seconds": 1314.8
+  },
+  "4055_Magellan": {
+    "asteroid": "4055_Magellan",
+    "number": 4055,
+    "method": "jackknife",
+    "n_jackknife": 10,
+    "n_successful": 10,
+    "n_sessions": 10,
+    "n_datapoints": 475,
+    "period": {
+      "mean": 7.443676267462971,
+      "std": 0.48997212100011345,
+      "relative_uncertainty_pct": 6.582394282000535
+    },
+    "pole_lambda_deg": {
+      "mean": 0.28309687564624997,
+      "std": 2.5458402947640955
+    },
+    "pole_beta_deg": {
+      "mean": 48.567393780386375,
+      "std": 21.84496830151143
+    },
+    "residual_rms": {
+      "mean": 0.1913779032136817,
+      "std": 0.011198062347384463
+    },
+    "confidence": "low",
+    "time_seconds": 205.3
+  }
+}
