@@ -1,0 +1,199 @@
+\relax 
+\providecommand\hyper@newdestlabel[2]{}
+\providecommand\HyperFirstAtBeginDocument{\AtBeginDocument}
+\HyperFirstAtBeginDocument{\ifx\hyper@anchor\@undefined
+\global\let\oldnewlabel\newlabel
+\gdef\newlabel#1#2{\newlabelxx{#1}#2}
+\gdef\newlabelxx#1#2#3#4#5#6{\oldnewlabel{#1}{{#2}{#3}}}
+\AtEndDocument{\ifx\hyper@anchor\@undefined
+\let\newlabel\oldnewlabel
+\fi}
+\fi}
+\global\let\hyper@last\relax 
+\gdef\HyperFirstAtBeginDocument#1{#1}
+\providecommand\HyField@AuxAddToFields[1]{}
+\providecommand\HyField@AuxAddToCoFields[2]{}
+\citation{Kaasalainen2001a,Kaasalainen2001b}
+\citation{Bartczak2018}
+\citation{Durech2009}
+\citation{Viikinkoski2015}
+\citation{Ostro2002,Kaasalainen2001b}
+\citation{Kaasalainen2001a}
+\citation{Kaasalainen2001b}
+\citation{Durech2010}
+\citation{Warner2009}
+\@writefile{toc}{\contentsline {section}{\numberline {1}Introduction}{1}{section.1}\protected@file@percent }
+\newlabel{sec:intro}{{1}{1}{Introduction}{section.1}{}}
+\citation{Bartczak2018}
+\citation{Durech2009,Cellino2009,Hanus2013}
+\citation{Carry2012,Viikinkoski2015}
+\citation{Kaasalainen2001a,Kaasalainen2001b}
+\citation{Durech2010}
+\citation{Warner2009}
+\citation{Hanus2011}
+\citation{Bartczak2018}
+\citation{Cellino2009}
+\citation{Viikinkoski2015}
+\citation{Carry2012}
+\citation{Viikinkoski2015}
+\@writefile{toc}{\contentsline {section}{\numberline {2}Related Work}{2}{section.2}\protected@file@percent }
+\newlabel{sec:related}{{2}{2}{Related Work}{section.2}{}}
+\@writefile{toc}{\contentsline {paragraph}{Convex inversion.}{2}{section*.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Non-convex and genetic approaches.}{2}{section*.2}\protected@file@percent }
+\citation{Durech2009}
+\citation{Hanus2013}
+\citation{SantanaRos2015}
+\citation{Durech2016}
+\@writefile{toc}{\contentsline {paragraph}{Multi-data fusion.}{3}{section*.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Sparse-data inversion.}{3}{section*.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Positioning of this work.}{3}{section*.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {3}Background \& Preliminaries}{3}{section.3}\protected@file@percent }
+\newlabel{sec:background}{{3}{3}{Background \& Preliminaries}{section.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Notation}{3}{subsection.3.1}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Principal notation used in this paper.\relax }}{3}{table.caption.6}\protected@file@percent }
+\providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
+\newlabel{tab:notation}{{1}{3}{Principal notation used in this paper.\relax }{table.caption.6}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}The forward problem}{3}{subsection.3.2}\protected@file@percent }
+\newlabel{eq:brightness}{{1}{3}{The forward problem}{equation.3.1}{}}
+\citation{Bowell1989,Hapke1981}
+\citation{Hapke1993}
+\citation{Kaasalainen2001b}
+\citation{Kaasalainen2001a}
+\citation{Kaasalainen2001b}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3}Scattering laws}{4}{subsection.3.3}\protected@file@percent }
+\newlabel{eq:lommel}{{2}{4}{Scattering laws}{equation.3.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.4}The inverse problem}{4}{subsection.3.4}\protected@file@percent }
+\newlabel{eq:chi2}{{3}{4}{The inverse problem}{equation.3.3}{}}
+\newlabel{eq:reg}{{4}{4}{The inverse problem}{equation.3.4}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4}Method}{4}{section.4}\protected@file@percent }
+\newlabel{sec:method}{{4}{4}{Method}{section.4}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}Pipeline architecture}{4}{subsection.4.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}Data ingestion}{4}{subsection.4.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3}Period search}{4}{subsection.4.3}\protected@file@percent }
+\citation{Bartczak2018}
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Pipeline architecture diagram showing the five processing stages. Data from the ALCDEF archive and MPC orbital elements are ingested and parsed. Period search identifies candidate rotation periods. Convex inversion recovers the spin state and shape. Optional branches refine non-convex features via genetic algorithm or incorporate sparse/survey data. Outputs include shape files, spin vectors, and jackknife uncertainty estimates.\relax }}{5}{figure.caption.7}\protected@file@percent }
+\newlabel{fig:architecture}{{1}{5}{Pipeline architecture diagram showing the five processing stages. Data from the ALCDEF archive and MPC orbital elements are ingested and parsed. Period search identifies candidate rotation periods. Convex inversion recovers the spin state and shape. Optional branches refine non-convex features via genetic algorithm or incorporate sparse/survey data. Outputs include shape files, spin vectors, and jackknife uncertainty estimates.\relax }{figure.caption.7}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.4}Convex inversion solver}{5}{subsection.4.4}\protected@file@percent }
+\newlabel{eq:phase}{{5}{5}{Convex inversion solver}{equation.4.5}{}}
+\newlabel{eq:rotation}{{6}{5}{Convex inversion solver}{equation.4.6}{}}
+\@writefile{toc}{\contentsline {paragraph}{Vectorized forward model.}{5}{section*.8}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.5}Genetic algorithm for non-convex shapes}{5}{subsection.4.5}\protected@file@percent }
+\newlabel{sec:ga}{{4.5}{5}{Genetic algorithm for non-convex shapes}{subsection.4.5}{}}
+\citation{Durech2009}
+\citation{Cellino2009}
+\citation{Bowell1989}
+\citation{Viikinkoski2015}
+\@writefile{loa}{\contentsline {algorithm}{\numberline {1}{\ignorespaces Period Search with Alias Handling\relax }}{6}{algorithm.1}\protected@file@percent }
+\newlabel{alg:period}{{1}{6}{Period Search with Alias Handling\relax }{algorithm.1}{}}
+\@writefile{loa}{\contentsline {algorithm}{\numberline {2}{\ignorespaces Genetic Algorithm for Non-Convex Shape Refinement\relax }}{6}{algorithm.2}\protected@file@percent }
+\newlabel{alg:ga}{{2}{6}{Genetic Algorithm for Non-Convex Shape Refinement\relax }{algorithm.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.6}Sparse-data inversion and hybrid fusion}{6}{subsection.4.6}\protected@file@percent }
+\newlabel{eq:hred}{{8}{6}{Sparse-data inversion and hybrid fusion}{equation.4.8}{}}
+\newlabel{eq:hybrid}{{9}{6}{Sparse-data inversion and hybrid fusion}{equation.4.9}{}}
+\citation{Warner2009}
+\citation{Bartczak2018}
+\citation{Carry2012,Viikinkoski2015}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.7}Uncertainty quantification}{7}{subsection.4.7}\protected@file@percent }
+\newlabel{eq:jackknife}{{10}{7}{Uncertainty quantification}{equation.4.10}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5}Experimental Setup}{7}{section.5}\protected@file@percent }
+\newlabel{sec:setup}{{5}{7}{Experimental Setup}{section.5}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.1}Datasets}{7}{subsection.5.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{ALCDEF archive.}{7}{section*.9}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Ground-truth targets.}{7}{section*.10}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces Ground-truth asteroids used for blind validation. Dimensions and spin states from NEAR Shoemaker, Hayabusa, and radar observations.\relax }}{7}{table.caption.11}\protected@file@percent }
+\newlabel{tab:groundtruth}{{2}{7}{Ground-truth asteroids used for blind validation. Dimensions and spin states from NEAR Shoemaker, Hayabusa, and radar observations.\relax }{table.caption.11}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2}Baselines}{7}{subsection.5.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.3}Metrics}{7}{subsection.5.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.4}Hyperparameters}{8}{subsection.5.4}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces Pipeline hyperparameters used for all experiments.\relax }}{8}{table.caption.12}\protected@file@percent }
+\newlabel{tab:hyperparams}{{3}{8}{Pipeline hyperparameters used for all experiments.\relax }{table.caption.12}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.5}Hardware}{8}{subsection.5.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {6}Results}{8}{section.6}\protected@file@percent }
+\newlabel{sec:results}{{6}{8}{Results}{section.6}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.1}Blind validation on ground-truth asteroids}{8}{subsection.6.1}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {4}{\ignorespaces Blind validation results on three ground-truth asteroids. Bold values indicate the best result in each metric. The pipeline was run on real ALCDEF data with no access to ground-truth shapes or spin states.\relax }}{8}{table.caption.13}\protected@file@percent }
+\newlabel{tab:blind}{{4}{8}{Blind validation results on three ground-truth asteroids. Bold values indicate the best result in each metric. The pipeline was run on real ALCDEF data with no access to ground-truth shapes or spin states.\relax }{table.caption.13}{}}
+\citation{Durech2009}
+\citation{Durech2009}
+\newlabel{fig:comp_eros}{{2a}{9}{433 Eros\relax }{figure.caption.14}{}}
+\newlabel{sub@fig:comp_eros}{{a}{9}{433 Eros\relax }{figure.caption.14}{}}
+\newlabel{fig:comp_kleopatra}{{2b}{9}{216 Kleopatra\relax }{figure.caption.14}{}}
+\newlabel{sub@fig:comp_kleopatra}{{b}{9}{216 Kleopatra\relax }{figure.caption.14}{}}
+\newlabel{fig:comp_itokawa}{{2c}{9}{25143 Itokawa\relax }{figure.caption.14}{}}
+\newlabel{sub@fig:comp_itokawa}{{c}{9}{25143 Itokawa\relax }{figure.caption.14}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Side-by-side shape comparisons for the three ground-truth validation targets. Left panels show triaxial ellipsoid approximations of the true shapes; right panels show the shapes recovered by our pipeline from blind inversion of ALCDEF data. The recovered shapes capture the overall elongation but differ in axis ratios and orientation due to pole errors.\relax }}{9}{figure.caption.14}\protected@file@percent }
+\newlabel{fig:comparison}{{2}{9}{Side-by-side shape comparisons for the three ground-truth validation targets. Left panels show triaxial ellipsoid approximations of the true shapes; right panels show the shapes recovered by our pipeline from blind inversion of ALCDEF data. The recovered shapes capture the overall elongation but differ in axis ratios and orientation due to pole errors.\relax }{figure.caption.14}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.2}Benchmark comparison with established tools}{9}{subsection.6.2}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {5}{\ignorespaces Performance comparison against established asteroid shape modeling tools. Bold values indicate the best result per metric. Our pipeline uses 3--7$\times $ less data than published studies for the same asteroids.\relax }}{9}{table.caption.15}\protected@file@percent }
+\newlabel{tab:benchmark}{{5}{9}{Performance comparison against established asteroid shape modeling tools. Bold values indicate the best result per metric. Our pipeline uses 3--7$\times $ less data than published studies for the same asteroids.\relax }{table.caption.15}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.3}Sparse versus dense photometry}{9}{subsection.6.3}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {6}{\ignorespaces Dense versus sparse inversion performance. Sparse data were generated by subsampling ALCDEF lightcurves to 100--150 points from 3 simulated apparitions. Period errors degrade catastrophically (14--65\%) under sparse conditions, confirming the findings of \citet  {Durech2009}.\relax }}{9}{table.caption.16}\protected@file@percent }
+\newlabel{tab:sparse}{{6}{9}{Dense versus sparse inversion performance. Sparse data were generated by subsampling ALCDEF lightcurves to 100--150 points from 3 simulated apparitions. Period errors degrade catastrophically (14--65\%) under sparse conditions, confirming the findings of \citet {Durech2009}.\relax }{table.caption.16}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.4}New asteroid shape models}{9}{subsection.6.4}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {7}{\ignorespaces New asteroid shape models produced by our pipeline. None of these asteroids had prior entries in the DAMIT database. Bold RMS values indicate models achieving $<$0.05\nobreakspace  {}mag residuals. Confidence flags are derived from jackknife uncertainty quantification.\relax }}{10}{table.caption.17}\protected@file@percent }
+\newlabel{tab:candidates}{{7}{10}{New asteroid shape models produced by our pipeline. None of these asteroids had prior entries in the DAMIT database. Bold RMS values indicate models achieving $<$0.05~mag residuals. Confidence flags are derived from jackknife uncertainty quantification.\relax }{table.caption.17}{}}
+\@writefile{toc}{\contentsline {paragraph}{Individual asteroid highlights.}{10}{section*.18}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.4.1}3D shape visualizations}{10}{subsubsection.6.4.1}\protected@file@percent }
+\newlabel{fig:anteros}{{3a}{10}{1943 Anteros\relax }{figure.caption.19}{}}
+\newlabel{sub@fig:anteros}{{a}{10}{1943 Anteros\relax }{figure.caption.19}{}}
+\newlabel{fig:heracles}{{3b}{10}{5143 Heracles\relax }{figure.caption.19}{}}
+\newlabel{sub@fig:heracles}{{b}{10}{5143 Heracles\relax }{figure.caption.19}{}}
+\newlabel{fig:didymos}{{3c}{10}{65803 Didymos\relax }{figure.caption.19}{}}
+\newlabel{sub@fig:didymos}{{c}{10}{65803 Didymos\relax }{figure.caption.19}{}}
+\newlabel{fig:florence}{{3d}{10}{3122 Florence\relax }{figure.caption.19}{}}
+\newlabel{sub@fig:florence}{{d}{10}{3122 Florence\relax }{figure.caption.19}{}}
+\newlabel{fig:wh}{{3e}{10}{4015 Wilson-Harrington\relax }{figure.caption.19}{}}
+\newlabel{sub@fig:wh}{{e}{10}{4015 Wilson-Harrington\relax }{figure.caption.19}{}}
+\newlabel{fig:magellan}{{3f}{10}{4055 Magellan\relax }{figure.caption.19}{}}
+\newlabel{sub@fig:magellan}{{f}{10}{4055 Magellan\relax }{figure.caption.19}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Newly derived 3D shape models for six near-Earth asteroids. Each panel shows the shape from three viewing angles (two equatorial, one polar) with Lambertian shading and a spin-axis indicator line. These are the first shape models for these objects derived independently from ALCDEF photometry.\relax }}{10}{figure.caption.19}\protected@file@percent }
+\newlabel{fig:shapes_neo}{{3}{10}{Newly derived 3D shape models for six near-Earth asteroids. Each panel shows the shape from three viewing angles (two equatorial, one polar) with Lambertian shading and a spin-axis indicator line. These are the first shape models for these objects derived independently from ALCDEF photometry.\relax }{figure.caption.19}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.5}Uncertainty quantification}{10}{subsection.6.5}\protected@file@percent }
+\newlabel{sec:uq}{{6.5}{10}{Uncertainty quantification}{subsection.6.5}{}}
+\citation{Warner2009}
+\newlabel{fig:mnemosyne}{{4a}{11}{57 Mnemosyne ($d{\approx }140$~km)\relax }{figure.caption.20}{}}
+\newlabel{sub@fig:mnemosyne}{{a}{11}{57 Mnemosyne ($d{\approx }140$~km)\relax }{figure.caption.20}{}}
+\newlabel{fig:eunike}{{4b}{11}{185 Eunike ($d{\approx }103$~km)\relax }{figure.caption.20}{}}
+\newlabel{sub@fig:eunike}{{b}{11}{185 Eunike ($d{\approx }103$~km)\relax }{figure.caption.20}{}}
+\newlabel{fig:alinda}{{4c}{11}{887 Alinda\relax }{figure.caption.20}{}}
+\newlabel{sub@fig:alinda}{{c}{11}{887 Alinda\relax }{figure.caption.20}{}}
+\newlabel{fig:masaakikoyama}{{4d}{11}{13553 Masaakikoyama\relax }{figure.caption.20}{}}
+\newlabel{sub@fig:masaakikoyama}{{d}{11}{13553 Masaakikoyama\relax }{figure.caption.20}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Additional new shape models for main-belt asteroids and smaller NEOs. 57\nobreakspace  {}Mnemosyne and 185\nobreakspace  {}Eunike are large main-belt asteroids ($D > 100$\nobreakspace  {}km) with excellent photometric coverage. 887\nobreakspace  {}Alinda and 13553\nobreakspace  {}Masaakikoyama are smaller NEOs. All models show three viewing angles with Lambertian shading.\relax }}{11}{figure.caption.20}\protected@file@percent }
+\newlabel{fig:shapes_mba}{{4}{11}{Additional new shape models for main-belt asteroids and smaller NEOs. 57~Mnemosyne and 185~Eunike are large main-belt asteroids ($D > 100$~km) with excellent photometric coverage. 887~Alinda and 13553~Masaakikoyama are smaller NEOs. All models show three viewing angles with Lambertian shading.\relax }{figure.caption.20}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {8}{\ignorespaces Jackknife uncertainty quantification results. High-confidence models (bold) have $\sigma _P/P < 0.5\%$ and $\sigma _\beta < 15^{\circ }$. Low-confidence models show period uncertainties of 1--7\% and should be treated as preliminary.\relax }}{11}{table.caption.21}\protected@file@percent }
+\newlabel{tab:uq}{{8}{11}{Jackknife uncertainty quantification results. High-confidence models (bold) have $\sigma _P/P < 0.5\%$ and $\sigma _\beta < 15^{\circ }$. Low-confidence models show period uncertainties of 1--7\% and should be treated as preliminary.\relax }{table.caption.21}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {7}Discussion}{11}{section.7}\protected@file@percent }
+\newlabel{sec:discussion}{{7}{11}{Discussion}{section.7}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.1}Period recovery is the pipeline's strongest capability}{11}{subsection.7.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.2}Pole accuracy is the primary limitation}{11}{subsection.7.2}\protected@file@percent }
+\citation{Hapke1993}
+\citation{Durech2009}
+\citation{Hanus2013}
+\citation{Hanus2013}
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.3}Shape fidelity and ground-truth limitations}{12}{subsection.7.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.4}Sparse data limitations confirm literature findings}{12}{subsection.7.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.5}Implications for planetary defense}{12}{subsection.7.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.6}Limitations}{12}{subsection.7.6}\protected@file@percent }
+\bibstyle{plainnat}
+\bibdata{sources}
+\bibcite{Bartczak2018}{{1}{2018}{{Bartczak and Dudzi{\'n}ski}}{{}}}
+\bibcite{Bowell1989}{{2}{1989}{{Bowell et~al.}}{{Bowell, Hapke, Domingue, Lumme, Peltoniemi, and Harris}}}
+\bibcite{Carry2012}{{3}{2012}{{Carry et~al.}}{{Carry, Kaasalainen, Merline, M{\"u}ller, Jorda, Drummond, Berthier, O'Rourke, Durech, K{\"u}ppers, Conrad, Tamblyn, Dumas, and Sierks}}}
+\bibcite{Cellino2009}{{4}{2009}{{Cellino et~al.}}{{Cellino, Hestroffer, Tanga, Mottola, and Dell'Oro}}}
+\bibcite{Durech2009}{{5}{2009}{{Durech et~al.}}{{Durech, Kaasalainen, Warner, Fauerbach, Marks, Fauvaud, Graber, Gaftonyuk, and Strabla}}}
+\bibcite{Durech2010}{{6}{2010}{{Durech et~al.}}{{Durech, Sidorin, and Kaasalainen}}}
+\@writefile{toc}{\contentsline {section}{\numberline {8}Conclusion}{13}{section.8}\protected@file@percent }
+\newlabel{sec:conclusion}{{8}{13}{Conclusion}{section.8}{}}
+\bibcite{Durech2016}{{7}{2016}{{Durech et~al.}}{{Durech, Hanu{\v {s}}, Oszkiewicz, and Vanco}}}
+\bibcite{Hanus2011}{{8}{2011}{{Hanu{\v {s}} et~al.}}{{Hanu{\v {s}}, Durech, Bro{\v {z}}, Warner, Pilcher, Stephens, Oey, Bernasconi, Casulli, Behrend, Polishook, Henych, Lehk{\'y}, Yoshida, and Ito}}}
+\bibcite{Hanus2013}{{9}{2013}{{Hanu{\v {s}} et~al.}}{{Hanu{\v {s}}, Durech, Bro{\v {z}}, Marciniak, Warner, Pilcher, Stephens, Behrend, Carry, {\v {D}}uri{\v {s}}, Kor{\v {c}}{\'a}kov{\'a}, and Lehk{\'y}}}}
+\bibcite{Hapke1981}{{10}{1981}{{Hapke}}{{}}}
+\bibcite{Hapke1993}{{11}{1993}{{Hapke}}{{}}}
+\bibcite{Kaasalainen2001a}{{12}{2001}{{Kaasalainen and Torppa}}{{}}}
+\bibcite{Kaasalainen2001b}{{13}{2001}{{Kaasalainen et~al.}}{{Kaasalainen, Torppa, and Muinonen}}}
+\bibcite{Ostro2002}{{14}{2002}{{Ostro et~al.}}{{Ostro, Hudson, Benner, Giorgini, Magri, Margot, and Nolan}}}
+\bibcite{SantanaRos2015}{{15}{2015}{{Santana-Ros et~al.}}{{Santana-Ros, Bartczak, Micha{\l }owski, Tanga, and Cellino}}}
+\bibcite{Viikinkoski2015}{{16}{2015}{{Viikinkoski et~al.}}{{Viikinkoski, Kaasalainen, and Durech}}}
+\bibcite{Warner2009}{{17}{2009}{{Warner et~al.}}{{Warner, Harris, and Pravec}}}
+\gdef \@abspage@last{14}

@@ -1,0 +1,148 @@
+\begin{thebibliography}{17}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Bartczak and Dudzi{\'n}ski(2018)]{Bartczak2018}
+P.~Bartczak and G.~Dudzi{\'n}ski.
+\newblock Shaping asteroid models using genetic evolution ({SAGE}).
+\newblock \emph{Monthly Notices of the Royal Astronomical Society},
+  473\penalty0 (4):\penalty0 5050--5065, 2018.
+\newblock \doi{10.1093/mnras/stx2535}.
+
+\bibitem[Bowell et~al.(1989)Bowell, Hapke, Domingue, Lumme, Peltoniemi, and
+  Harris]{Bowell1989}
+E.~Bowell, B.~Hapke, D.~Domingue, K.~Lumme, J.~Peltoniemi, and A.~W. Harris.
+\newblock Application of photometric models to asteroids.
+\newblock In R.~P. Binzel, T.~Gehrels, and M.~S. Matthews, editors,
+  \emph{Asteroids {II}}, pages 524--556. University of Arizona Press, Tucson,
+  1989.
+
+\bibitem[Carry et~al.(2012)Carry, Kaasalainen, Merline, M{\"u}ller, Jorda,
+  Drummond, Berthier, O'Rourke, Durech, K{\"u}ppers, Conrad, Tamblyn, Dumas,
+  and Sierks]{Carry2012}
+B.~Carry, M.~Kaasalainen, W.~J. Merline, T.~G. M{\"u}ller, L.~Jorda, J.~D.
+  Drummond, J.~Berthier, L.~O'Rourke, J.~Durech, M.~K{\"u}ppers, A.~Conrad,
+  P.~Tamblyn, C.~Dumas, and H.~Sierks.
+\newblock {KOALA}: {A} new method combining lightcurve and multi-dataset
+  inversion for asteroids applied to ({234})~{B}arbara.
+\newblock \emph{Planetary and Space Science}, 73\penalty0 (1):\penalty0
+  98--118, 2012.
+\newblock \doi{10.1016/j.pss.2012.03.009}.
+
+\bibitem[Cellino et~al.(2009)Cellino, Hestroffer, Tanga, Mottola, and
+  Dell'Oro]{Cellino2009}
+A.~Cellino, D.~Hestroffer, P.~Tanga, S.~Mottola, and A.~Dell'Oro.
+\newblock Genetic inversion of sparse disk-integrated photometric data of
+  asteroids: application to {Hipparcos} data.
+\newblock \emph{Astronomy \& Astrophysics}, 506\penalty0 (2):\penalty0
+  935--954, 2009.
+\newblock \doi{10.1051/0004-6361/200912134}.
+
+\bibitem[Durech et~al.(2009)Durech, Kaasalainen, Warner, Fauerbach, Marks,
+  Fauvaud, Graber, Gaftonyuk, and Strabla]{Durech2009}
+J.~Durech, M.~Kaasalainen, B.~D. Warner, M.~Fauerbach, S.~A. Marks, S.~Fauvaud,
+  J.~Graber, N.~M. Gaftonyuk, and L.~Strabla.
+\newblock Asteroid models from combined sparse and dense photometric data.
+\newblock \emph{Astronomy \& Astrophysics}, 493\penalty0 (1):\penalty0
+  291--297, 2009.
+\newblock \doi{10.1051/0004-6361:200810393}.
+
+\bibitem[Durech et~al.(2010)Durech, Sidorin, and Kaasalainen]{Durech2010}
+J.~Durech, V.~Sidorin, and M.~Kaasalainen.
+\newblock {DAMIT}: a database of asteroid models from inversion techniques.
+\newblock \emph{Astronomy \& Astrophysics}, 513:\penalty0 A46, 2010.
+\newblock \doi{10.1051/0004-6361/200912693}.
+
+\bibitem[Durech et~al.(2016)Durech, Hanu{\v{s}}, Oszkiewicz, and
+  Vanco]{Durech2016}
+J.~Durech, J.~Hanu{\v{s}}, D.~Oszkiewicz, and R.~Vanco.
+\newblock Asteroid models from the {Lowell Photometric Database}.
+\newblock \emph{Astronomy \& Astrophysics}, 587:\penalty0 A48, 2016.
+\newblock \doi{10.1051/0004-6361/201527573}.
+
+\bibitem[Hanu{\v{s}} et~al.(2011)Hanu{\v{s}}, Durech, Bro{\v{z}}, Warner,
+  Pilcher, Stephens, Oey, Bernasconi, Casulli, Behrend, Polishook, Henych,
+  Lehk{\'y}, Yoshida, and Ito]{Hanus2011}
+J.~Hanu{\v{s}}, J.~Durech, M.~Bro{\v{z}}, B.~D. Warner, F.~Pilcher,
+  R.~Stephens, J.~Oey, L.~Bernasconi, S.~Casulli, R.~Behrend, D.~Polishook,
+  T.~Henych, M.~Lehk{\'y}, F.~Yoshida, and T.~Ito.
+\newblock A study of asteroid pole-latitude distribution based on an extended
+  set of shape models derived by the lightcurve inversion method.
+\newblock \emph{Astronomy \& Astrophysics}, 530:\penalty0 A134, 2011.
+\newblock \doi{10.1051/0004-6361/201116738}.
+
+\bibitem[Hanu{\v{s}} et~al.(2013)Hanu{\v{s}}, Durech, Bro{\v{z}}, Marciniak,
+  Warner, Pilcher, Stephens, Behrend, Carry, {\v{D}}uri{\v{s}},
+  Kor{\v{c}}{\'a}kov{\'a}, and Lehk{\'y}]{Hanus2013}
+J.~Hanu{\v{s}}, J.~Durech, M.~Bro{\v{z}}, A.~Marciniak, B.~D. Warner,
+  F.~Pilcher, R.~Stephens, R.~Behrend, B.~Carry, F.~{\v{D}}uri{\v{s}},
+  D.~Kor{\v{c}}{\'a}kov{\'a}, and M.~Lehk{\'y}.
+\newblock Asteroids' physical models from combined dense and sparse photometry
+  and scaling of the {YORP} effect by the observed obliquity distribution.
+\newblock \emph{Astronomy \& Astrophysics}, 551:\penalty0 A67, 2013.
+\newblock \doi{10.1051/0004-6361/201220701}.
+
+\bibitem[Hapke(1981)]{Hapke1981}
+B.~Hapke.
+\newblock Bidirectional reflectance spectroscopy. {I}. {Theory}.
+\newblock \emph{Journal of Geophysical Research}, 86\penalty0 (B4):\penalty0
+  3039--3054, 1981.
+\newblock \doi{10.1029/JB086iB04p03039}.
+
+\bibitem[Hapke(1993)]{Hapke1993}
+B.~Hapke.
+\newblock \emph{Theory of Reflectance and Emittance Spectroscopy}.
+\newblock Cambridge University Press, Cambridge, 1993.
+\newblock ISBN 9780521619271.
+
+\bibitem[Kaasalainen and Torppa(2001)]{Kaasalainen2001a}
+M.~Kaasalainen and J.~Torppa.
+\newblock Optimization methods for asteroid lightcurve inversion. {I}. shape
+  determination.
+\newblock \emph{Icarus}, 153\penalty0 (1):\penalty0 24--36, 2001.
+\newblock \doi{10.1006/icar.2001.6673}.
+
+\bibitem[Kaasalainen et~al.(2001)Kaasalainen, Torppa, and
+  Muinonen]{Kaasalainen2001b}
+M.~Kaasalainen, J.~Torppa, and K.~Muinonen.
+\newblock Optimization methods for asteroid lightcurve inversion. {II}. the
+  complete inverse problem.
+\newblock \emph{Icarus}, 153\penalty0 (1):\penalty0 37--51, 2001.
+\newblock \doi{10.1006/icar.2001.6674}.
+
+\bibitem[Ostro et~al.(2002)Ostro, Hudson, Benner, Giorgini, Magri, Margot, and
+  Nolan]{Ostro2002}
+S.~J. Ostro, R.~S. Hudson, L.~A.~M. Benner, J.~D. Giorgini, C.~Magri, J.-L.
+  Margot, and M.~C. Nolan.
+\newblock Asteroid radar astronomy.
+\newblock In W.~F. Bottke, A.~Cellino, P.~Paolicchi, and R.~P. Binzel, editors,
+  \emph{Asteroids {III}}, pages 151--168. University of Arizona Press, Tucson,
+  2002.
+
+\bibitem[Santana-Ros et~al.(2015)Santana-Ros, Bartczak, Micha{\l}owski, Tanga,
+  and Cellino]{SantanaRos2015}
+T.~Santana-Ros, P.~Bartczak, T.~Micha{\l}owski, P.~Tanga, and A.~Cellino.
+\newblock Testing the inversion of asteroids' {Gaia} photometry combined with
+  ground-based observations.
+\newblock \emph{Monthly Notices of the Royal Astronomical Society},
+  450\penalty0 (1):\penalty0 333--341, 2015.
+\newblock \doi{10.1093/mnras/stv600}.
+
+\bibitem[Viikinkoski et~al.(2015)Viikinkoski, Kaasalainen, and
+  Durech]{Viikinkoski2015}
+M.~Viikinkoski, M.~Kaasalainen, and J.~Durech.
+\newblock {ADAM}: a general method for using various data types in asteroid
+  reconstruction.
+\newblock \emph{Astronomy \& Astrophysics}, 576:\penalty0 A8, 2015.
+\newblock \doi{10.1051/0004-6361/201425259}.
+
+\bibitem[Warner et~al.(2009)Warner, Harris, and Pravec]{Warner2009}
+B.~D. Warner, A.~W. Harris, and P.~Pravec.
+\newblock The asteroid lightcurve database.
+\newblock \emph{Icarus}, 202\penalty0 (1):\penalty0 134--146, 2009.
+\newblock \doi{10.1016/j.icarus.2009.02.003}.
+
+\end{thebibliography}
