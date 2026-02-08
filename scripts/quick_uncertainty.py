@@ -23,6 +23,7 @@ RESULTS_DIR = os.path.join(os.path.dirname(__file__), '..', 'results')
 np.random.seed(42)
 
 def log(msg):
+    """Print a message immediately with flushed output."""
     print(msg, flush=True)
 
 
@@ -41,6 +42,18 @@ TARGETS = [
 
 
 def jackknife_asteroid(target):
+    """Estimate parameter uncertainties for one asteroid via jackknife resampling.
+
+    Performs leave-one-session-out inversions, then computes jackknife variance
+    estimates for period, pole direction, and residual RMS.
+
+    Args:
+        target: Dict with 'key', 'number', and 'period_init'.
+
+    Returns:
+        Dict with jackknife statistics and confidence flag, or None if
+        insufficient data or too few successful iterations.
+    """
     key = target['key']
     number = target['number']
     period_init = target['period_init']
@@ -153,6 +166,7 @@ def jackknife_asteroid(target):
 
 
 def main():
+    """Run jackknife uncertainty quantification for all targets and save results."""
     all_results = {}
     for target in TARGETS:
         try:

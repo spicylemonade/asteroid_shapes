@@ -48,10 +48,23 @@ RESULTS_DIR = os.path.join(os.path.dirname(__file__), '..', 'results')
 np.random.seed(42)
 
 def log(msg):
+    """Print a message immediately with flushed output."""
     print(msg, flush=True)
 
 
 def run_blind_test(asteroid_key, gt_params):
+    """Run full blind inversion pipeline on one asteroid and compare to ground truth.
+
+    Args:
+        asteroid_key: Identifier string for the asteroid (e.g. '433_Eros').
+        gt_params: Dict with ground-truth parameters including 'number',
+            'pole_lambda_deg', 'pole_beta_deg', 'period_hours', and
+            'dimensions_km'.
+
+    Returns:
+        Dict containing recovered parameters, validation metrics, and ground
+        truth comparison, or None if insufficient data.
+    """
     number = gt_params['number']
     log(f"\n{'='*60}")
     log(f"BLIND VALIDATION: {asteroid_key} (#{number})")
@@ -183,6 +196,7 @@ def run_blind_test(asteroid_key, gt_params):
 
 
 def main():
+    """Run blind validation on all ground-truth asteroids and save results."""
     all_results = {}
     for key, params in GROUND_TRUTH.items():
         try:

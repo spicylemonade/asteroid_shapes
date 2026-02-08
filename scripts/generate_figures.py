@@ -24,12 +24,24 @@ FIGURES_DIR = os.path.join(os.path.dirname(__file__), '..', 'figures')
 os.makedirs(FIGURES_DIR, exist_ok=True)
 
 def log(msg):
+    """Print a message immediately with flushed output."""
     print(msg, flush=True)
 
 
 def render_mesh(vertices, faces, title, filepath, spin_axis=None,
                 elev_azim_pairs=None, figsize=(18, 6)):
-    """Render a 3D mesh from multiple viewing angles."""
+    """Render a 3D mesh from multiple viewing angles and save to a PNG file.
+
+    Args:
+        vertices: (N, 3) array of mesh vertex positions.
+        faces: (M, 3) array of triangular face vertex indices.
+        title: Figure title string.
+        filepath: Output PNG file path.
+        spin_axis: Optional (3,) unit vector for spin axis overlay.
+        elev_azim_pairs: List of (elevation, azimuth) tuples for viewpoints.
+            Defaults to two equatorial views and one polar view.
+        figsize: Matplotlib figure size tuple.
+    """
     if elev_azim_pairs is None:
         elev_azim_pairs = [(20, 30), (20, 120), (80, 0)]  # equatorial x2, polar x1
 
@@ -96,6 +108,7 @@ def render_mesh(vertices, faces, title, filepath, spin_axis=None,
 
 
 def main():
+    """Generate all 3D shape visualizations: ground truth, blind tests, comparisons, and candidates."""
     log("Generating 3D shape visualizations...")
 
     # 1. Ground truth shapes

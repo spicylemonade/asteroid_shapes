@@ -39,6 +39,14 @@ class Individual:
 
     def __init__(self, displacements: np.ndarray, pole_lambda: float,
                  pole_beta: float, period: float):
+        """Initialize an individual with shape displacements and spin parameters.
+
+        Args:
+            displacements: (N,) array of radial vertex displacements.
+            pole_lambda: Ecliptic longitude of spin axis (radians).
+            pole_beta: Ecliptic latitude of spin axis (radians).
+            period: Sidereal rotation period (hours).
+        """
         self.displacements = displacements.copy()
         self.pole_lambda = pole_lambda
         self.pole_beta = pole_beta
@@ -46,6 +54,7 @@ class Individual:
         self.fitness = -np.inf
 
     def copy(self):
+        """Return a deep copy of this individual."""
         ind = Individual(self.displacements, self.pole_lambda,
                          self.pole_beta, self.period)
         ind.fitness = self.fitness

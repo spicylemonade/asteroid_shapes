@@ -15,6 +15,7 @@ import signal
 
 
 class ComputeTimeout(Exception):
+    """Raised when a period search computation exceeds the allowed time limit."""
     pass
 
 
@@ -194,6 +195,7 @@ def find_best_period(times: np.ndarray, mags: np.ndarray,
         all_scores: Corresponding scores
     """
     def _handler(signum, frame):
+        """Signal handler that raises ComputeTimeout on SIGALRM."""
         raise ComputeTimeout()
 
     old_handler = signal.signal(signal.SIGALRM, _handler)

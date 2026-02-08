@@ -26,6 +26,7 @@ RESULTS_DIR = os.path.join(os.path.dirname(__file__), '..', 'results')
 np.random.seed(42)
 
 def log(msg):
+    """Print a message immediately with flushed output."""
     print(msg, flush=True)
 
 
@@ -38,6 +39,19 @@ TARGETS = [
 
 
 def run_dense_vs_sparse(target):
+    """Compare dense and sparse inversion results for a single asteroid.
+
+    Performs dense period search and convex inversion, subsamples data to
+    sparse survey conditions, runs sparse inversion, and reports degradation
+    metrics.
+
+    Args:
+        target: Dict with 'key', 'number', and 'known_period' for the asteroid.
+
+    Returns:
+        Dict with dense and sparse results plus degradation metrics, or None on
+        failure.
+    """
     key = target['key']
     number = target['number']
     known_period = target['known_period']
@@ -192,6 +206,7 @@ def run_dense_vs_sparse(target):
 
 
 def main():
+    """Run dense-vs-sparse comparison for all target asteroids and save results."""
     all_results = {}
     for target in TARGETS:
         try:

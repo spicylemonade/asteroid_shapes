@@ -102,6 +102,7 @@ def parse_alcdef_file(content: str) -> List[LightcurveSession]:
 
         # Parse numeric fields safely
         def safe_float(val, default=0.0):
+            """Convert a value to float, returning *default* on failure."""
             try:
                 return float(val)
             except (ValueError, TypeError):
@@ -245,6 +246,11 @@ class MPCORBDatabase:
     """Interface to the MPCORB orbital elements database."""
 
     def __init__(self, gz_path: str):
+        """Initialize the database with a path to MPCORB.DAT.gz.
+
+        Args:
+            gz_path: File path to the gzipped MPCORB.DAT data file.
+        """
         self.gz_path = gz_path
         self._by_number: Dict[int, OrbitalElements] = {}
         self._by_name: Dict[str, OrbitalElements] = {}
@@ -291,6 +297,7 @@ class MPCORBDatabase:
 
     @property
     def count(self) -> int:
+        """Return the total number of unique asteroid records in the database."""
         if not self._loaded:
             self.load()
         return len(self._by_number) + len(self._by_name) - len(

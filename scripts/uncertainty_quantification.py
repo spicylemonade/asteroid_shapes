@@ -25,6 +25,7 @@ RESULTS_DIR = os.path.join(os.path.dirname(__file__), '..', 'results')
 np.random.seed(42)
 
 def log(msg):
+    """Print a message immediately with flushed output."""
     print(msg, flush=True)
 
 
@@ -39,6 +40,19 @@ N_BOOTSTRAP = 50
 
 
 def bootstrap_asteroid(target):
+    """Estimate parameter uncertainties for one asteroid via bootstrap resampling.
+
+    Runs N_BOOTSTRAP inversions on resampled (with replacement) session sets,
+    then computes mean, standard deviation, and confidence flags for period
+    and pole direction.
+
+    Args:
+        target: Dict with 'key', 'number', and 'period_init'.
+
+    Returns:
+        Dict with bootstrap statistics and confidence flag, or None if
+        insufficient data.
+    """
     key = target['key']
     number = target['number']
     period_init = target['period_init']
@@ -164,6 +178,7 @@ def bootstrap_asteroid(target):
 
 
 def main():
+    """Run bootstrap uncertainty quantification for all targets and save results."""
     all_results = {}
     for target in TARGETS:
         try:

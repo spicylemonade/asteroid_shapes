@@ -77,10 +77,12 @@ def log(msg):
 
 
 class AsteroidTimeout(Exception):
+    """Raised when processing a single asteroid exceeds the per-asteroid time limit."""
     pass
 
 
 def _timeout_handler(signum, frame):
+    """Signal handler that raises AsteroidTimeout on SIGALRM."""
     raise AsteroidTimeout("Asteroid processing timed out")
 
 
@@ -295,6 +297,7 @@ def save_summary_csv(all_results):
 
 
 def main():
+    """Run the full inversion pipeline on all top-10 candidate asteroids and save results."""
     log("=" * 70)
     log("  ASTEROID LIGHTCURVE INVERSION PIPELINE - TOP 10 CANDIDATES")
     log("  Item 020 of research rubric")
