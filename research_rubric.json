@@ -1,0 +1,292 @@
+{
+  "version": "1.0",
+  "created_at": "2026-02-08T12:00:00Z",
+  "updated_at": "2026-02-08T21:43:09.550448+00:00",
+  "current_agent": "orchestrator",
+  "agent_status": {
+    "orchestrator": {
+      "status": "completed",
+      "started_at": "2026-02-08T12:00:00Z",
+      "completed_at": "2026-02-08T21:43:09.550412+00:00",
+      "error": null
+    },
+    "researcher": {
+      "status": "pending",
+      "started_at": null,
+      "completed_at": null,
+      "error": null
+    },
+    "writer": {
+      "status": "pending",
+      "started_at": null,
+      "completed_at": null,
+      "error": null
+    },
+    "reviewer": {
+      "status": "pending",
+      "started_at": null,
+      "completed_at": null,
+      "error": null
+    }
+  },
+  "phases": [
+    {
+      "id": "phase_1",
+      "name": "Problem Analysis & Literature Review",
+      "order": 1,
+      "items": [
+        {
+          "id": "item_001",
+          "description": "Analyze repository structure and available data assets",
+          "acceptance_criteria": "Produce a written inventory document listing: (1) ALCDEF_ALL.zip contents\u201424,643 lightcurve files, naming convention, sample record format with all ALCDEF fields; (2) MPCORB.DAT.gz schema\u2014all column definitions, number of objects, epoch; (3) empty output directories (figures/, results/); (4) absence of existing source code. Document saved as results/repo_inventory.md.",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        },
+        {
+          "id": "item_002",
+          "description": "Conduct literature review on asteroid lightcurve inversion methods via web search",
+          "acceptance_criteria": "Search the web for and read at minimum the following foundational papers plus 6 additional relevant works: Kaasalainen & Torppa (2001) convex inversion, Kaasalainen et al. (2001) optimization methods, Durech et al. (2010) sparse photometry inversion, Bartczak & Dudzinski (2018) SAGE genetic evolution, Viikinkoski et al. (2015) ADAM multi-data fusion, Durech et al. (2010) DAMIT database description. Summarize each paper's key algorithm, inputs, outputs, and limitations in results/literature_review.md.",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        },
+        {
+          "id": "item_003",
+          "description": "Survey existing open-source LCI tools and code repositories",
+          "acceptance_criteria": "Search GitHub and the web for existing implementations: convexinv (Kaasalainen reference code), SAGE source availability, KOALA, ADAM, MPO LCInvert documentation, Durech's lightcurve inversion codes. Document for each: language, license, algorithmic approach, known limitations, and whether source is accessible. Record findings in results/tool_survey.md.",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        },
+        {
+          "id": "item_004",
+          "description": "Create and populate sources.bib with BibTeX entries for all consulted references",
+          "acceptance_criteria": "sources.bib exists in repo root with valid BibTeX entries for at least 15 relevant papers covering: convex inversion theory, non-convex/genetic methods, sparse photometry inversion, scattering law models (Lommel-Seeliger, Hapke), DAMIT database, ALCDEF format, LCDB catalogue, and Gaia/ZTF asteroid photometry. Each entry must include authors, title, journal, year, and DOI where available.",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        },
+        {
+          "id": "item_005",
+          "description": "Define mathematical formulation of the lightcurve inversion problem",
+          "acceptance_criteria": "Document in results/math_formulation.md the complete forward model: (1) shape representation (spherical harmonics for convex, vertex-based mesh for non-convex); (2) scattering law (Lommel-Seeliger with Lambert term); (3) viewing/illumination geometry from orbital elements; (4) synthetic brightness computation via visible+illuminated facet summation; (5) chi-squared objective function; (6) regularization terms (smoothness, convexity penalty). All equations rendered in LaTeX notation. References to sources.bib entries included.",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        },
+        {
+          "id": "item_006",
+          "description": "Parse and profile ALCDEF data to characterize available photometry",
+          "acceptance_criteria": "Write a Python script (src/data/parse_alcdef.py) that extracts ALCDEF_ALL.zip, parses all 24,643 files, and produces a summary CSV (results/alcdef_summary.csv) with columns: asteroid_number, name, num_sessions, total_datapoints, date_range, filter_bands, observers. Also produce histogram plots in figures/ showing distribution of datapoints-per-asteroid and temporal coverage. Script must run to completion without errors.",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        }
+      ]
+    },
+    {
+      "id": "phase_2",
+      "name": "Baseline Implementation & Metrics",
+      "order": 2,
+      "items": [
+        {
+          "id": "item_007",
+          "description": "Implement MPCORB parser and ephemeris geometry calculator",
+          "acceptance_criteria": "Module src/geometry/ephemeris.py that: (1) parses MPCORB.DAT.gz into a searchable dictionary keyed by asteroid number/designation; (2) given an asteroid ID and observation epoch, computes heliocentric and geocentric positions, phase angle, aspect angle (sub-observer latitude/longitude), and solar elongation using two-body Keplerian propagation. Unit tests in tests/test_ephemeris.py pass for at least 3 known asteroids with geometry verified against JPL Horizons to within 1 degree.",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        },
+        {
+          "id": "item_008",
+          "description": "Implement convex shape representation and synthetic lightcurve forward model",
+          "acceptance_criteria": "Module src/shapes/convex_model.py implementing: (1) spherical harmonics shape parameterization (degree/order up to 8); (2) triangulated mesh generation from coefficients; (3) facet normal and area computation; (4) Lommel-Seeliger + Lambert scattering law; (5) synthetic brightness calculation given shape, spin state (pole ecliptic lambda/beta, period, epoch), and observer geometry. Verified by generating a synthetic lightcurve for a triaxial ellipsoid and confirming it matches the analytic amplitude ratio a/b to within 2%.",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        },
+        {
+          "id": "item_009",
+          "description": "Implement period search module using Lomb-Scargle and phase dispersion minimization",
+          "acceptance_criteria": "Module src/inversion/period_search.py that: (1) takes time-series magnitude data; (2) computes Lomb-Scargle periodogram over configurable frequency range; (3) implements phase dispersion minimization (PDM) as independent cross-check; (4) returns ranked list of candidate periods with uncertainties. Tested on ALCDEF data for asteroid 433 Eros\u2014recovered period must match known value of 5.270 hours to within 0.005 hours.",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        },
+        {
+          "id": "item_010",
+          "description": "Implement convex inversion solver (Kaasalainen-Torppa gradient descent)",
+          "acceptance_criteria": "Module src/inversion/convex_solver.py implementing Levenberg-Marquardt or conjugate gradient minimization of the chi-squared objective between observed and synthetic lightcurves. Solver optimizes spherical harmonics coefficients and pole orientation simultaneously. Convergence tested on synthetic data from a known triaxial ellipsoid: recovered axis ratios within 5% of true values, pole direction within 10 degrees, period within 0.001 hours. No use of external inversion libraries for core logic.",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        },
+        {
+          "id": "item_011",
+          "description": "Implement Hausdorff distance and volumetric IoU mesh comparison metrics",
+          "acceptance_criteria": "Module src/metrics/shape_comparison.py implementing: (1) Hausdorff distance between two 3D meshes (one-sided and symmetric); (2) Volumetric IoU via voxelization at configurable resolution. Unit tests verify: identical meshes yield Hausdorff=0 and IoU=1.0; a sphere vs. same sphere scaled by 1.1x yields expected bounded Hausdorff and IoU values. Functions accept .obj mesh files as input.",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        },
+        {
+          "id": "item_012",
+          "description": "Retrieve ground-truth shape models from DAMIT and JPL for validation targets",
+          "acceptance_criteria": "Download and store in data/ground_truth/ the published shape models (.obj or .mod format) for at least 3 validation asteroids: 433 Eros (radar-derived, JPL), 25143 Itokawa (Hayabusa-derived), and 216 Kleopatra (radar-derived). Also retrieve their published spin vectors (pole ecliptic coordinates, sidereal period). Document provenance and citation for each model in data/ground_truth/README.md with references to sources.bib.",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        }
+      ]
+    },
+    {
+      "id": "phase_3",
+      "name": "Core Research & Novel Approaches",
+      "order": 3,
+      "items": [
+        {
+          "id": "item_013",
+          "description": "Implement genetic/evolutionary non-convex shape solver (SAGE-inspired)",
+          "acceptance_criteria": "Module src/inversion/genetic_solver.py implementing: (1) vertex-based mesh representation allowing concavities; (2) genetic algorithm with population size >= 50, crossover, mutation operators acting on vertex positions; (3) fitness function based on lightcurve chi-squared plus mesh regularity penalty; (4) elitism and tournament selection. Solver must converge on a synthetic bi-lobed (contact binary) test shape recovering concavity depth to within 15% of true value. Performance cited against SAGE paper (Bartczak & Dudzinski 2018) from sources.bib.",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        },
+        {
+          "id": "item_014",
+          "description": "Implement sparse data inversion module for survey-quality photometry",
+          "acceptance_criteria": "Module src/inversion/sparse_solver.py that: (1) accepts sparse photometric points (individual magnitude measurements with timestamps, not dense lightcurves); (2) jointly fits pole orientation and convex shape using the methodology of Durech et al. (2010); (3) handles heterogeneous data from different filters via color-index corrections; (4) tested on simulated sparse data (100 points over 4 apparitions) for a known shape\u2014pole recovered within 15 degrees, period within 0.01 hours. Methodology comparison to Durech et al. documented with reference to sources.bib.",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        },
+        {
+          "id": "item_015",
+          "description": "Build hybrid multi-method inversion pipeline combining convex, genetic, and sparse solvers",
+          "acceptance_criteria": "Module src/inversion/hybrid_pipeline.py that: (1) runs convex inversion first to establish initial pole/period/shape estimate; (2) uses convex solution as seed for genetic non-convex refinement; (3) optionally fuses dense ALCDEF lightcurves with sparse survey data in a unified chi-squared; (4) outputs final shape as .obj mesh plus spin vector. Pipeline orchestration is configurable via a YAML config file. End-to-end test on synthetic data demonstrates improved chi-squared vs. convex-only solver by at least 10%.",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        },
+        {
+          "id": "item_016",
+          "description": "Implement target selection query engine for candidate identification",
+          "acceptance_criteria": "Module src/targets/selector.py that: (1) parses MPCORB.DAT.gz to identify NEOs (q < 1.3 AU) and large MBAs (H magnitude implying diameter > 100 km); (2) cross-references against ALCDEF_ALL.zip to count available lightcurves per object; (3) queries or parses DAMIT model list to exclude already-modeled asteroids; (4) applies the 4-tier priority filter (NEO or large, LCDB U>=2, not in DAMIT, sufficient data). Output: results/candidate_list.csv with columns asteroid_id, name, neo_flag, estimated_diameter_km, num_lightcurves, num_datapoints, priority_score. List must contain at least 50 candidates.",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        },
+        {
+          "id": "item_017",
+          "description": "Optimize computational performance with NumPy vectorization and optional C++ kernels",
+          "acceptance_criteria": "Profile the hybrid pipeline on a representative inversion run. Identify top 3 bottlenecks. Optimize synthetic brightness computation and chi-squared evaluation using NumPy vectorized operations (no Python loops over facets/epochs). If single-asteroid inversion exceeds 30 minutes, implement critical inner loop in C++ with pybind11 binding. Demonstrate at least 5x speedup on the profiled benchmark vs. naive Python implementation. Profiling results documented in results/performance_report.md.",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        }
+      ]
+    },
+    {
+      "id": "phase_4",
+      "name": "Experiments & Evaluation",
+      "order": 4,
+      "items": [
+        {
+          "id": "item_018",
+          "description": "Blind validation test on 433 Eros using ALCDEF data",
+          "acceptance_criteria": "Run the hybrid inversion pipeline on real ALCDEF photometry for 433 Eros without using the ground-truth shape. Compare output mesh to JPL radar model using Hausdorff distance and volumetric IoU. Report: recovered pole direction (compare to known lambda=16\u00b0, beta=12\u00b0), period (compare to 5.270h), and shape metrics. Hausdorff distance normalized by equivalent radius must be < 20%, IoU > 0.6. Results saved in results/validation_eros.md with 3D figure in figures/eros_comparison.png.",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        },
+        {
+          "id": "item_019",
+          "description": "Blind validation test on 25143 Itokawa using ALCDEF data",
+          "acceptance_criteria": "Run the hybrid inversion pipeline on real ALCDEF photometry for 25143 Itokawa. Compare output mesh to Hayabusa-derived ground truth. Report recovered spin state and shape metrics. Given Itokawa's extreme elongation (contact binary), the genetic solver's concavity recovery is specifically evaluated. Normalized Hausdorff < 25%, IoU > 0.5. Results in results/validation_itokawa.md with figure in figures/itokawa_comparison.png.",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        },
+        {
+          "id": "item_020",
+          "description": "Blind validation test on 216 Kleopatra using ALCDEF data",
+          "acceptance_criteria": "Run the hybrid inversion pipeline on real ALCDEF photometry for 216 Kleopatra. Compare to radar-derived shape model. Kleopatra's dog-bone bifurcated shape tests the non-convex solver's ability to recover extreme concavities. Report metrics and spin state comparison. Normalized Hausdorff < 30%, IoU > 0.4. Results in results/validation_kleopatra.md with figure in figures/kleopatra_comparison.png.",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        },
+        {
+          "id": "item_021",
+          "description": "Recursive optimization loop if validation targets fail thresholds",
+          "acceptance_criteria": "If any validation asteroid fails its acceptance thresholds: (1) analyze residuals to identify systematic errors (period ambiguity, pole hemisphere degeneracy, scattering law mismatch); (2) adjust loss function weights, regularization strength, or period search granularity; (3) re-run inversion and document improvement. Iterate up to 3 times per target. Final pass/fail status and parameter adjustments logged in results/optimization_log.md. At least 2 of 3 validation targets must pass their thresholds.",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        },
+        {
+          "id": "item_022",
+          "description": "Execute inversion pipeline on top 50 candidate asteroids",
+          "acceptance_criteria": "Run the validated hybrid pipeline on all 50+ candidates from results/candidate_list.csv. For each: (1) extract ALCDEF lightcurves; (2) compute observation geometry from MPCORB; (3) run period search, convex inversion, then non-convex refinement; (4) save output .obj mesh to results/shapes/<asteroid_id>.obj; (5) save spin vector to results/shapes/<asteroid_id>_spin.json (pole lambda, beta, period, epoch). At least 30 asteroids must produce converged solutions (chi-squared reduced < 3.0). Progress tracked in results/batch_run_log.csv.",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        },
+        {
+          "id": "item_023",
+          "description": "Generate 3D visualizations of all newly modeled asteroid shapes",
+          "acceptance_criteria": "For each successfully modeled asteroid, produce: (1) a multi-view rendering (6 orthographic projections) saved as figures/shapes/<asteroid_id>_views.png; (2) a rotational animation frame sequence or GIF saved as figures/shapes/<asteroid_id>_rotation.gif. Figures must show shape with illumination shading. At least 30 asteroid shape figures generated. A gallery summary figure (figures/shape_gallery.png) showing thumbnail views of all new models in a grid layout.",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        }
+      ]
+    },
+    {
+      "id": "phase_5",
+      "name": "Analysis & Documentation",
+      "order": 5,
+      "items": [
+        {
+          "id": "item_024",
+          "description": "Write validation report comparing pipeline accuracy to published methods",
+          "acceptance_criteria": "Document results/validation_report.md containing: (1) table of validation results for Eros, Itokawa, Kleopatra (pole error in degrees, period error in hours, Hausdorff distance, IoU); (2) comparison of these metrics against published accuracy figures from Kaasalainen et al. (2001), Durech et al. (2010), and Bartczak & Dudzinski (2018) as cited in sources.bib; (3) discussion of where the hybrid pipeline outperforms or underperforms relative to individual methods; (4) statistical summary of convergence rates across all 50 candidates. Minimum 1500 words.",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        },
+        {
+          "id": "item_025",
+          "description": "Produce final prioritized candidate list with shape model confidence scores",
+          "acceptance_criteria": "File results/final_candidates.csv with columns: rank, asteroid_id, name, neo_flag, estimated_diameter_km, period_hours, pole_lambda, pole_beta, chi_squared_reduced, shape_confidence_score (0-1 based on chi-squared and lightcurve coverage), num_lightcurves_used, num_apparitions. Sorted by priority score. At least 30 entries with shape_confidence_score > 0.7. Accompanying results/final_candidates.md with narrative description of the top 10 most scientifically interesting new shape models.",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        },
+        {
+          "id": "item_026",
+          "description": "Write research paper draft with methodology, results, and 3D shape figures",
+          "acceptance_criteria": "File results/paper_draft.md (or .tex) structured as: Abstract, Introduction (citing at least 10 papers from sources.bib), Methods (convex inversion, genetic solver, sparse module, hybrid pipeline), Validation Results (Eros, Itokawa, Kleopatra with comparison figures), New Shape Models (gallery figure + table of top 50 candidates), Discussion, Conclusions. Includes embedded references to all figures in figures/. Minimum 5000 words. All 3D shape figures of newly discovered models must be included as referenced figures.",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        },
+        {
+          "id": "item_027",
+          "description": "Package source code with documentation and reproducibility instructions",
+          "acceptance_criteria": "Repository contains: (1) src/ directory with all Python modules organized into subpackages (data/, geometry/, shapes/, inversion/, metrics/, targets/); (2) requirements.txt listing all dependencies with pinned versions; (3) README.md with project description, installation instructions, and usage examples; (4) a run_pipeline.py entry point script that reproduces the full analysis from raw data to output shapes; (5) tests/ directory with at least 10 unit tests that all pass. Running 'python -m pytest tests/' completes with 0 failures.",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "total_items": 27,
+    "completed": 0,
+    "in_progress": 0,
+    "failed": 0,
+    "pending": 27
+  }
+}
