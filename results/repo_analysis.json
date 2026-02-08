@@ -1,0 +1,95 @@
+{
+  "repo_files": {
+    "ALCDEF_ALL.zip": {
+      "role": "Primary photometric lightcurve data archive",
+      "format": "ZIP containing 24,643 ALCDEF-format text files",
+      "size_mb": 135.5,
+      "description": "Asteroid Lightcurve Data Exchange Format files with pipe-delimited photometric observations"
+    },
+    "MPCORB.DAT.gz": {
+      "role": "Orbital elements database from Minor Planet Center",
+      "format": "Gzipped fixed-width text with MPC orbit format",
+      "size_mb": 91.3,
+      "description": "Orbital elements for all numbered and unnumbered multi-opposition minor planets"
+    },
+    "figures/": {
+      "role": "Output directory for publication-quality figures",
+      "status": "empty"
+    },
+    "results/": {
+      "role": "Output directory for experimental results and data files",
+      "status": "empty (being populated)"
+    },
+    "research_rubric.json": {
+      "role": "27-item research plan with 5 phases tracking project progress",
+      "description": "Defines acceptance criteria for each research task"
+    },
+    "sources.bib": {
+      "role": "BibTeX bibliography for all consulted references",
+      "entries": 21
+    },
+    "README.md": {
+      "role": "Project description (minimal)",
+      "status": "needs updating"
+    }
+  },
+  "data_formats": {
+    "ALCDEF": {
+      "structure": "Pipe-delimited text with metadata blocks",
+      "metadata_fields": ["OBJECTNUMBER", "OBJECTNAME", "MPCDESIG", "SESSIONDATE", "SESSIONTIME", "CONTACTNAME", "MPCCODE", "TELESCOPE", "DETECTOR", "PHASE", "PABL", "PABB", "FILTER", "MAGBAND", "DIFFERMAGS"],
+      "data_format": "DATA=JD|magnitude|uncertainty",
+      "blocks": "STARTMETADATA/ENDMETADATA delimit each lightcurve session"
+    },
+    "MPCORB": {
+      "structure": "Fixed-width columns (203 chars per line)",
+      "key_columns": {
+        "designation": "cols 0-7",
+        "H_magnitude": "cols 8-13",
+        "G_parameter": "cols 14-19",
+        "epoch": "cols 20-25 (packed format)",
+        "mean_anomaly": "cols 26-35",
+        "arg_perihelion": "cols 37-46",
+        "long_asc_node": "cols 48-57",
+        "inclination": "cols 59-68",
+        "eccentricity": "cols 70-79",
+        "mean_daily_motion": "cols 80-91",
+        "semi_major_axis": "cols 92-103",
+        "asteroid_name": "cols 175-194"
+      }
+    }
+  },
+  "data_volumes": {
+    "alcdef_files": 24643,
+    "numbered_asteroid_files": 23753,
+    "unnumbered_asteroid_files": 890,
+    "unique_numbered_asteroids": 23743,
+    "asteroid_number_range": "1 to 618481",
+    "asteroids_with_20plus_lightcurves": 8401,
+    "asteroids_with_10plus_lightcurves": 16513,
+    "mpcorb_estimated_records": "600000+",
+    "mpcorb_uncompressed_size_mb": "~307"
+  },
+  "identified_gaps": [
+    "No code written yet - entire LCI pipeline needs implementation",
+    "No ground-truth shape models downloaded from DAMIT or JPL",
+    "No DAMIT cross-reference catalog to identify unmodeled asteroids",
+    "No sparse data from Gaia DR3, ZTF, or Pan-STARRS ingested",
+    "No LCDB quality codes available for period reliability assessment",
+    "Golevka (6489) not found in ALCDEF data",
+    "Itokawa (25143) has only 3 lightcurves - may be insufficient for standalone inversion"
+  ],
+  "target_asteroids_in_data": {
+    "433_Eros": {"lightcurves": 27, "datapoints": 2289, "status": "good coverage"},
+    "25143_Itokawa": {"lightcurves": 3, "datapoints": 211, "status": "sparse coverage"},
+    "216_Kleopatra": {"lightcurves": 19, "datapoints": 2728, "status": "good coverage"},
+    "1580_Betulia": {"lightcurves": 5, "datapoints": 209, "status": "limited coverage"},
+    "6489_Golevka": {"lightcurves": 0, "datapoints": 0, "status": "NOT IN ALCDEF"}
+  },
+  "top_observed_asteroids": [
+    {"id": "288_Glauke", "lightcurves": 189, "datapoints": 3152},
+    {"id": "341_California", "lightcurves": 163, "datapoints": 8305},
+    {"id": "319_Leona", "lightcurves": 157, "datapoints": 9673},
+    {"id": "1036_Ganymed", "lightcurves": 134, "datapoints": 23583},
+    {"id": "470_Kilia", "lightcurves": 131, "datapoints": 11424}
+  ]
+}
