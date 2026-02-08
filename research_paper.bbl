@@ -1,0 +1,248 @@
+\begin{thebibliography}{32}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Aspert et~al.(2002)Aspert, Santa-Cruz, and
+  Ebrahimi]{aspert2002hausdorff}
+N.~Aspert, D.~Santa-Cruz, and T.~Ebrahimi.
+\newblock {MESH}: Measuring errors between surfaces using the hausdorff
+  distance.
+\newblock \emph{IEEE International Conference on Multimedia and Expo}, pages
+  705--708, 2002.
+\newblock \doi{10.1109/ICME.2002.1035879}.
+
+\bibitem[Bartczak and Dudzi{\'n}ski(2018)]{bartczak2018}
+P.~Bartczak and G.~Dudzi{\'n}ski.
+\newblock Shaping asteroids with genetic evolution ({SAGE}).
+\newblock \emph{Monthly Notices of the Royal Astronomical Society},
+  473\penalty0 (4):\penalty0 5085--5098, 2018.
+\newblock \doi{10.1093/mnras/stx2535}.
+
+\bibitem[Chambers et~al.(2016)Chambers, Magnier, Metcalfe, Flewelling, Huber,
+  Waters, et~al.]{chambers2016panstarrs}
+K.~C. Chambers, E.~A. Magnier, N.~Metcalfe, H.~A. Flewelling, M.~E. Huber,
+  C.~Z. Waters, et~al.
+\newblock The {Pan-STARRS1} surveys.
+\newblock \emph{arXiv preprint arXiv:1612.05560}, 2016.
+\newblock \doi{10.48550/arXiv.1612.05560}.
+
+\bibitem[Demura et~al.(2006)Demura, Kobayashi, Nemoto, Matsumoto, Furuya,
+  Yukishita, et~al.]{demura2006itokawa}
+H.~Demura, S.~Kobayashi, E.~Nemoto, N.~Matsumoto, M.~Furuya, A.~Yukishita,
+  et~al.
+\newblock Pole and global shape of 25143 {Itokawa}.
+\newblock \emph{Science}, 312:\penalty0 1347--1349, 2006.
+\newblock \doi{10.1126/science.1126574}.
+
+\bibitem[Descamps et~al.(2011)Descamps, Marchis, Berthier, Hestroffer, Colas,
+  Vachier, Tanga, et~al.]{descamps2011kleopatra}
+P.~Descamps, F.~Marchis, J.~Berthier, D.~Hestroffer, F.~Colas, F.~Vachier,
+  P.~Tanga, et~al.
+\newblock Triplicity and physical characteristics of asteroid (216)
+  {Kleopatra}.
+\newblock \emph{Icarus}, 211:\penalty0 1022--1033, 2011.
+\newblock \doi{10.1016/j.icarus.2010.11.016}.
+
+\bibitem[Durech et~al.(2009)Durech, Kaasalainen, Warner, Fauerbach, Marks,
+  Fauvaud, Fauvaud, Vugnon, Pilcher, Bernasconi, and Behrend]{durech2009}
+J.~Durech, M.~Kaasalainen, B.~D. Warner, M.~Fauerbach, S.~A. Marks, S.~Fauvaud,
+  M.~Fauvaud, J.-M. Vugnon, F.~Pilcher, L.~Bernasconi, and R.~Behrend.
+\newblock Asteroid models from combined sparse and dense photometric data.
+\newblock \emph{Astronomy \& Astrophysics}, 493:\penalty0 291--297, 2009.
+\newblock \doi{10.1051/0004-6361:200810393}.
+
+\bibitem[Durech et~al.(2010)Durech, Sidorin, and Kaasalainen]{durech2010sparse}
+J.~Durech, V.~Sidorin, and M.~Kaasalainen.
+\newblock {DAMIT}: a database of asteroid models from inversion techniques.
+\newblock \emph{Astronomy \& Astrophysics}, 513:\penalty0 A46, 2010.
+\newblock \doi{10.1051/0004-6361/200912693}.
+
+\bibitem[Durech et~al.(2016)Durech, Hanu{\v{s}}, Oszkiewicz, and
+  Vankov{\'a}]{durech2016}
+J.~Durech, J.~Hanu{\v{s}}, D.~Oszkiewicz, and R.~Vankov{\'a}.
+\newblock Asteroid models from the lowell photometric database.
+\newblock \emph{Astronomy \& Astrophysics}, 587:\penalty0 A48, 2016.
+\newblock \doi{10.1051/0004-6361/201527573}.
+
+\bibitem[Durech et~al.(2019)Durech, Hanu{\v{s}}, and
+  Van{\v{c}}o]{durech2019gaia}
+J.~Durech, J.~Hanu{\v{s}}, and R.~Van{\v{c}}o.
+\newblock Inversion of asteroid photometry from {Gaia DR2} and the {Lowell
+  Observatory} photometric database.
+\newblock \emph{Astronomy \& Astrophysics}, 631:\penalty0 A2, 2019.
+\newblock \doi{10.1051/0004-6361/201936341}.
+
+\bibitem[Durech et~al.(2020)Durech, Tonry, Erasmus, Denneau, Heinze,
+  Flewelling, and Van{\v{c}}o]{durech2020atlas}
+J.~Durech, J.~Tonry, N.~Erasmus, L.~Denneau, A.~N. Heinze, H.~Flewelling, and
+  R.~Van{\v{c}}o.
+\newblock Asteroid models reconstructed from {ATLAS} photometry.
+\newblock \emph{Astronomy \& Astrophysics}, 643:\penalty0 A59, 2020.
+\newblock \doi{10.1051/0004-6361/202038007}.
+
+\bibitem[Durech et~al.(2023)Durech, Hanu{\v{s}}, Van{\v{c}}o, and
+  Ali-Lagoa]{durech2023gaia}
+J.~Durech, J.~Hanu{\v{s}}, R.~Van{\v{c}}o, and V.~Ali-Lagoa.
+\newblock Reconstruction of asteroid spin states from {Gaia DR3} photometry.
+\newblock \emph{Astronomy \& Astrophysics}, 675:\penalty0 A24, 2023.
+\newblock \doi{10.1051/0004-6361/202345889}.
+
+\bibitem[{Gaia Collaboration} et~al.(2023){Gaia Collaboration}, Tanga, Panem,
+  Ducourant, Cellino, Delbo, Le~Poncin-Lafitte, et~al.]{gaia2023dr3}
+{Gaia Collaboration}, P.~Tanga, C.~Panem, C.~Ducourant, A.~Cellino, M.~Delbo,
+  C.~Le~Poncin-Lafitte, et~al.
+\newblock {Gaia Data Release 3}: Solar system observations.
+\newblock \emph{Astronomy \& Astrophysics}, 680:\penalty0 A37, 2023.
+\newblock \doi{10.1051/0004-6361/202347456}.
+
+\bibitem[Gaskell et~al.(2008)Gaskell, Barnouin-Jha, Scheeres, Konopliv, Mukai,
+  Abe, et~al.]{gaskell2008eros}
+R.~W. Gaskell, O.~S. Barnouin-Jha, D.~J. Scheeres, A.~S. Konopliv, T.~Mukai,
+  S.~Abe, et~al.
+\newblock Characterizing and navigating small bodies with imaging data.
+\newblock \emph{Meteoritics \& Planetary Science}, 43:\penalty0 1049--1061,
+  2008.
+\newblock \doi{10.1111/j.1945-5100.2008.tb00692.x}.
+
+\bibitem[Hanu{\v{s}} et~al.(2011)Hanu{\v{s}}, Durech, Bro{\v{z}}, Warner,
+  Pilcher, Stephens, Oey, Bernasconi, Casulli, Behrend, et~al.]{hanus2011}
+J.~Hanu{\v{s}}, J.~Durech, M.~Bro{\v{z}}, B.~D. Warner, F.~Pilcher,
+  R.~Stephens, J.~Oey, L.~Bernasconi, S.~Casulli, R.~Behrend, et~al.
+\newblock A study of asteroid pole-latitude distribution based on an extended
+  set of shape models derived by the lightcurve inversion method.
+\newblock \emph{Astronomy \& Astrophysics}, 530:\penalty0 A134, 2011.
+\newblock \doi{10.1051/0004-6361/201116738}.
+
+\bibitem[Hanu{\v{s}} et~al.(2016)Hanu{\v{s}}, Durech, Oszkiewicz, Behrend,
+  Carry, Delbo, Adam, Afonina, Anber, Arlot, et~al.]{hanus2016}
+J.~Hanu{\v{s}}, J.~Durech, D.~A. Oszkiewicz, R.~Behrend, B.~Carry, M.~Delbo,
+  O.~Adam, V.~Afonina, R.~Anber, J.-E. Arlot, et~al.
+\newblock New and updated convex shape models of asteroids based on optical
+  data from a large collaboration network.
+\newblock \emph{Astronomy \& Astrophysics}, 586:\penalty0 A108, 2016.
+\newblock \doi{10.1051/0004-6361/201527441}.
+
+\bibitem[Hapke(1981)]{hapke1981}
+B.~Hapke.
+\newblock Bidirectional reflectance spectroscopy. 1. theory.
+\newblock \emph{Journal of Geophysical Research}, 86:\penalty0 3039--3054,
+  1981.
+\newblock \doi{10.1029/JB086iB04p03039}.
+
+\bibitem[Hapke(2012)]{hapke2012book}
+B.~Hapke.
+\newblock \emph{Theory of Reflectance and Emittance Spectroscopy}.
+\newblock Cambridge University Press, 2nd edition, 2012.
+\newblock ISBN 978-0-521-88349-8.
+
+\bibitem[Kaasalainen and Torppa(2001)]{kaasalainen2001a}
+M.~Kaasalainen and J.~Torppa.
+\newblock Optimization methods for asteroid lightcurve inversion. {I}. shape
+  determination.
+\newblock \emph{Icarus}, 153:\penalty0 24--36, 2001.
+\newblock \doi{10.1006/icar.2001.6673}.
+
+\bibitem[Kaasalainen et~al.(2001)Kaasalainen, Torppa, and
+  Muinonen]{kaasalainen2001b}
+M.~Kaasalainen, J.~Torppa, and K.~Muinonen.
+\newblock Optimization methods for asteroid lightcurve inversion. {II}. the
+  complete inverse problem.
+\newblock \emph{Icarus}, 153:\penalty0 37--51, 2001.
+\newblock \doi{10.1006/icar.2001.6674}.
+
+\bibitem[Kaasalainen et~al.(2002)Kaasalainen, Torppa, and
+  Piironen]{kaasalainen2004}
+M.~Kaasalainen, J.~Torppa, and J.~Piironen.
+\newblock Models of twenty asteroids from photometric data.
+\newblock \emph{Icarus}, 159:\penalty0 369--395, 2002.
+\newblock \doi{10.1006/icar.2002.6907}.
+
+\bibitem[Lomb(1976)]{lomb1976}
+N.~R. Lomb.
+\newblock Least-squares frequency analysis of unequally spaced data.
+\newblock \emph{Astrophysics and Space Science}, 39:\penalty0 447--462, 1976.
+\newblock \doi{10.1007/BF00648343}.
+
+\bibitem[Masci et~al.(2019)Masci, Laher, Rusholme, Shupe, Groom, Surace,
+  Jackson, Monkewitz, Beck, et~al.]{masci2019ztf}
+F.~J. Masci, R.~R. Laher, B.~Rusholme, D.~L. Shupe, S.~Groom, J.~Surace,
+  E.~Jackson, S.~Monkewitz, R.~Beck, et~al.
+\newblock The {Zwicky Transient Facility}: Data processing, products, and
+  archive.
+\newblock \emph{Publications of the Astronomical Society of the Pacific},
+  131:\penalty0 018003, 2019.
+\newblock \doi{10.1088/1538-3873/aae8ac}.
+
+\bibitem[Scargle(1982)]{scargle1982}
+J.~D. Scargle.
+\newblock Studies in astronomical time series analysis. {II}. statistical
+  aspects of spectral analysis of unevenly spaced data.
+\newblock \emph{The Astrophysical Journal}, 263:\penalty0 835--853, 1982.
+\newblock \doi{10.1086/160554}.
+
+\bibitem[Seeliger(1887)]{lommelseeliger1887}
+H.~Seeliger.
+\newblock {Zur Theorie der Beleuchtung der grossen Planeten insbesondere des
+  Saturn}.
+\newblock \emph{Abhandlungen der Bayerischen Akademie der Wissenschaften},
+  16:\penalty0 405--516, 1887.
+\newblock Classic derivation of the Lommel-Seeliger scattering law.
+
+\bibitem[Stellingwerf(1978)]{stellingwerf1978}
+R.~F. Stellingwerf.
+\newblock Period determination using phase dispersion minimization.
+\newblock \emph{The Astrophysical Journal}, 224:\penalty0 953--960, 1978.
+\newblock \doi{10.1086/156444}.
+
+\bibitem[VanderPlas(2018)]{vanderplas2018}
+J.~T. VanderPlas.
+\newblock Understanding the {Lomb--Scargle} periodogram.
+\newblock \emph{The Astrophysical Journal Supplement Series}, 236\penalty0
+  (1):\penalty0 16, 2018.
+\newblock \doi{10.3847/1538-4365/aab766}.
+
+\bibitem[Viikinkoski et~al.(2015)Viikinkoski, Kaasalainen, and
+  Durech]{viikinkoski2015}
+M.~Viikinkoski, M.~Kaasalainen, and J.~Durech.
+\newblock {ADAM}: All-data asteroid modeling.
+\newblock \emph{Astronomy \& Astrophysics}, 576:\penalty0 A8, 2015.
+\newblock \doi{10.1051/0004-6361/201425259}.
+
+\bibitem[Viikinkoski et~al.(2018)Viikinkoski, Vernazza, Hanu{\v{s}},
+  et~al.]{viikinkoski2018}
+M.~Viikinkoski, P.~Vernazza, J.~Hanu{\v{s}}, et~al.
+\newblock {(16) Psyche}: A mesosiderite-like asteroid?
+\newblock \emph{Astronomy \& Astrophysics}, 619:\penalty0 L3, 2018.
+\newblock \doi{10.1051/0004-6361/201834091}.
+
+\bibitem[Warner(2016)]{warner2016alcdef}
+B.~D. Warner.
+\newblock Save the lightcurves! an update on the {ALCDEF} project.
+\newblock \emph{Minor Planet Bulletin}, 43\penalty0 (1):\penalty0 26--30, 2016.
+
+\bibitem[Warner et~al.(2009)Warner, Stephens, and Harris]{warner2009alcdef}
+B.~D. Warner, R.~D. Stephens, and A.~W. Harris.
+\newblock The asteroid lightcurve database.
+\newblock \emph{Icarus}, 202:\penalty0 134--146, 2009.
+\newblock \doi{10.1016/j.icarus.2009.02.003}.
+
+\bibitem[Warner et~al.(2011)Warner, Harris, and Pravec]{warner2011lcdb}
+B.~D. Warner, A.~W. Harris, and P.~Pravec.
+\newblock The asteroid lightcurve database.
+\newblock \emph{Icarus}, 214:\penalty0 399--403, 2011.
+\newblock \doi{10.1016/j.icarus.2011.05.029}.
+
+\bibitem[Waszczak et~al.(2015)Waszczak, Chang, Ofek, Laher, Masci, Levitan,
+  Surace, Cheng, Ip, Kinoshita, Helou, Prince, and Kulkarni]{waszczak2015ptf}
+A.~Waszczak, C.-K. Chang, E.~O. Ofek, R.~Laher, F.~Masci, D.~Levitan,
+  J.~Surace, Y.-C. Cheng, W.-H. Ip, D.~Kinoshita, G.~Helou, T.~A. Prince, and
+  S.~Kulkarni.
+\newblock Asteroid lightcurves from the {Palomar Transient Factory} survey:
+  Rotation periods and phase functions from sparse photometry.
+\newblock \emph{The Astronomical Journal}, 150:\penalty0 75, 2015.
+\newblock \doi{10.1088/0004-6256/150/3/75}.
+
+\end{thebibliography}
