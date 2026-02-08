@@ -51,46 +51,60 @@ def _compute_model_lightcurves(facet_areas: np.ndarray,
                                 epoch_jd: float) -> List[np.ndarray]:
     """Compute model lightcurves for all observation sessions.
 
-    Args:
-        facet_areas: (M,) facet area parameters (positive)
-        normals: (M, 3) unit normals from base mesh
-        base_vertices: (N, 3) base mesh vertices
-        faces: (F, 3) face indices
-        observations: List of dicts with 'times', 'sun_ecl', 'obs_ecl'
-        pole_lambda, pole_beta: Spin axis (radians)
-        period_hours: Sidereal period
-        epoch_jd: Reference epoch
-
-    Returns:
-        List of model magnitude arrays, one per observation session
+    Vectorized over rotation phases for speed.
     """
     period_days = period_hours / 24.0
     model_mags = []
+
+    # Precompute the static part of rotation matrix (pole alignment)
+    from .forward_model import rotation_matrix_z, rotation_matrix_y
+    R_beta = rotation_matrix_y(-(np.pi / 2 - pole_beta))
+    R_lambda = rotation_matrix_z(-pole_lambda)
+    R_static = R_beta @ R_lambda  # (3, 3)
 
     for obs in observations:
         times = obs['times']
         sun_ecl = obs['sun_ecl']
         obs_ecl = obs['obs_ecl']
 
+        # Pre-rotate sun/obs by static matrix
+        sun_static = R_static @ sun_ecl  # (3,)
+        obs_static = R_static @ obs_ecl  # (3,)
+
         phases = 2.0 * np.pi * (times - epoch_jd) / period_days
-        brightness = np.zeros(len(times))
+        n_times = len(phases)
 
-        for i, phase in enumerate(phases):
-            sun_body, obs_body = ecliptic_to_body_frame(
-                sun_ecl, obs_ecl, pole_lambda, pole_beta, phase
-            )
+        # Vectorized spin rotation: compute cos/sin for all phases
+        cos_p = np.cos(-phases)
+        sin_p = np.sin(-phases)
 
-            mu0 = normals @ sun_body
-            mu = normals @ obs_body
-            visible = (mu0 > 0) & (mu > 0)
+        # For each time, R_spin @ sun_static where R_spin rotates around Z
+        # R_spin = [[cos, -sin, 0], [sin, cos, 0], [0, 0, 1]]
+        sun_body_x = cos_p * sun_static[0] - sin_p * sun_static[1]
+        sun_body_y = sin_p * sun_static[0] + cos_p * sun_static[1]
+        sun_body_z = np.full(n_times, sun_static[2])
+        # sun_body shape: (n_times, 3)
+        sun_body_all = np.column_stack([sun_body_x, sun_body_y, sun_body_z])
 
-            if np.any(visible):
-                scatter = lommel_seeliger(mu0[visible], mu[visible])
-                brightness[i] = np.sum(scatter * facet_areas[visible])
-            else:
-                brightness[i] = 1e-10
+        obs_body_x = cos_p * obs_static[0] - sin_p * obs_static[1]
+        obs_body_y = sin_p * obs_static[0] + cos_p * obs_static[1]
+        obs_body_z = np.full(n_times, obs_static[2])
+        obs_body_all = np.column_stack([obs_body_x, obs_body_y, obs_body_z])
 
-        # Convert to relative magnitudes
+        # Compute mu0 and mu for all times and all facets at once
+        # normals: (M, 3), sun_body_all: (n_times, 3)
+        # mu0: (n_times, M) = sun_body_all @ normals.T
+        mu0_all = sun_body_all @ normals.T  # (n_times, M)
+        mu_all = obs_body_all @ normals.T   # (n_times, M)
+
+        # Lommel-Seeliger: mu0 / (mu0 + mu), only where both > 0
+        visible = (mu0_all > 0) & (mu_all > 0)
+        denom = mu0_all + mu_all
+        denom = np.where(visible, np.maximum(denom, 1e-10), 1.0)
+        scatter = np.where(visible, mu0_all / denom, 0.0)
+
+        # brightness = sum over facets of scatter * area
+        brightness = scatter @ facet_areas  # (n_times,)
         brightness = np.maximum(brightness, 1e-30)
         model_mags.append(-2.5 * np.log10(brightness))
 
@@ -137,10 +151,10 @@ def _chi_squared(params: np.ndarray,
         weights = 1.0 / np.maximum(err, 0.001) ** 2
         chi2 += np.sum(weights * (obs_m - mod_shifted) ** 2)
 
-    # Regularization: smoothness of facet areas
-    if adjacency is not None and lambda_smooth > 0:
-        for i, j in adjacency:
-            chi2 += lambda_smooth * (log_areas[i] - log_areas[j]) ** 2
+    # Regularization: smoothness of facet areas (vectorized)
+    if adjacency is not None and len(adjacency) > 0 and lambda_smooth > 0:
+        diffs = log_areas[adjacency[:, 0]] - log_areas[adjacency[:, 1]]
+        chi2 += lambda_smooth * np.sum(diffs ** 2)
 
     return chi2
 

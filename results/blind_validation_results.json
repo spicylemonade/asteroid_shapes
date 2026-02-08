@@ -1,0 +1,110 @@
+{
+  "433_Eros": {
+    "asteroid": "433_Eros",
+    "number": 433,
+    "ground_truth": {
+      "number": 433,
+      "pole_lambda_deg": 11.35,
+      "pole_beta_deg": 17.22,
+      "period_hours": 5.27025,
+      "dimensions_km": [
+        34.4,
+        11.2,
+        11.2
+      ]
+    },
+    "recovered": {
+      "period_hours": 5.302293935296301,
+      "pole_lambda_deg": 257.74245982245486,
+      "pole_beta_deg": -4.086067860982196,
+      "chi2": 739235.8702365106,
+      "residual_rms": 0.0816884286841075,
+      "n_iterations": 6,
+      "converged": true,
+      "n_sessions": 15,
+      "n_datapoints": 2147
+    },
+    "validation": {
+      "hausdorff_distance": 0.6599637246240475,
+      "hausdorff_distance_relative": 0.6599637246240475,
+      "mean_surface_distance": 0.31566090674317737,
+      "volumetric_iou": 0.18777232173732622,
+      "pole_error_degrees": 66.2566342553572,
+      "period_error_percent": 0.6080154697841955,
+      "residual_rms_mag": 0.0816884286841075
+    },
+    "obj_file": "blind_test_433_Eros.obj"
+  },
+  "216_Kleopatra": {
+    "asteroid": "216_Kleopatra",
+    "number": 216,
+    "ground_truth": {
+      "number": 216,
+      "pole_lambda_deg": 76.0,
+      "pole_beta_deg": 16.0,
+      "period_hours": 5.385,
+      "dimensions_km": [
+        217.0,
+        94.0,
+        81.0
+      ]
+    },
+    "recovered": {
+      "period_hours": 5.3723808192538565,
+      "pole_lambda_deg": 1.758887526329391e-08,
+      "pole_beta_deg": 45.70706144644025,
+      "chi2": 3769325.3862020704,
+      "residual_rms": 0.09022477038817701,
+      "n_iterations": 7,
+      "converged": false,
+      "n_sessions": 15,
+      "n_datapoints": 2573
+    },
+    "validation": {
+      "hausdorff_distance": 0.5869674238619362,
+      "hausdorff_distance_relative": 0.5869674238619363,
+      "mean_surface_distance": 0.3812113550231476,
+      "volumetric_iou": 0.22759559606961052,
+      "pole_error_degrees": 68.91874793487408,
+      "period_error_percent": 0.23433947532299576,
+      "residual_rms_mag": 0.09022477038817701
+    },
+    "obj_file": "blind_test_216_Kleopatra.obj"
+  },
+  "25143_Itokawa": {
+    "asteroid": "25143_Itokawa",
+    "number": 25143,
+    "ground_truth": {
+      "number": 25143,
+      "pole_lambda_deg": 128.5,
+      "pole_beta_deg": -89.66,
+      "period_hours": 12.132,
+      "dimensions_km": [
+        0.535,
+        0.294,
+        0.209
+      ]
+    },
+    "recovered": {
+      "period_hours": 12.13977811173142,
+      "pole_lambda_deg": 5.1655421229314005,
+      "pole_beta_deg": 67.02091657721382,
+      "chi2": 2101403.731662023,
+      "residual_rms": 0.10265505055426134,
+      "n_iterations": 20,
+      "converged": false,
+      "n_sessions": 3,
+      "n_datapoints": 211
+    },
+    "validation": {
+      "hausdorff_distance": 0.774866980517361,
+      "hausdorff_distance_relative": 0.7748669805173611,
+      "mean_surface_distance": 0.26298516752889667,
+      "volumetric_iou": 0.3424419667336867,
+      "pole_error_degrees": 22.793918972967294,
+      "period_error_percent": 0.06411236178223395,
+      "residual_rms_mag": 0.10265505055426134
+    },
+    "obj_file": "blind_test_25143_Itokawa.obj"
+  }
+}
