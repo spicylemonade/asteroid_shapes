@@ -71,16 +71,16 @@
           "id": "item_005",
           "description": "Parse ALCDEF_ALL.zip and catalog available asteroid lightcurve data",
           "acceptance_criteria": "Extract and parse ALCDEF_ALL.zip. Produce a catalog (CSV or in-memory DataFrame) with columns: asteroid_number, asteroid_name, number_of_lightcurves, total_data_points, date_range, observer_codes, filter_bands. Report total number of unique asteroids, total number of lightcurves, and identify the subset of asteroids with >=20 lightcurves. Save catalog to results/alcdef_catalog.csv.",
-          "status": "pending",
-          "notes": null,
+          "status": "completed",
+          "notes": "Parsed 24,643 files containing 384,935 lightcurve blocks. 8,401 asteroids have >=20 lightcurves. Catalog saved to results/alcdef_catalog.csv.",
           "error": null
         },
         {
           "id": "item_006",
           "description": "Parse MPCORB.DAT.gz and build orbital elements database",
           "acceptance_criteria": "Decompress and parse MPCORB.DAT.gz into a structured format. Extract for each object: number/designation, epoch, mean anomaly, argument of perihelion, longitude of ascending node, inclination, eccentricity, semimajor axis, absolute magnitude H, slope parameter G, orbit type flags (NEO flag, MBA classification). Identify and flag all NEOs and objects with estimated diameter >100km (using H magnitude and assumed albedo). Save to results/mpcorb_parsed.csv.",
-          "status": "pending",
-          "notes": null,
+          "status": "completed",
+          "notes": "Parsed 1,512,800 records. 40,831 NEOs identified, 2,744 objects with estimated D>100km. Saved to results/mpcorb_parsed.csv.",
           "error": null
         }
       ]
@@ -284,9 +284,9 @@
   ],
   "summary": {
     "total_items": 27,
-    "completed": 1,
+    "completed": 3,
     "in_progress": 0,
     "failed": 0,
-    "pending": 26
+    "pending": 24
   }
 }
