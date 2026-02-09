@@ -94,8 +94,8 @@
           "id": "item_007",
           "description": "Implement ALCDEF data ingestion and lightcurve preprocessing module",
           "acceptance_criteria": "Python module (e.g., src/data_ingest.py) that: (1) reads ALCDEF text files from the extracted zip, (2) parses JD timestamps, magnitudes, and uncertainties, (3) applies heliocentric correction using orbital elements from MPCORB, (4) computes viewing geometry (phase angle, aspect angle, solar elongation) for each observation using MPC orbital elements. Module must successfully load and preprocess lightcurves for at least 3 known test asteroids (433 Eros, 1580 Betulia, 6489 Golevka or similar well-observed targets present in ALCDEF). Unit tests pass.",
-          "status": "pending",
-          "notes": null,
+          "status": "completed",
+          "notes": "src/data_ingest.py implemented. Successfully processes 433 Eros (27 blocks, 2289 pts), 1580 Betulia (5 blocks, 209 pts), 1036 Ganymed (134 blocks, 23583 pts). Computes viewing geometry from MPCORB orbital elements. Uses ALCDEF metadata phase angles for validation.",
           "error": null
         },
         {
@@ -284,9 +284,9 @@
   ],
   "summary": {
     "total_items": 27,
-    "completed": 6,
+    "completed": 7,
     "in_progress": 0,
     "failed": 0,
-    "pending": 21
+    "pending": 20
   }
 }
