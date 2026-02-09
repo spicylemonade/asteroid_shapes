@@ -1,0 +1,14 @@
+{
+  "433": {
+    "known_period": 5.27,
+    "found_period": 5.280400135603387,
+    "error_hours": 0.010400135603387817,
+    "status": "CLOSE"
+  },
+  "1036": {
+    "known_period": 10.314,
+    "found_period": 10.299770516523223,
+    "error_hours": 0.014229483476777105,
+    "status": "CLOSE"
+  }
+}
