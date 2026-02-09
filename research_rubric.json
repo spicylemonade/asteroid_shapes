@@ -47,24 +47,24 @@
           "id": "item_002",
           "description": "Conduct literature review on light curve inversion methods via web search",
           "acceptance_criteria": "Search the web for at least the following topics and summarize findings: (a) Kaasalainen & Torppa convex inversion method, (b) SAGE genetic evolution for non-convex shapes (Bartczak & Dudzinski 2018), (c) sparse photometric inversion (Durech et al. 2010), (d) ADAM multi-data fusion (Viikinkoski et al. 2015), (e) self-shadowing ray-tracing in asteroid photometric models, (f) Lommel-Seeliger / Lambert / Hapke scattering laws. Summary must include key equations, algorithmic steps, and limitations of each method. At least 10 relevant papers cited in sources.bib.",
-          "status": "pending",
-          "notes": null,
+          "status": "completed",
+          "notes": "Comprehensive literature review saved to results/literature_review.md. Covers all 7 topics with key equations, algorithmic steps, limitations. 25+ papers cited in sources.bib.",
           "error": null
         },
         {
           "id": "item_003",
           "description": "Create and populate sources.bib with BibTeX entries for all consulted references",
           "acceptance_criteria": "File sources.bib exists in repo root with valid BibTeX entries for at least 15 papers including: Kaasalainen et al. (2001), Kaasalainen & Torppa (2001), Bartczak & Dudzinski (2018), Durech et al. (2010), Viikinkoski et al. (2015), Muinonen et al. (scattering laws), Cellino et al. (sparse inversion), and any additional state-of-the-art references found during web search. Each entry must have author, title, journal, year, and DOI/URL where available.",
-          "status": "pending",
-          "notes": null,
+          "status": "completed",
+          "notes": "sources.bib contains 30+ BibTeX entries with all required papers. Includes Kaasalainen (2001a,b,c), Bartczak (2018), Durech (2009,2010,2016,2018), Viikinkoski (2015,2017), Muinonen (2009,2010,2015,2020), Cellino (2009,2015), Hapke (1993,2012), Carry (2012), and more.",
           "error": null
         },
         {
           "id": "item_004",
           "description": "Survey existing open-source LCI tools and benchmark capabilities",
           "acceptance_criteria": "Web search for and document the capabilities, limitations, and source code availability of: (1) MPO LCInvert, (2) SAGE, (3) KOALA, (4) ADAM, (5) convexinv (Durech DAMIT tools), (6) any LSST/Rubin pipeline asteroid shape tools. For each, record: language, license, whether it handles sparse data, whether it supports non-convex shapes, whether it includes self-shadowing. Summarize gaps that our pipeline must fill. Add all relevant references to sources.bib.",
-          "status": "pending",
-          "notes": null,
+          "status": "completed",
+          "notes": "Tool survey included in literature_review.md Section 7. Covers all 6 tools with language, license, capability matrix, and gap analysis. Key finding: no existing tool combines non-convex + sparse + self-shadowing in one pipeline.",
           "error": null
         },
         {
@@ -284,9 +284,9 @@
   ],
   "summary": {
     "total_items": 27,
-    "completed": 3,
+    "completed": 6,
     "in_progress": 0,
     "failed": 0,
-    "pending": 24
+    "pending": 21
   }
 }
