@@ -1,0 +1,20 @@
+{
+  "sparse": {
+    "spin_lam": 0.0,
+    "spin_beta": -90.0,
+    "chi2_reduced": 63.0,
+    "pole_error_deg": 46.6
+  },
+  "dense": {
+    "spin_lam": 0.0,
+    "spin_beta": -90.0,
+    "chi2_reduced": 22.9,
+    "pole_error_deg": 46.6
+  },
+  "fusion": {
+    "spin_lam": 0.0,
+    "spin_beta": -90.0,
+    "chi2_reduced": 45.83,
+    "pole_error_deg": 46.6
+  }
+}

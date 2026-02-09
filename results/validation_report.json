@@ -1,0 +1,68 @@
+{
+  "1036": {
+    "asteroid_number": 1036,
+    "name": "Ganymed",
+    "known_period_hours": 10.31304,
+    "known_spin_lam": 198.0,
+    "known_spin_beta": -79.0,
+    "found_spin_lam": 0.0,
+    "found_spin_beta": -90.0,
+    "pole_error_deg": 10.999999999999993,
+    "convex_chi2_reduced": 22.687178423282234,
+    "ga_chi2": 1138.0488843796352,
+    "ellipsoid_params": {
+      "b_a": 0.9999973151660042,
+      "c_a": 0.33591660662270934
+    },
+    "hausdorff_vs_gt": 0.21887614749507767,
+    "iou_vs_gt": 0.3527042084511871,
+    "shape_file": "results/shapes/1036_ga.obj",
+    "elapsed_seconds": 75.56851482391357,
+    "n_blocks_used": 8,
+    "n_data_points": 120
+  },
+  "433": {
+    "asteroid_number": 433,
+    "name": "Eros",
+    "known_period_hours": 5.27025547,
+    "known_spin_lam": 17.22,
+    "known_spin_beta": 11.35,
+    "found_spin_lam": 0.0,
+    "found_spin_beta": -90.0,
+    "pole_error_deg": 78.65,
+    "convex_chi2_reduced": 131.418729751234,
+    "ga_chi2": 6159.83659667072,
+    "ellipsoid_params": {
+      "b_a": 0.9999974531761836,
+      "c_a": 0.48876448653289073
+    },
+    "hausdorff_vs_gt": 0.27807550343147863,
+    "iou_vs_gt": 0.49244129945320037,
+    "shape_file": "results/shapes/433_ga.obj",
+    "elapsed_seconds": 72.31509518623352,
+    "n_blocks_used": 8,
+    "n_data_points": 120
+  },
+  "1580": {
+    "asteroid_number": 1580,
+    "name": "Betulia",
+    "known_period_hours": 6.13836,
+    "known_spin_lam": 136.0,
+    "known_spin_beta": 22.0,
+    "found_spin_lam": 0.0,
+    "found_spin_beta": -90.0,
+    "pole_error_deg": 68.0,
+    "convex_chi2_reduced": 43.876896209695154,
+    "ga_chi2": 7153.892294225546,
+    "ellipsoid_params": {
+      "b_a": 0.6186088347434993,
+      "c_a": 0.574881927967072
+    },
+    "hausdorff_vs_gt": 0.18604169942532456,
+    "iou_vs_gt": 0.4816769948741489,
+    "shape_file": "results/shapes/1580_ga.obj",
+    "elapsed_seconds": 69.59304141998291,
+    "n_blocks_used": 5,
+    "n_data_points": 75
+  }
+}

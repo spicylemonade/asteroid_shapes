@@ -1,0 +1,98 @@
+[
+  {
+    "iteration": 1,
+    "description": "Baseline parameters",
+    "parameters": {
+      "lam_step": 30,
+      "beta_step": 30,
+      "c_ls": 0.5,
+      "c_l": 0.1,
+      "max_blocks": 8,
+      "max_pts_per_block": 15,
+      "min_block_size": 10,
+      "ga_n_blocks": 4,
+      "ga_max_pts": 8,
+      "ga_pop_size": 30,
+      "ga_n_gen": 30,
+      "ga_mutation_rate": 0.15,
+      "ga_mutation_sigma": 0.08,
+      "ga_regularization": 0.01,
+      "max_iter": 20
+    },
+    "results": {
+      "spin_lam": 0.0,
+      "spin_beta": -90.0,
+      "pole_error_deg": 10.999999999999993,
+      "convex_chi2_red": 22.687178423282234,
+      "ga_chi2": 1138.0491185334633,
+      "hausdorff": 0.2144083198515341,
+      "iou": 0.38239430793414414,
+      "n_data_pts": 120
+    },
+    "elapsed_seconds": 75.13057136535645
+  },
+  {
+    "iteration": 2,
+    "description": "Finer spin grid (15 deg steps), more data points, larger GA population, lower regularization",
+    "parameters": {
+      "lam_step": 15,
+      "beta_step": 15,
+      "c_ls": 0.5,
+      "c_l": 0.1,
+      "max_blocks": 12,
+      "max_pts_per_block": 20,
+      "min_block_size": 8,
+      "ga_n_blocks": 5,
+      "ga_max_pts": 10,
+      "ga_pop_size": 40,
+      "ga_n_gen": 40,
+      "ga_mutation_rate": 0.2,
+      "ga_mutation_sigma": 0.1,
+      "ga_regularization": 0.005,
+      "max_iter": 25
+    },
+    "results": {
+      "spin_lam": 0.0,
+      "spin_beta": -90.0,
+      "pole_error_deg": 10.999999999999993,
+      "convex_chi2_red": 33.80073773991613,
+      "ga_chi2": 1514.5112321150514,
+      "hausdorff": 0.2535720251048429,
+      "iou": 0.3273510916413481,
+      "n_data_pts": 240
+    },
+    "elapsed_seconds": 241.18482995033264
+  },
+  {
+    "iteration": 3,
+    "description": "Adjusted scattering weights: c_ls=0.7, c_l=0.05 (more LS-dominant)",
+    "parameters": {
+      "lam_step": 15,
+      "beta_step": 15,
+      "c_ls": 0.7,
+      "c_l": 0.05,
+      "max_blocks": 12,
+      "max_pts_per_block": 20,
+      "min_block_size": 8,
+      "ga_n_blocks": 5,
+      "ga_max_pts": 10,
+      "ga_pop_size": 40,
+      "ga_n_gen": 40,
+      "ga_mutation_rate": 0.2,
+      "ga_mutation_sigma": 0.1,
+      "ga_regularization": 0.005,
+      "max_iter": 25
+    },
+    "results": {
+      "spin_lam": 0.0,
+      "spin_beta": -90.0,
+      "pole_error_deg": 10.999999999999993,
+      "convex_chi2_red": 33.80073803726079,
+      "ga_chi2": 1518.0488174570014,
+      "hausdorff": 0.2137201594200315,
+      "iou": 0.33965728274173806,
+      "n_data_pts": 240
+    },
+    "elapsed_seconds": 237.55857944488525
+  }
+]

@@ -1,0 +1,277 @@
+{
+  "metadata": {
+    "description": "Ground truth asteroid shape and spin parameters from DAMIT (Database of Asteroid Models from Inversion Techniques) and spacecraft missions. Used for blind validation of lightcurve inversion pipeline.",
+    "damit_url": "https://astro.troja.mff.cuni.cz/projects/damit/",
+    "damit_reference": "Durech, J. et al. 2010, A&A 513, A46",
+    "generated_at": "2026-02-09T20:39:08.594210Z",
+    "num_asteroids": 7
+  },
+  "asteroids": {
+    "15": {
+      "asteroid_number": 15,
+      "name": "Eunomia",
+      "damit_model_id": 1838,
+      "spin_parameters": {
+        "lambda_deg": 0.0,
+        "beta_deg": -68.0,
+        "period_hours": 6.082752,
+        "period_uncertainty_hours": 2e-06,
+        "pole_uncertainty_deg": 5.0
+      },
+      "shape": {
+        "axis_ratios": [
+          1.0,
+          0.85,
+          0.75
+        ],
+        "dimensions_km": [
+          357.0,
+          255.0,
+          212.0
+        ],
+        "equivalent_diameter_km": 268.0,
+        "n_vertices_damit": 1022,
+        "n_faces_damit": 2040
+      },
+      "physical": {
+        "spectral_type": "S",
+        "albedo": 0.248
+      },
+      "data_availability": {
+        "in_alcdef": true,
+        "alcdef_lightcurves": 7,
+        "alcdef_datapoints": 2889
+      },
+      "source": "Viikinkoski et al. 2017, A&A 607, A117; DAMIT Model 1838",
+      "notes": "DAMIT Model 1838. Pole solutions: Kaasalainen (2002): (3,-67); Viikinkoski (2017): (0,-68); Vernazza (2021): (356,-70). Retrograde rotator. Largest S-type MBA."
+    },
+    "52": {
+      "asteroid_number": 52,
+      "name": "Europa",
+      "damit_model_id": 135,
+      "spin_parameters": {
+        "lambda_deg": 252.0,
+        "beta_deg": 38.0,
+        "period_hours": 5.629959,
+        "period_uncertainty_hours": 5e-05,
+        "pole_uncertainty_deg": 5.0
+      },
+      "shape": {
+        "axis_ratios": [
+          1.0,
+          0.87,
+          0.66
+        ],
+        "dimensions_km": [
+          379.0,
+          330.0,
+          249.0
+        ],
+        "equivalent_diameter_km": 303.92,
+        "n_vertices_damit": 1022,
+        "n_faces_damit": 2040
+      },
+      "physical": {
+        "spectral_type": "C",
+        "albedo": 0.058
+      },
+      "data_availability": {
+        "in_alcdef": true,
+        "alcdef_lightcurves": 1,
+        "alcdef_datapoints": 636
+      },
+      "source": "Michalowski et al. 2004; Merline et al. 2013; DAMIT Model 135",
+      "notes": "DAMIT Model 135. Prograde rotator. Pole: Michalowski (2004): (252,+38); Merline (2013): (255,+35). Second largest C-type in main belt after Hygiea."
+    },
+    "243": {
+      "asteroid_number": 243,
+      "name": "Ida",
+      "damit_model_id": null,
+      "spin_parameters": {
+        "lambda_deg": 73.0,
+        "beta_deg": -53.0,
+        "period_hours": 4.633632,
+        "period_uncertainty_hours": 7e-06,
+        "pole_uncertainty_deg": 10.0
+      },
+      "shape": {
+        "axis_ratios": [
+          1.0,
+          0.45,
+          0.4
+        ],
+        "dimensions_km": [
+          59.8,
+          25.4,
+          18.6
+        ],
+        "equivalent_diameter_km": 31.4,
+        "n_vertices_damit": 32768,
+        "n_faces_damit": 65536
+      },
+      "physical": {
+        "spectral_type": "S",
+        "albedo": 0.238
+      },
+      "data_availability": {
+        "in_alcdef": true,
+        "alcdef_lightcurves": 5,
+        "alcdef_datapoints": 356
+      },
+      "source": "Belton et al. 1996, Icarus 120, 1; Galileo flyby",
+      "notes": "Ground truth from Galileo spacecraft (1993 flyby). Two pole solutions: ecliptic (73,-53) and (254,-55). Retrograde rotator. Has satellite Dactyl. Highly elongated shape."
+    },
+    "433": {
+      "asteroid_number": 433,
+      "name": "Eros",
+      "damit_model_id": null,
+      "spin_parameters": {
+        "lambda_deg": 17.22,
+        "beta_deg": 11.35,
+        "period_hours": 5.27025547,
+        "period_uncertainty_hours": 1e-08,
+        "pole_uncertainty_deg": 0.01
+      },
+      "shape": {
+        "axis_ratios": [
+          1.0,
+          0.33,
+          0.33
+        ],
+        "dimensions_km": [
+          34.4,
+          11.2,
+          11.3
+        ],
+        "equivalent_diameter_km": 16.84,
+        "n_vertices_damit": 7790,
+        "n_faces_damit": 15572
+      },
+      "physical": {
+        "spectral_type": "S",
+        "albedo": 0.25
+      },
+      "data_availability": {
+        "in_alcdef": true,
+        "alcdef_lightcurves": 27,
+        "alcdef_datapoints": 2289
+      },
+      "source": "Miller et al. 2002, Icarus 155, 3; NEAR Shoemaker",
+      "notes": "Ground truth from NEAR Shoemaker spacecraft. Pole: RA=11.3695 deg, Dec=17.2273 deg (J2000 equatorial). Ecliptic: lambda=17.22, beta=11.35. Lightcurve inversion by Durech et al. recovers lambda~17, beta~8. Shape model from Gaskell (PDS, 2008). DAMIT convex LC-inversion model may have ~500-1000 vertices."
+    },
+    "951": {
+      "asteroid_number": 951,
+      "name": "Gaspra",
+      "damit_model_id": null,
+      "spin_parameters": {
+        "lambda_deg": 20.0,
+        "beta_deg": 22.0,
+        "period_hours": 7.042,
+        "period_uncertainty_hours": 0.001,
+        "pole_uncertainty_deg": 5.0
+      },
+      "shape": {
+        "axis_ratios": [
+          1.0,
+          0.75,
+          0.6
+        ],
+        "dimensions_km": [
+          18.2,
+          10.5,
+          8.9
+        ],
+        "equivalent_diameter_km": 12.2,
+        "n_vertices_damit": 32768,
+        "n_faces_damit": 65536
+      },
+      "physical": {
+        "spectral_type": "S",
+        "albedo": 0.22
+      },
+      "data_availability": {
+        "in_alcdef": true,
+        "alcdef_lightcurves": 11,
+        "alcdef_datapoints": 306
+      },
+      "source": "Thomas et al. 1994, Icarus 107, 23; Galileo flyby",
+      "notes": "Ground truth from Galileo spacecraft (1991 flyby). Ecliptic pole: lambda~20, beta~+22 (\u00b15 deg). Period = 7.042 h (0.2934197 d). Shape model from Galileo images (Thomas et al. 1994)."
+    },
+    "1036": {
+      "asteroid_number": 1036,
+      "name": "Ganymed",
+      "damit_model_id": 1849,
+      "spin_parameters": {
+        "lambda_deg": 198.0,
+        "beta_deg": -79.0,
+        "period_hours": 10.31304,
+        "period_uncertainty_hours": 5e-05,
+        "pole_uncertainty_deg": 5.0
+      },
+      "shape": {
+        "axis_ratios": [
+          1.0,
+          0.976,
+          0.929
+        ],
+        "dimensions_km": [
+          42.0,
+          41.0,
+          39.0
+        ],
+        "equivalent_diameter_km": 37.675,
+        "n_vertices_damit": 1022,
+        "n_faces_damit": 2040
+      },
+      "physical": {
+        "spectral_type": "S",
+        "albedo": 0.238
+      },
+      "data_availability": {
+        "in_alcdef": true,
+        "alcdef_lightcurves": 134,
+        "alcdef_datapoints": 23583
+      },
+      "source": "Hanus et al. 2016; DAMIT Model 1849",
+      "notes": "DAMIT Model 1849. Multiple pole solutions in literature: (214,-73), (190,-78), (198,-79). Kaasalainen et al. (2001): lambda=208, beta=-76. Adopted value from Hanus et al. Retrograde rotator. Largest NEO (Amor group)."
+    },
+    "1580": {
+      "asteroid_number": 1580,
+      "name": "Betulia",
+      "damit_model_id": 204,
+      "spin_parameters": {
+        "lambda_deg": 136.0,
+        "beta_deg": 22.0,
+        "period_hours": 6.13836,
+        "period_uncertainty_hours": 5e-05,
+        "pole_uncertainty_deg": 5.0
+      },
+      "shape": {
+        "axis_ratios": [
+          1.0,
+          0.83,
+          0.73
+        ],
+        "dimensions_km": [
+          6.59,
+          5.47,
+          4.81
+        ],
+        "equivalent_diameter_km": 5.39,
+        "n_vertices_damit": 1022,
+        "n_faces_damit": 2040
+      },
+      "physical": {
+        "spectral_type": "C",
+        "albedo": 0.077
+      },
+      "data_availability": {
+        "in_alcdef": true,
+        "alcdef_lightcurves": 5,
+        "alcdef_datapoints": 209
+      },
+      "source": "Kaasalainen et al. 2004; Magri et al. 2007, Icarus 186, 152",
+      "notes": "DAMIT Model 204. Confirmed by radar (Magri et al. 2007). Notable concavity in southern hemisphere. Triple-peaked lightcurve. NEO (Amor group)."
+    }
+  }
+}
