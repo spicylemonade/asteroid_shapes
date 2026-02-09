@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2026.2.8)  9 FEB 2026 22:15
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2026.2.8)  9 FEB 2026 22:16
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1954,9 +1954,6 @@ Underfull \hbox (badness 1540) in paragraph at lines 249--254
  <./figures/1866_shape.png> <./figures/3122_shape.png> <./figures/65803_shape.p
 ng> <./figures/887_shape.png> <./figures/11_shape.png> <./figures/324_shape.png
 > <./figures/617_shape.png> <./figures/470_shape.png>] (./research_paper.aux)
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
 Package rerunfilecheck Info: File `research_paper.out' has not changed.
 (rerunfilecheck)             Checksum: 4542807E9DFDDFB44DFE9F80C29CB340;6438.
  ) 
