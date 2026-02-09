@@ -1,0 +1,292 @@
+{
+  "version": "1.0",
+  "created_at": "2026-02-09T12:00:00Z",
+  "updated_at": "2026-02-09T18:48:32.797733+00:00",
+  "current_agent": "orchestrator",
+  "agent_status": {
+    "orchestrator": {
+      "status": "completed",
+      "started_at": "2026-02-09T12:00:00Z",
+      "completed_at": "2026-02-09T18:48:32.797697+00:00",
+      "error": null
+    },
+    "researcher": {
+      "status": "pending",
+      "started_at": null,
+      "completed_at": null,
+      "error": null
+    },
+    "writer": {
+      "status": "pending",
+      "started_at": null,
+      "completed_at": null,
+      "error": null
+    },
+    "reviewer": {
+      "status": "pending",
+      "started_at": null,
+      "completed_at": null,
+      "error": null
+    }
+  },
+  "phases": [
+    {
+      "id": "phase_1",
+      "name": "Problem Analysis & Literature Review",
+      "order": 1,
+      "items": [
+        {
+          "id": "item_001",
+          "description": "Analyze repository structure, data assets, and task specification",
+          "acceptance_criteria": "Produce a written document (in notes or markdown) listing: (1) all repository files and their purposes, (2) contents of ALCDEF_ALL.zip (number of lightcurve files, asteroid IDs covered, data format), (3) contents of MPCORB.DAT.gz (number of orbital records, column schema), (4) the results/ and figures/ output directories. Document must confirm both zip/gz files are accessible and parseable.",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        },
+        {
+          "id": "item_002",
+          "description": "Conduct literature review on light curve inversion methods via web search",
+          "acceptance_criteria": "Search the web for at least the following topics and summarize findings: (a) Kaasalainen & Torppa convex inversion method, (b) SAGE genetic evolution for non-convex shapes (Bartczak & Dudzinski 2018), (c) sparse photometric inversion (Durech et al. 2010), (d) ADAM multi-data fusion (Viikinkoski et al. 2015), (e) self-shadowing ray-tracing in asteroid photometric models, (f) Lommel-Seeliger / Lambert / Hapke scattering laws. Summary must include key equations, algorithmic steps, and limitations of each method. At least 10 relevant papers cited in sources.bib.",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        },
+        {
+          "id": "item_003",
+          "description": "Create and populate sources.bib with BibTeX entries for all consulted references",
+          "acceptance_criteria": "File sources.bib exists in repo root with valid BibTeX entries for at least 15 papers including: Kaasalainen et al. (2001), Kaasalainen & Torppa (2001), Bartczak & Dudzinski (2018), Durech et al. (2010), Viikinkoski et al. (2015), Muinonen et al. (scattering laws), Cellino et al. (sparse inversion), and any additional state-of-the-art references found during web search. Each entry must have author, title, journal, year, and DOI/URL where available.",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        },
+        {
+          "id": "item_004",
+          "description": "Survey existing open-source LCI tools and benchmark capabilities",
+          "acceptance_criteria": "Web search for and document the capabilities, limitations, and source code availability of: (1) MPO LCInvert, (2) SAGE, (3) KOALA, (4) ADAM, (5) convexinv (Durech DAMIT tools), (6) any LSST/Rubin pipeline asteroid shape tools. For each, record: language, license, whether it handles sparse data, whether it supports non-convex shapes, whether it includes self-shadowing. Summarize gaps that our pipeline must fill. Add all relevant references to sources.bib.",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        },
+        {
+          "id": "item_005",
+          "description": "Parse ALCDEF_ALL.zip and catalog available asteroid lightcurve data",
+          "acceptance_criteria": "Extract and parse ALCDEF_ALL.zip. Produce a catalog (CSV or in-memory DataFrame) with columns: asteroid_number, asteroid_name, number_of_lightcurves, total_data_points, date_range, observer_codes, filter_bands. Report total number of unique asteroids, total number of lightcurves, and identify the subset of asteroids with >=20 lightcurves. Save catalog to results/alcdef_catalog.csv.",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        },
+        {
+          "id": "item_006",
+          "description": "Parse MPCORB.DAT.gz and build orbital elements database",
+          "acceptance_criteria": "Decompress and parse MPCORB.DAT.gz into a structured format. Extract for each object: number/designation, epoch, mean anomaly, argument of perihelion, longitude of ascending node, inclination, eccentricity, semimajor axis, absolute magnitude H, slope parameter G, orbit type flags (NEO flag, MBA classification). Identify and flag all NEOs and objects with estimated diameter >100km (using H magnitude and assumed albedo). Save to results/mpcorb_parsed.csv.",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        }
+      ]
+    },
+    {
+      "id": "phase_2",
+      "name": "Baseline Implementation & Metrics",
+      "order": 2,
+      "items": [
+        {
+          "id": "item_007",
+          "description": "Implement ALCDEF data ingestion and lightcurve preprocessing module",
+          "acceptance_criteria": "Python module (e.g., src/data_ingest.py) that: (1) reads ALCDEF text files from the extracted zip, (2) parses JD timestamps, magnitudes, and uncertainties, (3) applies heliocentric correction using orbital elements from MPCORB, (4) computes viewing geometry (phase angle, aspect angle, solar elongation) for each observation using MPC orbital elements. Module must successfully load and preprocess lightcurves for at least 3 known test asteroids (433 Eros, 1580 Betulia, 6489 Golevka or similar well-observed targets present in ALCDEF). Unit tests pass.",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        },
+        {
+          "id": "item_008",
+          "description": "Implement period search engine (Lomb-Scargle + phase dispersion minimization)",
+          "acceptance_criteria": "Python module that implements both Lomb-Scargle periodogram and phase dispersion minimization (PDM) for rotation period determination. Must accept a lightcurve time series and return top-N candidate periods with confidence scores. Validated on at least 2 asteroids from ALCDEF where the known period (from LCDB) can be recovered to within 0.001 hours. Results logged with known period comparison.",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        },
+        {
+          "id": "item_009",
+          "description": "Implement convex inversion solver (Kaasalainen-Torppa method) as initial seed generator",
+          "acceptance_criteria": "Python module implementing gradient-based convex lightcurve inversion: (1) parameterize shape as spherical harmonics or triangulated convex hull with ~500+ facets, (2) implement Lommel-Seeliger + Lambert combined scattering law for forward brightness model, (3) implement Levenberg-Marquardt or conjugate gradient minimization of chi-squared between observed and modeled lightcurves, (4) search over spin axis (lambda, beta) grid. Must produce a convex shape (.obj file) and spin vector for one test asteroid from ALCDEF data. Cite Kaasalainen et al. (2001) from sources.bib in code comments.",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        },
+        {
+          "id": "item_010",
+          "description": "Implement self-shadowing ray-tracing in the forward photometric model",
+          "acceptance_criteria": "Extend the forward brightness model to include self-shadowing: for each visible facet, cast rays toward the Sun direction and check for intersections with other facets using a BVH (bounding volume hierarchy) or octree acceleration structure. A facet in shadow contributes zero direct illumination. Must demonstrate measurable brightness difference (>1% for elongated/concave test shapes) compared to the non-shadowed model on a synthetic concave test mesh. Performance must allow evaluation of at least 1000 shape renderings per minute on a single CPU core.",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        },
+        {
+          "id": "item_011",
+          "description": "Implement Hausdorff distance and volumetric IoU mesh comparison metrics",
+          "acceptance_criteria": "Python module that takes two 3D meshes (as .obj files or vertex/face arrays) and computes: (1) symmetric Hausdorff distance (normalized by mesh diameter), (2) volumetric Intersection over Union (IoU) using voxelization at configurable resolution. Validated on known test cases: identical meshes yield Hausdorff=0 and IoU=1.0; a sphere vs. scaled sphere yields analytically predictable values. Module must handle meshes of different resolutions via resampling.",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        }
+      ]
+    },
+    {
+      "id": "phase_3",
+      "name": "Core Research & Novel Approaches",
+      "order": 3,
+      "items": [
+        {
+          "id": "item_012",
+          "description": "Implement genetic/evolutionary non-convex solver (SAGE-inspired) using convex solution as seed",
+          "acceptance_criteria": "Python module implementing a genetic algorithm for non-convex shape optimization: (1) genome encodes vertex displacements from the convex seed mesh, allowing concavities, (2) fitness function is chi-squared of observed vs. modeled lightcurves using the self-shadowing ray-tracer from item_010, (3) implements crossover, mutation, and selection operators, (4) population size >=50, convergence after <=500 generations on test data. Pipeline is restructured so the GA solver runs on ALL targets (no convex-first gatekeeper), using convex solution from item_009 only as initial seed. Cite Bartczak & Dudzinski (2018) from sources.bib.",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        },
+        {
+          "id": "item_013",
+          "description": "Implement sparse data inversion module (Gaia/ZTF/Pan-STARRS methodology)",
+          "acceptance_criteria": "Python module for sparse photometric inversion: (1) handles input of <100 data points spread over multiple apparitions (>3 required), (2) uses a coarse spin-axis grid search combined with convex + GA refinement, (3) incorporates absolute photometry (calibrated magnitudes, not just relative), (4) properly weights sparse points by photometric uncertainty and phase angle coverage. Must converge on a pole solution for at least one asteroid using only sparse-format data extracted from ALCDEF (simulating survey-like sparse sampling). Cite Durech et al. (2010) from sources.bib.",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        },
+        {
+          "id": "item_014",
+          "description": "Implement hybrid dense+sparse multi-apparition data fusion engine",
+          "acceptance_criteria": "Module that fuses dense lightcurves and sparse survey data in a single unified inversion: (1) relative dense lightcurves contribute shape detail, (2) sparse absolute photometry constrains pole orientation and albedo, (3) weighting scheme balances dense and sparse contributions. Must demonstrate improved pole accuracy (within 10 degrees of known value) when combining both data types vs. using either alone, tested on at least one asteroid with both dense and sparse data in ALCDEF. Cite Viikinkoski et al. (2015) from sources.bib.",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        },
+        {
+          "id": "item_015",
+          "description": "Retrieve ground truth shape models from DAMIT for blind validation targets",
+          "acceptance_criteria": "Download or scrape at least 3 ground truth asteroid shape models (.obj or vertex/face format) from the DAMIT database for well-known asteroids whose lightcurves exist in ALCDEF_ALL.zip. Candidates: cross-reference ALCDEF catalog (item_005) with DAMIT database to find overlapping asteroids. Store ground truth models in results/ground_truth/. Document the DAMIT model IDs, spin vectors, and references for each.",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        },
+        {
+          "id": "item_016",
+          "description": "Execute blind validation: invert ALCDEF data for ground truth asteroids without shape priors",
+          "acceptance_criteria": "For each of the >=3 ground truth asteroids from item_015: (1) run full pipeline (period search -> convex seed -> GA non-convex solver with self-shadowing) on their ALCDEF lightcurve data, (2) produce output .obj shape model and spin vector, (3) compute Hausdorff distance and volumetric IoU against the DAMIT ground truth shape (item_011). All results logged to results/validation_report.json. If any asteroid has Hausdorff >5% or IoU <0.95 relative to ground truth, document the deviation and note parameter adjustments needed.",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        },
+        {
+          "id": "item_017",
+          "description": "Recursive optimization loop: tune pipeline parameters until validation threshold is met",
+          "acceptance_criteria": "If blind validation (item_016) shows deviation >5%: systematically adjust loss function weights, regularization strength (smoothness vs. data fit), period search granularity, GA mutation rates, and spin-axis grid resolution. Re-run blind validation after each adjustment round. Document each tuning iteration with parameter values and resulting metrics in results/optimization_log.json. Continue until best achievable metrics are reached (document final Hausdorff and IoU for each validation asteroid). At minimum 2 tuning iterations must be documented even if first pass meets threshold.",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        }
+      ]
+    },
+    {
+      "id": "phase_4",
+      "name": "Experiments & Evaluation",
+      "order": 4,
+      "items": [
+        {
+          "id": "item_018",
+          "description": "Build target selection query: identify top 50 unmodeled asteroids meeting all priority criteria",
+          "acceptance_criteria": "Cross-reference ALCDEF catalog (item_005), MPCORB orbital database (item_006), and DAMIT database (item_015 or web query) to select targets matching ALL criteria: (P1) NEO flag OR estimated diameter >100km, (P2) period quality U>=2 in ALCDEF/LCDB metadata, (P3) NOT in DAMIT (no existing shape model), (P4) >=20 dense lightcurves OR >=100 sparse points across >=3 apparitions. Produce ranked list of >=50 candidates saved to results/target_candidates.csv with columns: asteroid_id, name, neo_flag, est_diameter_km, period_hours, period_quality, num_lightcurves, num_sparse_points, num_apparitions, priority_score.",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        },
+        {
+          "id": "item_019",
+          "description": "Execute full inversion pipeline on top 50 candidate asteroids",
+          "acceptance_criteria": "Run the validated pipeline (period search -> convex seed -> GA non-convex with self-shadowing -> optional sparse fusion) on all 50 candidate asteroids. For each: (1) save output 3D shape model as .obj file in results/shapes/{asteroid_id}.obj, (2) save spin vector (lambda, beta, period) to results/spin_vectors.csv, (3) log chi-squared fit quality and convergence metrics. At least 30 of 50 must produce converged solutions (chi-squared reduced <3.0). Failed inversions documented with reason (insufficient data, no period convergence, etc.).",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        },
+        {
+          "id": "item_020",
+          "description": "Generate uncertainty quantification for all shape solutions",
+          "acceptance_criteria": "For each converged shape model from item_019: (1) run bootstrap or jackknife resampling (remove 10-20% of lightcurves, re-invert) at least 5 times, (2) compute vertex-wise standard deviation of shape across bootstrap samples, (3) report spin axis uncertainty as cone half-angle in degrees, (4) classify each solution confidence as HIGH (<5 deg pole uncertainty, low vertex variance), MEDIUM (5-15 deg), or LOW (>15 deg). Save results to results/uncertainty_report.csv.",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        },
+        {
+          "id": "item_021",
+          "description": "Generate 3D rendered figures of all new shape models for paper inclusion",
+          "acceptance_criteria": "For each converged shape model: produce publication-quality 3D renderings from at least 3 viewing angles (equatorial 0\u00b0, equatorial 90\u00b0, polar) using matplotlib 3D or similar. Figures saved as PNG at >=300 DPI to figures/{asteroid_id}_shape.png. Each figure must include: asteroid name/number, derived spin axis, rotation period, and pipeline confidence level. Also generate a composite multi-panel figure (figures/shape_gallery.png) showing all new shapes in a grid layout suitable for paper inclusion.",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        },
+        {
+          "id": "item_022",
+          "description": "Compare pipeline performance against prior work metrics from literature review",
+          "acceptance_criteria": "Using references from sources.bib (items 002-004), compare: (1) our validation Hausdorff/IoU scores against published accuracy metrics from SAGE, KOALA, and ADAM papers, (2) our sparse data convergence success rate against Durech et al. (2010) reported rates, (3) our computational performance (inversions/hour) against reported benchmarks. Produce a comparison table in results/benchmark_comparison.csv. Document where our pipeline improves upon or falls short of existing methods.",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        }
+      ]
+    },
+    {
+      "id": "phase_5",
+      "name": "Analysis & Documentation",
+      "order": 5,
+      "items": [
+        {
+          "id": "item_023",
+          "description": "Write comprehensive validation report with convergence metrics",
+          "acceptance_criteria": "Produce results/validation_report.md containing: (1) blind test results for all ground truth asteroids with Hausdorff and IoU metrics, (2) parameter tuning history from optimization log, (3) comparison of convex-only vs. GA non-convex results demonstrating improvement from self-shadowing ray-tracing, (4) analysis of sparse vs. dense data contribution to pole accuracy. All claims supported by quantitative metrics. References to sources.bib throughout.",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        },
+        {
+          "id": "item_024",
+          "description": "Write research paper with all required sections including 3D shape figures",
+          "acceptance_criteria": "Produce a LaTeX or Markdown research paper (results/paper.md or results/paper.tex) with sections: Abstract, Introduction (citing prior work from sources.bib), Methods (convex inversion, GA solver, self-shadowing ray-tracing, sparse fusion), Validation Results (ground truth comparison with figures), New Shape Models (3D figures from item_021 embedded), Discussion (comparison with SAGE/KOALA/ADAM from item_022), Conclusions, References. Paper must include at least 5 figures (validation plots, shape renderings, comparison charts). All 3D shape figures of newly discovered shapes must be included.",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        },
+        {
+          "id": "item_025",
+          "description": "Produce final prioritized candidate list with shape models and spin vectors",
+          "acceptance_criteria": "Generate results/final_candidates.csv as the master deliverable containing all 50 target asteroids ranked by: (1) scientific priority (NEO status, size), (2) solution confidence (from item_020). Columns: rank, asteroid_id, name, neo_flag, est_diameter_km, period_hours, spin_lambda_deg, spin_beta_deg, pole_uncertainty_deg, confidence_level, shape_file_path, hausdorff_self_consistency, chi_squared_reduced. Accompanying results/executive_summary.md with top-level findings and recommendations for follow-up observations.",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        },
+        {
+          "id": "item_026",
+          "description": "Document full source code architecture and usage instructions",
+          "acceptance_criteria": "Produce a README or documentation file (results/code_documentation.md) that describes: (1) all source modules and their roles, (2) dependencies and installation, (3) how to run the full pipeline end-to-end on new ALCDEF data, (4) how to add new data sources, (5) configuration parameters and their effects. Include a pipeline flowchart diagram (text-based or figure). Code must be organized in src/ directory with clear module separation.",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        },
+        {
+          "id": "item_027",
+          "description": "Final review: verify all deliverables are complete and internally consistent",
+          "acceptance_criteria": "Checklist verification: (1) sources.bib has >=15 entries with complete metadata, (2) results/shapes/ contains >=30 .obj files, (3) figures/ contains 3D renderings for all converged shapes plus gallery composite, (4) validation_report.json has metrics for >=3 ground truth asteroids, (5) final_candidates.csv has 50 rows with all columns populated, (6) paper includes all required sections and embedded figures, (7) all .obj files are valid meshes (parseable, watertight or near-watertight), (8) spin_vectors.csv has entries for all converged solutions. Any missing deliverable must be flagged.",
+          "status": "pending",
+          "notes": null,
+          "error": null
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "total_items": 27,
+    "completed": 0,
+    "in_progress": 0,
+    "failed": 0,
+    "pending": 27
+  }
+}
