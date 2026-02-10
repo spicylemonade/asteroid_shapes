@@ -1,0 +1,19 @@
+{
+  "asteroid_id": 433,
+  "name": "Eros",
+  "n_lightcurves": 1,
+  "n_datapoints": 7,
+  "known_period_h": 5.27025,
+  "recovered_period_h": 30.0,
+  "period_error_h": 24.7298,
+  "known_pole_lambda": 11.4,
+  "known_pole_beta": 17.2,
+  "recovered_pole_lambda": -8.6,
+  "recovered_pole_beta": 27.1,
+  "pole_error_deg": 21.0,
+  "hausdorff_normalized": 1.1161,
+  "hausdorff_mean": 0.2242,
+  "volumetric_iou": 0.1639,
+  "chi2_reduced": 2.508,
+  "final_method": "convex"
+}

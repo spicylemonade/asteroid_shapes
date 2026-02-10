@@ -1,0 +1,228 @@
+\relax 
+\providecommand\hyper@newdestlabel[2]{}
+\providecommand\HyperFirstAtBeginDocument{\AtBeginDocument}
+\HyperFirstAtBeginDocument{\ifx\hyper@anchor\@undefined
+\global\let\oldcontentsline\contentsline
+\gdef\contentsline#1#2#3#4{\oldcontentsline{#1}{#2}{#3}}
+\global\let\oldnewlabel\newlabel
+\gdef\newlabel#1#2{\newlabelxx{#1}#2}
+\gdef\newlabelxx#1#2#3#4#5#6{\oldnewlabel{#1}{{#2}{#3}}}
+\AtEndDocument{\ifx\hyper@anchor\@undefined
+\let\contentsline\oldcontentsline
+\let\newlabel\oldnewlabel
+\fi}
+\fi}
+\global\let\hyper@last\relax 
+\gdef\HyperFirstAtBeginDocument#1{#1}
+\providecommand\HyField@AuxAddToFields[1]{}
+\providecommand\HyField@AuxAddToCoFields[2]{}
+\citation{mpc_stats}
+\citation{damit_database}
+\citation{kaasalainen2001a,kaasalainen2001b}
+\citation{durech2010sparse}
+\citation{damit_database}
+\citation{kaasalainen2001a,kaasalainen2001b}
+\citation{bartczak2018}
+\citation{viikinkoski2015}
+\@writefile{toc}{\contentsline {section}{\numberline {1}Introduction}{1}{section.1}\protected@file@percent }
+\newlabel{sec:intro}{{1}{1}{Introduction}{section.1}{}}
+\citation{mpc_stats}
+\citation{gaia2023dr3,masci2019ztf,chambers2016panstarrs,ivezic2019lsst}
+\citation{durech2009}
+\citation{kaasalainen2001a}
+\citation{kaasalainen2001b}
+\citation{kaasalainen2004}
+\citation{bartczak2018}
+\citation{viikinkoski2015}
+\citation{viikinkoski2018}
+\citation{durech2009}
+\citation{durech2016}
+\citation{durech2019gaia,durech2020atlas,durech2023gaia}
+\citation{hanus2011,hanus2016}
+\citation{lomb1976}
+\citation{scargle1982}
+\citation{stellingwerf1978}
+\citation{vanderplas2018}
+\citation{waszczak2015ptf}
+\citation{hapke1981,hapke2012book}
+\citation{lommelseeliger1887}
+\citation{warner2009lcdb}
+\citation{warner2011lcdb}
+\citation{warner2016alcdef}
+\@writefile{toc}{\contentsline {section}{\numberline {2}Related Work}{2}{section.2}\protected@file@percent }
+\newlabel{sec:related}{{2}{2}{Related Work}{section.2}{}}
+\@writefile{toc}{\contentsline {paragraph}{Convex inversion.}{2}{section*.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Non-convex and multi-data methods.}{2}{section*.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Sparse photometry.}{2}{section*.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Period determination.}{2}{section*.5}\protected@file@percent }
+\citation{kaasalainen2001b}
+\citation{kaasalainen2001a}
+\citation{lommelseeliger1887,kaasalainen2001a}
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Notation and symbols used in this paper.\relax }}{3}{table.caption.7}\protected@file@percent }
+\providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
+\newlabel{tab:notation}{{1}{3}{Notation and symbols used in this paper.\relax }{table.caption.7}{}}
+\@writefile{toc}{\contentsline {paragraph}{Scattering models and data infrastructure.}{3}{section*.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {3}Background \& Preliminaries}{3}{section.3}\protected@file@percent }
+\newlabel{sec:background}{{3}{3}{Background \& Preliminaries}{section.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Notation}{3}{subsection.3.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}The Lightcurve Inversion Problem}{3}{subsection.3.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3}Convex Shape Parameterization}{3}{subsection.3.3}\protected@file@percent }
+\newlabel{eq:sh}{{1}{3}{Convex Shape Parameterization}{equation.3.1}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.4}Scattering Law}{3}{subsection.3.4}\protected@file@percent }
+\newlabel{eq:scatter}{{2}{3}{Scattering Law}{equation.3.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.5}Synthetic Brightness Computation}{3}{subsection.3.5}\protected@file@percent }
+\newlabel{eq:brightness}{{3}{3}{Synthetic Brightness Computation}{equation.3.3}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4}Method}{3}{section.4}\protected@file@percent }
+\newlabel{sec:method}{{4}{3}{Method}{section.4}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Architecture of the \textsc  {AstroInvert} hybrid inversion pipeline. Stage\nobreakspace  {}1 ingests ALCDEF photometry, MPCORB orbital elements, and the DAMIT model catalog. Stage\nobreakspace  {}2 determines the rotation period via Lomb--Scargle and PDM. Stage\nobreakspace  {}3 runs convex inversion, optionally followed by genetic non-convex refinement or sparse-data fusion. Stage\nobreakspace  {}4 outputs triangulated meshes, spin vectors, validation metrics, and publication-quality figures.\relax }}{4}{figure.caption.8}\protected@file@percent }
+\newlabel{fig:architecture}{{1}{4}{Architecture of the \textsc {AstroInvert} hybrid inversion pipeline. Stage~1 ingests ALCDEF photometry, MPCORB orbital elements, and the DAMIT model catalog. Stage~2 determines the rotation period via Lomb--Scargle and PDM. Stage~3 runs convex inversion, optionally followed by genetic non-convex refinement or sparse-data fusion. Stage~4 outputs triangulated meshes, spin vectors, validation metrics, and publication-quality figures.\relax }{figure.caption.8}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}Stage 1: Data Ingestion and Target Selection}{4}{subsection.4.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{ALCDEF parsing.}{4}{section*.9}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Geometry computation.}{4}{section*.10}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Target selection.}{4}{section*.11}\protected@file@percent }
+\citation{lomb1976,scargle1982}
+\citation{stellingwerf1978}
+\citation{bartczak2018}
+\citation{durech2009}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}Stage 2: Period Search}{5}{subsection.4.2}\protected@file@percent }
+\newlabel{sec:period}{{4.2}{5}{Stage 2: Period Search}{subsection.4.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3}Stage 3a: Convex Inversion Solver}{5}{subsection.4.3}\protected@file@percent }
+\newlabel{sec:convex}{{4.3}{5}{Stage 3a: Convex Inversion Solver}{subsection.4.3}{}}
+\newlabel{eq:objective}{{4}{5}{Stage 3a: Convex Inversion Solver}{equation.4.4}{}}
+\newlabel{eq:chi2}{{5}{5}{Stage 3a: Convex Inversion Solver}{equation.4.5}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.4}Stage 3b: Genetic Non-Convex Solver}{5}{subsection.4.4}\protected@file@percent }
+\newlabel{sec:genetic}{{4.4}{5}{Stage 3b: Genetic Non-Convex Solver}{subsection.4.4}{}}
+\@writefile{loa}{\contentsline {algorithm}{\numberline {1}{\ignorespaces Convex Inversion Solver\relax }}{5}{algorithm.1}\protected@file@percent }
+\newlabel{alg:convex}{{1}{5}{Convex Inversion Solver\relax }{algorithm.1}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.5}Stage 3c: Sparse Data Solver}{5}{subsection.4.5}\protected@file@percent }
+\newlabel{sec:sparse}{{4.5}{5}{Stage 3c: Sparse Data Solver}{subsection.4.5}{}}
+\citation{aspert2002hausdorff}
+\citation{warner2016alcdef}
+\citation{durech2010sparse,damit_database}
+\citation{gaskell2008eros}
+\citation{demura2006itokawa}
+\citation{descamps2011kleopatra}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.6}Hybrid Pipeline Integration}{6}{subsection.4.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.7}Validation Metrics}{6}{subsection.4.7}\protected@file@percent }
+\newlabel{sec:metrics}{{4.7}{6}{Validation Metrics}{subsection.4.7}{}}
+\@writefile{toc}{\contentsline {paragraph}{Hausdorff distance.}{6}{section*.12}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Volumetric IoU.}{6}{section*.13}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {5}Experimental Setup}{6}{section.5}\protected@file@percent }
+\newlabel{sec:setup}{{5}{6}{Experimental Setup}{section.5}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.1}Data Sources}{6}{subsection.5.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2}Validation Targets (Ground Truth)}{6}{subsection.5.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.3}Candidate Selection}{6}{subsection.5.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.4}Hyperparameters}{6}{subsection.5.4}\protected@file@percent }
+\citation{kaasalainen2001b}
+\citation{durech2016,hanus2016}
+\citation{durech2016,hanus2016}
+\citation{kaasalainen2001a}
+\citation{kaasalainen2001b}
+\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces Hyperparameters for the inversion pipeline.\relax }}{7}{table.caption.14}\protected@file@percent }
+\newlabel{tab:hyperparams}{{2}{7}{Hyperparameters for the inversion pipeline.\relax }{table.caption.14}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.5}Computational Environment}{7}{subsection.5.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {6}Results}{7}{section.6}\protected@file@percent }
+\newlabel{sec:results}{{6}{7}{Results}{section.6}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.1}Validation Against Ground Truth}{7}{subsection.6.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Key finding: data quantity determines success.}{7}{section*.17}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.2}Batch Run: 50 NEA Candidates}{7}{subsection.6.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.3}Top 10 New Shape Models}{7}{subsection.6.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.4}New Shape Gallery}{7}{subsection.6.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.5}Representative Individual Shape Models}{7}{subsection.6.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.6}Complete Candidate List}{7}{subsection.6.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.7}ALCDEF Data Distribution}{7}{subsection.6.7}\protected@file@percent }
+\citation{bartczak2018}
+\citation{durech2016}
+\citation{hanus2016}
+\@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces Blind validation results against procedurally generated proxy shapes. Bold entries indicate metrics meeting acceptance thresholds ($d_{\mathrm  {H}}< 0.30$, $\mathrm  {IoU}> 0.40$). Data quantity is the dominant factor: Kleopatra (66 points) passes both thresholds while Eros (7 points) and Itokawa (33 points) are data-limited.\relax }}{8}{table.caption.15}\protected@file@percent }
+\newlabel{tab:validation}{{3}{8}{Blind validation results against procedurally generated proxy shapes. Bold entries indicate metrics meeting acceptance thresholds ($\hausd < 0.30$, $\iou > 0.40$). Data quantity is the dominant factor: Kleopatra (66 points) passes both thresholds while Eros (7 points) and Itokawa (33 points) are data-limited.\relax }{table.caption.15}{}}
+\newlabel{fig:eros_val}{{2a}{8}{(433) Eros: 7 ALCDEF points. Severe data limitation prevents meaningful shape recovery ($\iou =0.164$).\relax }{figure.caption.16}{}}
+\newlabel{sub@fig:eros_val}{{a}{8}{(433) Eros: 7 ALCDEF points. Severe data limitation prevents meaningful shape recovery ($\iou =0.164$).\relax }{figure.caption.16}{}}
+\newlabel{fig:itokawa_val}{{2b}{8}{(25143) Itokawa: 33 points. Contact-binary morphology partially captured by the genetic solver ($\iou =0.364$).\relax }{figure.caption.16}{}}
+\newlabel{sub@fig:itokawa_val}{{b}{8}{(25143) Itokawa: 33 points. Contact-binary morphology partially captured by the genetic solver ($\iou =0.364$).\relax }{figure.caption.16}{}}
+\newlabel{fig:kleopatra_val}{{2c}{8}{(216) Kleopatra: 66 points. Dog-bone shape well recovered; both thresholds passed ($\iou =0.574$, $\hausd =0.175$).\relax }{figure.caption.16}{}}
+\newlabel{sub@fig:kleopatra_val}{{c}{8}{(216) Kleopatra: 66 points. Dog-bone shape well recovered; both thresholds passed ($\iou =0.574$, $\hausd =0.175$).\relax }{figure.caption.16}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Validation comparison of recovered shapes (bottom row) against procedurally generated proxy shapes (top row) for three test asteroids. Shape fidelity correlates strongly with input data density.\relax }}{8}{figure.caption.16}\protected@file@percent }
+\newlabel{fig:validation}{{2}{8}{Validation comparison of recovered shapes (bottom row) against procedurally generated proxy shapes (top row) for three test asteroids. Shape fidelity correlates strongly with input data density.\relax }{figure.caption.16}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {7}Discussion}{8}{section.7}\protected@file@percent }
+\newlabel{sec:discussion}{{7}{8}{Discussion}{section.7}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.1}Comparison with State of the Art}{8}{subsection.7.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Vs.\ convex-only methods.}{8}{section*.25}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Vs.\ SAGE.}{8}{section*.26}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Vs.\ large-scale sparse campaigns.}{8}{section*.27}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.2}Data Quality as the Limiting Factor}{8}{subsection.7.2}\protected@file@percent }
+\citation{kaasalainen2001b}
+\citation{durech2009}
+\citation{warner2011lcdb}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Gallery of new NEA convex shape models derived from ALCDEF photometry. Each panel shows the six orthographic projections ($\pm x$, $\pm y$, $\pm z$ views) for one asteroid. Objects shown have been verified as absent from the DAMIT database (snapshot 2026\nobreakspace  {}February\nobreakspace  {}8).\relax }}{9}{figure.caption.20}\protected@file@percent }
+\newlabel{fig:gallery}{{3}{9}{Gallery of new NEA convex shape models derived from ALCDEF photometry. Each panel shows the six orthographic projections ($\pm x$, $\pm y$, $\pm z$ views) for one asteroid. Objects shown have been verified as absent from the DAMIT database (snapshot 2026~February~8).\relax }{figure.caption.20}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.3}Period Aliasing}{9}{subsection.7.3}\protected@file@percent }
+\newlabel{fig:hathor}{{4a}{10}{(2340) Hathor: Aten-class NEA with $\chisqr =0.818$ and 99 data points, the highest data density in our sample. The model exhibits moderate elongation.\relax }{figure.caption.21}{}}
+\newlabel{sub@fig:hathor}{{a}{10}{(2340) Hathor: Aten-class NEA with $\chisqr =0.818$ and 99 data points, the highest data density in our sample. The model exhibits moderate elongation.\relax }{figure.caption.21}{}}
+\newlabel{fig:aten}{{4b}{10}{(2062) Aten: prototype of the Aten asteroid class, $\chisqr =1.008$. The nearly equidimensional shape is consistent with expectations for moderate-sized NEAs.\relax }{figure.caption.21}{}}
+\newlabel{sub@fig:aten}{{b}{10}{(2062) Aten: prototype of the Aten asteroid class, $\chisqr =1.008$. The nearly equidimensional shape is consistent with expectations for moderate-sized NEAs.\relax }{figure.caption.21}{}}
+\newlabel{fig:toutatis}{{4c}{10}{(4179) Toutatis: highly elongated NEA, $\chisqr =0.637$. Known to be in a non-principal-axis rotation state, complicating inversion.\relax }{figure.caption.21}{}}
+\newlabel{sub@fig:toutatis}{{c}{10}{(4179) Toutatis: highly elongated NEA, $\chisqr =0.637$. Known to be in a non-principal-axis rotation state, complicating inversion.\relax }{figure.caption.21}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Multi-view renders of three high-priority NEA shape models. Each panel shows six orthographic projections with illumination shading. These objects were selected for their scientific significance as potentially hazardous asteroids.\relax }}{10}{figure.caption.21}\protected@file@percent }
+\newlabel{fig:shapes1}{{4}{10}{Multi-view renders of three high-priority NEA shape models. Each panel shows six orthographic projections with illumination shading. These objects were selected for their scientific significance as potentially hazardous asteroids.\relax }{figure.caption.21}{}}
+\newlabel{fig:antinous}{{5a}{10}{(1863) Antinous: Apollo-class NEA, $P=8.56$\,h, $\chisqr =1.055$. The model suggests a moderately irregular shape with subtle elongation along one axis.\relax }{figure.caption.22}{}}
+\newlabel{sub@fig:antinous}{{a}{10}{(1863) Antinous: Apollo-class NEA, $P=8.56$\,h, $\chisqr =1.055$. The model suggests a moderately irregular shape with subtle elongation along one axis.\relax }{figure.caption.22}{}}
+\newlabel{fig:minos}{{5b}{10}{(6239) Minos: Apollo-class NEA, $P=3.60$\,h, $\chisqr =1.381$. Compact, roughly ellipsoidal morphology with 51 data points providing good coverage.\relax }{figure.caption.22}{}}
+\newlabel{sub@fig:minos}{{b}{10}{(6239) Minos: Apollo-class NEA, $P=3.60$\,h, $\chisqr =1.381$. Compact, roughly ellipsoidal morphology with 51 data points providing good coverage.\relax }{figure.caption.22}{}}
+\newlabel{fig:1991fe}{{5c}{10}{(5626) 1991~FE: slow rotator ($P=49.7$\,h), $\chisqr =0.632$. With 2 lightcurves and 49 points, this has the best data diversity in the sample.\relax }{figure.caption.22}{}}
+\newlabel{sub@fig:1991fe}{{c}{10}{(5626) 1991~FE: slow rotator ($P=49.7$\,h), $\chisqr =0.632$. With 2 lightcurves and 49 points, this has the best data diversity in the sample.\relax }{figure.caption.22}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Multi-view renders of three additional new NEA shape models. These objects illustrate the diversity of shapes and rotation states recovered by the pipeline.\relax }}{10}{figure.caption.22}\protected@file@percent }
+\newlabel{fig:shapes2}{{5}{10}{Multi-view renders of three additional new NEA shape models. These objects illustrate the diversity of shapes and rotation states recovered by the pipeline.\relax }{figure.caption.22}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {4}{\ignorespaces Batch inversion statistics for 50 NEA candidates. The 52\% convergence rate is consistent with published rates of 40--60\% for lightcurve inversion campaigns \citep  {durech2016,hanus2016}. Four converged objects were excluded post-hoc after a thorough DAMIT crossmatch.\relax }}{10}{table.caption.18}\protected@file@percent }
+\newlabel{tab:convergence}{{4}{10}{Batch inversion statistics for 50 NEA candidates. The 52\% convergence rate is consistent with published rates of 40--60\% for lightcurve inversion campaigns \citep {durech2016,hanus2016}. Four converged objects were excluded post-hoc after a thorough DAMIT crossmatch.\relax }{table.caption.18}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.4}Limitations}{10}{subsection.7.4}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {5}{\ignorespaces Top 10 new NEA shape models ranked by $\chi ^2_{\mathrm  {red}}$. All objects are Near-Earth Asteroids verified as absent from DAMIT. $\lambda _p$ and $\beta _p$ are the ecliptic pole coordinates. $N_{\mathrm  {pts}}$ is the number of data points from the ALCDEF session(s) used in the inversion (see text). Note: entries with $N_{\mathrm  {pts}} < 20$ (e.g., Beltrovata, Toutatis) should be considered preliminary; their low $\chi ^2_{\mathrm  {red}}$ likely reflects overfitting to sparse data rather than robust shape recovery.\relax }}{11}{table.caption.19}\protected@file@percent }
+\newlabel{tab:top10}{{5}{11}{Top 10 new NEA shape models ranked by $\chisqr $. All objects are Near-Earth Asteroids verified as absent from DAMIT. $\lambda _p$ and $\beta _p$ are the ecliptic pole coordinates. $N_{\mathrm {pts}}$ is the number of data points from the ALCDEF session(s) used in the inversion (see text). Note: entries with $N_{\mathrm {pts}} < 20$ (e.g., Beltrovata, Toutatis) should be considered preliminary; their low $\chisqr $ likely reflects overfitting to sparse data rather than robust shape recovery.\relax }{table.caption.19}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces Distribution of the number of photometric data points per asteroid in our ALCDEF archive snapshot (24,613 unique objects, 736,897 total measurements). The majority of asteroids have fewer than 50 data points, highlighting the importance of sparse-data inversion methods for maximizing the yield of shape models from existing survey data.\relax }}{11}{figure.caption.24}\protected@file@percent }
+\newlabel{fig:alcdef_hist}{{6}{11}{Distribution of the number of photometric data points per asteroid in our ALCDEF archive snapshot (24,613 unique objects, 736,897 total measurements). The majority of asteroids have fewer than 50 data points, highlighting the importance of sparse-data inversion methods for maximizing the yield of shape models from existing survey data.\relax }{figure.caption.24}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.5}Scientific Impact}{11}{subsection.7.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {8}Conclusion}{11}{section.8}\protected@file@percent }
+\newlabel{sec:conclusion}{{8}{11}{Conclusion}{section.8}{}}
+\citation{gaia2023dr3}
+\citation{masci2019ztf}
+\citation{warner2011lcdb}
+\bibstyle{plainnat}
+\bibdata{sources}
+\bibcite{aspert2002hausdorff}{{1}{2002}{{Aspert et~al.}}{{Aspert, Santa-Cruz, and Ebrahimi}}}
+\@writefile{lot}{\contentsline {table}{\numberline {6}{\ignorespaces All 22 converged NEA shape models verified as absent from DAMIT, sorted by $\chi ^2_{\mathrm  {red}}$. OBJ mesh files and spin-vector JSON files are provided in the supplementary material. $N_{\mathrm  {pts}}$ denotes the data points from the selected ALCDEF session(s) used in the inversion.\relax }}{12}{table.caption.23}\protected@file@percent }
+\newlabel{tab:all22}{{6}{12}{All 22 converged NEA shape models verified as absent from DAMIT, sorted by $\chisqr $. OBJ mesh files and spin-vector JSON files are provided in the supplementary material. $N_{\mathrm {pts}}$ denotes the data points from the selected ALCDEF session(s) used in the inversion.\relax }{table.caption.23}{}}
+\bibcite{bartczak2018}{{2}{2018}{{Bartczak and Dudzi{\'n}ski}}{{}}}
+\bibcite{chambers2016panstarrs}{{3}{2016}{{Chambers et~al.}}{{Chambers, Magnier, Metcalfe, Flewelling, Huber, Waters, et~al.}}}
+\bibcite{demura2006itokawa}{{4}{2006}{{Demura et~al.}}{{Demura, Kobayashi, Nemoto, Matsumoto, Furuya, Yukishita, et~al.}}}
+\bibcite{descamps2011kleopatra}{{5}{2011}{{Descamps et~al.}}{{Descamps, Marchis, Berthier, Hestroffer, Colas, Vachier, Tanga, et~al.}}}
+\bibcite{durech2009}{{6}{2009}{{Durech et~al.}}{{Durech, Kaasalainen, Warner, Fauerbach, Marks, Fauvaud, Fauvaud, Vugnon, Pilcher, Bernasconi, and Behrend}}}
+\bibcite{durech2010sparse}{{7}{2010}{{Durech et~al.}}{{Durech, Sidorin, and Kaasalainen}}}
+\bibcite{durech2016}{{8}{2016}{{Durech et~al.}}{{Durech, Hanu{\v {s}}, Oszkiewicz, and Vankov{\'a}}}}
+\bibcite{durech2019gaia}{{9}{2019}{{Durech et~al.}}{{Durech, Hanu{\v {s}}, and Van{\v {c}}o}}}
+\bibcite{durech2020atlas}{{10}{2020}{{Durech et~al.}}{{Durech, Tonry, Erasmus, Denneau, Heinze, Flewelling, and Van{\v {c}}o}}}
+\bibcite{durech2023gaia}{{11}{2023}{{Durech et~al.}}{{Durech, Hanu{\v {s}}, Van{\v {c}}o, and Ali-Lagoa}}}
+\bibcite{damit_database}{{12}{2026}{{Durech et~al.}}{{Durech, Sidorin, and Kaasalainen}}}
+\bibcite{gaia2023dr3}{{13}{2023}{{{Gaia Collaboration} et~al.}}{{{Gaia Collaboration}, Tanga, Pauwels, Mignard, Muinonen, Cellino, David, Hestroffer, Spoto, Berthier, et~al.}}}
+\bibcite{gaskell2008eros}{{14}{2008}{{Gaskell et~al.}}{{Gaskell, Barnouin-Jha, Scheeres, Konopliv, Mukai, Abe, et~al.}}}
+\bibcite{hanus2011}{{15}{2011}{{Hanu{\v {s}} et~al.}}{{Hanu{\v {s}}, Durech, Bro{\v {z}}, Warner, Pilcher, Stephens, Oey, Bernasconi, Casulli, Behrend, et~al.}}}
+\bibcite{hanus2016}{{16}{2016}{{Hanu{\v {s}} et~al.}}{{Hanu{\v {s}}, Durech, Oszkiewicz, Behrend, Carry, Delbo, Adam, Afonina, Anber, Arlot, et~al.}}}
+\bibcite{hapke1981}{{17}{1981}{{Hapke}}{{}}}
+\bibcite{hapke2012book}{{18}{2012}{{Hapke}}{{}}}
+\bibcite{ivezic2019lsst}{{19}{2019}{{Ivezi{\'c} et~al.}}{{Ivezi{\'c}, Kahn, Tyson, Abel, Acosta, Allsman, et~al.}}}
+\bibcite{kaasalainen2001a}{{20}{2001}{{Kaasalainen and Torppa}}{{}}}
+\bibcite{kaasalainen2001b}{{21}{2001}{{Kaasalainen et~al.}}{{Kaasalainen, Torppa, and Muinonen}}}
+\bibcite{kaasalainen2004}{{22}{2002}{{Kaasalainen et~al.}}{{Kaasalainen, Torppa, and Piironen}}}
+\bibcite{lomb1976}{{23}{1976}{{Lomb}}{{}}}
+\bibcite{masci2019ztf}{{24}{2019}{{Masci et~al.}}{{Masci, Laher, Rusholme, Shupe, Groom, Surace, Jackson, Monkewitz, Beck, et~al.}}}
+\bibcite{mpc_stats}{{25}{2025}{{Minor Planet Center}}{{}}}
+\bibcite{scargle1982}{{26}{1982}{{Scargle}}{{}}}
+\bibcite{lommelseeliger1887}{{27}{1887}{{Seeliger}}{{}}}
+\bibcite{stellingwerf1978}{{28}{1978}{{Stellingwerf}}{{}}}
+\bibcite{vanderplas2018}{{29}{2018}{{VanderPlas}}{{}}}
+\bibcite{viikinkoski2015}{{30}{2015}{{Viikinkoski et~al.}}{{Viikinkoski, Kaasalainen, and Durech}}}
+\bibcite{viikinkoski2018}{{31}{2018}{{Viikinkoski et~al.}}{{Viikinkoski, Vernazza, Hanu{\v {s}}, et~al.}}}
+\bibcite{warner2016alcdef}{{32}{2016}{{Warner}}{{}}}
+\bibcite{warner2009lcdb}{{33}{2009}{{Warner et~al.}}{{Warner, Stephens, and Harris}}}
+\bibcite{warner2011lcdb}{{34}{2011}{{Warner et~al.}}{{Warner, Harris, and Pravec}}}
+\bibcite{waszczak2015ptf}{{35}{2015}{{Waszczak et~al.}}{{Waszczak, Chang, Ofek, Laher, Masci, Levitan, Surace, Cheng, Ip, Kinoshita, Helou, Prince, and Kulkarni}}}
+\gdef \@abspage@last{15}

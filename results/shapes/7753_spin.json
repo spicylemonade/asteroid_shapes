@@ -1,0 +1,9 @@
+{
+  "asteroid_id": 7753,
+  "name": "1988 XB",
+  "pole_lambda_deg": 90.0,
+  "pole_beta_deg": -45.0,
+  "period_hours": 4.0,
+  "chi2_reduced": 6.043,
+  "method": "convex"
+}

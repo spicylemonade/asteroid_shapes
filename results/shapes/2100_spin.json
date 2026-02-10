@@ -1,0 +1,8 @@
+{
+  "asteroid_id": 2100,
+  "name": "Ra-Shalom",
+  "pole_lambda_deg": 180.0,
+  "pole_beta_deg": -45.0,
+  "period_hours": 5.4849,
+  "chi2_reduced": 9.985
+}

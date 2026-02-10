@@ -1,0 +1,8 @@
+{
+  "asteroid_id": 69230,
+  "name": "Hermes",
+  "pole_lambda_deg": 180.0,
+  "pole_beta_deg": 0.0,
+  "period_hours": 3.8567,
+  "chi2_reduced": 1.357
+}

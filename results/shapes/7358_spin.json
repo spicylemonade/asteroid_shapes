@@ -1,0 +1,9 @@
+{
+  "asteroid_id": 7358,
+  "name": "Oze",
+  "pole_lambda_deg": 90.0,
+  "pole_beta_deg": 0.0,
+  "period_hours": 4.46,
+  "chi2_reduced": 1.976,
+  "method": "convex"
+}

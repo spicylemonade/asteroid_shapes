@@ -1,0 +1,8 @@
+{
+  "asteroid_id": 1917,
+  "name": "Cuyo",
+  "pole_lambda_deg": 0.0,
+  "pole_beta_deg": -60.0,
+  "period_hours": 4.0,
+  "chi2_reduced": 5.167
+}

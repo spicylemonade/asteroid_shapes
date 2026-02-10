@@ -1,0 +1,8 @@
+{
+  "asteroid_id": 3352,
+  "name": "McAuliffe",
+  "pole_lambda_deg": 45.0,
+  "pole_beta_deg": -60.0,
+  "period_hours": 2.0,
+  "chi2_reduced": 6.976
+}

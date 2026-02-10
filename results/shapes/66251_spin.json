@@ -1,0 +1,8 @@
+{
+  "asteroid_id": 66251,
+  "name": "1999 GJ2",
+  "pole_lambda_deg": 180.0,
+  "pole_beta_deg": -45.0,
+  "period_hours": 2.5328,
+  "chi2_reduced": 0.915
+}

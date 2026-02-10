@@ -1,0 +1,9 @@
+{
+  "asteroid_id": 5587,
+  "name": "1990 SB",
+  "pole_lambda_deg": 90.0,
+  "pole_beta_deg": -45.0,
+  "period_hours": 2.5511,
+  "chi2_reduced": 23.634,
+  "method": "convex"
+}

@@ -1,0 +1,9 @@
+{
+  "asteroid_id": 6063,
+  "name": "Jason",
+  "pole_lambda_deg": 90.0,
+  "pole_beta_deg": 0.0,
+  "period_hours": 4.0,
+  "chi2_reduced": 2.021,
+  "method": "convex"
+}

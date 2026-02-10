@@ -1,0 +1,9 @@
+{
+  "asteroid_id": 9400,
+  "name": "1994 TW1",
+  "pole_lambda_deg": 180.0,
+  "pole_beta_deg": 45.0,
+  "period_hours": 6.298,
+  "chi2_reduced": 3.749,
+  "method": "convex"
+}

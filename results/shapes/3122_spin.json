@@ -1,0 +1,8 @@
+{
+  "asteroid_id": 3122,
+  "name": "Florence",
+  "pole_lambda_deg": 180.0,
+  "pole_beta_deg": 30.0,
+  "period_hours": 2.3216,
+  "chi2_reduced": 2.098
+}

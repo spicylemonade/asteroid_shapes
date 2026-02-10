@@ -1,0 +1,8 @@
+{
+  "asteroid_id": 1865,
+  "name": "Cerberus",
+  "pole_lambda_deg": 90.0,
+  "pole_beta_deg": -45.0,
+  "period_hours": 3.4199,
+  "chi2_reduced": 1170.013
+}

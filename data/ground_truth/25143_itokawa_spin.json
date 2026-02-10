@@ -1,0 +1,15 @@
+{
+  "asteroid_id": 25143,
+  "name": "Itokawa",
+  "pole_lambda_deg": 128.5,
+  "pole_beta_deg": -89.66,
+  "period_hours": 12.1324,
+  "period_days": 0.5055166666666667,
+  "reference_epoch_jd": 2451545.0,
+  "source": "Demura et al. 2006; Hayabusa",
+  "dimensions_km": [
+    0.535,
+    0.294,
+    0.209
+  ]
+}

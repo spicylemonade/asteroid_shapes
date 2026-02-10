@@ -1,0 +1,9 @@
+{
+  "asteroid_id": 5381,
+  "name": "Sekhmet",
+  "pole_lambda_deg": 180.0,
+  "pole_beta_deg": -45.0,
+  "period_hours": 2.5328,
+  "chi2_reduced": 4.657,
+  "method": "convex"
+}

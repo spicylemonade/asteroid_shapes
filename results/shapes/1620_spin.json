@@ -1,0 +1,8 @@
+{
+  "asteroid_id": 1620,
+  "name": "Geographos",
+  "pole_lambda_deg": 315.0,
+  "pole_beta_deg": 30.0,
+  "period_hours": 2.6269,
+  "chi2_reduced": 1791.995
+}

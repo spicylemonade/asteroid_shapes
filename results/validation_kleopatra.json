@@ -1,0 +1,19 @@
+{
+  "asteroid_id": 216,
+  "name": "Kleopatra",
+  "n_lightcurves": 1,
+  "n_datapoints": 66,
+  "known_period_h": 5.385,
+  "recovered_period_h": 2.6328,
+  "period_error_h": 2.7522,
+  "known_pole_lambda": 76.0,
+  "known_pole_beta": 16.0,
+  "recovered_pole_lambda": 0,
+  "recovered_pole_beta": 16,
+  "pole_error_deg": 72.6,
+  "hausdorff_normalized": 0.175,
+  "hausdorff_mean": 0.0679,
+  "volumetric_iou": 0.5744,
+  "chi2_reduced": 1.838,
+  "final_method": "convex"
+}
